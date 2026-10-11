@@ -1,0 +1,1028 @@
+{
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Description": "[PLAYERS_ATTEMPT_TO_GET_PLANT]",
+                "LevelNumber": 6,
+                "Loot": "RTID(DefaultLoot@LevelModules)",
+                "Modules": [
+                    "RTID(StandardIntro@LevelModules)",
+                    "RTID(ZombiesDeadWinCon@LevelModules)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)",
+                    "RTID(WestMowers@LevelModules)",
+                    "RTID(DefaultSunDropper@LevelModules)",
+                    "RTID(SeedBank@CurrentLevel)",
+                    "RTID(NewWaves@CurrentLevel)",
+                    "RTID(DoNotPlantBeforeLine@CurrentLevel)",
+                    "RTID(ProtectThePlant@CurrentLevel)"
+                ],
+                "PlantToIntroduce": "sapfling",
+                "FirstIntroNarrative": "SAPFLING6_INTRO",
+                "ReplayIntroNarrative": "SAPFLING6_INTRO_REPLAY",
+                "Name": "[EPIC_PLANT_LEVEL_NAME]",
+                "MusicType": "MiniGame_A",
+                "WrittenBy": "SansGrinder",
+                "StageModule": "RTID(FarmStage@LevelModules)"
+            }
+        },
+        {
+            "aliases": [
+                "SAPFLING6_INTRO"
+            ],
+            "objclass": "NarrativeProperties",
+            "objdata": {
+                "Flow": [
+                    {
+                        "Character": "winnie",
+                        "Action": "NPC_ENTER"
+                    },
+                    {
+                        "Character": "crazydave",
+                        "Action": "NPC_ENTER"
+                    },
+                    {
+                        "Character": "crazydave",
+                        "Action": "SHOUT",
+                        "Lines": {
+                            "en": "Zombies are CHARGING towards our Sapflings!",
+                            "zh": "僵尸正在全速冲向我们的树脂投手！"
+                        }
+                    },
+                    {
+                        "Character": "winnie",
+                        "Action": "SAY",
+                        "Lines": {
+                            "en": "Worry not, User Dave. We have 2 solution for this: ",
+                            "zh": "别担心，用户戴夫。我们有2种解决方案："
+                        }
+                    },
+                    {
+                        "Character": "winnie",
+                        "Action": "EXCITED",
+                        "Lines": {
+                            "en": "1. Slow those zombies down by applying multiple kinds of debuffs",
+                            "zh": "1. 使用多种减速手段使僵尸寸步难行"
+                        }
+                    },
+                    {
+                        "Character": "winnie",
+                        "Action": "EXCITED",
+                        "Lines": {
+                            "en": "2. Apply heavy firepower and kill the zombies before they could reach our Sapflings",
+                            "zh": "2. 使用重火力压制，在僵尸撞到树脂投手前将其击杀"
+                        }
+                    },
+                    {
+                        "Character": "crazydave",
+                        "Action": "PLAYFUL",
+                        "Lines": {
+                            "en": "Why don't we do both at the same time?",
+                            "zh": "要不咱们两招一起上呗？"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "SAPFLING6_INTRO_REPLAY"
+            ],
+            "objclass": "NarrativeProperties",
+            "objdata": {
+                "Flow": [
+                    {
+                        "Character": "winnie",
+                        "Action": "NPC_ENTER"
+                    },
+                    {
+                        "Character": "winnie",
+                        "Action": "SAY",
+                        "Lines": {
+                            "en": "Slow zombies down and deal heavy damage! ",
+                            "zh": "减速僵尸并造成巨额伤害！"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "DoNotPlantBeforeLine"
+            ],
+            "objclass": "MoldColonyChallengeProps",
+            "objdata": {
+                "Locations": "RTID(Column5_To_Column8@BoardGridMaps)"
+            }
+        },
+        {
+            "aliases": [
+                "ProtectThePlant"
+            ],
+            "objclass": "ProtectThePlantChallengeProperties",
+            "objdata": {
+                "MustProtectCount": 5,
+                "Plants": [
+                    {
+                        "GridX": 4,
+                        "GridY": 0,
+                        "PlantType": "sapfling"
+                    },
+                    {
+                        "GridX": 4,
+                        "GridY": 1,
+                        "PlantType": "sapfling"
+                    },
+                    {
+                        "GridX": 4,
+                        "GridY": 2,
+                        "PlantType": "sapfling"
+                    },
+                    {
+                        "GridX": 4,
+                        "GridY": 3,
+                        "PlantType": "sapfling"
+                    },
+                    {
+                        "GridX": 4,
+                        "GridY": 4,
+                        "PlantType": "sapfling"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "SeedBank"
+            ],
+            "objclass": "SeedBankProperties",
+            "objdata": {
+                "SelectionMethod": "chooser"
+            }
+        },
+        {
+            "aliases": [
+                "NewWaves"
+            ],
+            "objclass": "WaveManagerModuleProperties",
+            "objdata": {
+                "DynamicZombies": [
+                    {},
+                    {},
+                    {},
+                    {
+                        "PointIncrementPerWave": 80,
+                        "StartingPoints": 600,
+                        "StartingWave": 3,
+                        "ZombiePool": [
+                            "RTID(cowboy_armor2@ZombieTypes)",
+                            "RTID(cowboy_armor4@ZombieTypes)",
+                            "RTID(mech_cone@ZombieTypes)"
+                        ]
+                    },
+                    {
+                        "PointIncrementPerWave": 80,
+                        "StartingPoints": 600,
+                        "StartingWave": 3,
+                        "ZombiePool": [
+                            "RTID(cowboy_armor2@ZombieTypes)",
+                            "RTID(cowboy_armor4@ZombieTypes)",
+                            "RTID(mech_cone@ZombieTypes)"
+                        ]
+                    },
+                    {
+                        "PointIncrementPerWave": 80,
+                        "StartingPoints": 600,
+                        "StartingWave": 3,
+                        "ZombiePool": [
+                            "RTID(cowboy_armor2@ZombieTypes)",
+                            "RTID(cowboy_armor4@ZombieTypes)",
+                            "RTID(mech_cone@ZombieTypes)"
+                        ]
+                    },
+                    {
+                        "PointIncrementPerWave": 80,
+                        "StartingPoints": 600,
+                        "StartingWave": 3,
+                        "ZombiePool": [
+                            "RTID(cowboy_armor2@ZombieTypes)",
+                            "RTID(cowboy_armor4@ZombieTypes)",
+                            "RTID(mech_cone@ZombieTypes)"
+                        ]
+                    }
+                ],
+                "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "WaveManagerProps"
+            ],
+            "objclass": "WaveManagerProperties",
+            "objdata": {
+                "FlagWaveInterval": 9,
+                "WaveCount": 18,
+                "Waves": [
+                    [
+                        "RTID(Wave1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave2@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave3@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave4@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave5@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave6@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave7@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave8@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave9@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave10@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave11@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave12@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave13@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave14@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave15@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave16@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave17@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave18@CurrentLevel)"
+                    ]
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave1"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "DynamicPlantfood": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0
+                ],
+                "Zombies": [
+                    {
+                        "Row": "2",
+                        "Type": "RTID(cowboy_armor4@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave2"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "DynamicPlantfood": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0
+                ],
+                "Zombies": [
+                    {
+                        "Row": "4",
+                        "Type": "RTID(cowboy_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(cowboy_armor1@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave3"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "Zombies": [
+                    {
+                        "Row": "3",
+                        "Type": "RTID(cowboy_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(cowboy_armor2@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave4"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "DynamicPlantfood": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0
+                ],
+                "Zombies": [
+                    {
+                        "Row": "3",
+                        "Type": "RTID(iceage_weaselhoarder@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave5"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Row": "2",
+                        "Type": "RTID(iceage_troglobite_2block@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(iceage_troglobite_2block@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave6"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(iceage_weaselhoarder@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(west_bull_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave7"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "DynamicPlantfood": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "Zombies": [
+                    {
+                        "Row": "5",
+                        "Type": "RTID(iceage_troglobite_2block@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(iceage_troglobite_2block@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave8"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Row": "4",
+                        "Type": "RTID(modern_allstar@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(cowboy_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(cowboy_armor2@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave9"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "DynamicPlantfood": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0
+                ],
+                "Zombies": [
+                    {
+                        "Row": "2",
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(cowboy_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(west_bull_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(iceage_troglobite_2block@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(iceage_troglobite_2block@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave10"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "DynamicPlantfood": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0
+                ],
+                "Zombies": [
+                    {
+                        "Row": "2",
+                        "Type": "RTID(iceage_troglobite_2block@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(iceage_troglobite_2block@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(iceage_troglobite_2block@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(modern_allstar@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave11"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Row": "4",
+                        "Type": "RTID(iceage_troglobite_2block@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(iceage_troglobite_2block@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(modern_allstar@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(west_bull_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(west_bull_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(cowboy_armor4@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave12"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave13"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 0,
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(west_bull_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(modern_allstar@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(west_bull_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(modern_allstar@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(west_bull_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave14"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "DynamicPlantfood": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(iceage_weaselhoarder@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(iceage_weaselhoarder@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(iceage_weaselhoarder@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(iceage_weaselhoarder@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(iceage_weaselhoarder@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(cowboy_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(west_bull_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(west_bull_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(modern_allstar@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(modern_allstar@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(west_bull_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave15"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "DynamicPlantfood": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0
+                ],
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(iceage_troglobite_2block@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(iceage_troglobite_2block@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(iceage_troglobite_2block@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(iceage_troglobite_2block@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(iceage_troglobite_2block@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(iceage_troglobite_2block@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(west_bull_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(west_bull_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(west_bull_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(west_bull_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(west_bull_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(cowboy_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave16"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "DynamicPlantfood": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0
+                ],
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(west_bull_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(west_bull_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(west_bull_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(west_bull_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(west_bull_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave17"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "DynamicPlantfood": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    0
+                ],
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(iceage_weaselhoarder@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(iceage_weaselhoarder@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(iceage_weaselhoarder@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(iceage_weaselhoarder@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(iceage_weaselhoarder@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(iceage_troglobite_2block@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(iceage_troglobite_2block@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(iceage_troglobite_2block@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(iceage_troglobite_2block@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(iceage_troglobite_2block@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(cowboy_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(west_bull_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(west_bull_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(cowboy_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(west_bull_veteran@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave18"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "DynamicPlantfood": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    0,
+                    0
+                ],
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(modern_allstar@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(modern_allstar@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(modern_allstar@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(modern_allstar@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(modern_allstar@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(west_bull_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(west_bull_veteran@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(iceage_weaselhoarder@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(iceage_weaselhoarder@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(iceage_troglobite_2block@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(iceage_troglobite_2block@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(iceage_troglobite_2block@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(iceage_troglobite_2block@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(iceage_troglobite_2block@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(iceage_troglobite_2block@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(iceage_troglobite_2block@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(iceage_troglobite_2block@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(iceage_troglobite_2block@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(iceage_troglobite_2block@ZombieTypes)"
+                    }
+                ]
+            }
+        }
+    ],
+    "version": 1
+}

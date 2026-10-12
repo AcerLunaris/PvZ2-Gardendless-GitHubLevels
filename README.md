@@ -50,6 +50,12 @@ Levels are JSON files. Refer to existing examples for the format.
 
 ---
 
+### When Updates Happen
+
+Level updates are synced automatically **at :00 and :30 of every hour**. To see the latest levels, please **restart the game** after those times and open the **GitHub Level Window**. If the window was already opened before the sync, restarting the game is required to refresh the data.
+
+---
+
 ## 中文
 
 本仓库中的关卡会被 *PvZ2: Gardendless* 中的 **GitHub 关卡窗口** 获取。
@@ -93,3 +99,9 @@ Levels are JSON files. Refer to existing examples for the format.
 ## 关卡格式
 
 关卡为 JSON 文件，具体格式参考现有示例。
+
+---
+
+### 更新时机
+
+关卡的更新是定时的，**每小时的 00 分和 30 分**会自动同步一次。因此，请在这些时间点**之后**重启游戏，并打开 **GitHub Level 窗口**，才能看到最新的关卡内容。如果在同步之前已经打开了窗口，需要重启游戏才能刷新数据。

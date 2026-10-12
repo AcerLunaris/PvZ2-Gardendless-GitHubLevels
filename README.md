@@ -8,6 +8,22 @@
 
 Levels in this repository are fetched by the **GitHub Level Window** in *PvZ2: Gardendless*.
 
+### Repository Structure
+
+**The root directory should only contain folders named after level authors.**
+
+Each author must place their levels (files or subfolders) **inside a folder named after themselves**. Do **not** put level files directly in the root directory.
+
+.
+├── AuthorA/
+│ ├── level1.json
+│ └── level2.json
+├── AuthorB/
+│ ├── level1.json
+│ └── SubFolder/
+│ └── level3.json
+└── ...
+
 ### Uploading Levels
 
 You can upload your levels via **Pull Request**.
@@ -37,6 +53,22 @@ Levels are JSON files. Refer to existing examples for the format.
 ## 中文
 
 本仓库中的关卡会被 *PvZ2: Gardendless* 中的 **GitHub 关卡窗口** 获取。
+
+### 仓库结构
+
+**根目录只应包含以关卡作者名字命名的文件夹。**
+
+每位作者必须把关卡（文件或子文件夹）**放进以自己名字命名的文件夹里**。**不要**把关卡文件直接放在根目录。
+
+.
+├── 作者A/
+│ ├── level1.json
+│ └── level2.json
+├── 作者B/
+│ ├── level1.json
+│ └── 子文件夹/
+│ └── level3.json
+└── ...
 
 ### 上传关卡
 

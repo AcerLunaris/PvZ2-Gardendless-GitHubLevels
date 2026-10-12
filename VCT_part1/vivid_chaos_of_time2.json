@@ -1,0 +1,1613 @@
+{
+  "#comment": "Vivid Chaos of Time",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "Modules": [
+          "RTID(StandardIntro@LevelModules)",
+          "RTID(DefaultSunDropper@LevelModules)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(WestMowers@LevelModules)",
+          "RTID(SeedBank@CurrentLevel)",
+          "RTID(ChallengeModule@CurrentLevel)",
+          "RTID(Rails@CurrentLevel)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(NewWaves@CurrentLevel)"
+        ],
+        "Name": "Vivid Chaos of Time",
+        "NameMultiLanguage": {
+          "en": "Vivid Chaos of Time - Level <LEVELNUMBER>",
+          "zh": "时序绚乱 - 第 <LEVELNUMBER> 关"
+        },
+        "Description": "<PLAYERNAME>'s Trip to Time Turbulence!",
+        "DescriptionMultiLanguage": {
+          "en": "<PLAYERNAME>'s Trip to Time Turbulence!",
+          "zh": "<PLAYERNAME>的时空乱流之旅！"
+        },
+        "LevelNumber": 2,
+        "WrittenBy": "星痕_Hoshiato",
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "StageModule": "RTID(TheStage@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "TheStage"
+      ],
+      "objclass": "LawnType",
+      "objdata": {
+        "LawnBaseOn": "PersuitStage",
+        "Properties": "RTID(TheStageProp@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "TheStageProp"
+      ],
+      "objclass": "LawnProperties",
+      "objdata": {
+        "Basic_Zombie": [
+          "cowboy",
+          "lostcity"
+        ],
+        "Flag_Zombie": [
+          "cowboy_flag",
+          "lostcity_flag"
+        ],
+        "Armor1_Zombie": [
+          "cowboy_armor1",
+          "lostcity_armor1"
+        ],
+        "Armor2_Zombie": [
+          "cowboy_armor2",
+          "lostcity_armor2"
+        ],
+        "Music": "Lostcity"
+      }
+    },
+    {
+      "aliases": [
+        "SeedBank"
+      ],
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "PlantExcludeList": [
+          "powerplant",
+          "goldleaf"
+        ],
+        "SelectionMethod": "chooser"
+      }
+    },
+    {
+      "aliases": [
+        "ChallengeModule"
+      ],
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "Challenges": [
+          [
+            "RTID(SimultaneousPlants@CurrentLevel)"
+          ]
+        ],
+        "ChallengesAlwaysAvailable": true
+      }
+    },
+    {
+      "aliases": [
+        "SimultaneousPlants"
+      ],
+      "objclass": "StarChallengeSimultaneousPlantsProps",
+      "objdata": {
+        "MaximumPlants": 12
+      }
+    },
+    {
+      "aliases": [
+        "Rails"
+      ],
+      "objclass": "RailcartProperties",
+      "objdata": {
+        "RailcartType": "railcart_cowboy",
+        "Railcarts": [
+          {
+            "Column": 1,
+            "Row": 2
+          },
+          {
+            "Column": 2,
+            "Row": 4
+          },
+          {
+            "Column": 4,
+            "Row": 1
+          },
+          {
+            "Column": 7,
+            "Row": 3
+          },
+          {
+            "Column": 8,
+            "Row": 0
+          }
+        ],
+        "Rails": [
+          {
+            "Column": 1,
+            "RowEnd": 3,
+            "RowStart": 0
+          },
+          {
+            "Column": 2,
+            "RowEnd": 4,
+            "RowStart": 3
+          },
+          {
+            "Column": 4,
+            "RowEnd": 1,
+            "RowStart": 0
+          },
+          {
+            "Column": 8,
+            "RowEnd": 2,
+            "RowStart": 0
+          },
+          {
+            "Column": 7,
+            "RowEnd": 4,
+            "RowStart": 2
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "NewWaves"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {
+        "DynamicZombies": [
+          {},
+          {},
+          {},
+          {
+            "PointIncrementPerWave": 60,
+            "StartingPoints": 100,
+            "StartingWave": 3,
+            "ZombiePool": [
+              "RTID(cowboy@ZombieTypes)",
+              "RTID(cowboy_armor1@ZombieTypes)",
+              "RTID(cowboy_armor2@ZombieTypes)",
+              "RTID(piano@ZombieTypes)",
+              "RTID(chicken_farmer@ZombieTypes)",
+              "RTID(poncho@ZombieTypes)",
+              "RTID(west_bull@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": 80,
+            "StartingPoints": 100,
+            "StartingWave": 2,
+            "ZombiePool": [
+              "RTID(cowboy@ZombieTypes)",
+              "RTID(cowboy_armor1@ZombieTypes)",
+              "RTID(cowboy_armor2@ZombieTypes)",
+              "RTID(piano@ZombieTypes)",
+              "RTID(chicken_farmer@ZombieTypes)",
+              "RTID(poncho@ZombieTypes)",
+              "RTID(west_bull@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": 80,
+            "StartingPoints": 400,
+            "StartingWave": 2,
+            "ZombiePool": [
+              "RTID(cowboy@ZombieTypes)",
+              "RTID(cowboy_armor1@ZombieTypes)",
+              "RTID(cowboy_armor2@ZombieTypes)",
+              "RTID(piano@ZombieTypes)",
+              "RTID(chicken_farmer@ZombieTypes)",
+              "RTID(poncho@ZombieTypes)",
+              "RTID(west_bull@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": 120,
+            "StartingPoints": 500,
+            "StartingWave": 2,
+            "ZombiePool": [
+              "RTID(cowboy@ZombieTypes)",
+              "RTID(cowboy_armor1@ZombieTypes)",
+              "RTID(cowboy_armor2@ZombieTypes)",
+              "RTID(piano@ZombieTypes)",
+              "RTID(chicken_farmer@ZombieTypes)",
+              "RTID(poncho@ZombieTypes)",
+              "RTID(west_bull@ZombieTypes)"
+            ]
+          }
+        ],
+        "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "WaveManagerProps"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "FlagWaveInterval": 5,
+        "SpawnColEnd": 1,
+        "SpawnColStart": 1,
+        "WaveCount": 15,
+        "WaveSpendingPointIncrement": 0,
+        "WaveSpendingPoints": 0,
+        "Waves": [
+          [
+            "RTID(Wave1@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave2@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave3@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave4@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave5@CurrentLevel)",
+            "RTID(Wave5Scheduler@CurrentLevel)",
+            "RTID(GoldTileEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave6@CurrentLevel)",
+            "RTID(Wave6PortalEvent0@CurrentLevel)",
+            "RTID(Wave6PortalEvent1@CurrentLevel)",
+            "RTID(Random@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave7@CurrentLevel)",
+            "RTID(Random@CurrentLevel)",
+            "RTID(Random@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave8@CurrentLevel)",
+            "RTID(Wave8Scheduler@CurrentLevel)",
+            "RTID(Random@CurrentLevel)",
+            "RTID(Random@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave9@CurrentLevel)",
+            "RTID(Random@CurrentLevel)",
+            "RTID(Random@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave10@CurrentLevel)",
+            "RTID(Wave10PortalEvent0@CurrentLevel)",
+            "RTID(Wave10PortalEvent1@CurrentLevel)",
+            "RTID(Wave10PortalEvent2@CurrentLevel)",
+            "RTID(Random@CurrentLevel)",
+            "RTID(Random@CurrentLevel)",
+            "RTID(Random@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave11@CurrentLevel)",
+            "RTID(Wave8Scheduler@CurrentLevel)",
+            "RTID(Random@CurrentLevel)",
+            "RTID(Random@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave12@CurrentLevel)",
+            "RTID(Wave12PortalEvent0@CurrentLevel)",
+            "RTID(Wave12PortalEvent1@CurrentLevel)",
+            "RTID(Random@CurrentLevel)",
+            "RTID(Random@CurrentLevel)",
+            "RTID(Random@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave13@CurrentLevel)",
+            "RTID(Wave8Scheduler@CurrentLevel)",
+            "RTID(Random@CurrentLevel)",
+            "RTID(Random@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave14@CurrentLevel)",
+            "RTID(Wave14PortalEvent0@CurrentLevel)",
+            "RTID(Wave14PortalEvent1@CurrentLevel)",
+            "RTID(Wave14PortalEvent2@CurrentLevel)",
+            "RTID(Random@CurrentLevel)",
+            "RTID(Random@CurrentLevel)",
+            "RTID(Random@CurrentLevel)",
+            "RTID(Random@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave15@CurrentLevel)",
+            "RTID(Wave15Scheduler@CurrentLevel)",
+            "RTID(Wave8Scheduler@CurrentLevel)",
+            "RTID(Random@CurrentLevel)",
+            "RTID(Random@CurrentLevel)",
+            "RTID(Random@CurrentLevel)"
+          ]
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave1"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(cowboy@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave2"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(cowboy_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(poncho_no_plate@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave3"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(prospector@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(prospector@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave4"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "DynamicPlantfood": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(cowboy_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(poncho_no_plate@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(poncho_no_plate@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave5"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "DynamicPlantfood": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(prospector@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave6"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(cowboy_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave7"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(prospector@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave8"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "DynamicPlantfood": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(prospector@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(prospector@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave9"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(cowboy_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(cowboy_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave10"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(prospector@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave11"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "DynamicPlantfood": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(prospector@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(prospector@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave12"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(cowboy_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave13"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "DynamicPlantfood": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(prospector@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(prospector@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave14"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(cowboy_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(cowboy_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave15"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(prospector@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(prospector@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+			"aliases":[
+				"Wave5Scheduler"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":0,
+					"Min":0
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Wave5Kakushita@CurrentLevel)",
+          "RTID(GoldTile1@CurrentLevel)",
+          "RTID(GoldTile2@CurrentLevel)",
+          "RTID(GoldTile3@CurrentLevel)",
+          "RTID(GoldTile4@CurrentLevel)",
+          "RTID(GoldTile5@CurrentLevel)",
+          "RTID(GoldTile6@CurrentLevel)",
+          "RTID(GoldTile7@CurrentLevel)",
+          "RTID(GoldTile8@CurrentLevel)",
+          "RTID(GoldTile9@CurrentLevel)",
+          "RTID(Wave5ParachuteRain0@CurrentLevel)",
+          "RTID(Wave5ParachuteRain1@CurrentLevel)",
+          "RTID(Wave5ParachuteRain2@CurrentLevel)"
+				]
+			}
+		},
+    {
+      "aliases": [
+        "Wave5Kakushita"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(lostcity_bug@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lostcity_bug@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lostcity_bug@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave5ParachuteRain0"
+      ],
+      "objclass": "ParachuteRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": 3,
+        "ColumnStart": 3,
+        "GroupSize": 1,
+        "SpiderCount": 1,
+        "SpiderZombieName": "lostcity_lostpilot",
+        "TimeBeforeFullSpawn": "1.5",
+        "TimeBetweenGroups": "1",
+        "WaveStartMessage": "[WARNING_PARACHUTERAIN]",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave5ParachuteRain1"
+      ],
+      "objclass": "ParachuteRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": 5,
+        "ColumnStart": 5,
+        "GroupSize": 2,
+        "SpiderCount": 2,
+        "SpiderZombieName": "lostcity_lostpilot",
+        "TimeBeforeFullSpawn": "1.5",
+        "TimeBetweenGroups": "1",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave5ParachuteRain2"
+      ],
+      "objclass": "ParachuteRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": 7,
+        "ColumnStart": 7,
+        "GroupSize": 2,
+        "SpiderCount": 2,
+        "SpiderZombieName": "lostcity_lostpilot",
+        "TimeBeforeFullSpawn": "1.5",
+        "TimeBetweenGroups": "1",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave6PortalEvent0"
+      ],
+      "objclass": "SpawnModernPortalsWaveActionProps",
+      "objdata": {
+        "PortalColumn": 7,
+        "PortalRow": 3,
+        "PortalType": "RTID(Wave6Portal0@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave6PortalEvent1"
+      ],
+      "objclass": "SpawnModernPortalsWaveActionProps",
+      "objdata": {
+        "PortalColumn": 5,
+        "PortalRow": 2,
+        "PortalType": "RTID(Wave6Portal1@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "PortalType",
+      "aliases": [
+        "Wave6Portal0"
+      ],
+      "objdata": {
+        "Properties": "RTID(Wave6Portal0P@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "PortalType",
+      "aliases": [
+        "Wave6Portal1"
+      ],
+      "objdata": {
+        "Properties": "RTID(Wave6Portal1P@CurrentLevel)"
+      }
+    },
+    {
+      "objclass":"PortalProps",
+      "aliases":[
+        "Wave6Portal0P"
+      ],
+      "objdata":{
+        "TimeBeforeFirst":{
+          "Min":4,
+          "Max":6
+        },
+        "TimeBetween":{
+          "Min":6,
+          "Max":8
+        },
+        "Scale":1,
+        "World":"lostcity",
+        "ZombieTypesToSpawn":[
+          {
+            "Weight":1,
+            "ZombieTypeName":"RTID(lostcity_impporter@ZombieTypes)"
+          },
+          {
+            "Weight":1,
+            "ZombieTypeName":"RTID(lostcity_excavator@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "objclass":"PortalProps",
+      "aliases":[
+        "Wave6Portal1P"
+      ],
+      "objdata":{
+        "TimeBeforeFirst":{
+          "Min":4,
+          "Max":6
+        },
+        "TimeBetween":{
+          "Min":6,
+          "Max":8
+        },
+        "Scale":1,
+        "World":"lostcity",
+        "ZombieTypesToSpawn":[
+          {
+            "Weight":1,
+            "ZombieTypeName":"RTID(lostcity_impporter@ZombieTypes)"
+          },
+          {
+            "Weight":1,
+            "ZombieTypeName":"RTID(lostcity_jane@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+			"aliases":[
+				"Wave8Scheduler"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":0,
+					"Min":0
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Wave8Kakushita@CurrentLevel)"
+				]
+			}
+		},
+    {
+      "aliases": [
+        "Wave8Kakushita"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(lostcity_relichunter@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lostcity_relichunter@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lostcity_relichunter@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lostcity_relichunter@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave10PortalEvent0"
+      ],
+      "objclass": "SpawnModernPortalsWaveActionProps",
+      "objdata": {
+        "PortalColumn": 6,
+        "PortalRow": 0,
+        "PortalType": "RTID(Wave6Portal0@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave10PortalEvent1"
+      ],
+      "objclass": "SpawnModernPortalsWaveActionProps",
+      "objdata": {
+        "PortalColumn": 6,
+        "PortalRow": 4,
+        "PortalType": "RTID(Wave6Portal0@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave10PortalEvent2"
+      ],
+      "objclass": "SpawnModernPortalsWaveActionProps",
+      "objdata": {
+        "PortalColumn": 8,
+        "PortalRow": 1,
+        "PortalType": "RTID(Wave6Portal1@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave12PortalEvent0"
+      ],
+      "objclass": "SpawnModernPortalsWaveActionProps",
+      "objdata": {
+        "PortalColumn": 7,
+        "PortalRow": 1,
+        "PortalType": "RTID(Wave12Portal0@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave12PortalEvent1"
+      ],
+      "objclass": "SpawnModernPortalsWaveActionProps",
+      "objdata": {
+        "PortalColumn": 6,
+        "PortalRow": 3,
+        "PortalType": "RTID(Wave12Portal0@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave14PortalEvent0"
+      ],
+      "objclass": "SpawnModernPortalsWaveActionProps",
+      "objdata": {
+        "PortalColumn": 5,
+        "PortalRow": 0,
+        "PortalType": "RTID(Wave12Portal0@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave14PortalEvent1"
+      ],
+      "objclass": "SpawnModernPortalsWaveActionProps",
+      "objdata": {
+        "PortalColumn": 4,
+        "PortalRow": 2,
+        "PortalType": "RTID(Wave12Portal0@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave14PortalEvent2"
+      ],
+      "objclass": "SpawnModernPortalsWaveActionProps",
+      "objdata": {
+        "PortalColumn": 5,
+        "PortalRow": 4,
+        "PortalType": "RTID(Wave12Portal0@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "PortalType",
+      "aliases": [
+        "Wave12Portal0"
+      ],
+      "objdata": {
+        "Properties": "RTID(Wave12Portal0P@CurrentLevel)"
+      }
+    },
+    {
+			"aliases":[
+				"Wave15Scheduler"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":0,
+					"Min":0
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Wave15ParachuteRain0@CurrentLevel)"
+				]
+			}
+		},
+    {
+      "aliases": [
+        "Wave15ParachuteRain0"
+      ],
+      "objclass": "ParachuteRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": 7,
+        "ColumnStart": 4,
+        "GroupSize": 1,
+        "SpiderCount": 5,
+        "SpiderZombieName": "lostcity_lostpilot",
+        "TimeBeforeFullSpawn": "2.5",
+        "TimeBetweenGroups": "0.5",
+        "WaveStartMessage": "[WARNING_PARACHUTERAIN]",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "objclass":"PortalProps",
+      "aliases":[
+        "Wave12Portal0P"
+      ],
+      "objdata":{
+        "TimeBeforeFirst":{
+          "Min":4,
+          "Max":6
+        },
+        "TimeBetween":{
+          "Min":6,
+          "Max":8
+        },
+        "Scale":1,
+        "World":"lostcity",
+        "ZombieTypesToSpawn":[
+          {
+            "Weight":1,
+            "ZombieTypeName":"RTID(lostcity_impporter@ZombieTypes)"
+          },
+          {
+            "Weight":1,
+            "ZombieTypeName":"RTID(lostcity_armor1@ZombieTypes)"
+          },
+          {
+            "Weight":1,
+            "ZombieTypeName":"RTID(lostcity_crystalskull@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+			"aliases":[
+				"GoldTile1"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":0.7,
+					"Min":0.7
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(GoldTileEvent1@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"GoldTile2"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":1.4,
+					"Min":1.4
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(GoldTileEvent2@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"GoldTile3"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":2.1,
+					"Min":2.1
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(GoldTileEvent3@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"GoldTile4"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":2.8,
+					"Min":2.8
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(GoldTileEvent4@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"GoldTile5"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":3.5,
+					"Min":3.5
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(GoldTileEvent5@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"GoldTile6"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":4.2,
+					"Min":4.2
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(GoldTileEvent6@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"GoldTile7"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":4.9,
+					"Min":4.9
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(GoldTileEvent7@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"GoldTile8"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":5.6,
+					"Min":5.6
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(GoldTileEvent8@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"GoldTile9"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":6.3,
+					"Min":6.3
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(GoldTileEvent9@CurrentLevel)"
+				]
+			}
+		},
+    {
+      "aliases": [
+        "GoldTileEvent0"
+      ],
+      "objclass": "SpawnPlantsWaveActionProps",
+      "objdata": {
+        "Plants": [
+          {
+						"GridX": 6,
+						"GridY": 3,
+						"TypeName": "goldleaf",
+						"SpawnAnim": "fall",
+						"AllowSpawnOnOtherPlants": true
+					}
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "GoldTileEvent1"
+      ],
+      "objclass": "SpawnPlantsWaveActionProps",
+      "objdata": {
+        "Plants": [
+          {
+						"GridX": 1,
+						"GridY": 4,
+						"TypeName": "goldleaf",
+						"SpawnAnim": "fall",
+						"AllowSpawnOnOtherPlants": true
+					}
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "GoldTileEvent2"
+      ],
+      "objclass": "SpawnPlantsWaveActionProps",
+      "objdata": {
+        "Plants": [
+          {
+						"GridX": 5,
+						"GridY": 0,
+						"TypeName": "goldleaf",
+						"SpawnAnim": "fall",
+						"AllowSpawnOnOtherPlants": true
+					}
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "GoldTileEvent3"
+      ],
+      "objclass": "SpawnPlantsWaveActionProps",
+      "objdata": {
+        "Plants": [
+          {
+						"GridX": 0,
+						"GridY": 2,
+						"TypeName": "goldleaf",
+						"SpawnAnim": "fall",
+						"AllowSpawnOnOtherPlants": true
+					}
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "GoldTileEvent4"
+      ],
+      "objclass": "SpawnPlantsWaveActionProps",
+      "objdata": {
+        "Plants": [
+          {
+						"GridX": 5,
+						"GridY": 4,
+						"TypeName": "goldleaf",
+						"SpawnAnim": "fall",
+						"AllowSpawnOnOtherPlants": true
+					}
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "GoldTileEvent5"
+      ],
+      "objclass": "SpawnPlantsWaveActionProps",
+      "objdata": {
+        "Plants": [
+          {
+						"GridX": 2,
+						"GridY": 1,
+						"TypeName": "goldleaf",
+						"SpawnAnim": "fall",
+						"AllowSpawnOnOtherPlants": true
+					}
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "GoldTileEvent6"
+      ],
+      "objclass": "SpawnPlantsWaveActionProps",
+      "objdata": {
+        "Plants": [
+          {
+						"GridX": 7,
+						"GridY": 1,
+						"TypeName": "goldleaf",
+						"SpawnAnim": "fall",
+						"AllowSpawnOnOtherPlants": true
+					}
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "GoldTileEvent7"
+      ],
+      "objclass": "SpawnPlantsWaveActionProps",
+      "objdata": {
+        "Plants": [
+          {
+						"GridX": 0,
+						"GridY": 0,
+						"TypeName": "goldleaf",
+						"SpawnAnim": "fall",
+						"AllowSpawnOnOtherPlants": true
+					}
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "GoldTileEvent8"
+      ],
+      "objclass": "SpawnPlantsWaveActionProps",
+      "objdata": {
+        "Plants": [
+          {
+						"GridX": 4,
+						"GridY": 2,
+						"TypeName": "goldleaf",
+						"SpawnAnim": "fall",
+						"AllowSpawnOnOtherPlants": true
+					}
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "GoldTileEvent9"
+      ],
+      "objclass": "SpawnPlantsWaveActionProps",
+      "objdata": {
+        "Plants": [
+          {
+						"GridX": 3,
+						"GridY": 3,
+						"TypeName": "goldleaf",
+						"SpawnAnim": "fall",
+						"AllowSpawnOnOtherPlants": true
+					}
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Random"
+      ],
+      "objclass": "RandomEventsProps",
+      "objdata": {
+        "EventCount": {
+          "Min": 1,
+          "Max": 1
+        },
+        "Events": [
+          "RTID(Sentakushi0@CurrentLevel)",
+          "RTID(Sentakushi1@CurrentLevel)",
+          "RTID(Sentakushi2@CurrentLevel)",
+          "RTID(Sentakushi3@CurrentLevel)",
+          "RTID(Sentakushi4@CurrentLevel)",
+          "RTID(Sentakushi5@CurrentLevel)",
+          "RTID(Sentakushi6@CurrentLevel)",
+          "RTID(Sentakushi7@CurrentLevel)",
+          "RTID(Sentakushi8@CurrentLevel)",
+          "RTID(Sentakushi9@CurrentLevel)"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Sentakushi0"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(lawn@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lawn@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lawn@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lawn@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Sentakushi1"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(lawn_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lawn_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Sentakushi2"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(lawn_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Sentakushi3"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Sentakushi4"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(lostcity_excavator@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lostcity_excavator@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Sentakushi5"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(lostcity_excavator@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lostcity_jane@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Sentakushi6"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(lostcity_bug@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lostcity_bug@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lostcity_bug@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Sentakushi7"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(lostcity_bug_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lostcity_bug@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Sentakushi8"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(lostcity_crystalskull@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lostcity_crystalskull@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Sentakushi9"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(lostcity_impporter@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lostcity_impporter@ZombieTypes)"
+          }
+        ]
+      }
+    }
+  ],
+  "version": 1
+}

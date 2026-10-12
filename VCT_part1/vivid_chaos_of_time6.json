@@ -1,0 +1,1737 @@
+{
+  "#comment": "Vivid Chaos of Time",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "Modules": [
+          "RTID(StandardIntro@LevelModules)",
+          "RTID(DefaultSunDropper@LevelModules)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(DinoMowers@LevelModules)",
+          "RTID(SeedBank@CurrentLevel)",
+          "RTID(ChallengeModule@CurrentLevel)",
+          "RTID(LevelDeadLine@CurrentLevel)",
+          "RTID(LevelScheduler@CurrentLevel)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(NewWaves@CurrentLevel)"
+        ],
+        "Name": "Vivid Chaos of Time",
+        "NameMultiLanguage": {
+          "en": "Vivid Chaos of Time - Level <LEVELNUMBER>",
+          "zh": "时序绚乱 - 第 <LEVELNUMBER> 关"
+        },
+        "Description": "<PLAYERNAME>'s Trip to Time Turbulence!",
+        "DescriptionMultiLanguage": {
+          "en": "<PLAYERNAME>'s Trip to Time Turbulence!",
+          "zh": "<PLAYERNAME>的时空乱流之旅！"
+        },
+        "LevelNumber": 6,
+        "WrittenBy": "星痕_Hoshiato",
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "StageModule": "RTID(TheStage@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "TheStage"
+      ],
+      "objclass": "LawnType",
+      "objdata": {
+        "LawnBaseOn": "PersuitStage",
+        "Properties": "RTID(TheStageProp@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "TheStageProp"
+      ],
+      "objclass": "LawnProperties",
+      "objdata": {
+        "Basic_Zombie": [
+          "dino",
+          "eighties"
+        ],
+        "Flag_Zombie": [
+          "dino_flag",
+          "eighties_flag"
+        ],
+        "Armor1_Zombie": [
+          "dino_armor1",
+          "eighties_armor1"
+        ],
+        "Armor2_Zombie": [
+          "dino_armor2",
+          "eighties_armor2"
+        ],
+        "Music": "Eighties"
+      }
+    },
+    {
+      "aliases": [
+        "SeedBank"
+      ],
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "SelectionMethod": "chooser"
+      }
+    },
+    {
+      "aliases": [
+        "ChallengeModule"
+      ],
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "Challenges": [
+          [
+            "RTID(SunProduced@CurrentLevel)"
+          ]
+        ],
+        "ChallengesAlwaysAvailable": true
+      }
+    },
+    {
+      "aliases": [
+        "SunProduced"
+      ],
+      "objclass": "StarChallengeSunProducedProps",
+      "objdata": {
+        "TargetSun": 9000
+      }
+    },
+    {
+      "aliases": [
+        "LevelDeadLine"
+      ],
+      "objclass": "LevelDeadLineProps",
+      "objdata": {
+        "Countdown": 360,
+        "Events": [
+          "RTID(Deadline@CurrentLevel)"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Deadline"
+      ],
+      "objclass": "LoseGameWaveActionProps",
+      "objdata": {
+        "Tip": {
+          "en": "",
+          "zh": ""
+        },
+        "SmallTip": {
+          "en": "Mission Fail",
+          "zh": "任务失败"
+        }
+      }
+    },
+    {
+			"aliases":[
+				"LevelScheduler"
+			],
+			"objclass":"LevelSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":300,
+					"Min":300
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Message0@CurrentLevel)",
+          "RTID(Message1Ready@CurrentLevel)",
+          "RTID(Message2Ready@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"Message1Ready"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":30,
+					"Min":30
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Message1@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"Message2Ready"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":50,
+					"Min":50
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Message2@CurrentLevel)"
+				]
+			}
+		},
+    {
+      "aliases": [
+        "Message0"
+      ],
+      "objclass": "WaveLevelAuthorMessageProps",
+      "objdata": {
+        "StringMultiLanguage": {
+          "en": "60 SECONDS LEFT!",
+          "zh": "剩余60秒！"
+        },
+        "ThemeColor": "#FF0000"
+      }
+    },
+    {
+      "aliases": [
+        "Message1"
+      ],
+      "objclass": "WaveLevelAuthorMessageProps",
+      "objdata": {
+        "StringMultiLanguage": {
+          "en": "30 SECONDS LEFT!",
+          "zh": "剩余30秒！"
+        },
+        "ThemeColor": "#FF0000"
+      }
+    },
+    {
+      "aliases": [
+        "Message2"
+      ],
+      "objclass": "WaveLevelAuthorMessageProps",
+      "objdata": {
+        "StringMultiLanguage": {
+          "en": "10 SECONDS LEFT!",
+          "zh": "剩余10秒！"
+        },
+        "ThemeColor": "#FF0000"
+      }
+    },
+    {
+      "aliases": [
+        "NewWaves"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {
+        "DynamicZombies": [
+          {},
+          {},
+          {},
+          {
+            "PointIncrementPerWave": 60,
+            "StartingPoints": 100,
+            "StartingWave": 3,
+            "ZombiePool": [
+              "RTID(dino@ZombieTypes)",
+              "RTID(dino_armor1@ZombieTypes)",
+              "RTID(dino_armor2@ZombieTypes)",
+              "RTID(dino_armor3@ZombieTypes)",
+              "RTID(dino_bully@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": 80,
+            "StartingPoints": 200,
+            "StartingWave": 3,
+            "ZombiePool": [
+              "RTID(dino@ZombieTypes)",
+              "RTID(dino_armor1@ZombieTypes)",
+              "RTID(dino_armor2@ZombieTypes)",
+              "RTID(dino_armor3@ZombieTypes)",
+              "RTID(dino_bully@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": 100,
+            "StartingPoints": 300,
+            "StartingWave": 2,
+            "ZombiePool": [
+              "RTID(dino@ZombieTypes)",
+              "RTID(dino_armor1@ZombieTypes)",
+              "RTID(dino_armor2@ZombieTypes)",
+              "RTID(dino_armor3@ZombieTypes)",
+              "RTID(dino_bully@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": 120,
+            "StartingPoints": 400,
+            "StartingWave": 2,
+            "ZombiePool": [
+              "RTID(dino@ZombieTypes)",
+              "RTID(dino_armor1@ZombieTypes)",
+              "RTID(dino_armor2@ZombieTypes)",
+              "RTID(dino_armor3@ZombieTypes)",
+              "RTID(dino_bully@ZombieTypes)"
+            ]
+          }
+        ],
+        "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "WaveManagerProps"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "FlagWaveInterval": 5,
+        "SpawnColEnd": 1,
+        "SpawnColStart": 1,
+        "WaveCount": 15,
+        "WaveSpendingPointIncrement": 0,
+        "WaveSpendingPoints": 0,
+        "Waves": [
+          [
+            "RTID(Wave1@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave2@CurrentLevel)",
+            "RTID(Wave2DinoTimeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave3@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave4@CurrentLevel)",
+            "RTID(Wave4DinoTimeEvent0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave5@CurrentLevel)",
+            "RTID(Wave5Scheduler@CurrentLevel)",
+            "RTID(Wave5DinoTimeEvent0@CurrentLevel)",
+            "RTID(Random@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave6@CurrentLevel)",
+            "RTID(Wave6Scheduler@CurrentLevel)",
+            "RTID(Wave6DinoTimeEvent0@CurrentLevel)",
+            "RTID(Wave6DinoTimeEvent1@CurrentLevel)",
+            "RTID(Random@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave7@CurrentLevel)",
+            "RTID(Wave7Scheduler@CurrentLevel)",
+            "RTID(Random@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave8@CurrentLevel)",
+            "RTID(Wave8Scheduler@CurrentLevel)",
+            "RTID(Wave8PortalEvent0@CurrentLevel)",
+            "RTID(Wave8DinoTimeEvent0@CurrentLevel)",
+            "RTID(Random@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave9@CurrentLevel)",
+            "RTID(Wave9Scheduler@CurrentLevel)",
+            "RTID(Wave9DinoTimeEvent0@CurrentLevel)",
+            "RTID(Random@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave10@CurrentLevel)",
+            "RTID(Wave10Scheduler@CurrentLevel)",
+            "RTID(Wave10DinoTimeEvent0@CurrentLevel)",
+            "RTID(Wave10DinoTimeEvent1@CurrentLevel)",
+            "RTID(Random@CurrentLevel)",
+            "RTID(Random@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave11@CurrentLevel)",
+            "RTID(Wave11PortalEvent0@CurrentLevel)",
+            "RTID(Wave11PortalEvent1@CurrentLevel)",
+            "RTID(Wave11PortalEvent2@CurrentLevel)",
+            "RTID(Wave11Scheduler@CurrentLevel)",
+            "RTID(Random@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave12@CurrentLevel)",
+            "RTID(Wave12DinoTimeEvent0@CurrentLevel)",
+            "RTID(Random@CurrentLevel)",
+            "RTID(Random@CurrentLevel)",
+            "RTID(Random@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave13@CurrentLevel)",
+            "RTID(Wave13PortalEvent0@CurrentLevel)",
+            "RTID(Wave13Scheduler@CurrentLevel)",
+            "RTID(Random@CurrentLevel)",
+            "RTID(Random@CurrentLevel)",
+            "RTID(Random@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave14@CurrentLevel)",
+            "RTID(Wave13Scheduler@CurrentLevel)",
+            "RTID(Wave14DinoTimeEvent0@CurrentLevel)",
+            "RTID(Wave14DinoTimeEvent1@CurrentLevel)",
+            "RTID(Random@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave15@CurrentLevel)",
+            "RTID(Wave15PortalEvent0@CurrentLevel)",
+            "RTID(Wave15PortalEvent1@CurrentLevel)",
+            "RTID(Wave13Scheduler@CurrentLevel)",
+            "RTID(Wave15DinoTimeEvent0@CurrentLevel)",
+            "RTID(Wave15DinoTimeEvent1@CurrentLevel)",
+            "RTID(Wave15DinoTimeEvent2@CurrentLevel)",
+            "RTID(Random@CurrentLevel)"
+          ]
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave1"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "DynamicPlantfood": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(dino@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dino@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave2"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dino@ZombieTypes)",
+            "Row": 2
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave2DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 1,
+        "DinoType": "raptor"
+      }
+    },
+    {
+      "aliases": [
+        "Wave3"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dino_bully@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave4"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dino_armor2@ZombieTypes)",
+            "Row": 4
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave4DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 3,
+        "DinoType": "raptor"
+      }
+    },
+    {
+      "aliases": [
+        "Wave5"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "NotificationEvents": [
+          "jam_8bit"
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(dino_armor3@ZombieTypes)",
+            "Row": 3
+          },
+          {
+            "Type": "RTID(dino@ZombieTypes)",
+            "Row": 3
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave5DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 2,
+        "DinoType": "stego"
+      }
+    },
+    {
+			"aliases":[
+				"Wave5Scheduler"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":0,
+					"Min":0
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Wave5Kakushita@CurrentLevel)"
+				]
+			}
+		},
+    {
+      "aliases": [
+        "Wave5Kakushita"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(eighties_boombox@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_boombox@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_arcade@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_arcade@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_arcade@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave6"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dino_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave6DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 0,
+        "DinoType": "raptor"
+      }
+    },
+    {
+      "aliases": [
+        "Wave6DinoTimeEvent1"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 4,
+        "DinoType": "raptor"
+      }
+    },
+    {
+			"aliases":[
+				"Wave6Scheduler"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":0,
+					"Min":0
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Wave6Kakushita@CurrentLevel)"
+				]
+			}
+		},
+    {
+      "aliases": [
+        "Wave6Kakushita"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(eighties_arcade@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_arcade@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_arcade@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave7"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "DynamicPlantfood": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(dino_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dino_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dino_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+			"aliases":[
+				"Wave7Scheduler"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":0,
+					"Min":0
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Wave7Kakushita@CurrentLevel)"
+				]
+			}
+		},
+    {
+      "aliases": [
+        "Wave7Kakushita"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(eighties_arcade@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_arcade@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_glitter@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_glitter@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_glitter@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave8"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "NotificationEvents": [
+          "jam_pop"
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(dino_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dino_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave8DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 2,
+        "DinoType": "raptor"
+      }
+    },
+    {
+			"aliases":[
+				"Wave8Scheduler"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":0,
+					"Min":0
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Wave8Kakushita@CurrentLevel)",
+          "RTID(Wave8PortalLate1@CurrentLevel)",
+          "RTID(Wave8PortalLate2@CurrentLevel)",
+          "RTID(Wave8PortalLate3@CurrentLevel)",
+          "RTID(Wave8PortalLate4@CurrentLevel)"
+				]
+			}
+		},
+    {
+      "aliases": [
+        "Wave8Kakushita"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(eighties_glitter@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_glitter@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_glitter@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_glitter@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+			"aliases":[
+				"Wave8PortalLate1"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":2,
+					"Min":2
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Wave8PortalEvent1@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"Wave8PortalLate2"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":4,
+					"Min":4
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Wave8PortalEvent2@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"Wave8PortalLate3"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":6,
+					"Min":6
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Wave8PortalEvent3@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"Wave8PortalLate4"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":8,
+					"Min":8
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Wave8PortalEvent4@CurrentLevel)"
+				]
+			}
+		},
+    {
+      "aliases": [
+        "Wave8PortalEvent0"
+      ],
+      "objclass": "SpawnModernPortalsWaveActionProps",
+      "objdata": {
+        "PortalColumn": 5,
+        "PortalRow": 1,
+        "PortalType": "RTID(Wave8Portal0@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave8PortalEvent1"
+      ],
+      "objclass": "SpawnModernPortalsWaveActionProps",
+      "objdata": {
+        "PortalColumn": 7,
+        "PortalRow": 4,
+        "PortalType": "RTID(Wave8Portal0@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave8PortalEvent2"
+      ],
+      "objclass": "SpawnModernPortalsWaveActionProps",
+      "objdata": {
+        "PortalColumn": 6,
+        "PortalRow": 0,
+        "PortalType": "RTID(Wave8Portal0@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave8PortalEvent3"
+      ],
+      "objclass": "SpawnModernPortalsWaveActionProps",
+      "objdata": {
+        "PortalColumn": 5,
+        "PortalRow": 2,
+        "PortalType": "RTID(Wave8Portal0@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave8PortalEvent4"
+      ],
+      "objclass": "SpawnModernPortalsWaveActionProps",
+      "objdata": {
+        "PortalColumn": 7,
+        "PortalRow": 3,
+        "PortalType": "RTID(Wave8Portal0@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "PortalType",
+      "aliases": [
+        "Wave8Portal0"
+      ],
+      "objdata": {
+        "Properties": "RTID(Wave8Portal0P@CurrentLevel)"
+      }
+    },
+    {
+      "objclass":"PortalProps",
+      "aliases":[
+        "Wave8Portal0P"
+      ],
+      "objdata":{
+        "TimeBeforeFirst":{
+          "Min":4,
+          "Max":6
+        },
+        "TimeBetween":{
+          "Min":6,
+          "Max":8
+        },
+        "Scale":1,
+        "World":"eighties",
+        "ZombieTypesToSpawn":[
+          {
+            "Weight":1,
+            "ZombieTypeName":"RTID(eighties_glitter@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave9"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "DynamicPlantfood": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(dino_bully@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dino_bully@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave9DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 3,
+        "DinoType": "stego"
+      }
+    },
+    {
+			"aliases":[
+				"Wave9Scheduler"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":0,
+					"Min":0
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Wave9Kakushita@CurrentLevel)"
+				]
+			}
+		},
+    {
+      "aliases": [
+        "Wave9Kakushita"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(eighties_glitter@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_glitter@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_punk@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_punk@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave10"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "DynamicPlantfood": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "NotificationEvents": [
+          "jam_punk"
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(dino_armor3@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dino_armor3@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+			"aliases":[
+				"Wave10Scheduler"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":0,
+					"Min":0
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Wave10Kakushita@CurrentLevel)"
+				]
+			}
+		},
+    {
+      "aliases": [
+        "Wave10Kakushita"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(eighties_punk@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_punk@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_punk@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave10DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 1,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave10DinoTimeEvent1"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 2,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave11"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dino_armor3@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+			"aliases":[
+				"Wave11Scheduler"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":0,
+					"Min":0
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Wave11Kakushita@CurrentLevel)"
+				]
+			}
+		},
+    {
+      "aliases": [
+        "Wave11Kakushita"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(eighties_punk@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_punk@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_punk@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_punk@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_punk@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave11PortalEvent0"
+      ],
+      "objclass": "SpawnModernPortalsWaveActionProps",
+      "objdata": {
+        "PortalColumn": 7,
+        "PortalRow": 0,
+        "PortalType": "RTID(Wave11Portal0@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave11PortalEvent1"
+      ],
+      "objclass": "SpawnModernPortalsWaveActionProps",
+      "objdata": {
+        "PortalColumn": 5,
+        "PortalRow": 1,
+        "PortalType": "RTID(Wave11Portal0@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave11PortalEvent1"
+      ],
+      "objclass": "SpawnModernPortalsWaveActionProps",
+      "objdata": {
+        "PortalColumn": 6,
+        "PortalRow": 4,
+        "PortalType": "RTID(Wave11Portal0@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "PortalType",
+      "aliases": [
+        "Wave11Portal0"
+      ],
+      "objdata": {
+        "Properties": "RTID(Wave11Portal0P@CurrentLevel)"
+      }
+    },
+    {
+      "objclass":"PortalProps",
+      "aliases":[
+        "Wave11Portal0P"
+      ],
+      "objdata":{
+        "TimeBeforeFirst":{
+          "Min":4,
+          "Max":6
+        },
+        "TimeBetween":{
+          "Min":6,
+          "Max":8
+        },
+        "Scale":1,
+        "World":"eighties",
+        "ZombieTypesToSpawn":[
+          {
+            "Weight":1,
+            "ZombieTypeName":"RTID(eighties_punk@ZombieTypes)"
+          },
+          {
+            "Weight":1,
+            "ZombieTypeName":"RTID(eighties_punk@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave12"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "NotificationEvents": [
+          "jam_metal"
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(dino_armor3@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave12DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 0,
+        "DinoType": "ankylo"
+      }
+    },
+    {
+      "aliases": [
+        "Wave13"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "DynamicPlantfood": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(dino_armor3@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dino_armor3@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dino_armor3@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+			"aliases":[
+				"Wave13Scheduler"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":0,
+					"Min":0
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Wave13Kakushita@CurrentLevel)"
+				]
+			}
+		},
+    {
+      "aliases": [
+        "Wave13Kakushita"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(eighties_breakdancer@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_breakdancer@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_breakdancer@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_mc@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_mc@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_mc@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave13PortalEvent0"
+      ],
+      "objclass": "SpawnModernPortalsWaveActionProps",
+      "objdata": {
+        "PortalColumn": 4,
+        "PortalRow": 2,
+        "PortalType": "RTID(Wave13Portal0@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "PortalType",
+      "aliases": [
+        "Wave13Portal0"
+      ],
+      "objdata": {
+        "Properties": "RTID(Wave13Portal0P@CurrentLevel)"
+      }
+    },
+    {
+      "objclass":"PortalProps",
+      "aliases":[
+        "Wave13Portal0P"
+      ],
+      "objdata":{
+        "TimeBeforeFirst":{
+          "Min":4,
+          "Max":6
+        },
+        "TimeBetween":{
+          "Min":6,
+          "Max":8
+        },
+        "Scale":1,
+        "World":"eighties",
+        "ZombieTypesToSpawn":[
+          {
+            "Weight":1,
+            "ZombieTypeName":"RTID(eighties_boombox@ZombieTypes)"
+          },
+          {
+            "Weight":1,
+            "ZombieTypeName":"RTID(eighties_boombox@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave14"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "NotificationEvents": [
+          "jam_rap"
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(dino_armor3@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave14DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 1,
+        "DinoType": "ankylo"
+      }
+    },
+    {
+      "aliases": [
+        "Wave14DinoTimeEvent1"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 4,
+        "DinoType": "ankylo"
+      }
+    },
+    {
+      "aliases": [
+        "Wave15"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(dino_armor3@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave15DinoTimeEvent0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 2,
+        "DinoType": "stego"
+      }
+    },
+    {
+      "aliases": [
+        "Wave15DinoTimeEvent1"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 3,
+        "DinoType": "stego"
+      }
+    },
+    {
+      "aliases": [
+        "Wave15DinoTimeEvent2"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 4,
+        "DinoType": "tyranno"
+      }
+    },
+    {
+      "aliases": [
+        "Wave15PortalEvent0"
+      ],
+      "objclass": "SpawnModernPortalsWaveActionProps",
+      "objdata": {
+        "PortalColumn": 6,
+        "PortalRow": 1,
+        "PortalType": "RTID(Wave15Portal0@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "Wave15PortalEvent1"
+      ],
+      "objclass": "SpawnModernPortalsWaveActionProps",
+      "objdata": {
+        "PortalColumn": 6,
+        "PortalRow": 3,
+        "PortalType": "RTID(Wave15Portal0@CurrentLevel)"
+      }
+    },
+    {
+      "objclass": "PortalType",
+      "aliases": [
+        "Wave15Portal0"
+      ],
+      "objdata": {
+        "Properties": "RTID(Wave15Portal0P@CurrentLevel)"
+      }
+    },
+    {
+      "objclass":"PortalProps",
+      "aliases":[
+        "Wave15Portal0P"
+      ],
+      "objdata":{
+        "TimeBeforeFirst":{
+          "Min":4,
+          "Max":6
+        },
+        "TimeBetween":{
+          "Min":6,
+          "Max":8
+        },
+        "Scale":1,
+        "World":"eighties",
+        "ZombieTypesToSpawn":[
+          {
+            "Weight":1,
+            "ZombieTypeName":"RTID(eighties_mc@ZombieTypes)"
+          },
+          {
+            "Weight":1,
+            "ZombieTypeName":"RTID(eighties_mc@ZombieTypes)"
+          },
+          {
+            "Weight":1,
+            "ZombieTypeName":"RTID(eighties_mc@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Random"
+      ],
+      "objclass": "RandomEventsProps",
+      "objdata": {
+        "EventCount": {
+          "Min": 1,
+          "Max": 1
+        },
+        "Events": [
+          "RTID(Sentakushi0@CurrentLevel)",
+          "RTID(Sentakushi1@CurrentLevel)",
+          "RTID(Sentakushi2@CurrentLevel)",
+          "RTID(Sentakushi3@CurrentLevel)",
+          "RTID(Sentakushi4@CurrentLevel)",
+          "RTID(Sentakushi5@CurrentLevel)"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Sentakushi0"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(lawn@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lawn@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lawn_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Sentakushi1"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(lawn_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lawn_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Sentakushi2"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(lawn_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Sentakushi3"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(eighties_boombox@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(eighties_boombox@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Sentakushi4"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(eighties_boombox@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lawn_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Sentakushi5"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(lawn@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lawn@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lawn@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(lawn@ZombieTypes)"
+          }
+        ]
+      }
+    }
+  ],
+  "version": 1
+}

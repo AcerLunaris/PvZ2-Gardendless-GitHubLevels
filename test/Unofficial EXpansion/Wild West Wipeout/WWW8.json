@@ -1,0 +1,1193 @@
+{
+  "#comment": "Cowboy 43",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Description": "[PLAYERS_TRIP_TO_WEST]",
+        "LevelNumber": 43,
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "Modules": [
+          "RTID(StandardIntro@LevelModules)",
+          "RTID(Rails@CurrentLevel)",
+          "RTID(ProtectThePlant@CurrentLevel)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(SeedBank@CurrentLevel)",
+          "RTID(NewWaves@CurrentLevel)",
+          "RTID(DefaultSunDropper@LevelModules)",
+          "RTID(DoNotUseSun@CurrentLevel)",
+          "RTID(DefaultZombieWinCondition@LevelModules)"
+        ],
+        "MusicType": "MiniGame_A",
+        "WrittenBy": "SansGrinder",
+        "NameMultiLanguage": {
+            "en": "Epic Quest: Wild West Wipeout!",
+            "zh": "史诗任务：狂野西部的覆灭！"
+        },
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "StageModule": "RTID(WestStage@LevelModules)"
+      }
+    },
+    {
+			"aliases": [
+				"DoNotUseSun"
+			],
+			"objclass": "StarChallengeSpendSunHoldoutProps",
+			"objdata": {
+				"HoldoutSeconds": 60
+			}
+    },
+    {
+      "aliases": [
+        "ProtectThePlant"
+      ],
+      "objclass": "ProtectThePlantChallengeProperties",
+      "objdata": {
+        "SuppressObjectiveTip":false,
+        "MustProtectCount": 7,
+        "Plants": [
+          {
+            "GridX": 4,
+            "GridY": 0,
+            "PlantType": "starfruit",
+            "Level": -1
+          },
+          {
+            "GridX": 4,
+            "GridY": 1,
+            "PlantType": "starfruit",
+            "Level": -1
+          },
+          {
+            "GridX": 4,
+            "GridY": 2,
+            "PlantType": "starfruit",
+            "Level": -1
+          },
+          {
+            "GridX": 4,
+            "GridY": 3,
+            "PlantType": "starfruit",
+            "Level": -1
+          },
+          {
+            "GridX": 4,
+            "GridY": 4,
+            "PlantType": "starfruit",
+            "Level": -1
+          },
+          {
+            "GridX": 0,
+            "GridY": 2,
+            "PlantType": "tallernut",
+            "Level": -1
+          },
+          {
+            "GridX": 8,
+            "GridY": 2,
+            "PlantType": "tallernut",
+            "Level": -1
+          }
+        ]
+      }
+    },
+    {
+			"aliases":[
+				"tallernut"
+			],
+			"objclass":"PlantType",
+			"objdata":{
+				"PlantBasedOn":"tallnut",
+				"Properties":"RTID(tallernut@CurrentLevel)"
+			}
+		},
+		{
+			"aliases":[
+				"tallernut"
+			],
+			"objclass":"PlantProperties",
+			"objdata":{
+				"ArmorToughness": 6000,
+        "Cooldown": 20,
+        "CooldownFrom": 1,
+        "SunCost": 125,
+        "BeghouledCost": 1000,
+        "Toughness": 16000,
+        "Family": "Defence",
+        "MintBoostedProps": {
+          "ResistanceMult": 5,
+          "SpeedMult": 1,
+          "Plantfood": true
+        }
+			}
+		},
+    {
+      "aliases": [
+        "Rails"
+      ],
+      "objclass": "RailcartProperties",
+      "objdata": {
+        "RailcartType": "railcart_cowboy",
+        "Railcarts": [
+          {
+            "Column": 0,
+            "Row": 2
+          },
+          {
+            "Column": 3,
+            "Row": 2
+          },
+          {
+            "Column": 5,
+            "Row": 2
+          },
+          {
+            "Column": 8,
+            "Row": 2
+          }
+        ],
+        "Rails": [
+          {
+            "Column": 0,
+            "RowEnd": 4,
+            "RowStart": 0
+          },
+          {
+            "Column": 8,
+            "RowEnd": 4,
+            "RowStart": 0
+          },
+          {
+            "Column": 3,
+            "RowEnd": 4,
+            "RowStart": 0
+          },
+          {
+            "Column": 5,
+            "RowEnd": 4,
+            "RowStart": 0
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "SeedBank"
+      ],
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "SelectionMethod": "chooser",
+        "CardDecks":{
+					"Challenging":[
+						{
+							"Name":{
+								"en":"Eddie and their favorite tech",
+								"zh":"Eddie和他最喜欢的技巧"
+							},
+							"HugeWaveGem":3,
+							"Leader":2,
+							"Plants":[
+								"moonflower",
+								"phatbeet",
+								"grimrose"
+							]
+						}
+					]
+				}
+      }
+    },
+    {
+      "aliases": [
+        "NewWaves"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {
+        "DynamicZombies": [
+          {
+            "PointIncrementPerWave": 175,
+            "StartingPoints": 550,
+            "StartingWave": 0,
+            "ZombiePool": [
+              "RTID(cowboy_gargantuar@ZombieTypes)",
+              "RTID(chicken_farmer@ZombieTypes)",
+              "RTID(cowboy_armor2@ZombieTypes)",
+              "RTID(west_bull_veteran@ZombieTypes)",
+              "RTID(cowboy_armor4@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": 175,
+            "StartingPoints": 550,
+            "StartingWave": 0,
+            "ZombiePool": [
+              "RTID(cowboy_gargantuar@ZombieTypes)",
+              "RTID(chicken_farmer@ZombieTypes)",
+              "RTID(cowboy_armor2@ZombieTypes)",
+              "RTID(west_bull_veteran@ZombieTypes)",
+              "RTID(cowboy_armor4@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": 175,
+            "StartingPoints": 550,
+            "StartingWave": 0,
+            "ZombiePool": [
+              "RTID(cowboy_gargantuar@ZombieTypes)",
+              "RTID(chicken_farmer@ZombieTypes)",
+              "RTID(cowboy_armor2@ZombieTypes)",
+              "RTID(west_bull_veteran@ZombieTypes)",
+              "RTID(cowboy_armor4@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": 175,
+            "StartingPoints": 550,
+            "StartingWave": 0,
+            "ZombiePool": [
+              "RTID(cowboy_gargantuar@ZombieTypes)",
+              "RTID(chicken_farmer@ZombieTypes)",
+              "RTID(cowboy_armor2@ZombieTypes)",
+              "RTID(west_bull_veteran@ZombieTypes)",
+              "RTID(cowboy_armor4@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": 175,
+            "StartingPoints": 550,
+            "StartingWave": 0,
+            "ZombiePool": [
+              "RTID(cowboy_gargantuar@ZombieTypes)",
+              "RTID(chicken_farmer@ZombieTypes)",
+              "RTID(cowboy_armor2@ZombieTypes)",
+              "RTID(west_bull_veteran@ZombieTypes)",
+              "RTID(cowboy_armor4@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": 175,
+            "StartingPoints": 550,
+            "StartingWave": 0,
+            "ZombiePool": [
+              "RTID(cowboy_gargantuar@ZombieTypes)",
+              "RTID(chicken_farmer@ZombieTypes)",
+              "RTID(cowboy_armor2@ZombieTypes)",
+              "RTID(west_bull_veteran@ZombieTypes)",
+              "RTID(cowboy_armor4@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": 75,
+            "StartingPoints": 250,
+            "StartingWave": 0,
+            "ZombiePool": [
+              "RTID(cowboy_gargantuar@ZombieTypes)",
+              "RTID(chicken_farmer@ZombieTypes)",
+              "RTID(poncho_plate@ZombieTypes)",
+              "RTID(west_bull_veteran@ZombieTypes)",
+              "RTID(cowboy_armor4@ZombieTypes)"
+            ]
+          }
+        ],
+        "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "WaveManagerProps"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "FlagWaveInterval": 4,
+        "SuppressFlagZombie": true,
+        "WaveCount": 16,
+        "WaveSpendingPointIncrement": 100,
+        "WaveSpendingPoints": 200,
+        "Waves": [
+          [
+            "RTID(Wave1@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave2@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave3@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave4@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave5@CurrentLevel)",
+            "RTID(Wave5Reverse@CurrentLevel)",
+            "RTID(AmbushWarning@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave6@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave7@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave8@CurrentLevel)",
+            "RTID(Wave8Reverse@CurrentLevel)",
+            "RTID(AmbushWarning@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave9@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave10@CurrentLevel)",
+            "RTID(Wave10Reverse@CurrentLevel)",
+            "RTID(AmbushWarning@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave11@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave12@CurrentLevel)",
+            "RTID(Wave12Reverse@CurrentLevel)",
+            "RTID(AmbushWarning@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave13@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave14@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave15@CurrentLevel)",
+            "RTID(Wave15Reverse@CurrentLevel)",
+            "RTID(AmbushWarning@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave16@CurrentLevel)",
+            "RTID(Wave16Reverse@CurrentLevel)",
+            "RTID(AmbushWarning@CurrentLevel)"
+          ]
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "AmbushWarning"
+      ],
+      "objclass": "WaveWarningProps",
+      "objdata": {
+        "LabelR": 255,
+        "LabelG": 255,
+        "LabelB": 0,
+        "LabelAInit": 4,
+        "OutLineR": 0,
+        "OutLineG": 0,
+        "OutLineB": 0,
+        "String": "WATCH OUT BEHIND YOU!",
+        "StringMultiLanguage": {
+          "en": "WATCH OUT BEHIND YOU!",
+          "zh": "当心身后！"
+        },
+        "Sound": "HugeWave",
+        "LabelTargetScale": 0.5,
+        "LabelInitScale": 4,
+        "Duration": 3,
+        "InitTime": 0.33
+      }
+    },
+    {
+      "aliases": [
+        "Wave5Reverse"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(poncho_plate_reverse@CurrentLevel)"
+          },
+          {
+            "Type": "RTID(poncho_no_plate_reverse@CurrentLevel)"
+          },
+          {
+            "Type": "RTID(cowboy_armor1_reverse@CurrentLevel)"
+          },
+          {
+            "Type": "RTID(cowboy_reverse@CurrentLevel)"
+          },
+          {
+            "Type": "RTID(piano_reverse@CurrentLevel)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave8Reverse"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(cowboy_flag_veteran_reverse@CurrentLevel)"
+          },
+          {
+            "Type": "RTID(west_bull_reverse@CurrentLevel)"
+          },
+          {
+            "Type": "RTID(chicken_farmer_reverse@CurrentLevel)"
+          },
+          {
+            "Type": "RTID(chicken_farmer_reverse@CurrentLevel)"
+          },
+          {
+            "Type": "RTID(cowboy_armor2_reverse@CurrentLevel)"
+          },
+          {
+            "Type": "RTID(cowboy_armor1_reverse@CurrentLevel)"
+          },
+          {
+            "Type": "RTID(cowboy_armor4_reverse@CurrentLevel)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave10Reverse"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(cowboy_armor4_reverse@CurrentLevel)"
+          },
+          {
+            "Type": "RTID(cowboy_armor4_reverse@CurrentLevel)"
+          },
+          {
+            "Type": "RTID(cowboy_armor4_reverse@CurrentLevel)"
+          },
+          {
+            "Type": "RTID(chicken_farmer_reverse@CurrentLevel)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave12Reverse"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(cowboy_flag_veteran_reverse@CurrentLevel)"
+          },
+          {
+            "Type": "RTID(piano_reverse@CurrentLevel)"
+          },
+          {
+            "Type": "RTID(west_bull_veteran_reverse@CurrentLevel)"
+          },
+          {
+            "Type": "RTID(poncho_no_plate_reverse@CurrentLevel)"
+          },
+          {
+            "Type": "RTID(cowboy_reverse@CurrentLevel)"
+          },
+          {
+            "Type": "RTID(cowboy_reverse@CurrentLevel)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave15Reverse"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(piano_reverse@CurrentLevel)"
+          },
+          {
+            "Type": "RTID(piano_reverse@CurrentLevel)"
+          },
+          {
+            "Type": "RTID(west_bull_reverse@CurrentLevel)"
+          },
+          {
+            "Type": "RTID(chicken_farmer_reverse@CurrentLevel)"
+          },
+          {
+            "Type": "RTID(cowboy_armor2_reverse@CurrentLevel)"
+          },
+          {
+            "Type": "RTID(poncho_no_plate_reverse@CurrentLevel)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave16Reverse"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(cowboy_flag_veteran_reverse@CurrentLevel)"
+          },
+          {
+            "Type": "RTID(cowboy_gargantuar_reverse@CurrentLevel)"
+          },
+          {
+            "Type": "RTID(west_bull_veteran_reverse@CurrentLevel)"
+          },
+          {
+            "Type": "RTID(chicken_farmer_reverse@CurrentLevel)"
+          },
+          {
+            "Type": "RTID(poncho_no_plate_reverse@CurrentLevel)"
+          },
+          {
+            "Type": "RTID(cowboy_armor1_reverse@CurrentLevel)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave1"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(cowboy_armor4@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave2"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(piano@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(cowboy_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(cowboy_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave3"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(cowboy_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(chicken_farmer@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(chicken_farmer@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave4"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(cowboy_flag@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(poncho_plate@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(west_bull@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave5"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(west_bull_veteran@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(cowboy_armor4@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(west_bull@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(poncho_no_plate@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave6"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(cowboy_armor4@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(cowboy_armor4@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(chicken_farmer@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(chicken_farmer@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave7"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(west_bull@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(west_bull@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(poncho_plate@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(cowboy_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(cowboy_armor1@ZombieTypes)"
+          },       
+          {
+            "Type": "RTID(west_bull_veteran@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave8"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(cowboy@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(cowboy_armor4@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(west_bull@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(west_bull@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave9"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(west_bull_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(west_bull_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(west_bull_veteran@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave10"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(cowboy@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(cowboy@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave11"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(west_bull@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(west_bull@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(west_bull@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(west_bull_veteran@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(west_bull_veteran@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(cowboy_armor4@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave12"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(chicken_farmer@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(chicken_farmer@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(chicken_farmer@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(west_bull@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(west_bull@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave13"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(cowboy@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(cowboy@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave14"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(cowboy_armor4@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(cowboy_armor4@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(cowboy_armor4@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(cowboy_armor4@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(west_bull_veteran@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(chicken_farmer@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave15"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave16"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Type": "RTID(west_bull_veteran@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(cowboy_armor4@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(cowboy_armor4@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(cowboy_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(poncho_plate@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(chicken_farmer@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(cowboy_gargantuar@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+			"aliases": [
+				"cowboy_reverse"
+			],
+			"objclass": "ZombieType",
+			"objdata": {
+				"Properties": "RTID(cowboy_reverse@CurrentLevel)",
+				"ZombieBasedOn": "cowboy"
+			}
+		},
+		{
+			"aliases": [
+				"cowboy_reverse"
+			],
+			"objclass": "ZombieProperties",
+			"objdata": {
+				"ChanceToReverse":1
+			}
+		},
+		{
+			"aliases": [
+				"cowboy_armor1_reverse"
+			],
+			"objclass": "ZombieType",
+			"objdata": {
+				"Properties": "RTID(cowboy_armor1_reverse@CurrentLevel)",
+				"ZombieBasedOn": "cowboy_armor1"
+			}
+		},
+		{
+			"aliases": [
+				"cowboy_armor1_reverse"
+			],
+			"objclass": "ZombieProperties",
+			"objdata": {
+				"ChanceToReverse":1
+			}
+		},
+		{
+			"aliases": [
+				"cowboy_armor2_reverse"
+			],
+			"objclass": "ZombieType",
+			"objdata": {
+				"Properties": "RTID(cowboy_armor2_reverse@CurrentLevel)",
+				"ZombieBasedOn": "cowboy_armor2"
+			}
+		},
+		{
+			"aliases": [
+				"cowboy_armor2_reverse"
+			],
+			"objclass": "ZombieProperties",
+			"objdata": {
+				"ChanceToReverse":1
+			}
+		},
+		{
+			"aliases": [
+				"cowboy_armor4_reverse"
+			],
+			"objclass": "ZombieType",
+			"objdata": {
+				"Properties": "RTID(cowboy_armor4_reverse@CurrentLevel)",
+				"ZombieBasedOn": "cowboy_armor4"
+			}
+		},
+		{
+			"aliases": [
+				"cowboy_armor4_reverse"
+			],
+			"objclass": "ZombieProperties",
+			"objdata": {
+				"ChanceToReverse":1
+			}
+		},
+		{
+			"aliases": [
+				"west_bull_veteran_reverse"
+			],
+			"objclass": "ZombieType",
+			"objdata": {
+				"Properties": "RTID(west_bull_veteran_reverse@CurrentLevel)",
+				"ZombieBasedOn": "west_bull_veteran"
+			}
+		},
+		{
+			"aliases": [
+				"west_bull_veteran_reverse"
+			],
+			"objclass": "ZombieProperties",
+			"objdata": {
+				"ChanceToReverse":1
+			}
+		},
+		{
+			"aliases": [
+				"west_bull_reverse"
+			],
+			"objclass": "ZombieType",
+			"objdata": {
+				"Properties": "RTID(west_bull_reverse@CurrentLevel)",
+				"ZombieBasedOn": "west_bull"
+			}
+		},
+		{
+			"aliases": [
+				"west_bull_reverse"
+			],
+			"objclass": "ZombieProperties",
+			"objdata": {
+				"ChanceToReverse":1
+			}
+		},
+    {
+			"aliases": [
+				"poncho_reverse"
+			],
+			"objclass": "ZombieType",
+			"objdata": {
+				"Properties": "RTID(poncho_reverse@CurrentLevel)",
+				"ZombieBasedOn": "poncho"
+			}
+		},
+		{
+			"aliases": [
+				"poncho_reverse"
+			],
+			"objclass": "ZombieProperties",
+			"objdata": {
+				"ChanceToReverse":1
+			}
+		},
+    {
+			"aliases": [
+				"poncho_plate_reverse"
+			],
+			"objclass": "ZombieType",
+			"objdata": {
+				"Properties": "RTID(poncho_plate_reverse@CurrentLevel)",
+				"ZombieBasedOn": "poncho_plate"
+			}
+		},
+		{
+			"aliases": [
+				"poncho_plate_reverse"
+			],
+			"objclass": "ZombieProperties",
+			"objdata": {
+				"ChanceToReverse":1
+			}
+		},
+    {
+			"aliases": [
+				"poncho_no_plate_reverse"
+			],
+			"objclass": "ZombieType",
+			"objdata": {
+				"Properties": "RTID(poncho_no_plate_reverse@CurrentLevel)",
+				"ZombieBasedOn": "poncho_no_plate"
+			}
+		},
+		{
+			"aliases": [
+				"poncho_no_plate_reverse"
+			],
+			"objclass": "ZombieProperties",
+			"objdata": {
+				"ChanceToReverse":1
+			}
+		},
+		{
+			"aliases": [
+				"chicken_farmer_reverse"
+			],
+			"objclass": "ZombieType",
+			"objdata": {
+				"Properties": "RTID(chicken_farmer_reverse@CurrentLevel)",
+				"ZombieBasedOn": "chicken_farmer"
+			}
+		},
+		{
+			"aliases": [
+				"chicken_farmer_reverse"
+			],
+			"objclass": "ZombieProperties",
+			"objdata": {
+				"ChanceToReverse":1
+			}
+		},
+		{
+			"aliases": [
+				"piano_reverse"
+			],
+			"objclass": "ZombieType",
+			"objdata": {
+				"Properties": "RTID(piano_reverse@CurrentLevel)",
+				"ZombieBasedOn": "piano"
+			}
+		},
+		{
+			"aliases": [
+				"piano_reverse"
+			],
+			"objclass": "ZombieProperties",
+			"objdata": {
+				"ChanceToReverse":1,
+        "ChickenTypeName": "chicken_pumpkin"
+			}
+		},
+		{
+			"aliases": [
+				"cowboy_gargantuar_reverse"
+			],
+			"objclass": "ZombieType",
+			"objdata": {
+				"Properties": "RTID(cowboy_gargantuar_reverse@CurrentLevel)",
+				"ZombieBasedOn": "cowboy_gargantuar"
+			}
+		},
+		{
+			"aliases": [
+				"cowboy_gargantuar_reverse"
+			],
+			"objclass": "ZombieProperties",
+			"objdata": {
+				"ChanceToReverse":1
+			}
+		},
+		{
+			"aliases": [
+				"cowboy_flag_reverse"
+			],
+			"objclass": "ZombieType",
+			"objdata": {
+				"Properties": "RTID(cowboy_flag_reverse@CurrentLevel)",
+				"ZombieBasedOn": "cowboy_flag"
+			}
+		},
+		{
+			"aliases": [
+				"cowboy_flag_reverse"
+			],
+			"objclass": "ZombieProperties",
+			"objdata": {
+				"ChanceToReverse":1
+			}
+		},
+		{
+			"aliases": [
+				"cowboy_flag_veteran_reverse"
+			],
+			"objclass": "ZombieType",
+			"objdata": {
+				"Properties": "RTID(cowboy_flag_veteran_reverse@CurrentLevel)",
+				"ZombieBasedOn": "cowboy_flag_veteran"
+			}
+		},
+		{
+			"aliases": [
+				"cowboy_flag_veteran_reverse"
+			],
+			"objclass": "ZombieProperties",
+			"objdata": {
+				"ChanceToReverse":1
+			}
+		}
+  ],
+  "version": 1
+}

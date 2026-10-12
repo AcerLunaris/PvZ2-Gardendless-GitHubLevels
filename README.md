@@ -20,6 +20,20 @@ For example, if a level was previously named `level0.json`, rename it to somethi
 
 ---
 
+## How to Contribute
+
+1. Fork this repository.
+2. Add, modify or remove level JSON files.
+3. Pull Request / Submit a Pull Request.
+
+---
+
+## Level Format
+
+Levels are JSON files. Refer to existing examples for the format.
+
+---
+
 ## 中文
 
 本仓库中的关卡会被 *PvZ2: Gardendless* 中的 **GitHub 关卡窗口** 获取。
@@ -36,7 +50,6 @@ For example, if a level was previously named `level0.json`, rename it to somethi
 
 ---
 
-## 中文
 ## 如何提交
 
 1. Fork 本仓库；
@@ -45,23 +58,6 @@ For example, if a level was previously named `level0.json`, rename it to somethi
 
 ---
 
-## English
-## How to Contribute
-
-1. Fork this repository.
-2. Add, modify or remove level JSON files.
-3. Pull Request / Submit a Pull Request.
-
----
-
-## 中文
 ## 关卡格式
 
 关卡为 JSON 文件，具体格式参考现有示例。
-
----
-
-## English
-## Level Format
-
-Levels are JSON files. Refer to existing examples for the format.

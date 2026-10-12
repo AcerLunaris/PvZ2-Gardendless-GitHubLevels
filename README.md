@@ -13,7 +13,7 @@ Levels in this repository are fetched by the **GitHub Level Window** in *PvZ2: G
 **The root directory should only contain folders named after level authors.**
 
 Each author must place their levels (files or subfolders) **inside a folder named after themselves**. Do **not** put level files directly in the root directory.
-
+```
 .
 ├── AuthorA/
 │ ├── level1.json
@@ -23,7 +23,7 @@ Each author must place their levels (files or subfolders) **inside a folder name
 │ └── SubFolder/
 │ └── level3.json
 └── ...
-
+```
 ### Uploading Levels
 
 You can upload your levels via **Pull Request**.
@@ -59,7 +59,7 @@ Levels are JSON files. Refer to existing examples for the format.
 **根目录只应包含以关卡作者名字命名的文件夹。**
 
 每位作者必须把关卡（文件或子文件夹）**放进以自己名字命名的文件夹里**。**不要**把关卡文件直接放在根目录。
-
+```
 .
 ├── 作者A/
 │ ├── level1.json
@@ -69,7 +69,7 @@ Levels are JSON files. Refer to existing examples for the format.
 │ └── 子文件夹/
 │ └── level3.json
 └── ...
-
+```
 ### 上传关卡
 
 你可以通过 **Pull Request** 上传关卡。

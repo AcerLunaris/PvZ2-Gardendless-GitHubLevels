@@ -36,14 +36,32 @@ For example, if a level was previously named `level0.json`, rename it to somethi
 
 ---
 
-## 如何提交 / How to Contribute
+## 中文
+## 如何提交
 
-1. Fork 本仓库 / Fork this repository.
-2. 添加/修改/删除关卡 JSON 文件 / Add, modify or remove level JSON files.
-3. 提交 Pull Request / Submit a Pull Request.
+1. Fork 本仓库；
+2. 添加/修改/删除关卡 JSON 文件；
+3. 提交 Pull Request。
 
 ---
 
-## 关卡格式 / Level Format
+## English
+## How to Contribute
 
-关卡为 JSON 文件，具体格式参考现有示例 / Levels are JSON files. Refer to existing examples for the format.
+1. Fork this repository.
+2. Add, modify or remove level JSON files.
+3. Pull Request / Submit a Pull Request.
+
+---
+
+## 中文
+## 关卡格式
+
+关卡为 JSON 文件，具体格式参考现有示例。
+
+---
+
+## English
+## Level Format
+
+Levels are JSON files. Refer to existing examples for the format.

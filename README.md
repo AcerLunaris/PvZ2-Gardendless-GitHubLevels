@@ -41,7 +41,7 @@ For example, if a level was previously named `level0.json`, rename it to somethi
 1. Fork this repository.
 2. Add, modify or remove level JSON files.
 3. Pull Request / Submit a Pull Request.
-4. <font color="red">Think twice before changing the name of your folders, or the game will forget all the levels in the folder!!</font>
+4. ⚠️Think twice before changing the name of your folders, or the game will forget all the levels in the folder.
 
 ---
 
@@ -94,7 +94,7 @@ Level updates are synced automatically **every 30 minuites**. To see the latest 
 1. Fork 本仓库；
 2. 添加/修改/删除关卡 JSON 文件；
 3. 提交 Pull Request；
-4. <font color="red">在更改文件夹名字前请郑重考虑，否则游戏将会遗忘文件夹内所有的关卡。</font>
+4. ⚠️在更改文件夹名字前请郑重考虑，否则游戏将会遗忘文件夹内所有的关卡。
 
 ---
 

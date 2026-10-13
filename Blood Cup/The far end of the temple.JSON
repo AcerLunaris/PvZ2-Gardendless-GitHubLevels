@@ -1,0 +1,986 @@
+{
+  "#comment": "kongfu",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Description": "",
+        "Description": "[PLAYERS_TRIP_TO_KONGFU]",
+        "FirstIntroNarrative": "KONGFU_44_INTRO",
+        "FirstOutroNarrative": "KONGFU_44_OUTRO",
+        "LevelNumber": 44,
+        "LoadDefaultMusic": false,
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "Modules": [
+          "RTID(LevelScheduler@CurrentLevel)",
+          "RTID(ZombossIntro@LevelModules)",
+          "RTID(ConveyorBelt@CurrentLevel)",
+          "RTID(CowboyRails@CurrentLevel)",
+          "RTID(KongfuRack@CurrentLevel)",
+          "RTID(ZombossBattle@CurrentLevel)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(NewWaves@CurrentLevel)"
+        ],
+                "Name": "The far end of the temple",
+        "NameMultiLanguage": {
+          "en": "The far end of the temple",
+          "zh": "寺院尽头"
+        },
+        "WrittenBy": "蔓逐I蝶舞",
+        "NormalPresentTable": "egypt_normal_01",
+        "RepeatPlayForceToWorldMap": true,
+        "ShinyPresentTable": "egypt_shiny_01",
+         "MusicType": "MiniGame_A",
+        "StageModule": "RTID(KongfuStage@LevelModules)",
+        "SuppressSunSpawn": true,
+        "VictoryModule": "RTID(ZombossVictoryOutro@LevelModules)"
+            }
+        },
+        {
+            "objclass": "NarrativeProperties",
+            "aliases": [
+                "KONGFU_44_INTRO"
+            ],
+            "objdata": {
+                "Flow": [
+{
+            "Character": "zombossicon",
+            "Action": "NPC_ENTER"
+          },
+          {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "en": "Bad news for you,time traveller.",
+              "zh": "告诉你一个坏消息，时间旅行者。"
+                        }
+        },
+          {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "en": "I have completed my latest project.",
+              "zh": "我已经完成了我的最新项目。"
+                        }
+        },
+          {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "en": "My masterpiece,which is intergrated the successors's essence of The Big Three.",
+              "zh": "我的杰作，凝聚着武林三巨头传人们的精湛。"
+                        }
+            },
+          {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "en": "You have to stop here…",
+              "zh": "你们早该停下了。"
+                        }
+            },
+          {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "en": "Your neighbor have already messed up countless timelines just because of that damn taco,has't he?",
+              "zh": "你的邻居为了那个该死的玉米卷已经祸害了数不清的时空了，难道不是吗？"
+                        }
+            },
+          {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "en": "I suggest you think about the accidents that inflexible guy caused.",
+              "zh": "我劝你好好思考一下那个疯子加自大狂造成的事故。"
+                        }
+            },
+          {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "en": "Here to advise you to stop resisting,to avoid digging your own grave.",
+              "zh": "在此望你束手，以免自误。"
+                        }
+            },
+          {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "en": "We are unstoppable.",
+              "zh": "我们势如破竹。"
+                        }
+            },
+          {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "en": "If you still insist on helping him.",
+              "zh": "若你执意要为虎作伥。"
+                        }
+            },
+          {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "en": "Next year on this day will be your memorial day.",
+              "zh": "明年的今天就是你们的忌日。"
+                        }
+            },
+          {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "en": "Both of you.",
+              "zh": "你们两个的。"
+                        }
+            },
+          {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "en": "And.Of course,including your trashy time machine.",
+              "zh": "当然，也包括你们那台无用的时间机器。"
+                        }
+                    },
+                    {
+                        "Character": "crazydave",
+                        "Action": "NPC_ENTER"
+                    },
+                    {
+                        "Character": "crazydave",
+                        "Action": "PLAYFUL",
+                        "Lines": {
+                            "en": "I just want to have that taco again.",
+                            "zh": "我就是想再吃一次玉米卷。"
+                        }
+                    },
+                    {
+                        "Character": "crazydave",
+                        "Action": "PLAYFUL",
+                        "Lines": {
+                            "en": "There's no need to say any more.Let's beat the bossman so that he won't even have any fragment of armour left!My neighbor!",
+                            "zh": "不用说那么多了。让我们打僵尸博士个片甲不留吧！我的邻居！"
+                        }
+                    },
+                    {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "en": "WUHAHAHAHA!The human brain is truly fascinating,haha!HAAAAH!",
+              "zh": "呜哈哈哈哈!人类的脑子真是有趣呢，哈哈!哈哈哈哈！"
+            }
+                    },
+                    {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "en": "Heh.",
+              "zh": "呵。"
+            }
+                    },
+                    {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "en": "This time,I will destroy you once and for all!",
+              "zh": "这次，我将一劳永逸的解决你们！"
+            }
+          }
+                ]
+            }
+        },
+        {
+            "objclass": "NarrativeProperties",
+            "aliases": [
+                "KONGFU_44_OUTRO"
+            ],
+            "objdata": {
+                "Flow": [
+                    {
+                        "Character": "crazydave",
+                        "Action": "NPC_ENTER"
+                    },
+                    {
+                        "Character": "crazydave",
+                        "Action": "SPECIAL17",
+                        "Lines": {
+                            "en": "An apple a day, keeps the doctor away~",
+                            "zh": "一天一苹果，博士远离我~"
+                        }
+        },
+{
+            "Character": "zombossicon",
+            "Action": "NPC_ENTER"
+          },
+          {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "en": "Dash it!",
+              "zh": "可恶！"
+                        }
+        },
+          {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "en": "Why are you so obsessed with it?",
+              "zh": "为什么你对那个玉米卷那么执着呢？"
+                        }
+        },
+          {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "en": "What's there to be so precious about a taco? Why not just go buy another one? It's so simple.",
+              "zh": "玉米卷有什么好珍惜的呢？直接再去买一个不就好了，多么简单的事。"
+                        }
+                    },
+                    {
+                        "Character": "crazydave",
+                        "Action": "SAY",
+                        "Lines": {
+                            "en": "Yeah, you asked me why I didn't buy another one.",
+                            "zh": "是呀，你问我为什么不去再买一个。"
+                        }
+                    },
+                    {
+                        "Character": "crazydave",
+                        "Action": "SHOUT",
+                        "Lines": {
+                            "en": "Because I'm CRAAAZY!!!!",
+                            "zh": "因为我疯了！！！！"
+                        }
+                    },
+                    {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "en": "…",
+              "zh": "…"
+            }
+                    },
+                    {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "en": "I never expected that you could actually defeat my new mech in such a way.",
+              "zh": "我没有想到你们能用这种方式打败我的新机甲。"
+            }
+                    },
+                    {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "en": "But I still have fallback plan.",
+              "zh": "但我仍留有后手。"
+            }
+                    },
+                    {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "en": "Next time, my forces shall pierce your defenses with irresistible momentum!",
+              "zh": "下一次，我的部队必将以不可阻挡之势击穿你的防线。"
+            }
+                    },
+                    {
+            "Character": "zombossicon",
+            "Action": "SAY",
+            "Lines": {
+              "en": "There's still time!Time Traveller!!!",
+              "zh": "时间旅行者，我们来日方长！"
+            }
+          }
+                ]
+      }
+    },
+    {
+      "aliases": [
+        "LevelScheduler"
+      ],
+      "objclass": "LevelSchedulerProps",
+      "objdata": {
+        "TimeBeforeFirst": {
+          "Max": 150,
+          "Min": 120
+        },
+        "TimeBetween": {
+          "Max": 270,
+          "Min": 240
+        },
+        "Repeat": {
+          "Max": 999,
+          "Min": 999
+        },
+        "RewardWhenEnded": false,
+        "SuppressRewardState": false,
+        "Events": [
+          "RTID(E.M.P@CurrentLevel)"
+        ]
+      }
+        },
+        {
+            "aliases": [
+                "E.M.P"
+            ],
+            "objclass": "ModifyConveyorWaveActionProps",
+            "objdata": {
+                "Add": [
+                    {
+                        "MaxDelivered": 1,
+                        "Type": "RTID(empea@PlantTypes)",
+                        "Weight": 1
+                    }
+                ],
+                "Remove": []
+            }
+    },
+    {
+      "aliases": [
+        "CowboyRails"
+      ],
+      "objclass": "RailcartProperties",
+      "objdata": {
+        "RailcartType": "railcart_kongfu",
+        "Railcarts": [
+          {
+            "Column": 0,
+            "Row": 1
+          },
+          {
+            "Column": 0,
+            "Row": 2
+          },
+          {
+            "Column": 0,
+            "Row": 3
+          },
+          {
+            "Column": 1,
+            "Row": 2
+          },
+          {
+            "Column": 6,
+            "Row": 2
+          },
+          {
+            "Column": 6,
+            "Row": 3
+          }
+        ],
+        "Rails": [
+          {
+            "Column": 6,
+            "RowEnd": 4,
+            "RowStart": 0
+          },
+          {
+            "Column": 0,
+            "RowEnd": 4,
+            "RowStart": 0
+          },
+          {
+            "Column": 1,
+            "RowEnd": 4,
+            "RowStart": 0
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "ConveyorBelt"
+      ],
+      "objclass": "ConveyorSeedBankProperties",
+      "objdata": {
+        "DropDelayConditions": [
+          {
+            "Delay": 3,
+            "MaxPackets": 1
+          },
+          {
+            "Delay": 4,
+            "MaxPackets": 4
+          },
+          {
+            "Delay": 6,
+            "MaxPackets": 6
+          },
+          {
+            "Delay": 8,
+            "MaxPackets": 8
+          }
+        ],
+        "InitialPlantList": [
+          {
+            "PlantType": "lychee",
+            "Weight": 0.1
+          },
+          {
+            "PlantType": "iceburg",
+            "Weight": 5
+          },
+          {
+            "MaxCountCooldownSeconds": 14,
+            "MaxCount": 1,
+            "MaxWeightFactor": 0,
+            "PlantType": "applemortar",
+            "Weight": 8888
+          },
+          {
+            "MaxCountCooldownSeconds": 8,
+            "MaxCount": 2,
+            "MaxWeightFactor": 0,
+            "PlantType": "melonpult",
+            "Weight": 55
+          },
+          {
+            "MaxCountCooldownSeconds": 10,
+            "MaxCount": 2,
+            "MaxWeightFactor": 0,
+            "PlantType": "peacommando",
+            "Weight": 8
+          },
+          {
+            "MaxCountCooldownSeconds": 16,
+            "MaxCount": 1,
+            "MaxWeightFactor": 0,
+            "PlantType": "ghostpepper",
+            "Weight": 3
+          },
+          {
+            "MaxCount": 1,
+            "MaxWeightFactor": 0,
+            "PlantType": "bloomerang",
+            "Weight": 20
+          },
+          {
+            "MaxCountCooldownSeconds": 3,
+            "MaxCount": 2,
+            "MaxWeightFactor": 0,
+            "PlantType": "iceweed",
+            "Weight": 222
+          },
+          {
+            "MaxCount": 3,
+            "MaxWeightFactor": 0,
+            "PlantType": "kernelpult",
+            "Weight": 12
+          },
+          {
+            "MaxCountCooldownSeconds": 3,
+            "MaxCount": 5,
+            "MaxWeightFactor": 0,
+            "PlantType": "citron",
+            "Weight": 10
+          },
+          {
+            "MaxCountCooldownSeconds": 5,
+            "MaxCount": 2,
+            "MaxWeightFactor": 0,
+            "PlantType": "lychee",
+            "Weight": 8
+          },
+          {
+            "MaxCount": 6,
+            "MaxWeightFactor": 0,
+            "PlantType": "turnip",
+            "Weight": 12
+          }
+        ],
+        "SpeedConditions": [
+          {
+            "MaxPackets": 0,
+            "Speed": 100
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "KongfuRack"
+      ],
+      "objclass": "GravestoneProperties",
+      "objdata": {
+        "ForceSpawnData": [
+          {
+            "GridX": 3,
+            "GridY": 0,
+            "TypeName": "kongfu_rack_helmet"
+          },
+          {
+            "GridX": 4,
+            "GridY": 0,
+            "TypeName": "kongfu_rack_torch"
+          },
+          {
+            "GridX": 3,
+            "GridY": 1,
+            "TypeName": "kongfu_rack_torch"
+          },
+          {
+            "GridX": 4,
+            "GridY": 1,
+            "TypeName": "kongfu_rack_helmet"
+          },
+          {
+            "GridX": 3,
+            "GridY": 2,
+            "TypeName": "kongfu_rack_helmet"
+          },
+          {
+            "GridX": 4,
+            "GridY": 2,
+            "TypeName": "kongfu_rack_torch"
+          },
+          {
+            "GridX": 3,
+            "GridY": 3,
+            "TypeName": "kongfu_rack_torch"
+          },
+          {
+            "GridX": 4,
+            "GridY": 3,
+            "TypeName": "kongfu_rack_helmet"
+          },
+          {
+            "GridX": 4,
+            "GridY": 4,
+            "TypeName": "kongfu_rack_torch"
+          },
+          {
+            "GridX": 3,
+            "GridY": 4,
+            "TypeName": "kongfu_rack_helmet"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "ZombossBattle"
+      ],
+      "objclass": "ZombossBattleModuleProperties",
+      "objdata": {
+        "ReservedColumnCount": 2,
+        "ZombossDeathColumn": 5,
+        "ZombossDeathRow": 3,
+        "ZombossMechType": "zombossmech_modern2",
+        "ZombossSpawnGridPosition": {
+          "mX": 6,
+          "mY": 3
+        }
+      }
+    },
+   {
+               "aliases": [
+                    "zombossmech_modern2"
+               ],
+               "objclass": "ZombieType",
+               "objdata": {
+                    "Properties": "RTID(zombossmech_egypt2@CurrentLevel)",
+                    "ZombieBasedOn": "zombossmech_egypt2"
+               }
+          },
+          {
+			"aliases": [
+				"zombossmech_egypt2"
+			],
+			"objclass": "ZombieProperties",
+			"objdata": {
+				"MissileType": "zomboss_missile_future",
+				"CannotBeEnlightenedBySolarSage": true,
+				"ImmuneToSweetPotato": true,
+				"ImmuneToShrinkingViolet": true,
+				"ZombieSort": "Zomboss",
+				"CannotBeGrabbedByPtero": true,
+				"CannotBeDetectedByPowerToss": true,
+				"CannotBeDraggedByTangleKelp": true,
+				"CannotBeTossedByCitron": true,
+				"CannotBeDetectedBySapfling": true,
+				"CannotBeSwallowedByChomper": true,
+				"ChiliStunDurationMult": 0,
+				"CannotCarryPlantfoodsInWaves": true,
+				"FoeEatDamageReflectPct": 0.5,
+				"LivesInDeepWater": true,
+				"WalkSPS": 0.185,
+				"EatDPS": 100,
+				"Toughness": 190,
+				"ImmuneToGarlic": true,
+				"WavePointCost": 100,
+				"Weight": 0,
+				"IdleColumn": 7,
+				"HitRect": "RTID(ZombossMechHitRect@RectangleProps)",
+				"AttackRect": "RTID(ZombossMechAttackRect@RectangleProps)",
+				"ZombossMechLevel": 0,
+				"ZombossStages": [
+					{
+						"Actions": [
+							{
+								"actionName": "walk",
+								"summonProps": {
+									"zombieList": [],
+									"pointMin": 1000,
+									"pointMax": 2000
+								},
+								"weight": 8,
+								"repeatMax": 3,
+								"repeatMin": 1
+							},
+							{
+								"actionName": "summon",
+								"summonProps": {
+									"zombieList": [
+										"kongfu_bomb",
+										"kongfu_torch",
+										"kongfu_armor1"
+									],
+									"pointMin": 1000,
+									"pointMax": 2000,
+									"plantfoodchance": 0
+								},
+								"weight": 8,
+								"repeatMax": 2,
+								"repeatMin": 1
+							},
+							{
+								"actionName": "summon",
+								"summonProps": {
+									"zombieList": [
+										"kongfu_bomb",
+										"kongfu_armor2",
+										"abbot_fan",
+										"monk_drink",
+										"monk_imp",
+										"monk_nunchaku",
+										"kongfu_torch",
+										"kongfu_armor4",
+										"kongfu_armor1"
+									],
+									"pointMin": 3000,
+									"pointMax": 4000,
+									"plantfoodchance": 0
+								},
+								"weight": 18,
+								"repeatMax": 2,
+								"repeatMin": 1
+							},
+							{
+								"actionName": "summon",
+								"summonProps": {
+									"zombieList": [
+										"kongfu_bomb",
+										"kongfu_bronze_hook",
+										"kongfu_armor2",
+										"abbot_fan",
+										"kongfu_drink",
+										"monk_imp",
+										"monk_nunchaku",
+										"kongfu_torch",
+										"kongfu_armor1"
+									],
+									"pointMin": 5500,
+									"pointMax": 6700,
+									"plantfoodchance": 0
+								},
+								"weight": 3,
+								"repeatMax": 1,
+								"repeatMin": 1
+							},
+							{
+								"actionName": "shoot",
+								"summonProps": {
+									"zombieList": [],
+									"pointMin": 1000,
+									"pointMax": 2000
+								},
+								"weight": 6,
+								"repeatMax": 1,
+								"repeatMin": 1
+							}
+						],
+						"AnimRateModifier": 1.25,
+						"ChilledDurationFromFrozen": 5,
+						"DamageIndexFull": 6,
+						"DamageIndexHalf": 6,
+						"HitPoints": 22800,
+						"MaxIdleTime": 0.3,
+						"MinIdleTime": 0.1,
+						"StunDamageScale": 1.25,
+						"StunStaggerBackMovement": 1,
+						"StunStaggerBackTime": 0.4,
+						"StunTime": 4
+					},
+					{
+						"Actions": [
+							{
+								"actionName": "walk",
+								"summonProps": {
+									"zombieList": [],
+									"pointMin": 1000,
+									"pointMax": 2000
+								},
+								"weight": 6,
+								"repeatMax": 1,
+								"repeatMin": 1
+							},
+							{
+								"actionName": "summon",
+								"summonProps": {
+									"zombieList": [
+										"monk_blade",
+										"monk_armor2",
+										"abbot_torch",
+										"kongfu_bomb",
+										"kongfu_chi",
+										"monk_drink",
+										"monk_drink_veteran",
+										"monk_armor4"
+									],
+									"pointMin": 6800,
+									"pointMax": 8800,
+									"plantfoodchance": 0
+								},
+								"weight": 16,
+								"repeatMax": 2,
+								"repeatMin": 2
+							},
+							{
+								"actionName": "summon",
+								"summonProps": {
+									"zombieList": [
+										"monk_blade",
+										"kongfu_bronze_chi",
+										"monk_armor2",
+										"abbot_torch",
+										"kongfu_bomb",
+										"kongfu_gong",
+										"kongfu_chi",
+										"monk_drink",
+										"monk_drink_veteran",
+										"monk_armor4"
+									],
+									"pointMin": 6000,
+									"pointMax": 7200,
+									"plantfoodchance": 0
+								},
+								"weight": 10,
+								"repeatMax": 1,
+								"repeatMin": 1
+							},
+							{
+								"actionName": "summon",
+								"summonProps": {
+									"zombieList": [
+										"monk_blade",
+										"kongfu_gong",
+										"monk_drink",
+										"kongfu_bomb",
+										"monk_armor2"
+									],
+									"pointMin": 4000,
+									"pointMax": 5400,
+									"plantfoodchance": 0
+								},
+								"weight": 6,
+								"repeatMax": 1,
+								"repeatMin": 1
+							},
+							{
+								"actionName": "summon",
+								"summonProps": {
+									"zombieList": [
+										"monk_blade",
+										"abbot_torch",
+										"abbot_imp",
+										"kongfu_gong",
+										"kongfu_chi",
+										"monk_drink",
+										"monk_drink_veteran",
+										"monk_armor4"
+									],
+									"pointMin": 8000,
+									"pointMax": 9000,
+									"plantfoodchance": 0
+								},
+								"weight": 2,
+								"repeatMax": 1,
+								"repeatMin": 1
+							},
+							{
+								"actionName": "shoot",
+								"summonProps": {
+									"zombieList": [],
+									"pointMin": 1000,
+									"pointMax": 2000
+								},
+								"weight": 8,
+								"repeatMax": 2,
+								"repeatMin": 2
+							}
+						],
+						"AnimRateModifier": 1.25,
+						"ChilledDurationFromFrozen": 5,
+						"DamageIndexFull": 6,
+						"DamageIndexHalf": 6,
+						"HitPoints": 35800,
+						"MaxIdleTime": 0.24,
+						"MinIdleTime": 0.08,
+						"StunDamageScale": 1.25,
+						"StunStaggerBackMovement": 1,
+						"StunStaggerBackTime": 0.4,
+						"StunTime": 3
+					},
+					{
+						"Actions": [
+							{
+								"actionName": "summon",
+								"summonProps": {
+									"zombieList": [
+										"kongfu_bronze_strong",
+										"monk_blade",
+										"monk_imp",
+										"kongfu_hammer",
+										"kongfu_gong",
+										"kongfu_drink",
+										"monk_drink_veteran",
+										"abbot_armor4",
+										"abbot_torch",
+										"monk_torch",
+										"kongfu_chi",
+										"abbot_fan",
+										"abbot_3section_staff"
+									],
+									"pointMin": 6000,
+									"pointMax": 7000,
+									"plantfoodchance": 0
+								},
+								"weight": 12,
+								"repeatMax": 1,
+								"repeatMin": 1
+								},
+							{
+								"actionName": "summon",
+								"summonProps": {
+									"zombieList": [
+										"kongfu_bronze_strong",
+										"kongfu_hammer",
+										"kongfu_bomb",
+										"abbot_armor2",
+										"monk_torch",
+										"kongfu_chi"
+									],
+									"pointMin": 2500,
+									"pointMax": 3600,
+									"plantfoodchance": 0
+								},
+								"weight": 6,
+								"repeatMax": 1,
+								"repeatMin": 1
+								},
+							{
+								"actionName": "summon",
+								"summonProps": {
+									"zombieList": [
+										"kongfu_bronze_chi",
+										"kongfu_gong",
+										"monk_drink",
+										"monk_drink_veteran",
+										"monk_imp",
+										"abbot_armor2",
+										"abbot_armor4",
+										"abbot_torch",
+										"monk_torch",
+										"kongfu_chi",
+										"abbot_fan",
+										"abbot_3section_staff"
+									],
+									"pointMin": 5400,
+									"pointMax": 6200,
+									"plantfoodchance": 0
+								},
+								"weight": 4,
+								"repeatMax": 1,
+								"repeatMin": 1
+								},
+							{
+								"actionName": "summon",
+								"summonProps": {
+									"zombieList": [
+										"monk_blade",
+										"monk_drink",
+										"abbot_torch",
+										"monk_torch",
+										"abbot_fan"
+									],
+									"pointMin": 5000,
+									"pointMax": 6000,
+									"plantfoodchance": 0
+								},
+								"weight": 8,
+								"repeatMax": 2,
+								"repeatMin": 1
+								},
+							{
+								"actionName": "summon",
+								"summonProps": {
+									"zombieList": [
+										"monk_blade",
+										"kongfu_hammer",
+										"kongfu_bomb",
+										"monk_drink_veteran",
+										"abbot_armor4",
+										"abbot_torch",
+										"abbot_3section_staff"
+									],
+									"pointMin": 9000,
+									"pointMax": 10000,
+									"plantfoodchance": 0
+								},
+								"weight": 4,
+								"repeatMax": 1,
+								"repeatMin": 1
+							},
+							{
+								"actionName": "shoot",
+								"summonProps": {
+									"zombieList": [],
+									"pointMin": 1000,
+									"pointMax": 2000
+								},
+								"weight": 4,
+								"repeatMax": 3,
+								"repeatMin": 2
+							},
+							{
+								"actionName": "rush",
+								"summonProps": {
+									"zombieList": [],
+									"pointMin": 1000,
+									"pointMax": 2000
+								},
+								"weight": 2,
+								"repeatMax": 1,
+								"repeatMin": 1
+							}
+						],
+						"AnimRateModifier": 1.25,
+						"ChilledDurationFromFrozen": 5,
+						"DamageIndexFull": 6,
+						"DamageIndexHalf": 6,
+						"HitPoints": 39999,
+						"MaxIdleTime": 0.18,
+						"MinIdleTime": 0.06,
+						"StunDamageScale": 1.25,
+						"StunStaggerBackMovement": 1,
+						"StunStaggerBackTime": 0.4,
+						"StunTime": 2
+					}
+				]
+			}
+    }
+  ],
+  "version": 1
+}

@@ -1,0 +1,1198 @@
+{
+  "#comment": "",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Description": "[MEET_PEPPER_FAMILY]",
+        "LevelNumber": -2,
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "Modules": [
+          "RTID(GoldTiles@CurrentLevel)",
+          "RTID(StandardIntro@LevelModules)",
+          "RTID(ModernMowers@LevelModules)",
+          "RTID(DefaultSunDropper@LevelModules)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(ChallengeModule@CurrentLevel)",
+          "RTID(SeedBank@CurrentLevel)",
+          "RTID(NewWaves@CurrentLevel)"
+        ],
+        "MusicType": "MiniGame_A",
+        "WrittenBy": "蔓逐I蝶舞",
+        "Name": "[EPIC_PLANT_PEPPER_LEVEL_NAME]",
+        "StageModule": "RTID(PaddysStage@LevelModules)"
+      }
+        },
+        {
+            "aliases": [
+                "GoldTiles"
+            ],
+            "objclass": "InitialGridItemProperties",
+            "objdata": {
+                "InitialGridItemPlacements": [
+                    {
+                        "GridX": 8,
+                        "GridY": 0,
+                        "TypeName": "goldtile"
+                    },
+                    {
+                        "GridX": 8,
+                        "GridY": 1,
+                        "TypeName": "goldtile"
+                    },
+                    {
+                        "GridX": 8,
+                        "GridY": 2,
+                        "TypeName": "goldtile"
+                    },
+                    {
+                        "GridX": 8,
+                        "GridY": 3,
+                        "TypeName": "goldtile"
+                    },
+                    {
+                        "GridX": 8,
+                        "GridY": 4,
+                        "TypeName": "goldtile"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "DoNotPlantBeforeLine"
+            ],
+            "objclass": "MoldColonyChallengeProps",
+            "objdata": {
+                "MoldedSquares": [
+                    {
+                        "GridX": 8,
+                        "GridY": 0
+                    },
+                    {
+                        "GridX": 8,
+                        "GridY": 1
+                    },
+                    {
+                        "GridX": 8,
+                        "GridY": 2
+                    },
+                    {
+                        "GridX": 8,
+                        "GridY": 3
+                    },
+                    {
+                        "GridX": 8,
+                        "GridY": 4
+                    }
+                ]
+            }
+    },
+    {
+      "aliases": [
+        "ChallengeModule"
+      ],
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "Challenges": [
+          [
+                        "RTID(BeatTheLevel@CurrentLevel)",
+                        "RTID(DoNotPlantBeforeLine@CurrentLevel)"
+]
+        ],
+        "ChallengesAlwaysAvailable": true
+      }
+        },
+        {
+            "aliases": [
+                "SeedBank"
+            ],
+            "objclass": "SeedBankProperties",
+            "objdata": {
+                "PresetPlantList": [
+                    {
+                        "Level": -1,
+                        "PlantType": "sunflower"
+                    },
+                    {
+                        "Level": -1,
+                        "PlantType": "jalapeno"
+                    },
+                    {
+                        "Level": -1,
+                        "PlantType": "firepeashooter"
+                    },
+                    {
+                        "Level": -1,
+                        "PlantType": "endurian"
+                    },
+                    {
+                        "Level": -1,
+                        "PlantType": "stallia"
+                    }
+                ],
+                "SelectionMethod": "preset"
+            }
+    },
+    {
+      "aliases": [
+        "NewWaves"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {
+        "DynamicZombies": [
+          {
+            "PointIncrementPerWave": -40,
+            "StartingPoints": -100,
+            "StartingWave": 3,
+            "ZombiePool": [
+              "RTID(stpatrick_armor2@ZombieTypes)",
+              "RTID(stpatrick_armor1@ZombieTypes)",
+              "RTID(stpatrick_dodo@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": -25,
+            "StartingPoints": -100,
+            "StartingWave": 4,
+            "ZombiePool": [
+              "RTID(stpatrick_armor2@ZombieTypes)",
+              "RTID(stpatrick_armor1@ZombieTypes)",
+              "RTID(stpatrick_dodo@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": -10,
+            "StartingPoints": -100,
+            "StartingWave": 5,
+            "ZombiePool": [
+              "RTID(stpatrick_armor2@ZombieTypes)",
+              "RTID(stpatrick_armor1@ZombieTypes)",
+              "RTID(stpatrick_dodo@ZombieTypes)"
+            ]
+          },
+          {},
+          {
+            "PointIncrementPerWave": 20,
+            "StartingPoints": 100,
+            "StartingWave": 5,
+            "ZombiePool": [
+              "RTID(stpatrick_armor2@ZombieTypes)",
+              "RTID(stpatrick_armor1@ZombieTypes)",
+              "RTID(stpatrick_dodo@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": 40,
+            "StartingPoints": 200,
+            "StartingWave": 4,
+            "ZombiePool": [
+              "RTID(stpatrick_armor2@ZombieTypes)",
+              "RTID(stpatrick_armor1@ZombieTypes)",
+              "RTID(stpatrick_dodo@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": 60,
+            "StartingPoints": 400,
+            "StartingWave": 3,
+            "ZombiePool": [
+              "RTID(stpatrick_armor2@ZombieTypes)",
+              "RTID(stpatrick_armor1@ZombieTypes)",
+              "RTID(stpatrick_dodo@ZombieTypes)"
+            ]
+          }
+        ],
+        "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "WaveManagerProps"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "FlagWaveInterval": 8,
+                "SuppressedDynamicZombieWaves": [
+                    6,
+                    11
+                ],
+        "WaveCount": 16,
+        "WaveSpendingPointIncrement": 50,
+        "WaveSpendingPoints": 100,
+        "Waves": [
+          [
+            "RTID(Wave1@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave2@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave3@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave4@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave5@CurrentLevel)",
+            "RTID(Wave5SpiderRainEvent0@CurrentLevel)",
+            "RTID(Wave5SpiderRainEvent1@CurrentLevel)",
+            "RTID(Wave5SpiderRainEvent2@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave5.5@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave6@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave7@CurrentLevel)",
+            "RTID(Wave7SpiderRainEvent0@CurrentLevel)",
+            "RTID(Wave7SpiderRainEvent1@CurrentLevel)",
+            "RTID(Wave7SpiderRainEvent2@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave8@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave9@CurrentLevel)",
+            "RTID(Wave9SpiderRainEvent0@CurrentLevel)",
+            "RTID(Wave9SpiderRainEvent1@CurrentLevel)",
+            "RTID(Wave9SpiderRainEvent2@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave10pf@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave11@CurrentLevel)",
+            "RTID(Wave11SpiderRainEvent0@CurrentLevel)",
+            "RTID(Wave11SpiderRainEvent1@CurrentLevel)",
+            "RTID(Wave11SpiderRainEvent2@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave12@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave13@CurrentLevel)",
+            "RTID(Wave13SpiderRainEvent0@CurrentLevel)",
+            "RTID(Wave13SpiderRainEvent1@CurrentLevel)",
+            "RTID(Wave13SpiderRainEvent2@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave14@CurrentLevel)",
+            "RTID(Wave14SpiderRainEvent0@CurrentLevel)",
+            "RTID(Wave14SpiderRainEvent1@CurrentLevel)",
+            "RTID(Wave14SpiderRainEvent2@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave15@CurrentLevel)"
+          ]
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave1"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(stpatrick_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave2"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(stpatrick_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(stpatrick_dodo@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave3"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(zomboni@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(stpatrick_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(stpatrick_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(stpatrick_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave4"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "4",
+            "Type": "RTID(stpatrick_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(stpatrick_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lostcity_impporter@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lostcity_impporter@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(stpatrick_dodo@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(stpatrick_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave5"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(stpatrick_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(stpatrick_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(stpatrick_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(stpatrick_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(stpatrick_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(lostcity_impporter@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(stpatrick_dodo@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(stpatrick_dodo@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(stpatrick_dodo@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave5.5"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(stpatrick_imp@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(stpatrick_imp@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave6"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "4",
+            "Type": "RTID(stpatrick_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(stpatrick_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(lostcity_impporter@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(zomboni@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(beach_surfer@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(beach_surfer@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave7"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(stpatrick_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(stpatrick_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(stpatrick_dodo@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(stpatrick_dodo@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(stpatrick_dodo@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(stpatrick_dodo@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(beach_surfer@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(zomboni@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lostcity_impporter@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(beach_surfer@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(beach_surfer@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave8"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(kongfu_hammer@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(kongfu_hammer@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(kongfu_hammer@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(stpatrick_dodo@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(stpatrick_dodo@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(stpatrick_dodo@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(stpatrick_dodo@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lostcity_impporter@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(beach_surfer@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(beach_surfer@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(beach_surfer@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave9"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(beach_surfer@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(stpatrick_dodo@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(stpatrick_dodo@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(lostcity_impporter@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(lostcity_impporter@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(kongfu_hammer@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(kongfu_hammer@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave10pf"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "DynamicPlantfood": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(stpatrick_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(stpatrick_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(stpatrick_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave11"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(beach_surfer@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(beach_surfer@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(beach_surfer@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(zomboni@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(lostcity_impporter@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(lostcity_impporter@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(kongfu_hammer@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(beach_surfer@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave12"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "5",
+            "Type": "RTID(beach_surfer@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(beach_surfer@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(beach_surfer@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(zomboni@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(stpatrick_dodo@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(stpatrick_dodo@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(stpatrick_dodo@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(lostcity_impporter@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(kongfu_hammer@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(kongfu_hammer@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave13"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(beach_surfer@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(beach_surfer@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(beach_surfer@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(beach_surfer@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(beach_surfer@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave14"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(stpatrick_dodo@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(stpatrick_dodo@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(stpatrick_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(stpatrick_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(kongfu_hammer@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(kongfu_hammer@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(beach_surfer@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(beach_surfer@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(zomboni@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave15"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(stpatrick_dodo@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(stpatrick_dodo@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(stpatrick_dodo@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(kongfu_hammer@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(beach_surfer@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(lostcity_impporter@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(stpatrick_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(stpatrick_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(stpatrick_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(stpatrick_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(stpatrick_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(zomboni@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(zomboni@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave5SpiderRainEvent0"
+      ],
+      "objclass": "SpiderRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": "8",
+        "ColumnStart": "7",
+        "GroupSize": "2",
+        "SpiderCount": 1,
+        "SpiderZombieName": "stpatrick_imp",
+        "TimeBeforeFullSpawn": "1",
+        "TimeBetweenGroups": "0.2",
+        "WaveStartMessage": "[WARNING_LEPRACHAUNS]",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave5SpiderRainEvent1"
+      ],
+      "objclass": "SpiderRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": "8",
+        "ColumnStart": "7",
+        "GroupSize": "2",
+        "SpiderCount": 1,
+        "SpiderZombieName": "stpatrick_imp",
+        "TimeBeforeFullSpawn": "1",
+        "TimeBetweenGroups": "0.2",
+        "WaveStartMessage": "[WARNING_LEPRACHAUNS]",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave5SpiderRainEvent2"
+      ],
+      "objclass": "SpiderRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": "7",
+        "ColumnStart": "6",
+        "GroupSize": "2",
+        "SpiderCount": 1,
+        "SpiderZombieName": "stpatrick_imp",
+        "TimeBeforeFullSpawn": "1",
+        "TimeBetweenGroups": "0.2",
+        "WaveStartMessage": "[WARNING_LEPRACHAUNS]",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave7SpiderRainEvent0"
+      ],
+      "objclass": "SpiderRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": "8",
+        "ColumnStart": "7",
+        "GroupSize": "2",
+        "SpiderCount": 2,
+        "SpiderZombieName": "stpatrick_imp",
+        "TimeBeforeFullSpawn": "1",
+        "TimeBetweenGroups": "0.2",
+        "WaveStartMessage": "[WARNING_LEPRACHAUNS]",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave7SpiderRainEvent1"
+      ],
+      "objclass": "SpiderRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": "7",
+        "ColumnStart": "6",
+        "GroupSize": "2",
+        "SpiderCount": 1,
+        "SpiderZombieName": "stpatrick_imp",
+        "TimeBeforeFullSpawn": "1",
+        "TimeBetweenGroups": "0.2",
+        "WaveStartMessage": "[WARNING_LEPRACHAUNS]",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave7SpiderRainEvent2"
+      ],
+      "objclass": "SpiderRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": "6",
+        "ColumnStart": "5",
+        "GroupSize": "2",
+        "SpiderCount": 1,
+        "SpiderZombieName": "stpatrick_imp",
+        "TimeBeforeFullSpawn": "1",
+        "TimeBetweenGroups": "0.2",
+        "WaveStartMessage": "[WARNING_LEPRACHAUNS]",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave9SpiderRainEvent0"
+      ],
+      "objclass": "SpiderRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": "8",
+        "ColumnStart": "7",
+        "GroupSize": "2",
+        "SpiderCount": 2,
+        "SpiderZombieName": "stpatrick_imp",
+        "TimeBeforeFullSpawn": "1",
+        "TimeBetweenGroups": "0.2",
+        "WaveStartMessage": "[WARNING_LEPRACHAUNS]",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave9SpiderRainEvent1"
+      ],
+      "objclass": "SpiderRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": "7",
+        "ColumnStart": "6",
+        "GroupSize": "2",
+        "SpiderCount": 2,
+        "SpiderZombieName": "stpatrick_imp",
+        "TimeBeforeFullSpawn": "1",
+        "TimeBetweenGroups": "0.2",
+        "WaveStartMessage": "[WARNING_LEPRACHAUNS]",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave9SpiderRainEvent2"
+      ],
+      "objclass": "SpiderRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": "6",
+        "ColumnStart": "5",
+        "GroupSize": "2",
+        "SpiderCount": 1,
+        "SpiderZombieName": "stpatrick_imp",
+        "TimeBeforeFullSpawn": "1",
+        "TimeBetweenGroups": "0.2",
+        "WaveStartMessage": "[WARNING_LEPRACHAUNS]",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave11SpiderRainEvent0"
+      ],
+      "objclass": "SpiderRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": "8",
+        "ColumnStart": "7",
+        "GroupSize": "2",
+        "SpiderCount": 2,
+        "SpiderZombieName": "stpatrick_imp",
+        "TimeBeforeFullSpawn": "1",
+        "TimeBetweenGroups": "0.2",
+        "WaveStartMessage": "[WARNING_LEPRACHAUNS]",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave11SpiderRainEvent1"
+      ],
+      "objclass": "SpiderRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": "7",
+        "ColumnStart": "6",
+        "GroupSize": "2",
+        "SpiderCount": 2,
+        "SpiderZombieName": "stpatrick_imp",
+        "TimeBeforeFullSpawn": "1",
+        "TimeBetweenGroups": "0.2",
+        "WaveStartMessage": "[WARNING_LEPRACHAUNS]",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave11SpiderRainEvent2"
+      ],
+      "objclass": "SpiderRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": "6",
+        "ColumnStart": "5",
+        "GroupSize": "2",
+        "SpiderCount": 2,
+        "SpiderZombieName": "stpatrick_imp",
+        "TimeBeforeFullSpawn": "1",
+        "TimeBetweenGroups": "0.2",
+        "WaveStartMessage": "[WARNING_LEPRACHAUNS]",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave13SpiderRainEvent0"
+      ],
+      "objclass": "SpiderRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": "8",
+        "ColumnStart": "7",
+        "GroupSize": "2",
+        "SpiderCount": 3,
+        "SpiderZombieName": "stpatrick_imp",
+        "TimeBeforeFullSpawn": "1",
+        "TimeBetweenGroups": "0.2",
+        "WaveStartMessage": "[WARNING_LEPRACHAUNS]",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave13SpiderRainEvent1"
+      ],
+      "objclass": "SpiderRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": "7",
+        "ColumnStart": "6",
+        "GroupSize": "2",
+        "SpiderCount": 2,
+        "SpiderZombieName": "stpatrick_imp",
+        "TimeBeforeFullSpawn": "1",
+        "TimeBetweenGroups": "0.2",
+        "WaveStartMessage": "[WARNING_LEPRACHAUNS]",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave13SpiderRainEvent2"
+      ],
+      "objclass": "SpiderRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": "6",
+        "ColumnStart": "5",
+        "GroupSize": "2",
+        "SpiderCount": 2,
+        "SpiderZombieName": "stpatrick_imp",
+        "TimeBeforeFullSpawn": "1",
+        "TimeBetweenGroups": "0.2",
+        "WaveStartMessage": "[WARNING_LEPRACHAUNS]",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave14SpiderRainEvent0"
+      ],
+      "objclass": "SpiderRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": "8",
+        "ColumnStart": "7",
+        "GroupSize": "2",
+        "SpiderCount": 3,
+        "SpiderZombieName": "stpatrick_imp",
+        "TimeBeforeFullSpawn": "1",
+        "TimeBetweenGroups": "0.2",
+        "WaveStartMessage": "[WARNING_LEPRACHAUNS]",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave14SpiderRainEvent1"
+      ],
+      "objclass": "SpiderRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": "7",
+        "ColumnStart": "6",
+        "GroupSize": "2",
+        "SpiderCount": 3,
+        "SpiderZombieName": "stpatrick_imp",
+        "TimeBeforeFullSpawn": "1",
+        "TimeBetweenGroups": "0.2",
+        "WaveStartMessage": "[WARNING_LEPRACHAUNS]",
+        "ZombieFallTime": "1.5"
+      }
+    },
+    {
+      "aliases": [
+        "Wave14SpiderRainEvent2"
+      ],
+      "objclass": "SpiderRainZombieSpawnerProps",
+      "objdata": {
+        "ColumnEnd": "6",
+        "ColumnStart": "5",
+        "GroupSize": "2",
+        "SpiderCount": 2,
+        "SpiderZombieName": "stpatrick_imp",
+        "TimeBeforeFullSpawn": "1",
+        "TimeBetweenGroups": "0.2",
+        "WaveStartMessage": "[WARNING_LEPRACHAUNS]",
+        "ZombieFallTime": "1.5"
+      }
+    }
+  ],
+  "version": 1
+}

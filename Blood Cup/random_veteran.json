@@ -1,0 +1,504 @@
+{
+  "#comment": "random",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+                "Description": "random",
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "Modules": [
+          "RTID(StandardIntro@LevelModules)",
+          "RTID(LevelScheduler@CurrentLevel)",
+          "RTID(LawnMowers@LevelModules)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(ConveyorBelt@CurrentLevel)",
+          "RTID(RandomImitaterAdditional@CurrentLevel)",
+          "RTID(RandomImitater@LevelModules)",
+          "RTID(ChallengeModule@CurrentLevel)",
+          "RTID(NewWaves@CurrentLevel)",
+          "RTID(Tide@CurrentLevel)"
+        ],
+        "Name": "Random Veteran",
+        "NameMultiLanguage": {
+          "en": "Peak of all talentz",
+          "zh": "群彦之巅"
+        },
+        "WrittenBy": "蔓逐I蝶舞",
+        "MusicType": "MiniGame_A",
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+                "StageModule": "RTID(ModernStage@LevelModules)"
+            }
+    },
+{
+            "aliases": [
+                "lostcity_lostpilot_veteran"
+            ],
+            "objclass": "ZombieType",
+            "objdata": {
+                "Properties": "RTID(lostcity_lostpilot_veteran@CurrentLevel)",
+                "ZombieBasedOn": "lostcity_lostpilot_veteran"
+            }
+		},
+		{
+			"aliases": [
+				"lostcity_lostpilot_veteran"
+			],
+			"objclass": "ZombieProperties",
+			"objdata": {
+				"HangingNoEatTimeUntilDrop": 3,
+				"WalkSPS": 0.185,
+				"EatDPS": 100,
+				"Toughness": 500,
+				"WavePointCost": 250,
+				"Weight": 3000,
+				"HitRect": "RTID(CommonHitRect@RectangleProps)",
+				"AttackRect": "RTID(CommonAttackRect@RectangleProps)",
+				"ZombiesToBringWith": [
+                    {
+                        "Type": "RTID(tutorial_armor4@ZombieTypes)"
+                    }
+]
+			}
+    },
+{
+            "aliases": [
+                "eighties_punk_veteran"
+            ],
+            "objclass": "ZombieType",
+            "objdata": {
+                "Properties": "RTID(eighties_punk_veteran@CurrentLevel)",
+                "ZombieBasedOn": "eighties_punk_veteran"
+            }
+		},
+		{
+			"aliases": [
+				"eighties_punk_veteran"
+			],
+			"objclass": "ZombieProperties",
+			"objdata": {
+				"WalkSPS": 0.346875,
+				"EatDPS": 100,
+				"Toughness": 400,
+				"PushCooldown": 2,
+				"JamStyle": "jam_punk",
+				"WavePointCost": 500,
+				"Weight": 1000,
+				"SkunkCooldown": 5,
+				"SkunkChasingSpeedMult": 2,
+				"SkunkPositionList": [
+					{
+						"x": -1,
+						"y": -1
+					},
+					{
+						"x": 0,
+						"y": -1
+					},
+					{
+						"x": 1,
+						"y": -1
+					},
+					{
+						"x": -1,
+						"y": 0
+					},
+					{
+						"x": 1,
+						"y": 0
+					},
+					{
+						"x": -1,
+						"y": 1
+					},
+					{
+						"x": 0,
+						"y": 1
+					},
+					{
+						"x": 1,
+						"y": 1
+					}
+				],
+				"SkunkType": "eighties_skunk",
+				"HitRect": "RTID(CommonHitRect@RectangleProps)",
+				"AttackRect": "RTID(CommonAttackRect@RectangleProps)"
+			}
+    },
+{
+            "aliases": [
+                "eighties_skunk"
+            ],
+            "objclass": "ZombieType",
+            "objdata": {
+                "Properties": "RTID(eighties_skunk@CurrentLevel)",
+                "ZombieBasedOn": "eighties_skunk"
+            }
+		},
+		{
+			"aliases": [
+				"eighties_skunk"
+			],
+			"objclass": "ZombieProperties",
+			"objdata": {
+				"CannotBeEnlightenedBySolarSage": true,
+				"KilledByShrinkingViolet": true,
+				"CannotBeGrabbedByPtero": true,
+				"ChiliStunDurationMult": 0,
+				"CannotBePushedBySliders": true,
+				"CanBeEasilySwallowedByChomper": true,
+				"WalkSPS": 0.185,
+				"RunSPS": 2.25,
+				"DoesNotDamageHeavilyToGarlic": true,
+				"EatDPS": 75,
+				"Toughness": 40,
+				"WavePointCost": 10,
+				"Weight": 0,
+				"NormalDeathWhenMowed": true,
+				"FartInterval": 3,
+				"FartStunDuration": 2,
+				"HitRect": "RTID(CowboyChickenHitRect@RectangleProps)",
+				"AttackRect": "RTID(CowboyChickenAttackRect@RectangleProps)"
+			}
+        },
+        {
+            "aliases": [
+                "ParachuteRain"
+            ],
+            "objclass": "ParachuteRainZombieSpawnerProps",
+            "objdata": {
+                "ColumnEnd": 7,
+                "ColumnStart": 4,
+                "GroupSize": 1,
+                "SpiderCount": 4,
+                "SpiderZombieName": "lostcity_lostpilot_veteran",
+                "TimeBeforeFullSpawn": "2",
+                "TimeBetweenGroups": "0.2",
+                "WaveStartMessage": "[WARNING_PARACHUTERAIN]",
+                "ZombieFallTime": "1.5",
+                "ZombiesToBringWith": []
+            }
+    },
+    {
+      "aliases": [
+        "Tide"
+      ],
+      "objclass": "TideProperties",
+      "objdata": {
+        "StartingWaveLocation": 4
+      }
+    },
+    {
+      "aliases": [
+        "LevelScheduler"
+      ],
+      "objclass": "LevelSchedulerProps",
+      "objdata": {
+        "TimeBeforeFirst": {
+          "Max": 75,
+          "Min": 45
+        },
+        "TimeBetween": {
+          "Max": 60,
+          "Min": 30
+        },
+        "Repeat": {
+          "Max": 999,
+          "Min": 999
+        },
+        "RewardWhenEnded": false,
+        "SuppressRewardState": false,
+        "Events": [
+          "RTID(ParachuteRain@CurrentLevel)"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "ConveyorBelt"
+      ],
+      "objclass": "ConveyorSeedBankProperties",
+      "objdata": {
+        "DropDelayConditions": [
+          {
+            "Delay": 4,
+            "MaxPackets": 0
+          },
+          {
+            "Delay": 7,
+            "MaxPackets": 4
+          },
+          {
+            "Delay": 10,
+            "MaxPackets": 8
+          }
+        ],
+        "InitialPlantList": [
+          {
+            "PlantType": "imitater",
+            "Weight": 250
+          },
+          {
+            "PlantType": "powerlily",
+            "Weight": 25
+          },
+          {
+            "PlantType": "lilypad",
+            "Weight": 25
+          }
+        ],
+        "SpeedConditions": [
+          {
+            "MaxPackets": 0,
+            "Speed": 100
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "RandomImitaterAdditional"
+      ],
+      "objclass": "RandomImitaterProperties",
+      "objdata": {
+        "ExcludeListSunProducers": "false",
+        "ExtraRandomPlantExcludeList": [
+          "sunflower",
+          "twinsunflower",
+          "magnifyinggrass",
+          "sunshroom",
+          "sunbean",
+          "primalsunflower",
+          "goldbloom",
+          "hollybarrierleaf",
+          "hollybarrierleafplantfood",
+          "marigold_red",
+          "marigold_orange",
+          "marigold_green",
+          "marigold_blue",
+          "marigold_yellow",
+          "marigold_pink",
+          "marigold_purple",
+          "dragonbabybruit",
+          "bamboobusket",
+          "hollybarrierleafplantfood",
+          "atombomb",
+          "seedling",
+          "appeasemint",
+          "enlightenmint",
+          "reinforcemint",
+          "bombardmint",
+          "armamint",
+          "spearmint",
+          "wintermint",
+          "enforcemint",
+          "peppermint",
+          "ailmint",
+          "filamint",
+          "enchantmint",
+          "concealmint",
+          "containmint",
+          "powerplant"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "ChallengeModule"
+      ],
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "Challenges": [
+          [
+            "RTID(BeatTheLevel@CurrentLevel)"
+          ]
+        ],
+        "ChallengesAlwaysAvailable": true
+      }
+    },
+    {
+      "aliases": [
+        "BeatTheLevel"
+      ],
+      "objclass": "StarChallengeBeatTheLevelProps",
+      "objdata": {
+        "Description": "[STARCHALLENGE_EGYPT_FINALE]",
+        "DescriptiveName": "[STARCHALLENGE_EGYPT_FINALE_NAME]"
+      }
+    },
+    {
+      "aliases": [
+        "NewWaves"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {
+        "DynamicZombies": [
+          {},
+          {},
+          {},
+          {
+            "PointIncrementPerWave": 150,
+            "StartingPoints": 200,
+            "StartingWave": 0,
+            "ZombiePool": [
+                            "RTID(newspaper_veteran@ZombieTypes)",
+                            "RTID(explorer_veteran@ZombieTypes)",
+                            "RTID(pelican@ZombieTypes)",
+                            "RTID(west_bull_veteran@ZombieTypes)",
+                            "RTID(future_jetpack_veteran@ZombieTypes)",
+                            "RTID(dark_wizard_veteran@ZombieTypes)",
+                            "RTID(dark_king_veteran@ZombieTypes)",
+                            "RTID(beach_surfer_veteran@ZombieTypes)",
+                            "RTID(lostcity_bug_armor4@ZombieTypes)",
+                            "RTID(monk_drink_veteran@CurrentLevel)",
+                            "RTID(eighties_punk_veteran@ZombieTypes)",
+                            "RTID(dino_bully_veteran@ZombieTypes)",
+                            "RTID(iceage_hunter_veteran@ZombieTypes)",
+                            "RTID(iceage_troglobite_veteran@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": 200,
+            "StartingPoints": 300,
+            "StartingWave": 0,
+            "ZombiePool": [
+                            "RTID(newspaper_veteran@ZombieTypes)",
+                            "RTID(explorer_veteran@ZombieTypes)",
+                            "RTID(pelican@ZombieTypes)",
+                            "RTID(west_bull_veteran@ZombieTypes)",
+                            "RTID(future_jetpack_veteran@ZombieTypes)",
+                            "RTID(dark_wizard_veteran@ZombieTypes)",
+                            "RTID(dark_king_veteran@ZombieTypes)",
+                            "RTID(beach_surfer_veteran@ZombieTypes)",
+                            "RTID(lostcity_bug_armor4@ZombieTypes)",
+                            "RTID(monk_drink_veteran@ZombieTypes)",
+                            "RTID(eighties_punk_veteran@CurrentLevel)",
+                            "RTID(dino_bully_veteran@ZombieTypes)",
+                            "RTID(iceage_hunter_veteran@ZombieTypes)",
+                            "RTID(iceage_troglobite_veteran@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": 250,
+            "StartingPoints": 400,
+            "StartingWave": 0,
+            "ZombiePool": [
+                            "RTID(newspaper_veteran@ZombieTypes)",
+                            "RTID(explorer_veteran@ZombieTypes)",
+                            "RTID(pelican@ZombieTypes)",
+                            "RTID(west_bull_veteran@ZombieTypes)",
+                            "RTID(future_jetpack_veteran@ZombieTypes)",
+                            "RTID(dark_wizard_veteran@ZombieTypes)",
+                            "RTID(dark_king_veteran@ZombieTypes)",
+                            "RTID(beach_surfer_veteran@ZombieTypes)",
+                            "RTID(lostcity_bug_armor4@ZombieTypes)",
+                            "RTID(monk_drink_veteran@ZombieTypes)",
+                            "RTID(eighties_punk_veteran@CurrentLevel)",
+                            "RTID(dino_bully_veteran@ZombieTypes)",
+                            "RTID(iceage_hunter_veteran@ZombieTypes)",
+                            "RTID(iceage_troglobite_veteran@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": 300,
+            "StartingPoints": 500,
+            "StartingWave": 0,
+            "ZombiePool": [
+                            "RTID(newspaper_veteran@ZombieTypes)",
+                            "RTID(explorer_veteran@ZombieTypes)",
+                            "RTID(pelican@ZombieTypes)",
+                            "RTID(west_bull_veteran@ZombieTypes)",
+                            "RTID(future_jetpack_veteran@ZombieTypes)",
+                            "RTID(dark_wizard_veteran@ZombieTypes)",
+                            "RTID(dark_king_veteran@ZombieTypes)",
+                            "RTID(beach_surfer_veteran@ZombieTypes)",
+                            "RTID(lostcity_bug_armor4@ZombieTypes)",
+                            "RTID(monk_drink_veteran@ZombieTypes)",
+                            "RTID(eighties_punk_veteran@CurrentLevel)",
+                            "RTID(dino_bully_veteran@ZombieTypes)",
+                            "RTID(iceage_hunter_veteran@ZombieTypes)",
+                            "RTID(iceage_troglobite_veteran@ZombieTypes)"
+            ]
+          }
+        ],
+        "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "WaveManagerProps"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+"LevelJamList": [
+                    "jam_punk"
+                ],
+                "FlagWaveVeteranOverrideTypes": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+        "FlagWaveInterval": 4,
+        "WaveCount": 44,
+        "Waves": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [
+          "RTID(ParachuteRain@CurrentLevel)"
+          ]
+        ]
+      }
+    }
+  ],
+  "version": 1
+}

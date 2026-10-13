@@ -22,6 +22,7 @@
           "RTID(SunBombs@LevelModules)",
           "RTID(Tide@CurrentLevel)"
         ],
+        "WrittenBy": "南 Garden",
         "Name": "[DANGER_ROOM_MODERN_LEVEL_NAME]",
         "NormalPresentTable": "egypt_normal_01",
         "ShinyPresentTable": "egypt_shiny_01",

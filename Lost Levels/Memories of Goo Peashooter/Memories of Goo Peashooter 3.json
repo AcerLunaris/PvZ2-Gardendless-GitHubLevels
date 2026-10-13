@@ -193,22 +193,6 @@
                     "SuppressChallengingHugeWaveGems": false,
                     "ChallengingLocked": false,
                     "Challenging": [
-                        // {
-                        //     "Name": {
-                        //         "en": "作者卡组",
-                        //         "zh": "作者卡组"
-                        //     },
-                        //     "HugeWaveGem": 2,
-                        //     "Leader": 5,
-                        //     "Plants": [
-                        //         "moonflower",
-                        //         "nightshade",
-                        //         "grimrose",
-                        //         "shadowshroom",
-                        //         "repeater",
-                        //         "strawburst"
-                        //     ]
-                        // }
                     ]
                 },
                 "PresetPlantList": [
@@ -218,11 +202,6 @@
                     }
                 ],
                 "PlantExcludeList": [
-                    // "goldleaf",
-                    // "thymewarp",
-                    // "moonbean",
-                    // "peach",
-                    // "blover"
                 ],
                 "SelectionMethod": "chooser"
             }
@@ -306,11 +285,6 @@
             "objdata": {
                 "FlagWaveInterval": 4,
                 "WaveCount": 8,
-                // "LevelJamList": [
-                //     "jam_punk",
-                //     "jam_rap",
-                //     "jam_pop"
-                // ],
                 "WaveSpendingPointIncrement": 200,
                 "WaveSpendingPoints": 150,
                 "Waves": [

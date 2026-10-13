@@ -52,7 +52,7 @@ Levels are JSON files. Refer to existing examples for the format.
 
 ### When Updates Happen
 
-Level updates are synced automatically **at :00 and :30 of every hour**. To see the latest levels, please **restart the game** after those times and open the **GitHub Level Window**. If the window was already opened before the sync, restarting the game is required to refresh the data.
+Level updates are synced automatically **every 30 minuites**. To see the latest levels, please **restart the game** after those times and open the **GitHub Level Window**. If the window was already opened before the sync, restarting the game is required to refresh the data.
 
 ---
 
@@ -104,4 +104,4 @@ Level updates are synced automatically **at :00 and :30 of every hour**. To see 
 
 ### 更新时机
 
-关卡的更新是定时的，**每小时的 00 分和 30 分**会自动同步一次。因此，请在这些时间点**之后**重启游戏，并打开 **GitHub 关卡窗口**，才能看到最新的关卡内容。如果在同步之前已经打开了窗口，需要重启游戏才能刷新数据。
+关卡的更新是定时的，**每半小时**会自动同步一次。因此，请在这些时间点**之后**重启游戏，并打开 **GitHub 关卡窗口**，才能看到最新的关卡内容。如果在同步之前已经打开了窗口，需要重启游戏才能刷新数据。

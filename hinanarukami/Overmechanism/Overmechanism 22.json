@@ -1,0 +1,656 @@
+{
+    "#comment": "Sample Level",
+    "Information": {
+        "Author": "hinanarukami",
+        "Introduction": "A sandbox level based on Mr. Blues' which was based on Altverz's sandbox levels.",
+        "Version": "1.0",
+        "CreatedAt": "2025-07-26",
+        "UpdatedAt": "2025-07-26",
+        "Difficulty": "Normal",
+        "Category": "Survival"
+    },
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Description": "Something is wrong...",
+                "LevelNumber": 1,
+                "Loot": "RTID(DefaultLoot@LevelModules)",
+                "Modules": [
+                    "RTID(ZombiesDeadWinCon@LevelModules)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)",
+                    "RTID(NewWaves@CurrentLevel)",
+                    "RTID(StandardIntro@LevelModules)",
+                    "RTID(ChallengeModule@CurrentLevel)",
+                    "RTID(SeedBank@CurrentLevel)",
+                    "RTID(EightiesMowers@LevelModules)",
+                    "RTID(LastStand@CurrentLevel)"
+                ],
+                "Name": "Overmechanism - Level 22",
+                "WrittenBy": "hinanarukami",
+                "MusicType": "MiniGame_B",
+                "NormalPresentTable": "egypt_normal_01",
+                "ShinyPresentTable": "egypt_shiny_01",
+                "StageModule": "RTID(EightiesTutorialStage@LevelModules)"
+            }
+        },
+        {
+            "aliases": [
+                "taco_metalgarg"
+            ],
+            "objclass": "ZombieType",
+            "objdata": {
+                "Properties": "RTID(taco_metalgarg@CurrentLevel)",
+                "ZombieBasedOn": "eighties_gargantuar"
+            }
+        },
+        {
+            "aliases": [
+                "taco_metalgarg"
+            ],
+            "objclass": "ZombieProperties",
+            "objdata": {
+                "CannotBeEnlightenedBySolarSage": true,
+                "ZombieSort": "Gargantuar",
+                "CannotBeGrabbedByPtero": true,
+                "CannotChangeLaneByPowerToss": true,
+                "CannotBeFlickedByPowerToss": true,
+                "CannotBeDraggedByTangleKelp": true,
+                "CannotBeTossedByCitron": true,
+                "CannotBeSwallowedByChomper": true,
+                "CannotCarryPlantfoodsInWaves": true,
+                "WavePointCost": 2000,
+                "Weight": 3000,
+                "WalkSPS": 0.24,
+                "EatDPS": 100,
+                "Toughness": 3600,
+                "LivesInDeepWater": true,
+                "NormalDeathWhenMowed": true,
+                "CannotCarryPlantfoodsInWaves": true,
+                "SmashDamage": 1500,
+                "JamStyle": "jam_rap"
+            }
+        },
+        {
+            "aliases": [
+                "ChallengeModule"
+            ],
+            "objclass": "StarChallengeModuleProperties",
+            "objdata": {
+                "Challenges": [
+                    [
+                        "RTID(BeatTheLevel@CurrentLevel)"
+                    ]
+                ],
+                "ChallengesAlwaysAvailable": true
+            }
+        },
+        {
+            "aliases": [
+                "LastStand"
+            ],
+            "objclass": "LastStandMinigameProperties",
+            "objdata": {
+                "StartingPlantfood": 2,
+                "StartingSun": 9900
+            }
+        },
+        {
+            "aliases": [
+                "SeedBank"
+            ],
+            "objclass": "SeedBankProperties",
+            "objdata": {
+                "ExcludeListSunProducers": "true",
+                "PlantExcludeList": [
+                  "megagatling",
+                  "inferno",
+                    "blover",
+                    "glaciershroom",
+                    "icebloom",
+                    "powerlily",
+                    "atombomb_seedling",
+                    "filamint",
+                    "reinforcemint",
+                    "bombardmint",
+                    "armamint",
+                    "containmint",
+                    "enchantmint",
+                    "spearmint",
+                    "peppermint",
+                    "wintermint",
+                    "concealmint",
+                    "enforcemint",
+                    "enlightenmint",
+                    "ailmint",
+                    "appeasemint",
+                    "caulipower"
+                ],
+                "SelectionMethod": "chooser"
+            }
+        },
+        {
+            "aliases": [
+                "BeatTheLevel"
+            ],
+            "objclass": "StarChallengeBeatTheLevelProps",
+            "objdata": {
+                "Descriptions": [
+                    "Survive the overmechanism!" 
+                ],
+                "DescriptionsMultiLanguage": [
+                    {
+                        "en": "123",
+                        "zh": "112233"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "NewWaves"
+            ],
+            "objclass": "WaveManagerModuleProperties",
+            "objdata": {
+                "DynamicZombies": [
+                    {},
+                    {},
+                    {},
+                    {
+                        "PointIncrementPerWave": 400,                         
+                        "StartingPoints": 1500,
+                        "StartingWave": 0,
+                        "ZombiePool": [
+                            "RTID(egypt_gargantuar@ZombieTypes)",
+                            "RTID(pirate_gargantuar@ZombieTypes)",
+                            "RTID(cowboy_gargantuar@ZombieTypes)",
+                            "RTID(future_gargantuar@ZombieTypes)",
+                            "RTID(dark_gargantuar@ZombieTypes)",
+                            "RTID(beach_gargantuar@ZombieTypes)",
+                            "RTID(iceage_gargantuar@ZombieTypes)",
+                            "RTID(lostcity_gargantuar@ZombieTypes)",
+                            "RTID(taco_metalgarg@CurrentLevel)",
+                            "RTID(dino_gargantuar@ZombieTypes)",
+                            "RTID(kongfu_bronze_chi@ZombieTypes)",
+                            "RTID(kongfu_bronze_hook@ZombieTypes)",
+                            "RTID(kongfu_bronze_strong@ZombieTypes)",
+                            "RTID(sky_gargantuar@ZombieTypes)" 
+                        ]
+                    },
+                    {
+                        "PointIncrementPerWave": 470,                        
+                        "StartingPoints": 1500,
+                        "StartingWave": 0,
+                        "ZombiePool": [
+                            "RTID(egypt_gargantuar@ZombieTypes)",
+                            "RTID(pirate_gargantuar@ZombieTypes)",
+                            "RTID(cowboy_gargantuar@ZombieTypes)",
+                            "RTID(future_gargantuar@ZombieTypes)",
+                            "RTID(dark_gargantuar@ZombieTypes)",
+                            "RTID(beach_gargantuar@ZombieTypes)",
+                            "RTID(iceage_gargantuar@ZombieTypes)",
+                            "RTID(lostcity_gargantuar@ZombieTypes)",
+                            "RTID(taco_metalgarg@CurrentLevel)",
+                            "RTID(dino_gargantuar@ZombieTypes)",
+                            "RTID(kongfu_bronze_chi@ZombieTypes)",
+                            "RTID(kongfu_bronze_hook@ZombieTypes)",
+                            "RTID(kongfu_bronze_strong@ZombieTypes)",
+                            "RTID(sky_gargantuar@ZombieTypes)" 
+                        ]
+                    },
+                    {
+                        "PointIncrementPerWave": 540,                          
+                        "StartingPoints": 1500,
+                        "StartingWave": 0,
+                        "ZombiePool": [
+                            "RTID(egypt_gargantuar@ZombieTypes)",
+                            "RTID(pirate_gargantuar@ZombieTypes)",
+                            "RTID(cowboy_gargantuar@ZombieTypes)",
+                            "RTID(future_gargantuar@ZombieTypes)",
+                            "RTID(dark_gargantuar@ZombieTypes)",
+                            "RTID(beach_gargantuar@ZombieTypes)",
+                            "RTID(iceage_gargantuar@ZombieTypes)",
+                            "RTID(lostcity_gargantuar@ZombieTypes)",
+                            "RTID(taco_metalgarg@CurrentLevel)",
+                            "RTID(dino_gargantuar@ZombieTypes)",
+                            "RTID(kongfu_bronze_chi@ZombieTypes)",
+                            "RTID(kongfu_bronze_hook@ZombieTypes)",
+                            "RTID(kongfu_bronze_strong@ZombieTypes)",
+                            "RTID(sky_gargantuar@ZombieTypes)" 
+                        ]
+                    },
+                    {
+                        "PointIncrementPerWave": 600,                        
+                        "StartingPoints": 1500,
+                        "StartingWave": 0,
+                        "ZombiePool": [
+                            "RTID(egypt_gargantuar@ZombieTypes)",
+                            "RTID(pirate_gargantuar@ZombieTypes)",
+                            "RTID(cowboy_gargantuar@ZombieTypes)",
+                            "RTID(future_gargantuar@ZombieTypes)",
+                            "RTID(dark_gargantuar@ZombieTypes)",
+                            "RTID(beach_gargantuar@ZombieTypes)",
+                            "RTID(iceage_gargantuar@ZombieTypes)",
+                            "RTID(lostcity_gargantuar@ZombieTypes)",
+                            "RTID(taco_metalgarg@CurrentLevel)",
+                            "RTID(dino_gargantuar@ZombieTypes)",
+                            "RTID(kongfu_bronze_chi@ZombieTypes)",
+                            "RTID(kongfu_bronze_hook@ZombieTypes)",
+                            "RTID(kongfu_bronze_strong@ZombieTypes)",
+                            "RTID(sky_gargantuar@ZombieTypes)" 
+                        ]
+                    }
+                ],
+                "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "WaveManagerProps"
+            ],
+            "objclass": "WaveManagerProperties",
+            "objdata": {
+                "FlagWaveInterval": 10,
+                "WaveCount": 50,
+                "Waves": [
+                    [],          
+                    [
+                        "RTID(RelicHunterZom@CurrentLevel)"
+                    ],          
+                    [
+                        "RTID(QigongZombieZom@CurrentLevel)"
+                    ],          
+                    [
+                        "RTID(RelicHunter@CurrentLevel)"
+                    ],          
+                    [
+                        "RTID(SummerGargantuarZom@CurrentLevel)",
+                        "RTID(BreakdancerZombieZom@CurrentLevel)",
+                        "RTID(EnterRapEvent@CurrentLevel)"
+                    ],          
+                    [
+                        "RTID(RelicHunter@CurrentLevel)",
+                        "RTID(QigongZombie@CurrentLevel)"
+                    ],          
+                    [],          
+                    [
+                        "RTID(RelicHunter@CurrentLevel)"
+                    ],          
+                    [
+                        "RTID(QigongZombie@CurrentLevel)"
+                    ],          
+                    [
+                        "RTID(RelicHunter@CurrentLevel)",
+                        "RTID(SummerGargantuar@CurrentLevel)",
+                        "RTID(BreakdancerZombie@CurrentLevel)"
+                    ],           
+                    [],           
+                    [
+                        "RTID(RelicHunter@CurrentLevel)",
+                        "RTID(SummerGargantuar@CurrentLevel)",
+                        "RTID(QigongZombie@CurrentLevel)"
+                    ],           
+                    [],           
+                    [
+                        "RTID(RelicHunter@CurrentLevel)",
+                        "RTID(SummerGargantuar@CurrentLevel)"
+                    ],           
+                    [
+                        "RTID(BreakdancerZombie@CurrentLevel)",
+                        "RTID(QigongZombie@CurrentLevel)"
+                    ],           
+                    [
+                        "RTID(RelicHunter@CurrentLevel)",
+                        "RTID(SummerGargantuar@CurrentLevel)"
+                    ],           
+                    [],           
+                    [
+                        "RTID(RelicHunter@CurrentLevel)",
+                        "RTID(SummerGargantuar@CurrentLevel)",
+                        "RTID(QigongZombie@CurrentLevel)"
+                    ],           
+                    [],           
+                    [
+                        "RTID(RelicHunter@CurrentLevel)",
+                        "RTID(SummerGargantuar@CurrentLevel)",
+                        "RTID(BreakdancerZombie@CurrentLevel)"
+                    ],           
+                    [
+                        "RTID(QigongZombie@CurrentLevel)"
+                    ],           
+                    [
+                        "RTID(RelicHunter@CurrentLevel)",
+                        "RTID(SummerGargantuar@CurrentLevel)"
+                    ],           
+                    [],           
+                    [
+                        "RTID(RelicHunter@CurrentLevel)",
+                        "RTID(SummerGargantuar@CurrentLevel)",
+                        "RTID(QigongZombie@CurrentLevel)"
+                    ],           
+                    [
+                        "RTID(BreakdancerZombie@CurrentLevel)"
+                    ],           
+                    [
+                        "RTID(RelicHunter@CurrentLevel)",
+                        "RTID(SummerGargantuar@CurrentLevel)"
+                    ],           
+                    [
+                        "RTID(QigongZombie@CurrentLevel)"
+                    ],           
+                    [
+                        "RTID(RelicHunter@CurrentLevel)",
+                        "RTID(SummerGargantuar@CurrentLevel)"
+                    ],           
+                    [],           
+                    [
+                        "RTID(RelicHunter@CurrentLevel)",
+                        "RTID(SummerGargantuar@CurrentLevel)",
+                        "RTID(BreakdancerZombie@CurrentLevel)",
+                        "RTID(QigongZombie@CurrentLevel)"
+                    ],           
+                    [
+                        "RTID(SummerGargantuar@CurrentLevel)"
+                    ],           
+                    [
+                        "RTID(RelicHunter@CurrentLevel)",
+                        "RTID(SummerGargantuar@CurrentLevel)"
+                    ],           
+                    [
+                        "RTID(SummerGargantuar@CurrentLevel)",
+                        "RTID(QigongZombie@CurrentLevel)"
+                    ],           
+                    [
+                        "RTID(RelicHunter@CurrentLevel)",
+                        "RTID(SummerGargantuar@CurrentLevel)"
+                    ],           
+                    [
+                        "RTID(SummerGargantuar@CurrentLevel)",
+                        "RTID(BreakdancerZombie@CurrentLevel)"
+                    ],           
+                    [
+                        "RTID(RelicHunter@CurrentLevel)",
+                        "RTID(SummerGargantuar@CurrentLevel)",
+                        "RTID(QigongZombie@CurrentLevel)"
+                    ],           
+                    [
+                        "RTID(SummerGargantuar@CurrentLevel)"
+                    ],           
+                    [
+                        "RTID(RelicHunter@CurrentLevel)",
+                        "RTID(SummerGargantuar@CurrentLevel)"
+                    ],           
+                    [
+                        "RTID(SummerGargantuar@CurrentLevel)",
+                        "RTID(QigongZombie@CurrentLevel)"
+                    ],           
+                    [
+                        "RTID(RelicHunter@CurrentLevel)",
+                        "RTID(SummerGargantuar@CurrentLevel)",
+                        "RTID(BreakdancerZombie@CurrentLevel)"
+                    ],           
+                    [
+                        "RTID(SummerGargantuar@CurrentLevel)"
+                    ],           
+                    [
+                        "RTID(RelicHunter@CurrentLevel)",
+                        "RTID(SummerGargantuar@CurrentLevel)",
+                        "RTID(QigongZombie@CurrentLevel)"
+                    ],           
+                    [
+                        "RTID(SummerGargantuar@CurrentLevel)"
+                    ],           
+                    [
+                        "RTID(RelicHunter@CurrentLevel)",
+                        "RTID(SummerGargantuar@CurrentLevel)"
+                    ],           
+                    [
+                        "RTID(SummerGargantuar@CurrentLevel)",
+                        "RTID(BreakdancerZombie@CurrentLevel)",
+                        "RTID(QigongZombie@CurrentLevel)"
+                    ],           
+                    [
+                        "RTID(RelicHunter@CurrentLevel)",
+                        "RTID(SummerGargantuar@CurrentLevel)"
+                    ],           
+                    [
+                        "RTID(SummerGargantuar@CurrentLevel)"
+                    ],           
+                    [
+                        "RTID(RelicHunter@CurrentLevel)",
+                        "RTID(SummerGargantuar@CurrentLevel)",
+                        "RTID(QigongZombie@CurrentLevel)"
+                    ],           
+                    [
+                        "RTID(SummerGargantuar@CurrentLevel)"
+                    ],           
+                    [
+                        "RTID(RelicHunter@CurrentLevel)",
+                        "RTID(SummerGargantuar@CurrentLevel)",
+                        "RTID(BreakdancerZombie@CurrentLevel)"
+                    ]           
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "SummerGargantuarZom"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(summer_gargantuar@ZombieTypes)",
+                        "Row": 2
+                    },
+                    {
+                        "Type": "RTID(summer_gargantuar@ZombieTypes)",
+                        "Row": 4
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "SummerGargantuar"
+            ],
+            "objclass": "WaveSchedulerProps",
+            "objdata": {
+                "TimeBeforeFirst": {
+                    "Max": 0.1,
+                    "Min": 0.1
+                },
+                "TimeBetween": {
+                    "Max": 1,
+                    "Min": 1
+                },
+                "Repeat": {
+                    "Max": 1,
+                    "Min": 1
+                },
+                "RewardWhenEnded": false,
+                "SuppressRewardState": false,
+                "Events": [
+                    "RTID(SummerGargantuarZom@CurrentLevel)"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "RelicHunterZom"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(lostcity_relichunter@ZombieTypes)",
+                        "Row": 1
+                    },
+                    {
+                        "Type": "RTID(lostcity_relichunter@ZombieTypes)",
+                        "Row": 2
+                    },
+                    {
+                        "Type": "RTID(lostcity_relichunter@ZombieTypes)",
+                        "Row": 3
+                    },
+                    {
+                        "Type": "RTID(lostcity_relichunter@ZombieTypes)",
+                        "Row": 4
+                    },
+                    {
+                        "Type": "RTID(lostcity_relichunter@ZombieTypes)",
+                        "Row": 5
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "RelicHunter"
+            ],
+            "objclass": "WaveSchedulerProps",
+            "objdata": {
+                "TimeBeforeFirst": {
+                    "Max": 0.1,
+                    "Min": 0.1
+                },
+                "TimeBetween": {
+                    "Max": 1,
+                    "Min": 1
+                },
+                "Repeat": {
+                    "Max": 1,
+                    "Min": 1
+                },
+                "RewardWhenEnded": false,
+                "SuppressRewardState": false,
+                "Events": [
+                    "RTID(RelicHunterZom@CurrentLevel)"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "BreakdancerZombieZom"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(eighties_breakdancer@ZombieTypes)",
+                        "Row": 1
+                    },
+                    {
+                        "Type": "RTID(eighties_breakdancer@ZombieTypes)",
+                        "Row": 2
+                    },
+                    {
+                        "Type": "RTID(eighties_breakdancer@ZombieTypes)",
+                        "Row": 3
+                    },
+                    {
+                        "Type": "RTID(eighties_breakdancer@ZombieTypes)",
+                        "Row": 4
+                    },
+                    {
+                        "Type": "RTID(eighties_breakdancer@ZombieTypes)",
+                        "Row": 5
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "BreakdancerZombie"
+            ],
+            "objclass": "WaveSchedulerProps",
+            "objdata": {
+                "TimeBeforeFirst": {
+                    "Max": 0.1,
+                    "Min": 0.1
+                },
+                "TimeBetween": {
+                    "Max": 1,
+                    "Min": 1
+                },
+                "Repeat": {
+                    "Max": 1,
+                    "Min": 1
+                },
+                "RewardWhenEnded": false,
+                "SuppressRewardState": false,
+                "Events": [
+                    "RTID(BreakdancerZombieZom@CurrentLevel)"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "QigongZombieZom"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(kongfu_chi@ZombieTypes)",
+                        "Row": 1
+                    },
+                    {
+                        "Type": "RTID(kongfu_chi@ZombieTypes)",
+                        "Row": 2
+                    },
+                    {
+                        "Type": "RTID(kongfu_chi@ZombieTypes)",
+                        "Row": 3
+                    },
+                    {
+                        "Type": "RTID(kongfu_chi@ZombieTypes)",
+                        "Row": 4
+                    },
+                    {
+                        "Type": "RTID(kongfu_chi@ZombieTypes)",
+                        "Row": 5
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "QigongZombie"
+            ],
+            "objclass": "WaveSchedulerProps",
+            "objdata": {
+                "TimeBeforeFirst": {
+                    "Max": 0.1,
+                    "Min": 0.1
+                },
+                "TimeBetween": {
+                    "Max": 1,
+                    "Min": 1
+                },
+                "Repeat": {
+                    "Max": 1,
+                    "Min": 1
+                },
+                "RewardWhenEnded": false,
+                "SuppressRewardState": false,
+                "Events": [
+                    "RTID(QigongZombieZom@CurrentLevel)"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "EnterRapEvent"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "NotificationEvents": [
+                    "jam_rap"
+                ]
+            }
+        }
+    ],
+    "version": 1
+}

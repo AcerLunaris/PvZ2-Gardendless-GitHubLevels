@@ -1,0 +1,231 @@
+{
+  "#comment": "Vase Breaker by Hoshiato",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "LevelNumber": 6,
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "Modules": [
+          "RTID(LevelOfTheDayIntro@CurrentLevel)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(Potholepuddle@CurrentLevel)",
+          "RTID(SkyCityShip@CurrentLevel)",
+          "RTID(ProtectThePlant@CurrentLevel)",
+          "RTID(VaseBreakerArcade@LevelModules)",
+					"RTID(VaseBreakerProps@.)"
+        ],
+        "Name": "Vase Breaker - Level <LEVELNUMBER>",
+        "NameMultiLanguage": {
+          "en": "Vase Breaker - Level <LEVELNUMBER>",
+          "zh": "破罐者 - 第 <LEVELNUMBER> 关"
+        },
+        "Description": "Vase Breaker",
+        "DescriptionMultiLanguage": {
+          "en": "Vase Breaker",
+          "zh": "破罐者"
+        },
+        "WrittenBy": "星痕_Hoshiato",
+        "IsVasebreaker": true,
+        "MusicType": "MiniGame_B",
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "StageModule": "RTID(ValentinesStage@LevelModules)"
+      }
+    },
+    {
+      "objclass": "LevelIntroProperties",
+      "aliases": [
+        "Intro"
+      ],
+      "objdata": {
+        "PanStartOffset": -40,
+        "PanStreetOffset": 0,
+        "ZombiePreviewOff": true
+      }
+    },
+    {
+      "aliases": [
+        "Potholepuddle"
+      ],
+      "objclass": "InitialGridItemProperties",
+      "objdata": {
+        "InitialGridItemMatrixes": [
+          {
+            "GridMatrix": [
+              "111000111",
+              "111000111",
+              "111000111",
+              "111000111",
+              "111000111"
+            ],
+            "TypeName": "potholepuddle"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "ProtectThePlant"
+      ],
+      "objclass": "ProtectThePlantChallengeProperties",
+      "objdata": {
+        "MustProtectCount": 3,
+        "Plants": [
+          {
+            "GridX": 4,
+            "GridY": 0,
+            "PlantType": "marigold_pink"
+          },
+          {
+            "GridX": 4,
+            "GridY": 2,
+            "PlantType": "marigold_pink"
+          },
+          {
+            "GridX": 4,
+            "GridY": 4,
+            "PlantType": "marigold_pink"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "SkyCityShip"
+      ],
+      "objclass": "SkyCityShipProperties",
+      "objdata": {
+        "Toughness": 10000,
+        "ToughnessShield": 5000,
+        "ForceShielded": true,
+        "EdgeX": 5.5
+      }
+    },
+    {
+      "aliases": [
+        "seagull_0"
+      ],
+      "objclass": "ZombieType",
+      "objdata": {
+        "Properties": "RTID(seagull_0@CurrentLevel)",
+        "ZombieBasedOn": "seagull"
+      }
+    },
+    {
+      "aliases": [
+        "seagull_0"
+      ],
+      "objclass": "ZombieProperties",
+      "objdata": {
+        "RefuseToSurrender": true,
+        "ChanceToReverse":1
+      }
+    },
+    {
+      "aliases": [
+        "sky_unarmed_armor1_0"
+      ],
+      "objclass": "ZombieType",
+      "objdata": {
+        "Properties": "RTID(sky_unarmed_armor1_0@CurrentLevel)",
+        "ZombieBasedOn": "sky_unarmed"
+      }
+    },
+    {
+      "aliases": [
+        "sky_unarmed_armor1_0"
+      ],
+      "objclass": "ZombieProperties",
+      "objdata": {
+        "RefuseToSurrender": true,
+        "ChanceToReverse":1,
+        "StartingArmors": [
+          "sky_armor1"
+        ]
+      }
+    },
+    {
+			"objclass": "VaseBreakerPresetProperties",
+			"aliases": [
+				"VaseBreakerProps"
+			],
+			"objdata": {
+				"MinColumnIndex": 6,
+				"MaxColumnIndex": 8,
+				"Vases": [
+					{
+						"ZombieTypeName": "sky_armor1",
+						"Count": 3
+					},
+          {
+						"ZombieTypeName": "sky_armor2",
+						"Count": 5
+					},
+          {
+						"PlantTypeName": "asparagus",
+						"Count": 1
+					},
+          {
+						"PlantTypeName": "snapdragon",
+						"Count": 1
+					},
+          {
+						"PlantTypeName": "xshot",
+						"Count": 3
+					},
+          {
+						"PlantTypeName": "phatbeet",
+						"Count": 2
+					}
+				],
+				"NumColoredPlantVases": 2,
+				"NumColoredZombieVases": 0
+			}
+		},
+    {
+			"objclass": "VaseBreakerPresetProperties",
+			"aliases": [
+				"VaseBreakerProps"
+			],
+			"objdata": {
+				"MinColumnIndex": 0,
+				"MaxColumnIndex": 2,
+				"Vases": [
+					{
+						"ZombieTypeName": "seagull_0",
+						"Count": 4
+					},
+          {
+						"ZombieTypeName": "sky_unarmed_armor1_0",
+						"Count": 3
+					},
+          {
+						"PlantTypeName": "asparagus",
+						"Count": 2
+					},
+          {
+						"PlantTypeName": "snapdragon",
+						"Count": 1
+					},
+          {
+						"PlantTypeName": "xshot",
+						"Count": 1
+					},
+          {
+						"PlantTypeName": "phatbeet",
+						"Count": 3
+					},
+          {
+						"CollectableTypeName": "plantfood",
+						"Count": 1
+					}
+				],
+				"NumColoredPlantVases": 3,
+				"NumColoredZombieVases": 0
+			}
+		}
+  ],
+  "version": 1
+}

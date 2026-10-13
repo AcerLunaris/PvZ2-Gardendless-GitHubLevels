@@ -1,0 +1,169 @@
+{
+  "#comment": "Vase Breaker by Hoshiato",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "LevelNumber": 3,
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "Modules": [
+          "RTID(LevelOfTheDayIntro@CurrentLevel)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(ChallengeModule@CurrentLevel)",
+          "RTID(VaseBreakerArcade@LevelModules)",
+					"RTID(VaseBreakerProps@.)"
+        ],
+        "Name": "Vase Breaker - Level <LEVELNUMBER>",
+        "NameMultiLanguage": {
+          "en": "Vase Breaker - Level <LEVELNUMBER>",
+          "zh": "破罐者 - 第 <LEVELNUMBER> 关"
+        },
+        "Description": "Vase Breaker",
+        "DescriptionMultiLanguage": {
+          "en": "Vase Breaker",
+          "zh": "破罐者"
+        },
+        "WrittenBy": "星痕_Hoshiato",
+        "IsVasebreaker": true,
+        "MusicType": "MiniGame_B",
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "StageModule": "RTID(FarmStage@LevelModules)"
+      }
+    },
+    {
+      "aliases": [
+        "ChallengeModule"
+      ],
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "Challenges": [
+          [
+            "RTID(ZombieDistance@CurrentLevel)"
+          ]
+        ],
+        "ChallengesAlwaysAvailable": true
+      }
+    },
+    {
+      "aliases": [
+        "ZombieDistance"
+      ],
+      "objclass": "StarChallengeZombieDistanceProps",
+      "objdata": {
+        "TargetDistance": 8.99
+      }
+    },
+    {
+      "objclass": "LevelIntroProperties",
+      "aliases": [
+        "Intro"
+      ],
+      "objdata": {
+        "PanStartOffset": -40,
+        "PanStreetOffset": 0,
+        "ZombiePreviewOff": true
+      }
+    },
+    {
+      "aliases": [
+        "cowboy_armor1_0"
+      ],
+      "objclass": "ZombieType",
+      "objdata": {
+        "Properties": "RTID(cowboy_armor1_0@CurrentLevel)",
+        "ZombieBasedOn": "cowboy_armor1"
+      }
+    },
+    {
+      "aliases": [
+        "cowboy_armor1_0"
+      ],
+      "objclass": "ZombieProperties",
+      "objdata": {
+        "RefuseToSurrender": true,
+        "ChanceToReverse":1
+      }
+    },
+    {
+      "aliases": [
+        "cowboy_armor2_0"
+      ],
+      "objclass": "ZombieType",
+      "objdata": {
+        "Properties": "RTID(cowboy_armor2_0@CurrentLevel)",
+        "ZombieBasedOn": "cowboy_armor2"
+      }
+    },
+    {
+      "aliases": [
+        "cowboy_armor2_0"
+      ],
+      "objclass": "ZombieProperties",
+      "objdata": {
+        "RefuseToSurrender": true,
+        "ChanceToReverse":1
+      }
+    },
+    {
+      "aliases": [
+        "poncho_plate_0"
+      ],
+      "objclass": "ZombieType",
+      "objdata": {
+        "Properties": "RTID(poncho_plate_0@CurrentLevel)",
+        "ZombieBasedOn": "poncho_plate"
+      }
+    },
+    {
+      "aliases": [
+        "poncho_plate_0"
+      ],
+      "objclass": "ZombieProperties",
+      "objdata": {
+        "RefuseToSurrender": true,
+        "ChanceToReverse":1
+      }
+    },
+    {
+			"objclass": "VaseBreakerPresetProperties",
+			"aliases": [
+				"VaseBreakerProps"
+			],
+			"objdata": {
+				"MinColumnIndex": 0,
+				"MaxColumnIndex": 5,
+				"Vases": [
+					{
+						"ZombieTypeName": "cowboy_armor1_0",
+						"Count": 6
+					},
+          {
+						"ZombieTypeName": "cowboy_armor2_0",
+						"Count": 3
+					},
+          {
+						"ZombieTypeName": "poncho_plate_0",
+						"Count": 3
+					},
+					{
+						"PlantTypeName": "splitpea",
+						"Count": 9
+					},
+          {
+						"PlantTypeName": "wallnut",
+						"Count": 4
+					},
+          {
+						"PlantTypeName": "chilibean",
+						"Count": 5
+					}
+				],
+				"NumColoredPlantVases": 3,
+				"NumColoredZombieVases": 0
+			}
+		}
+  ],
+  "version": 1
+}

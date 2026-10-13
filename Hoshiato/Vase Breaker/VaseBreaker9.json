@@ -1,0 +1,133 @@
+{
+  "#comment": "Vase Breaker by Hoshiato",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "LevelNumber": 9,
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "Modules": [
+          "RTID(LevelOfTheDayIntro@CurrentLevel)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(VaseBreakerArcade@LevelModules)",
+          "RTID(BeatTheLevel@CurrentLevel)",
+					"RTID(VaseBreakerProps@.)"
+        ],
+        "Name": "Vase Breaker - Level <LEVELNUMBER>",
+        "NameMultiLanguage": {
+          "en": "Vase Breaker - Level <LEVELNUMBER>",
+          "zh": "破罐者 - 第 <LEVELNUMBER> 关"
+        },
+        "Description": "Vase Breaker",
+        "DescriptionMultiLanguage": {
+          "en": "Vase Breaker",
+          "zh": "破罐者"
+        },
+        "WrittenBy": "星痕_Hoshiato",
+        "IsVasebreaker": true,
+        "MusicType": "MiniGame_B",
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "StageModule": "RTID(ModernNightStage@LevelModules)"
+      }
+    },
+    {
+      "objclass": "LevelIntroProperties",
+      "aliases": [
+        "Intro"
+      ],
+      "objdata": {
+        "PanStartOffset": -40,
+        "PanStreetOffset": 0,
+        "ZombiePreviewOff": true
+      }
+    },
+    {
+      "aliases": [
+        "BeatTheLevel"
+      ],
+      "objclass": "StarChallengeBeatTheLevelProps",
+      "objdata": {
+        "DescriptionsMultilanguage": [
+          {
+            "en": "Pirate Barrels copy themselves when broken",
+            "zh": "木桶破碎时将复制自身"
+          },
+          {
+            "en": "The Vases on the left contain 5 Blovers",
+            "zh": "左侧的罐子中有5株三叶草"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "pirate_barrel_0"
+      ],
+      "objclass": "ZombieType",
+      "objdata": {
+        "Properties": "RTID(pirate_barrel_0@CurrentLevel)",
+        "ZombieBasedOn": "pirate_barrel"
+      }
+    },
+    {
+      "aliases": [
+        "pirate_barrel_0"
+      ],
+      "objclass": "ZombieProperties",
+      "objdata": {
+        "ImpType": "pirate_barrel_0"
+      }
+    },
+    {
+			"objclass": "VaseBreakerPresetProperties",
+			"aliases": [
+				"VaseBreakerProps"
+			],
+			"objdata": {
+				"MinColumnIndex": 4,
+				"MaxColumnIndex": 8,
+				"Vases": [
+					{
+						"ZombieTypeName": "pirate_barrel_0",
+						"Count": 12
+					},
+					{
+						"PlantTypeName": "moonflower",
+						"Count": 2
+					},
+          {
+						"PlantTypeName": "grimrose",
+						"Count": 4
+					},
+          {
+						"PlantTypeName": "spikerock",
+						"Count": 7
+					}
+				],
+				"NumColoredPlantVases": 3,
+				"NumColoredZombieVases": 0
+			}
+		},
+    {
+			"objclass": "VaseBreakerPresetProperties",
+			"aliases": [
+				"VaseBreakerProps"
+			],
+			"objdata": {
+				"MinColumnIndex": 0,
+				"MaxColumnIndex": 0,
+				"Vases": [
+          {
+						"PlantTypeName": "blover",
+						"Count": 5
+					}
+				],
+				"NumColoredPlantVases": 5,
+				"NumColoredZombieVases": 0
+			}
+		}
+  ],
+  "version": 1
+}

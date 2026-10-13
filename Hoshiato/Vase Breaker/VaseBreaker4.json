@@ -1,0 +1,228 @@
+{
+  "#comment": "Vase Breaker by Hoshiato",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "LevelNumber": 4,
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "Modules": [
+          "RTID(LevelOfTheDayIntro@CurrentLevel)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(LevelScheduler@CurrentLevel)",
+          "RTID(VaseBreakerArcade@LevelModules)",
+					"RTID(VaseBreakerProps@.)"
+        ],
+        "Name": "Vase Breaker - Level <LEVELNUMBER>",
+        "NameMultiLanguage": {
+          "en": "Vase Breaker - Level <LEVELNUMBER>",
+          "zh": "破罐者 - 第 <LEVELNUMBER> 关"
+        },
+        "Description": "Vase Breaker",
+        "DescriptionMultiLanguage": {
+          "en": "Vase Breaker",
+          "zh": "破罐者"
+        },
+        "WrittenBy": "星痕_Hoshiato",
+        "IsVasebreaker": true,
+        "MusicType": "MiniGame_B",
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "StageModule": "RTID(SportzballStage@LevelModules)"
+      }
+    },
+    {
+      "objclass": "LevelIntroProperties",
+      "aliases": [
+        "Intro"
+      ],
+      "objdata": {
+        "PanStartOffset": -40,
+        "PanStreetOffset": 0,
+        "ZombiePreviewOff": true
+      }
+    },
+    {
+			"aliases":[
+				"LevelScheduler"
+			],
+			"objclass":"LevelSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":3.5,
+					"Min":3.5
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(TipMessage@CurrentLevel)"
+				]
+			}
+		},
+    {
+      "aliases": [
+        "TipMessage"
+      ],
+      "objclass": "WaveLevelAuthorMessageProps",
+      "objdata": {
+        "StringMultiLanguage": {
+          "en": "Beware of the All-Star Zombie inside the vase!",
+          "zh": "警惕罐子中的全明星僵尸！"
+        },
+        "ThemeColor": "#FF0000"
+      }
+    },
+    {
+			"objclass": "VaseBreakerPresetProperties",
+			"aliases": [
+				"VaseBreakerProps"
+			],
+			"objdata": {
+				"MinColumnIndex": 7,
+				"MaxColumnIndex": 7,
+				"Vases": [
+					{
+						"PlantTypeName": "aloe",
+						"Count": 1
+					},
+          {
+						"PlantTypeName": "primalwallnut",
+						"Count": 1
+					},
+          {
+						"PlantTypeName": "gatling",
+						"Count": 1
+					},
+          {
+						"PlantTypeName": "loquat",
+						"Count": 1
+					},
+          {
+						"PlantTypeName": "cherry_bomb",
+						"Count": 1
+					}
+				],
+				"NumColoredPlantVases": 5,
+				"NumColoredZombieVases": 0
+			}
+		},
+    {
+			"objclass": "VaseBreakerPresetProperties",
+			"aliases": [
+				"VaseBreakerProps"
+			],
+			"objdata": {
+				"MinColumnIndex": 5,
+				"MaxColumnIndex": 5,
+				"Vases": [
+					{
+						"PlantTypeName": "primalwallnut",
+						"Count": 1
+					},
+          {
+						"PlantTypeName": "gatling",
+						"Count": 1
+					},
+          {
+						"PlantTypeName": "loquat",
+						"Count": 1
+					},
+          {
+						"PlantTypeName": "cherry_bomb",
+						"Count": 1
+					},
+          {
+						"PlantTypeName": "primalpotatomine",
+						"Count": 1
+					}
+				],
+				"NumColoredPlantVases": 5,
+				"NumColoredZombieVases": 0
+			}
+		},
+    {
+			"objclass": "VaseBreakerPresetProperties",
+			"aliases": [
+				"VaseBreakerProps"
+			],
+			"objdata": {
+				"MinColumnIndex": 3,
+				"MaxColumnIndex": 3,
+				"Vases": [
+					{
+						"PlantTypeName": "aloe",
+						"Count": 1
+					},
+          {
+						"PlantTypeName": "gatling",
+						"Count": 2
+					},
+          {
+						"PlantTypeName": "loquat",
+						"Count": 1
+					},
+          {
+						"PlantTypeName": "primalpotatomine",
+						"Count": 1
+					}
+				],
+				"NumColoredPlantVases": 5,
+				"NumColoredZombieVases": 0
+			}
+		},
+    {
+			"objclass": "VaseBreakerPresetProperties",
+			"aliases": [
+				"VaseBreakerProps"
+			],
+			"objdata": {
+				"MinColumnIndex": 4,
+				"MaxColumnIndex": 4,
+				"Vases": [],
+				"NumColoredPlantVases": 0,
+				"NumColoredZombieVases": 5
+			}
+		},
+    {
+			"objclass": "VaseBreakerPresetProperties",
+			"aliases": [
+				"VaseBreakerProps"
+			],
+			"objdata": {
+				"MinColumnIndex": 6,
+				"MaxColumnIndex": 6,
+				"Vases": [],
+				"NumColoredPlantVases": 0,
+				"NumColoredZombieVases": 5
+			}
+		},
+    {
+			"objclass": "VaseBreakerPresetProperties",
+			"aliases": [
+				"VaseBreakerProps"
+			],
+			"objdata": {
+				"MinColumnIndex": 8,
+				"MaxColumnIndex": 8,
+				"Vases": [
+					{
+						"ZombieTypeName": "modern_allstar",
+						"Count": 5
+					}
+				],
+				"NumColoredPlantVases": 0,
+				"NumColoredZombieVases": 0
+			}
+		}
+  ],
+  "version": 1
+}

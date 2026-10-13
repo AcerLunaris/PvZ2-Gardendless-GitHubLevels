@@ -1,0 +1,227 @@
+{
+  "#comment": "Vase Breaker by Hoshiato",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "LevelNumber": 5,
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "Modules": [
+          "RTID(LevelOfTheDayIntro@CurrentLevel)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(FrozenPlantPlacement@CurrentLevel)",
+          "RTID(FrozenZombiePlacement@CurrentLevel)",
+          "RTID(VaseBreakerArcade@LevelModules)",
+					"RTID(VaseBreakerProps@.)"
+        ],
+        "Name": "Vase Breaker - Level <LEVELNUMBER>",
+        "NameMultiLanguage": {
+          "en": "Vase Breaker - Level <LEVELNUMBER>",
+          "zh": "破罐者 - 第 <LEVELNUMBER> 关"
+        },
+        "Description": "Vase Breaker",
+        "DescriptionMultiLanguage": {
+          "en": "Vase Breaker",
+          "zh": "破罐者"
+        },
+        "WrittenBy": "星痕_Hoshiato",
+        "IsVasebreaker": true,
+        "MusicType": "MiniGame_B",
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "StageModule": "RTID(FeastivusStage@LevelModules)"
+      }
+    },
+    {
+      "aliases": [
+        "FrozenPlantPlacement"
+      ],
+      "objclass": "InitialPlantProperties",
+      "objdata": {
+        "InitialPlantPlacements": [
+          {
+            "Condition": "icecubed",
+            "GridX": 2,
+            "GridY": 0,
+            "TypeName": "wallnut"
+          },
+          {
+            "Condition": "icecubed",
+            "GridX": 2,
+            "GridY": 1,
+            "TypeName": "wallnut"
+          },
+          {
+            "Condition": "icecubed",
+            "GridX": 2,
+            "GridY": 2,
+            "TypeName": "wallnut"
+          },
+          {
+            "Condition": "icecubed",
+            "GridX": 2,
+            "GridY": 3,
+            "TypeName": "wallnut"
+          },
+          {
+            "Condition": "icecubed",
+            "GridX": 2,
+            "GridY": 4,
+            "TypeName": "wallnut"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "FrozenZombiePlacement"
+      ],
+      "objclass": "InitialZombieProperties",
+      "objdata": {
+        "InitialZombiePlacements": [
+          {
+            "Condition": "icecubed",
+            "GridX": 0,
+            "GridY": 1,
+            "TypeName": "feastivus_imp"
+          },
+          {
+            "Condition": "icecubed",
+            "GridX": 0,
+            "GridY": 3,
+            "TypeName": "feastivus_imp"
+          },
+          {
+            "Condition": "icecubed",
+            "GridX": 1,
+            "GridY": 0,
+            "TypeName": "feastivus_armor3"
+          },
+          {
+            "Condition": "icecubed",
+            "GridX": 1,
+            "GridY": 2,
+            "TypeName": "feastivus_armor3"
+          },
+          {
+            "Condition": "icecubed",
+            "GridX": 1,
+            "GridY": 4,
+            "TypeName": "feastivus_armor3"
+          },
+          {
+            "Condition": "icecubed",
+            "GridX": 3,
+            "GridY": 1,
+            "TypeName": "feastivus_armor1"
+          },
+          {
+            "Condition": "icecubed",
+            "GridX": 3,
+            "GridY": 3,
+            "TypeName": "feastivus_armor1"
+          },
+          {
+            "Condition": "icecubed",
+            "GridX": 4,
+            "GridY": 0,
+            "TypeName": "feastivus_armor1"
+          },
+          {
+            "Condition": "icecubed",
+            "GridX": 4,
+            "GridY": 2,
+            "TypeName": "feastivus_armor1"
+          },
+          {
+            "Condition": "icecubed",
+            "GridX": 4,
+            "GridY": 4,
+            "TypeName": "feastivus_armor1"
+          },
+          {
+            "Condition": "icecubed",
+            "GridX": 5,
+            "GridY": 1,
+            "TypeName": "feastivus_armor3"
+          },
+          {
+            "Condition": "icecubed",
+            "GridX": 5,
+            "GridY": 3,
+            "TypeName": "feastivus_armor3"
+          },
+          {
+            "Condition": "icecubed",
+            "GridX": 6,
+            "GridY": 0,
+            "TypeName": "feastivus_armor3"
+          },
+          {
+            "Condition": "icecubed",
+            "GridX": 6,
+            "GridY": 2,
+            "TypeName": "feastivus_armor3"
+          },
+          {
+            "Condition": "icecubed",
+            "GridX": 6,
+            "GridY": 4,
+            "TypeName": "feastivus_armor3"
+          },
+          {
+            "Condition": "icecubed",
+            "GridX": 7,
+            "GridY": 1,
+            "TypeName": "iceage_armor4"
+          },
+          {
+            "Condition": "icecubed",
+            "GridX": 7,
+            "GridY": 3,
+            "TypeName": "iceage_armor4"
+          }
+        ]
+      }
+    },
+    {
+      "objclass": "LevelIntroProperties",
+      "aliases": [
+        "Intro"
+      ],
+      "objdata": {
+        "PanStartOffset": -40,
+        "PanStreetOffset": 0,
+        "ZombiePreviewOff": true
+      }
+    },
+    {
+			"objclass": "VaseBreakerPresetProperties",
+			"aliases": [
+				"VaseBreakerProps"
+			],
+			"objdata": {
+				"MinColumnIndex": 3,
+				"MaxColumnIndex": 8,
+				"Vases": [
+					{
+						"ZombieTypeName": "feastivus_armor2",
+						"Count": 5
+					},
+          {
+						"PlantTypeName": "wasabiwhip",
+						"Count": 10
+					},
+					{
+						"PlantTypeName": "stunion",
+						"Count": 3
+					}
+				],
+				"NumColoredPlantVases": 3,
+				"NumColoredZombieVases": 0
+			}
+		}
+  ],
+  "version": 1
+}

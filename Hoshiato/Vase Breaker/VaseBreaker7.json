@@ -1,0 +1,248 @@
+{
+  "#comment": "Vase Breaker by Hoshiato",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "LevelNumber": 7,
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "Modules": [
+          "RTID(LevelOfTheDayIntro@CurrentLevel)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(SkyCityShipDefault@LevelModules)",
+          "RTID(VaseBreakerArcade@LevelModules)",
+					"RTID(VaseBreakerProps@.)"
+        ],
+        "Name": "Vase Breaker - Level <LEVELNUMBER>",
+        "NameMultiLanguage": {
+          "en": "Vase Breaker - Level <LEVELNUMBER>",
+          "zh": "破罐者 - 第 <LEVELNUMBER> 关"
+        },
+        "Description": "Vase Breaker",
+        "DescriptionMultiLanguage": {
+          "en": "Vase Breaker",
+          "zh": "破罐者"
+        },
+        "WrittenBy": "星痕_Hoshiato",
+        "IsVasebreaker": true,
+        "MusicType": "MiniGame_B",
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "StageModule": "RTID(SkyStage@LevelModules)"
+      }
+    },
+    {
+      "objclass": "LevelIntroProperties",
+      "aliases": [
+        "Intro"
+      ],
+      "objdata": {
+        "PanStartOffset": -40,
+        "PanStreetOffset": 0,
+        "ZombiePreviewOff": true
+      }
+    },
+    {
+      "aliases": [
+        "dropship1"
+      ],
+      "objclass": "ZombieType",
+      "objdata": {
+        "Properties": "RTID(dropship1@CurrentLevel)",
+        "ZombieBasedOn": "sky_dropship"
+      }
+    },
+    {
+      "aliases": [
+        "dropship2"
+      ],
+      "objclass": "ZombieType",
+      "objdata": {
+        "Properties": "RTID(dropship2@CurrentLevel)",
+        "ZombieBasedOn": "sky_dropship"
+      }
+    },
+    {
+      "aliases": [
+        "dropship3"
+      ],
+      "objclass": "ZombieType",
+      "objdata": {
+        "Properties": "RTID(dropship3@CurrentLevel)",
+        "ZombieBasedOn": "sky_dropship"
+      }
+    },
+    {
+      "aliases": [
+        "dropship4"
+      ],
+      "objclass": "ZombieType",
+      "objdata": {
+        "Properties": "RTID(dropship4@CurrentLevel)",
+        "ZombieBasedOn": "sky_dropship"
+      }
+    },
+    {
+      "aliases": [
+        "dropship5"
+      ],
+      "objclass": "ZombieType",
+      "objdata": {
+        "Properties": "RTID(dropship5@CurrentLevel)",
+        "ZombieBasedOn": "sky_dropship"
+      }
+    },
+    {
+      "aliases": [
+        "dropship6"
+      ],
+      "objclass": "ZombieType",
+      "objdata": {
+        "Properties": "RTID(dropship6@CurrentLevel)",
+        "ZombieBasedOn": "sky_dropship"
+      }
+    },
+    {
+      "aliases": [
+        "dropship1"
+      ],
+      "objclass": "ZombieProperties",
+      "objdata": {
+        "RefuseToSurrender": true,
+        "ChanceToReverse":1,
+        "ImpType": "sky_arbiterx",
+				"ImpCount": {
+					"Min": 2,
+					"Max": 2
+				}
+      }
+    },
+    {
+      "aliases": [
+        "dropship2"
+      ],
+      "objclass": "ZombieProperties",
+      "objdata": {
+        "RefuseToSurrender": true,
+        "ChanceToReverse":1,
+        "ImpType": "sky_battleplane",
+				"ImpCount": {
+					"Min": 3,
+					"Max": 3
+				}
+      }
+    },
+    {
+      "aliases": [
+        "dropship3"
+      ],
+      "objclass": "ZombieProperties",
+      "objdata": {
+        "RefuseToSurrender": true,
+        "ChanceToReverse":1,
+        "ImpType": "sky_electric",
+				"ImpCount": {
+					"Min": 4,
+					"Max": 4
+				}
+      }
+    },
+    {
+      "aliases": [
+        "dropship4"
+      ],
+      "objclass": "ZombieProperties",
+      "objdata": {
+        "RefuseToSurrender": true,
+        "ChanceToReverse":1,
+        "ImpType": "sky_armor1",
+				"ImpCount": {
+					"Min": 4,
+					"Max": 4
+				}
+      }
+    },
+    {
+      "aliases": [
+        "dropship5"
+      ],
+      "objclass": "ZombieProperties",
+      "objdata": {
+        "RefuseToSurrender": true,
+        "ChanceToReverse":1,
+        "ImpType": "sky_armor2",
+				"ImpCount": {
+					"Min": 3,
+					"Max": 3
+				}
+      }
+    },
+    {
+      "aliases": [
+        "dropship6"
+      ],
+      "objclass": "ZombieProperties",
+      "objdata": {
+        "RefuseToSurrender": true,
+        "ChanceToReverse":1,
+        "ImpType": "sky",
+				"ImpCount": {
+					"Min": 5,
+					"Max": 5
+				}
+      }
+    },
+    {
+			"objclass": "VaseBreakerPresetProperties",
+			"aliases": [
+				"VaseBreakerProps"
+			],
+			"objdata": {
+				"MinColumnIndex": 0,
+				"MaxColumnIndex": 2,
+				"Vases": [
+          {
+						"ZombieTypeName": "dropship1",
+						"Count": 2
+					},
+          {
+						"ZombieTypeName": "dropship2",
+						"Count": 2
+					},
+          {
+						"ZombieTypeName": "dropship3",
+						"Count": 1
+					},
+          {
+						"ZombieTypeName": "dropship4",
+						"Count": 1
+					},
+          {
+						"ZombieTypeName": "dropship5",
+						"Count": 1
+					},
+          {
+						"ZombieTypeName": "dropship6",
+						"Count": 1
+					},
+					{
+						"PlantTypeName": "electricblueberry",
+						"Count": 2
+					},
+          {
+						"PlantTypeName": "peacommando",
+						"Count": 4
+					},
+          {
+						"PlantTypeName": "moonbean",
+						"Count": 1
+					}
+				],
+				"NumColoredPlantVases": 3,
+				"NumColoredZombieVases": 0
+			}
+		}
+  ],
+  "version": 1
+}

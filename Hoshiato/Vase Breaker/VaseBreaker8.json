@@ -1,0 +1,344 @@
+{       
+  "#comment": "Vase Breaker by Hoshiato",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "LevelNumber": 8,
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "Modules": [
+          "RTID(LevelOfTheDayIntro@CurrentLevel)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(LevelScheduler0@CurrentLevel)",
+          "RTID(LevelScheduler1@CurrentLevel)",
+          "RTID(LevelScheduler2@CurrentLevel)",
+          "RTID(LevelScheduler3@CurrentLevel)",
+          "RTID(Gravestones@CurrentLevel)",
+          "RTID(VaseBreakerArcade@LevelModules)",
+					"RTID(VaseBreakerProps@.)"
+        ],
+        "Name": "Vase Breaker - Level <LEVELNUMBER>",
+        "NameMultiLanguage": {
+          "en": "Vase Breaker - Level <LEVELNUMBER>",
+          "zh": "破罐者 - 第 <LEVELNUMBER> 关"
+        },
+        "Description": "Vase Breaker",
+        "DescriptionMultiLanguage": {
+          "en": "Vase Breaker",
+          "zh": "破罐者"
+        },
+        "WrittenBy": "星痕_Hoshiato",
+        "IsVasebreaker": true,
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "StageModule": "RTID(EightiesTutorialStage@LevelModules)"
+      }
+    },
+    {
+			"aliases":[
+				"LevelScheduler0"
+			],
+			"objclass":"LevelSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":4,
+					"Min":4
+				},
+				"TimeBetween":{
+					"Max":48,
+					"Min":48
+				},
+				"Repeat":{
+					"Max":20,
+					"Min":20
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Rap@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"LevelScheduler1"
+			],
+			"objclass":"LevelSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":16,
+					"Min":16
+				},
+				"TimeBetween":{
+					"Max":48,
+					"Min":48
+				},
+				"Repeat":{
+					"Max":20,
+					"Min":20
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Pop@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"LevelScheduler2"
+			],
+			"objclass":"LevelSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":28,
+					"Min":28
+				},
+				"TimeBetween":{
+					"Max":48,
+					"Min":48
+				},
+				"Repeat":{
+					"Max":20,
+					"Min":20
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(8bit@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"LevelScheduler3"
+			],
+			"objclass":"LevelSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":40,
+					"Min":40
+				},
+				"TimeBetween":{
+					"Max":48,
+					"Min":48
+				},
+				"Repeat":{
+					"Max":20,
+					"Min":20
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Punk@CurrentLevel)"
+				]
+			}
+		},
+    {
+      "aliases": [
+        "Rap"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "NotificationEvents": [
+          "jam_rap"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Pop"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "NotificationEvents": [
+          "jam_pop"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "8bit"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "NotificationEvents": [
+          "jam_8bit"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Punk"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "NotificationEvents": [
+          "jam_punk"
+        ]
+      }
+    },
+    {
+      "objclass": "LevelIntroProperties",
+      "aliases": [
+        "Intro"
+      ],
+      "objdata": {
+        "PanStartOffset": -40,
+        "PanStreetOffset": 0,
+        "ZombiePreviewOff": true
+      }
+    },
+    {
+      "aliases": [
+        "Gravestones"
+      ],
+      "objclass": "GravestoneProperties",
+      "objdata": {
+        "ForceSpawnData": [
+          {
+            "GridX": 6,
+            "GridY": 0,
+            "TypeName": "eightiesarcadecabinet"
+          },
+          {
+            "GridX": 6,
+            "GridY": 2,
+            "TypeName": "eightiesarcadecabinet"
+          },
+          {
+            "GridX": 6,
+            "GridY": 4,
+            "TypeName": "eightiesarcadecabinet"
+          },
+          {
+            "GridX": 6,
+            "GridY": 1,
+            "TypeName": "eightiesarcadecabinet"
+          },
+          {
+            "GridX": 6,
+            "GridY": 3,
+            "TypeName": "eightiesarcadecabinet"
+          }
+        ]
+      }
+    },
+    {
+			"objclass": "VaseBreakerPresetProperties",
+			"aliases": [
+				"VaseBreakerProps"
+			],
+			"objdata": {
+				"MinColumnIndex": 7,
+				"MaxColumnIndex": 8,
+				"Vases": [
+					{
+						"ZombieTypeName": "eighties_arcade",
+						"Count": 3
+					},
+          {
+						"ZombieTypeName": "eighties_mc",
+						"Count": 2
+					},
+          {
+						"ZombieTypeName": "eighties_boombox",
+						"Count": 1
+					},
+					{
+						"PlantTypeName": "bamboozle",
+						"Count": 1
+					},
+          {
+						"PlantTypeName": "thymewarp",
+						"Count": 1
+					},
+          {
+						"PlantTypeName": "skyshooter",
+						"Count": 2
+					}
+				],
+				"NumColoredPlantVases": 2,
+				"NumColoredZombieVases": 0
+			}
+		},
+    {
+			"objclass": "VaseBreakerPresetProperties",
+			"aliases": [
+				"VaseBreakerProps"
+			],
+			"objdata": {
+				"MinColumnIndex": 4,
+				"MaxColumnIndex": 5,
+				"Vases": [
+					{
+						"ZombieTypeName": "eighties_boombox",
+						"Count": 1
+					},
+          {
+						"ZombieTypeName": "eighties_breakdancer",
+						"Count": 2
+					},
+          {
+						"ZombieTypeName": "eighties_punk",
+						"Count": 2
+					},
+          {
+						"ZombieTypeName": "eighties_glitter",
+						"Count": 1
+					},
+					{
+						"PlantTypeName": "thymewarp",
+						"Count": 1
+					},
+          {
+						"PlantTypeName": "skyshooter",
+						"Count": 3
+					}
+				],
+				"NumColoredPlantVases": 2,
+				"NumColoredZombieVases": 0
+			}
+		},
+    {
+			"objclass": "VaseBreakerPresetProperties",
+			"aliases": [
+				"VaseBreakerProps"
+			],
+			"objdata": {
+				"MinColumnIndex": 2,
+				"MaxColumnIndex": 3,
+				"Vases": [
+					{
+						"ZombieTypeName": "eighties_armor1",
+						"Count": 1
+					},
+          {
+						"ZombieTypeName": "eighties_glitter",
+						"Count": 2
+					},
+          {
+						"PlantTypeName": "bamboozle",
+						"Count": 1
+					},
+					{
+						"PlantTypeName": "skyshooter",
+						"Count": 4
+					},
+          {
+						"PlantTypeName": "escaperoot",
+						"Count": 1
+					},
+          {
+						"CollectableTypeName": "plantfood",
+						"Count": 1
+					}
+				],
+				"NumColoredPlantVases": 2,
+				"NumColoredZombieVases": 0
+			}
+		}
+  ],
+  "version": 1
+}

@@ -1,0 +1,1943 @@
+{
+  "#comment": "",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "FirstRewardParam": "ghostpepper",
+        "FirstRewardType": "unlock_plant",
+        "Modules": [
+          "RTID(StandardIntro@LevelModules)",
+          "RTID(DefaultSunDropper@LevelModules)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(FutureMowers@LevelModules)",
+          "RTID(SeedBank@CurrentLevel)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(LevelFog@CurrentLevel)",
+          "RTID(GridItemPlacement@CurrentLevel)",
+          "RTID(ProtectThePlant@CurrentLevel)",
+          "RTID(NewWaves@CurrentLevel)"
+        ],
+        "PlantToIntroduce": "ghostpepper",
+        "Name": "[EPIC_PLANT_LEVEL_NAME]",
+        "Description": "[PLAYERS_ATTEMPT_TO_GET_PLANT]",
+        "LevelNumber": 3,
+        "WrittenBy": "星痕_Hoshiato",
+        "MusicType": "MiniGame_B",
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "StageModule": "RTID(TheStage@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "TheStage"
+      ],
+      "objclass": "LawnType",
+      "objdata": {
+        "LawnBaseOn": "FutureTutorialStage",
+        "Properties": "RTID(TheStageProp@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "TheStageProp"
+      ],
+      "objclass": "LawnProperties",
+      "objdata": {
+        "Flag_Zombie": [
+          "duckytube_flag",
+          "future_flag"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "SeedBank"
+      ],
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "PresetPlantList": [
+          {
+            "Level": -1,
+            "PlantType": "ghostpepper"
+          }
+        ],
+        "PlantExcludeList": [
+          "lilypad",
+          "bulbkekengi"
+        ],
+        "SelectionMethod": "chooser"
+      }
+    },
+    {
+      "aliases": [
+        "LevelFog"
+      ],
+      "objclass": "LevelFogProperties",
+      "objdata": {
+        "Fogs": [
+          {
+            "BasePosition": {
+              "x": 10,
+              "y": -2
+            },
+            "FogMatrix": [
+              "1111111111",
+              "1111111111",
+              "1111111111",
+              "1111111111",
+              "1111111111",
+              "1111111111",
+              "1111111111",
+              "1111111111",
+              "1111111111"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "GridItemPlacement"
+      ],
+      "objclass": "InitialGridItemProperties",
+      "objdata": {
+        "InitialGridItemMatrixes": [
+          {
+            "GridMatrix": [
+              "001000001",
+              "000000000",
+              "001000000",
+              "100000001",
+              "000000000"
+            ],
+            "TypeName": "slider_down_modern"
+          },
+          {
+            "GridMatrix": [
+              "000000000",
+              "100000100",
+              "000000010",
+              "000010000",
+              "001000100"
+            ],
+            "TypeName": "slider_up_modern"
+          },
+          {
+            "GridMatrix": [
+              "000000100",
+              "000000001",
+              "000001000",
+              "000000010",
+              "000010000"
+            ],
+            "TypeName": "gravestone_future"
+          },
+          {
+            "GridMatrix": [
+              "000011111",
+              "011011111",
+              "010001110",
+              "000000000",
+              "000111000"
+            ],
+            "TypeName": "potholepool"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "ProtectThePlant"
+      ],
+      "objclass": "ProtectThePlantChallengeProperties",
+      "objdata": {
+        "SuppressObjectiveTip": true,
+        "MustProtectCount": 0,
+        "Plants": [
+          {
+            "GridX": 0,
+            "GridY": 2,
+            "PlantType": "bulbkekengi"
+          },
+          {
+            "GridX": 4,
+            "GridY": 2,
+            "PlantType": "bulbkekengi"
+          },
+          {
+            "GridX": 8,
+            "GridY": 2,
+            "PlantType": "bulbkekengi"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "NewWaves"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {
+        "DynamicZombies": [
+          {},
+          {},
+          {},
+          {},
+          {
+            "PointIncrementPerWave": 30,
+            "StartingPoints": 200,
+            "StartingWave": 5,
+            "ZombiePool": [
+              "RTID(future@ZombieTypes)",
+              "RTID(future_armor1@ZombieTypes)",
+              "RTID(future_armor2@ZombieTypes)",
+              "RTID(duckytube@ZombieTypes)",
+              "RTID(duckytube_armor1@ZombieTypes)",
+              "RTID(duckytube_armor2@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": 40,
+            "StartingPoints": 250,
+            "StartingWave": 4,
+            "ZombiePool": [
+              "RTID(future@ZombieTypes)",
+              "RTID(future_armor1@ZombieTypes)",
+              "RTID(future_armor2@ZombieTypes)",
+              "RTID(duckytube@ZombieTypes)",
+              "RTID(duckytube_armor1@ZombieTypes)",
+              "RTID(duckytube_armor2@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": 50,
+            "StartingPoints": 300,
+            "StartingWave": 3,
+            "ZombiePool": [
+              "RTID(future@ZombieTypes)",
+              "RTID(future_armor1@ZombieTypes)",
+              "RTID(future_armor2@ZombieTypes)",
+              "RTID(duckytube@ZombieTypes)",
+              "RTID(duckytube_armor1@ZombieTypes)",
+              "RTID(duckytube_armor2@ZombieTypes)"
+            ]
+          }
+        ],
+        "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "WaveManagerProps"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "FlagWaveInterval": 7,
+        "SpawnColEnd": 1,
+        "SpawnColStart": 1,
+        "WaveCount": 14,
+        "WaveSpendingPointIncrement": 0,
+        "WaveSpendingPoints": 0,
+        "Waves": [
+          [
+            "RTID(Wave1@CurrentLevel)",
+            "RTID(Wave1Lilypad@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave2@CurrentLevel)",
+            "RTID(Wave2Lilypad@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave3@CurrentLevel)",
+            "RTID(Wave3Lilypad@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave4@CurrentLevel)",
+            "RTID(Wave4Lilypad@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave5@CurrentLevel)",
+            "RTID(GravestoneEvent@CurrentLevel)",
+            "RTID(GraveSpawn0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave6@CurrentLevel)",
+            "RTID(Wave1Lilypad@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave7@CurrentLevel)",
+            "RTID(Wave2Lilypad@CurrentLevel)",
+            "RTID(GraveSpawn0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave8@CurrentLevel)",
+            "RTID(Wave3Lilypad@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave9@CurrentLevel)",
+            "RTID(Wave4Lilypad@CurrentLevel)",
+            "RTID(Fog@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave10@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave11@CurrentLevel)",
+            "RTID(Wave1Lilypad@CurrentLevel)",
+            "RTID(GravestoneEvent@CurrentLevel)",
+            "RTID(GraveSpawn0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave12@CurrentLevel)",
+            "RTID(Wave2Lilypad@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave13@CurrentLevel)",
+            "RTID(Wave3Lilypad@CurrentLevel)",
+            "RTID(GraveSpawn1@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave14@CurrentLevel)",
+            "RTID(Wave4Lilypad@CurrentLevel)"
+          ]
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave1"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(duckytube@ZombieTypes)",
+            "Row": 3
+          },
+          {
+            "Type": "RTID(future@ZombieTypes)",
+            "Row": 5
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave2"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "DynamicPlantfood": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(duckytube_armor1@ZombieTypes)",
+            "Row": 1
+          },
+          {
+            "Type": "RTID(future@ZombieTypes)",
+            "Row": 4
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave3"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(future_protector@ZombieTypes)",
+            "Row": 2,
+            "Column": 9
+          },
+          {
+            "Type": "RTID(birthday_juggler@ZombieTypes)",
+            "Row": 5
+          },
+          {
+            "Type": "RTID(duckytube@ZombieTypes)",
+            "Row": 1
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave4"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(duckytube_armor1@ZombieTypes)",
+            "Row": 1
+          },
+          {
+            "Type": "RTID(duckytube@ZombieTypes)",
+            "Row": 3
+          },
+          {
+            "Type": "RTID(catapult@ZombieTypes)",
+            "Row": 4
+          },
+          {
+            "Type": "RTID(future_armor1@ZombieTypes)",
+            "Row": 5
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave5"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "DynamicPlantfood": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(birthday_juggler@ZombieTypes)",
+            "Row": 4
+          },
+          {
+            "Type": "RTID(duckytube_armor1@ZombieTypes)",
+            "Row": 2
+          },
+          {
+            "Type": "RTID(duckytube@ZombieTypes)",
+            "Row": 3
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave6"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(catapult@ZombieTypes)",
+            "Row": 1
+          },
+          {
+            "Type": "RTID(duckytube_armor1@ZombieTypes)",
+            "Row": 3
+          },
+          {
+            "Type": "RTID(future_protector@ZombieTypes)",
+            "Row": 5,
+            "Column": 6
+          },
+          {
+            "Type": "RTID(future_armor1@ZombieTypes)",
+            "Row": 4
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave7"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(future_protector@ZombieTypes)",
+            "Row": 3,
+            "Column": 8
+          },
+          {
+            "Type": "RTID(duckytube_armor1@ZombieTypes)",
+            "Row": 5,
+            "Column": 6
+          },
+          {
+            "Type": "RTID(sportzball_balloon@ZombieTypes)",
+            "Row": 4
+          },
+          {
+            "Type": "RTID(future@ZombieTypes)",
+            "Row": 5
+          },
+          {
+            "Type": "RTID(modern_newspaper@ZombieTypes)",
+            "Row": 5
+          },
+          {
+            "Type": "RTID(duckytube_armor1@ZombieTypes)",
+            "Row": 1
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave8"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(duckytube_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(duckytube_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(future_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(zomboni@ZombieTypes)",
+            "Row": 1
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave9"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "DynamicPlantfood": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(duckytube@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(duckytube@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(modern_newspaper@ZombieTypes)",
+            "Row": 5
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave10"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(future_protector@ZombieTypes)",
+            "Row": 2,
+            "Column": 8
+          },
+          {
+            "Type": "RTID(future_protector@ZombieTypes)",
+            "Row": 5,
+            "Column": 6
+          },
+          {
+            "Type": "RTID(sportzball_balloon@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(duckytube_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(future_armor1@ZombieTypes)",
+            "Row": 4
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave11"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(zomboni@ZombieTypes)",
+            "Row": 2
+          },
+          {
+            "Type": "RTID(catapult@ZombieTypes)",
+            "Row": 1
+          },
+          {
+            "Type": "RTID(birthday_juggler@ZombieTypes)",
+            "Row": 5
+          },
+          {
+            "Type": "RTID(duckytube_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave12"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "DynamicPlantfood": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(future_protector@ZombieTypes)",
+            "Row": 1,
+            "Column": 8
+          },
+          {
+            "Type": "RTID(future_protector@ZombieTypes)",
+            "Row": 5,
+            "Column": 6
+          },
+          {
+            "Type": "RTID(duckytube_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(duckytube_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(future_armor2@ZombieTypes)",
+            "Row": 4
+          },
+          {
+            "Type": "RTID(modern_newspaper@ZombieTypes)",
+            "Row": 5
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave13"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(sportzball_balloon@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(duckytube_armor1@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(duckytube_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(future_armor1@ZombieTypes)",
+            "Row": 5
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave14"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "DynamicPlantfood": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(zomboni@ZombieTypes)",
+            "Row": 2
+          },
+          {
+            "Type": "RTID(duckytube_armor1@ZombieTypes)",
+            "Row": 1,
+            "Column": 5
+          },
+          {
+            "Type": "RTID(future_protector@ZombieTypes)",
+            "Row": 2,
+            "Column": 6
+          },
+          {
+            "Type": "RTID(duckytube_armor2@ZombieTypes)",
+            "Row": 5,
+            "Column": 6
+          },
+          {
+            "Type": "RTID(birthday_juggler@ZombieTypes)",
+            "Row": 4
+          },
+          {
+            "Type": "RTID(birthday_juggler@ZombieTypes)",
+            "Row": 5
+          },
+          {
+            "Type": "RTID(duckytube@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(future_armor1@ZombieTypes)",
+            "Row": 4
+          },
+          {
+            "Type": "RTID(future_armor2@ZombieTypes)",
+            "Row": 5
+          },
+          {
+            "Type": "RTID(sportzball_balloon@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(catapult@ZombieTypes)",
+            "Row": 3
+          }
+        ]
+      }
+    },
+    {
+			"aliases": [
+				"Wave1Lilypad"
+			],
+			"objclass": "SpawnPlantsWaveActionProps",
+			"objdata": {
+				"Plants": [
+					{
+						"GridX": 1,
+						"GridY": 2,
+						"TypeName": "lilypad",
+						"SpawnAnim": "grow",
+						"AllowSpawnOnOtherPlants": false
+					},
+          {
+						"GridX": 5,
+						"GridY": 1,
+						"TypeName": "lilypad",
+						"SpawnAnim": "grow",
+						"AllowSpawnOnOtherPlants": false
+					}
+				]
+			}
+		},
+    {
+			"aliases": [
+				"Wave2Lilypad"
+			],
+			"objclass": "SpawnPlantsWaveActionProps",
+			"objdata": {
+				"Plants": [
+					{
+						"GridX": 2,
+						"GridY": 1,
+						"TypeName": "lilypad",
+						"SpawnAnim": "grow",
+						"AllowSpawnOnOtherPlants": false
+					},
+          {
+						"GridX": 6,
+						"GridY": 2,
+						"TypeName": "lilypad",
+						"SpawnAnim": "grow",
+						"AllowSpawnOnOtherPlants": false
+					},
+          {
+						"GridX": 4,
+						"GridY": 0,
+						"TypeName": "lilypad",
+						"SpawnAnim": "grow",
+						"AllowSpawnOnOtherPlants": false
+					}
+				]
+			}
+		},
+    {
+			"aliases": [
+				"Wave3Lilypad"
+			],
+			"objclass": "SpawnPlantsWaveActionProps",
+			"objdata": {
+				"Plants": [
+					{
+						"GridX": 7,
+						"GridY": 0,
+						"TypeName": "lilypad",
+						"SpawnAnim": "grow",
+						"AllowSpawnOnOtherPlants": false
+					},
+          {
+						"GridX": 4,
+						"GridY": 1,
+						"TypeName": "lilypad",
+						"SpawnAnim": "grow",
+						"AllowSpawnOnOtherPlants": false
+					},
+          {
+						"GridX": 3,
+						"GridY": 4,
+						"TypeName": "lilypad",
+						"SpawnAnim": "grow",
+						"AllowSpawnOnOtherPlants": false
+					}
+				]
+			}
+		},
+    {
+			"aliases": [
+				"Wave4Lilypad"
+			],
+			"objclass": "SpawnPlantsWaveActionProps",
+			"objdata": {
+				"Plants": [
+					{
+						"GridX": 1,
+						"GridY": 1,
+						"TypeName": "lilypad",
+						"SpawnAnim": "grow",
+						"AllowSpawnOnOtherPlants": false
+					},
+          {
+						"GridX": 5,
+						"GridY": 4,
+						"TypeName": "lilypad",
+						"SpawnAnim": "grow",
+						"AllowSpawnOnOtherPlants": false
+					},
+          {
+						"GridX": 5,
+						"GridY": 0,
+						"TypeName": "lilypad",
+						"SpawnAnim": "grow",
+						"AllowSpawnOnOtherPlants": false
+					}
+				]
+			}
+		},
+    {
+			"aliases":[
+				"GraveSpawn0"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":1,
+					"Min":1
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":2,
+					"Min":2
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+          "RTID(GraveSpawnEvent@CurrentLevel)"
+				],
+        "WaveStartMessage": "[WARNING_GRAVESTONE_SPAWN]"
+			}
+		},
+    {
+			"aliases":[
+				"GraveSpawn1"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":1,
+					"Min":1
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":3,
+					"Min":3
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+          "RTID(GraveSpawnEvent@CurrentLevel)"
+				],
+        "WaveStartMessage": "[WARNING_GRAVESTONE_SPAWN]"
+			}
+		},
+    {
+      "aliases": [
+        "GravestoneEvent"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 5,
+            "Type": "RTID(gravestone_future@GridItemTypes)"
+          }
+        ],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_DIRT_SPAWN_DIRT",
+        "SpawnEffectAnimPlay": "tomb_dirt_anim",
+        "SpawnPositionsPool": [
+          {
+            "mX": 6,
+            "mY": 0
+          },
+          {
+            "mX": 8,
+            "mY": 1
+          },
+          {
+            "mX": 5,
+            "mY": 2
+          },
+          {
+            "mX": 7,
+            "mY": 3
+          },
+          {
+            "mX": 4,
+            "mY": 4
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "GraveSpawnEvent"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(gravestone_future@GridItemTypes)"
+        ],
+        "ZombieSpawnWaitTime": 1,
+        "Zombies": [
+          {
+            "Type": "RTID(future_jetpack@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+			"aliases":[
+				"Fog"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":0,
+					"Min":0
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(MissileEvent0@CurrentLevel)",
+          "RTID(MissileEvent1@CurrentLevel)",
+          "RTID(MissileEvent2@CurrentLevel)",
+          "RTID(Fog_0@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"Light"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":12,
+					"Min":12
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+          "RTID(Spawn0@CurrentLevel)",
+          "RTID(Missile2@CurrentLevel)",
+          "RTID(Spawn1@CurrentLevel)",
+          "RTID(Missile0@CurrentLevel)",
+          "RTID(Spawn2@CurrentLevel)",
+          "RTID(Missile1@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"Spawn0"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":1,
+					"Min":1
+				},
+				"TimeBetween":{
+					"Max":13.5,
+					"Min":13.5
+				},
+				"Repeat":{
+					"Max":0,
+					"Min":0
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(SpawnPlantsEvent0@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"Missile2"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":14.5,
+					"Min":14.5
+				},
+				"TimeBetween":{
+					"Max":13.5,
+					"Min":13.5
+				},
+				"Repeat":{
+					"Max":0,
+					"Min":0
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(MissileEvent2@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"Spawn1"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":5.5,
+					"Min":5.5
+				},
+				"TimeBetween":{
+					"Max":13.5,
+					"Min":13.5
+				},
+				"Repeat":{
+					"Max":0,
+					"Min":0
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(SpawnPlantsEvent1@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"Missile0"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":5.5,
+					"Min":5.5
+				},
+				"TimeBetween":{
+					"Max":13.5,
+					"Min":13.5
+				},
+				"Repeat":{
+					"Max":0,
+					"Min":0
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(MissileEvent0@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"Spawn2"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":10,
+					"Min":10
+				},
+				"TimeBetween":{
+					"Max":13.5,
+					"Min":13.5
+				},
+				"Repeat":{
+					"Max":0,
+					"Min":0
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(SpawnPlantsEvent2@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"Missile1"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":10,
+					"Min":10
+				},
+				"TimeBetween":{
+					"Max":13.5,
+					"Min":13.5
+				},
+				"Repeat":{
+					"Max":0,
+					"Min":0
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(MissileEvent1@CurrentLevel)"
+				]
+			}
+		},
+    {
+      "aliases": [
+        "MissileEvent0"
+      ],
+      "objclass": "MissileLocateWaveActionProps",
+      "objdata": {
+        "ColumnEnd": 8,
+        "ColumnStart": 8,
+        "RowEnd": 2,
+        "RowStart": 2,
+        "MissileCount": 1,
+        "MissileFallCountdown": 0,
+        "WaveStartMessage": "",
+        "ProjectileType": "Killer"
+      }
+    },
+    {
+      "aliases": [
+        "MissileEvent1"
+      ],
+      "objclass": "MissileLocateWaveActionProps",
+      "objdata": {
+        "ColumnEnd": 4,
+        "ColumnStart": 4,
+        "RowEnd": 2,
+        "RowStart": 2,
+        "MissileCount": 1,
+        "MissileFallCountdown": 0,
+        "WaveStartMessage": "",
+        "ProjectileType": "Killer"
+      }
+    },
+    {
+      "aliases": [
+        "MissileEvent2"
+      ],
+      "objclass": "MissileLocateWaveActionProps",
+      "objdata": {
+        "ColumnEnd": 0,
+        "ColumnStart": 0,
+        "RowEnd": 2,
+        "RowStart": 2,
+        "MissileCount": 1,
+        "MissileFallCountdown": 0,
+        "WaveStartMessage": "",
+        "ProjectileType": "Killer"
+      }
+    },
+    {
+      "aliases": [
+        "Killer"
+      ],
+      "objclass": "ProjectileType",
+      "objdata": {
+        "ProjectileBasedOn": "armamint",
+        "Props": "RTID(KillerProp@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "KillerProp"
+      ],
+      "objclass": "ProjectileProperties",
+      "objdata": {
+        "Damage": 8000,
+        "SplashDamage": [
+          {
+            "Damage": 8000,
+            "Range": {
+              "w": 1,
+              "h": 1
+            }
+          }
+        ],
+        "Size": {
+          "w": 1,
+          "h": 1
+        },
+        "SpeedMult": 3,
+        "ShakesScreenOnImpact": true,
+        "CannotBeReversedByJester": true,
+        "DamageType": "fire"
+      }
+    },
+    {
+			"aliases": [
+				"SpawnPlantsEvent0"
+			],
+			"objclass": "SpawnPlantsWaveActionProps",
+			"objdata": {
+				"Plants": [
+					{
+						"GridX": 8,
+						"GridY": 2,
+						"TypeName": "bulbkekengi",
+						"SpawnAnim": "fall",
+						"AllowSpawnOnOtherPlants": false
+					}
+				]
+			}
+		},
+    {
+			"aliases": [
+				"SpawnPlantsEvent1"
+			],
+			"objclass": "SpawnPlantsWaveActionProps",
+			"objdata": {
+				"Plants": [
+					{
+						"GridX": 4,
+						"GridY": 2,
+						"TypeName": "bulbkekengi",
+						"SpawnAnim": "fall",
+						"AllowSpawnOnOtherPlants": false
+					}
+				]
+			}
+		},
+    {
+			"aliases": [
+				"SpawnPlantsEvent2"
+			],
+			"objclass": "SpawnPlantsWaveActionProps",
+			"objdata": {
+				"Plants": [
+					{
+						"GridX": 0,
+						"GridY": 2,
+						"TypeName": "bulbkekengi",
+						"SpawnAnim": "fall",
+						"AllowSpawnOnOtherPlants": false
+					}
+				]
+			}
+		},
+    {
+			"aliases":[
+				"Fog_0"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":3,
+					"Min":3
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+          "RTID(Light@CurrentLevel)",
+					"RTID(Warning@CurrentLevel)",
+          "RTID(Fog0@CurrentLevel)",
+          "RTID(Fog1@CurrentLevel)",
+          "RTID(Fog2@CurrentLevel)",
+          "RTID(Fog3@CurrentLevel)",
+          "RTID(Fog4@CurrentLevel)",
+          "RTID(Fog5@CurrentLevel)",
+          "RTID(Fog6@CurrentLevel)",
+          "RTID(Fog7@CurrentLevel)",
+          "RTID(Fog8@CurrentLevel)",
+          "RTID(Fog9@CurrentLevel)",
+          "RTID(Fog10@CurrentLevel)"
+				]
+			}
+		},
+    {
+      "aliases": [
+        "Warning"
+      ],
+      "objclass": "WaveWarningProps",
+      "objdata": {
+        "LabelR": 10,
+        "LabelG": 31,
+        "LabelB": 68,
+        "OutLineR": 201,
+        "OutLineG": 221,
+        "OutLineB": 242,
+        "StringMultiLanguage": {
+          "en": "FOG ROLLS IN!",
+          "zh": "起雾了！"
+        },
+        "Sound": "HugeWave"
+      }
+    },
+    {
+			"aliases":[
+				"Fog0"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":3,
+					"Min":3
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Fog0_0@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"Fog1"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":3.7,
+					"Min":3.7
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Fog1_0@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"Fog2"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":4.4,
+					"Min":4.4
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Fog2_0@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"Fog3"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":5.1,
+					"Min":5.1
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Fog3_0@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"Fog4"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":5.8,
+					"Min":5.8
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Fog4_0@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"Fog5"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":6.5,
+					"Min":6.5
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Fog5_0@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"Fog6"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":7.2,
+					"Min":7.2
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Fog6_0@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"Fog7"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":7.9,
+					"Min":7.9
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Fog7_0@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"Fog8"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":8.6,
+					"Min":8.6
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Fog8_0@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"Fog9"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":9.3,
+					"Min":9.3
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Fog9_0@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases":[
+				"Fog10"
+			],
+			"objclass":"WaveSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":10,
+					"Min":10
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Fog10_0@CurrentLevel)"
+				]
+			}
+		},
+    {
+      "aliases": [
+        "Fog0_0"
+      ],
+      "objclass": "WaveFogEventProperties",
+      "objdata": {
+        "Fogs": [
+          {
+            "ModifyingType": "add",
+            "BasePosition": {
+              "x": 9,
+              "y": -2
+            },
+            "FogMatrix": [
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Fog1_0"
+      ],
+      "objclass": "WaveFogEventProperties",
+      "objdata": {
+        "Fogs": [
+          {
+            "ModifyingType": "add",
+            "BasePosition": {
+              "x": 8,
+              "y": -2
+            },
+            "FogMatrix": [
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Fog2_0"
+      ],
+      "objclass": "WaveFogEventProperties",
+      "objdata": {
+        "Fogs": [
+          {
+            "ModifyingType": "add",
+            "BasePosition": {
+              "x": 7,
+              "y": -2
+            },
+            "FogMatrix": [
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Fog3_0"
+      ],
+      "objclass": "WaveFogEventProperties",
+      "objdata": {
+        "Fogs": [
+          {
+            "ModifyingType": "add",
+            "BasePosition": {
+              "x": 6,
+              "y": -2
+            },
+            "FogMatrix": [
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Fog4_0"
+      ],
+      "objclass": "WaveFogEventProperties",
+      "objdata": {
+        "Fogs": [
+          {
+            "ModifyingType": "add",
+            "BasePosition": {
+              "x": 5,
+              "y": -2
+            },
+            "FogMatrix": [
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Fog5_0"
+      ],
+      "objclass": "WaveFogEventProperties",
+      "objdata": {
+        "Fogs": [
+          {
+            "ModifyingType": "add",
+            "BasePosition": {
+              "x": 4,
+              "y": -2
+            },
+            "FogMatrix": [
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Fog6_0"
+      ],
+      "objclass": "WaveFogEventProperties",
+      "objdata": {
+        "Fogs": [
+          {
+            "ModifyingType": "add",
+            "BasePosition": {
+              "x": 3,
+              "y": -2
+            },
+            "FogMatrix": [
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Fog7_0"
+      ],
+      "objclass": "WaveFogEventProperties",
+      "objdata": {
+        "Fogs": [
+          {
+            "ModifyingType": "add",
+            "BasePosition": {
+              "x": 2,
+              "y": -2
+            },
+            "FogMatrix": [
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Fog8_0"
+      ],
+      "objclass": "WaveFogEventProperties",
+      "objdata": {
+        "Fogs": [
+          {
+            "ModifyingType": "add",
+            "BasePosition": {
+              "x": 1,
+              "y": -2
+            },
+            "FogMatrix": [
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Fog9_0"
+      ],
+      "objclass": "WaveFogEventProperties",
+      "objdata": {
+        "Fogs": [
+          {
+            "ModifyingType": "add",
+            "BasePosition": {
+              "x": 0,
+              "y": -2
+            },
+            "FogMatrix": [
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Fog10_0"
+      ],
+      "objclass": "WaveFogEventProperties",
+      "objdata": {
+        "Fogs": [
+          {
+            "ModifyingType": "add",
+            "BasePosition": {
+              "x": -1,
+              "y": -2
+            },
+            "FogMatrix": [
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1",
+              "1"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "version": 1
+}

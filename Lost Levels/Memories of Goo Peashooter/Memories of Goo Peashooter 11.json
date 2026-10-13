@@ -1,0 +1,632 @@
+{
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "PlantToIntroduce": "poisonpeashooter",
+        "Name": "Memories of Goo Peashooter - Level <LEVELNUMBER>",
+        "NameMultiLanguage": {
+          "en": "Memories of Goo Peashooter - Level <LEVELNUMBER>",
+          "zh": "黏毒豌豆的回忆 - 第 <LEVELNUMBER> 关"
+        },
+        "Description": "[PLAYERS_ATTEMPT_TO_GET_PLANT]",
+        "LevelNumber": 11,
+        "WrittenBy": "Penelo-P-E",
+        "MusicType": "MiniGame_A",
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "StageModule": "RTID(SkyStage@LevelModules)",
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "Modules": [
+          "RTID(StandardIntro@LevelModules)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(SkyCityShipDefault@LevelModules)",
+          "RTID(ConveyorBelt@CurrentLevel)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(NewWaves@CurrentLevel)"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "ConveyorBelt"
+      ],
+      "objclass": "ConveyorSeedBankProperties",
+      "objdata": {
+        "DropDelayConditions": [
+          {
+            "Delay": 4,
+            "MaxPackets": 0
+          },
+          {
+            "Delay": 5,
+            "MaxPackets": 2
+          },
+          {
+            "Delay": 6,
+            "MaxPackets": 4
+          },
+          {
+            "Delay": 8,
+            "MaxPackets": 6
+          }
+        ],
+        "SpeedConditions": [
+          {
+            "MaxPackets": 0,
+            "Speed": 100
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "NewWaves"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {
+        "DynamicZombies": [
+          {},
+          {},
+          {},
+          {},
+          {
+            "PointIncrementPerWave": 30,
+            "StartingPoints": 100,
+            "StartingWave": 5,
+            "ZombiePool": [
+              "RTID(sky_armor1@ZombieTypes)",
+              "RTID(sky_armor2@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": 40,
+            "StartingPoints": 200,
+            "StartingWave": 4,
+            "ZombiePool": [
+              "RTID(sky_armor1@ZombieTypes)",
+              "RTID(sky_armor2@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": 60,
+            "StartingPoints": 400,
+            "StartingWave": 3,
+            "ZombiePool": [
+              "RTID(sky_armor1@ZombieTypes)",
+              "RTID(sky_armor2@ZombieTypes)"
+            ]
+          }
+        ],
+        "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "WaveManagerProps"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "MinNextWaveHealthPercentage": 0.7,
+        "MaxNextWaveHealthPercentage": 0.75,
+        "FlagWaveInterval": 5,
+        "WaveCount": 10,
+        "WaveSpendingPointIncrement": 0,
+        "WaveSpendingPoints": 0,
+        "Waves": [
+          [
+            "RTID(Wave1@CurrentLevel)",
+            "RTID(Wave1ModConveyor0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave2@CurrentLevel)",
+            "RTID(Wave2ModConveyor0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave3@CurrentLevel)",
+            "RTID(Wave3ModConveyor0@CurrentLevel)",
+            "RTID(Wave3ModConveyor1@CurrentLevel)",
+            "RTID(Wave3ModConveyor2@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave4@CurrentLevel)",
+            "RTID(Wave4ModConveyor0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave5@CurrentLevel)",
+            "RTID(Wave5ModConveyor0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave6@CurrentLevel)",
+            "RTID(Wave6ModConveyor0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave7@CurrentLevel)",
+            "RTID(Wave7ModConveyor0@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave8@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave9@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave10@CurrentLevel)"
+          ]
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave1"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": 1,
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Row": 3,
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Row": 5,
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave1ModConveyor0"
+      ],
+      "objclass": "ModifyConveyorWaveActionProps",
+      "objdata": {
+        "Add": [
+          {
+            "MaxCount": 3,
+            "MaxWeightFactor": 0,
+            "Type": "RTID(poisonpeashooter@PlantTypes)",
+            "Weight": 10
+          }
+        ],
+        "Remove": []
+      }
+    },
+    {
+      "aliases": [
+        "Wave2"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Row": 1,
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          },
+          {
+            "Row": 1,
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Row": 2,
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Row": 3,
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          },
+          {
+            "Row": 3,
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Row": 4,
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Row": 5,
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Row": 5,
+            "Type": "RTID(sky_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave2ModConveyor0"
+      ],
+      "objclass": "ModifyConveyorWaveActionProps",
+      "objdata": {
+        "Add": [
+          {
+            "MaxCount": 2,
+            "MaxWeightFactor": 0,
+            "Type": "RTID(applemortar@PlantTypes)",
+            "Weight": 10
+          }
+        ],
+        "Remove": []
+      }
+    },
+    {
+      "aliases": [
+        "Wave3"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_gargantuar_armor2_thrower@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_dronemaker@ZombieTypes)",
+            "Row": 2
+          },
+          {
+            "Type": "RTID(sky_dronemaker@ZombieTypes)",
+            "Row": 5
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave3ModConveyor0"
+      ],
+      "objclass": "ModifyConveyorWaveActionProps",
+      "objdata": {
+        "Add": [
+          {
+            "MaxCount": 3,
+            "MaxWeightFactor": 0,
+            "Type": "RTID(banana@PlantTypes)",
+            "Weight": 50
+          }
+        ],
+        "Remove": []
+      }
+    },
+    {
+      "aliases": [
+        "Wave3ModConveyor1"
+      ],
+      "objclass": "ModifyConveyorWaveActionProps",
+      "objdata": {
+        "Add": [
+          {
+            "MaxCount": 7,
+            "MaxWeightFactor": 0,
+            "Type": "RTID(skyshooter@PlantTypes)",
+            "Weight": 10
+          }
+        ],
+        "Remove": []
+      }
+    },
+    {
+      "aliases": [
+        "Wave3ModConveyor2"
+      ],
+      "objclass": "ModifyConveyorWaveActionProps",
+      "objdata": {
+        "Add": [
+          {
+            "MaxCount": 5,
+            "MaxWeightFactor": 0,
+            "Type": "RTID(poisonpeashooter@PlantTypes)",
+            "Weight": 30
+          }
+        ],
+        "Remove": []
+      }
+    },
+    {
+      "aliases": [
+        "Wave4"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_dronemaker@ZombieTypes)",
+            "Row": 1
+          },
+          {
+            "Type": "RTID(sky_dronemaker@ZombieTypes)",
+            "Row": 3
+          },
+          {
+            "Type": "RTID(sky_dronemaker@ZombieTypes)",
+            "Row": 4
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave4ModConveyor0"
+      ],
+      "objclass": "ModifyConveyorWaveActionProps",
+      "objdata": {
+        "Add": [
+          {
+            "MaxCount": 4,
+            "MaxWeightFactor": 0,
+            "Type": "RTID(applemortar@PlantTypes)",
+            "Weight": 30
+          }
+        ],
+        "Remove": []
+      }
+    },
+    {
+      "aliases": [
+        "Wave5"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_gargantuar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_twin@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave5ModConveyor0"
+      ],
+      "objclass": "ModifyConveyorWaveActionProps",
+      "objdata": {
+        "Add": [
+          {
+            "MaxCount": 8,
+            "MaxWeightFactor": 0,
+            "Type": "RTID(poisonpeashooter@PlantTypes)",
+            "Weight": 20
+          }
+        ],
+        "Remove": []
+      }
+    },
+    {
+      "aliases": [
+        "Wave6"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(sky_gargantuar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_arbiterx@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_battleplane@ZombieTypes)",
+            "Row": 1
+          },
+          {
+            "Type": "RTID(sky_battleplane@ZombieTypes)",
+            "Row": 2
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave6ModConveyor0"
+      ],
+      "objclass": "ModifyConveyorWaveActionProps",
+      "objdata": {
+        "Add": [
+          {
+            "MaxCount": 5,
+            "MaxWeightFactor": 0,
+            "Type": "RTID(pineapple@PlantTypes)",
+            "Weight": 35
+          }
+        ],
+        "Remove": []
+      }
+    },
+    {
+      "aliases": [
+        "Wave7"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(sky_gargantuar_armor2_thrower@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_gargantuar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_dronemaker@ZombieTypes)",
+            "Row": 2
+          },
+          {
+            "Type": "RTID(sky_dronemaker@ZombieTypes)",
+            "Row": 5
+          },
+          {
+            "Type": "RTID(sky_battleplane@ZombieTypes)",
+            "Row": 5
+          },
+          {
+            "Type": "RTID(sky_battleplane@ZombieTypes)",
+            "Row": 3
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave7ModConveyor0"
+      ],
+      "objclass": "ModifyConveyorWaveActionProps",
+      "objdata": {
+        "Add": [
+          {
+            "MaxCount": 5,
+            "MaxWeightFactor": 0,
+            "Type": "RTID(xshot@PlantTypes)",
+            "Weight": 20
+          }
+        ],
+        "Remove": []
+      }
+    },
+    {
+      "aliases": [
+        "Wave8"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(sky_dronemaker@ZombieTypes)",
+            "Row": 1
+          },
+          {
+            "Type": "RTID(sky_dronemaker@ZombieTypes)",
+            "Row": 4
+          },
+          {
+            "Type": "RTID(sky_dronemaker@ZombieTypes)",
+            "Row": 3
+          },
+          {
+            "Type": "RTID(sky_arbiterx@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_arbiterx@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_twin@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_battleplane@ZombieTypes)",
+            "Row": 4
+          },
+          {
+            "Type": "RTID(sky_battleplane@ZombieTypes)",
+            "Row": 1
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave9"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(sky_gargantuar_armor2_thrower@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_gargantuar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_arbiterx@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_battleplane@ZombieTypes)",
+            "Row": 3
+          },
+          {
+            "Type": "RTID(sky_battleplane@ZombieTypes)",
+            "Row": 4
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave10"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "Type": "RTID(sky_dronemaker@ZombieTypes)",
+            "Row": 1
+          },
+          {
+            "Type": "RTID(sky_dronemaker@ZombieTypes)",
+            "Row": 4
+          },
+          {
+            "Type": "RTID(sky_dronemaker@ZombieTypes)",
+            "Row": 3
+          },
+          {
+            "Type": "RTID(sky_dronemaker@ZombieTypes)",
+            "Row": 2
+          },
+          {
+            "Type": "RTID(sky_dronemaker@ZombieTypes)",
+            "Row": 5
+          },
+          {
+            "Type": "RTID(sky_gargantuar@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_arbiterx@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_twin@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_gargantuar_armor2_thrower@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(sky_gargantuar_armor2_thrower@ZombieTypes)"
+          }
+        ]
+      }
+    }
+  ],
+  "version": 1
+}

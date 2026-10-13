@@ -1,0 +1,564 @@
+{
+    "#comment": "",
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "Description": "[PLAYERS_ATTEMPT_TO_GET_PLANT]",
+                "LevelNumber": 3,
+                "Loot": "RTID(DefaultLoot@LevelModules)",
+                "Modules": [
+                    "RTID(StandardIntro@LevelModules)",
+                    "RTID(DefaultSunDropper@LevelModules)",
+                    "RTID(EightiesMowers@LevelModules)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)",
+                    "RTID(ZombiesDeadWinCon@LevelModules)",
+                    "RTID(ChallengeModule@CurrentLevel)",
+                    "RTID(SeedBank@CurrentLevel)",
+                    "RTID(ModPlants@.)",
+                    "RTID(NewWaves@CurrentLevel)"
+                ],
+                "Name": "Memories of Goo Peashooter - Level <LEVELNUMBER>",
+        "NameMultiLanguage": {
+          "en": "Memories of Goo Peashooter - Level <LEVELNUMBER>",
+          "zh": "黏毒豌豆的回忆 - 第 <LEVELNUMBER> 关"
+        },
+                "PlantToIntroduce": "poisonpeashooter",
+                "WrittenBy": "逍遥",
+                "NormalPresentTable": "egypt_normal_01",
+                "ShinyPresentTable": "egypt_shiny_01",
+                "StageModule": "RTID(EightiesStage@LevelModules)"
+            }
+        },
+        {
+            "aliases": [
+                "Rails"
+            ],
+            "objclass": "RailcartProperties",
+            "objdata": {
+                "RailcartType": "railcart_future",
+                "Railcarts": [
+                    {
+                        "Column": 1,
+                        "Row": 1
+                    },
+                    {
+                        "Column": 3,
+                        "Row": 4
+                    },
+                    {
+                        "Column": 3,
+                        "Row": 0
+                    },
+                    {
+                        "Column": 2,
+                        "Row": 4
+                    },
+                    {
+                        "Column": 2,
+                        "Row": 1
+                    },
+                    {
+                        "Column": 5,
+                        "Row": 3
+                    },
+                    {
+                        "Column": 4,
+                        "Row": 3
+                    },
+                    {
+                        "Column": 4,
+                        "Row": 0
+                    }
+                ],
+                "Rails": [
+                    {
+                        "Column": 1,
+                        "RowEnd": 4,
+                        "RowStart": 0
+                    },
+                    {
+                        "Column": 2,
+                        "RowEnd": 4,
+                        "RowStart": 3
+                    },
+                    {
+                        "Column": 2,
+                        "RowEnd": 2,
+                        "RowStart": 0
+                    },
+                    {
+                        "Column": 4,
+                        "RowEnd": 1,
+                        "RowStart": 0
+                    },
+                    {
+                        "Column": 4,
+                        "RowEnd": 4,
+                        "RowStart": 2
+                    },
+                    {
+                        "Column": 5,
+                        "RowEnd": 4,
+                        "RowStart": 0
+                    },
+                    {
+                        "Column": 3,
+                        "RowEnd": 4,
+                        "RowStart": 0
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "ModPlants"
+            ],
+            "objclass": "PlantModifierProperties",
+            "objdata": {
+                "HidePlantfood": true,
+                "SuppressParticle": true,
+                "List": [
+                    {
+                        "Type": "sunflower",
+                        "NewObjdata": {
+                            "ProduceInterval": 32,
+                            "ProduceIntervalAdditional": 4
+                        }
+                    },
+                    {
+                        "Type": "twinsunflower",
+                        "NewObjdata": {
+                            "ProduceInterval": 32,
+                            "ProduceIntervalAdditional": 4
+                        }
+                    },
+                    {
+                        "Type": "primalsunflower",
+                        "NewObjdata": {
+                            "ProduceInterval": 32,
+                            "ProduceIntervalAdditional": 4
+                        }
+                    },
+                    {
+                        "Type": "moonflower",
+                        "NewObjdata": {
+                            "ProduceInterval": 32,
+                            "ProduceIntervalAdditional": 4
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "ChallengeModule"
+            ],
+            "objclass": "StarChallengeModuleProperties",
+            "objdata": {
+                "Challenges": [
+                    [
+                        "RTID(Rails@CurrentLevel)",
+                        "RTID(PlantsLost@CurrentLevel)"
+                    ]
+                ],
+                "ChallengesAlwaysAvailable": true
+            }
+        },
+        {
+            "aliases": [
+                "ZombieDistance"
+            ],
+            "objclass": "StarChallengeZombieDistanceProps",
+            "objdata": {
+                "TargetDistance": 6
+            }
+        },
+        {
+            "aliases": [
+                "PlantsLost"
+            ],
+            "objclass": "StarChallengePlantsLostProps",
+            "objdata": {
+                "MaximumPlantsLost": 5
+            }
+        },
+        {
+            "aliases": [
+                "SeedBank"
+            ],
+            "objclass": "SeedBankProperties",
+            "objdata": {
+                "CardDecks": {
+                    "SuppressChallengingHugeWaveGems": false,
+                    "ChallengingLocked": false,
+                    "Challenging": [
+                        // {
+                        //     "Name": {
+                        //         "en": "作者卡组",
+                        //         "zh": "作者卡组"
+                        //     },
+                        //     "HugeWaveGem": 2,
+                        //     "Leader": 5,
+                        //     "Plants": [
+                        //         "moonflower",
+                        //         "nightshade",
+                        //         "grimrose",
+                        //         "shadowshroom",
+                        //         "repeater",
+                        //         "strawburst"
+                        //     ]
+                        // }
+                    ]
+                },
+                "PresetPlantList": [
+                    {
+                        "PlantType": "poisonpeashooter",
+                        "Level": -1
+                    }
+                ],
+                "PlantExcludeList": [
+                    // "goldleaf",
+                    // "thymewarp",
+                    // "moonbean",
+                    // "peach",
+                    // "blover"
+                ],
+                "SelectionMethod": "chooser"
+            }
+        },
+        {
+            "aliases": [
+                "NewWaves"
+            ],
+            "objclass": "WaveManagerModuleProperties",
+            "objdata": {
+                "DynamicZombies": [
+                    {
+                        "PointIncrementPerWave": -40,
+                        "StartingPoints": -100,
+                        "StartingWave": 3,
+                        "ZombiePool": [
+                            "RTID(eighties@ZombieTypes)",
+                            "RTID(eighties_armor1@ZombieTypes)",
+                            "RTID(eighties_armor2@ZombieTypes)"
+                        ]
+                    },
+                    {
+                        "PointIncrementPerWave": -25,
+                        "StartingPoints": -100,
+                        "StartingWave": 4,
+                        "ZombiePool": [
+                            "RTID(eighties@ZombieTypes)",
+                            "RTID(eighties_armor1@ZombieTypes)",
+                            "RTID(eighties_armor2@ZombieTypes)"
+                        ]
+                    },
+                    {
+                        "PointIncrementPerWave": -10,
+                        "StartingPoints": -100,
+                        "StartingWave": 5,
+                        "ZombiePool": [
+                            "RTID(eighties@ZombieTypes)",
+                            "RTID(eighties_armor1@ZombieTypes)",
+                            "RTID(eighties_armor2@ZombieTypes)"
+                        ]
+                    },
+                    {},
+                    {
+                        "PointIncrementPerWave": 20,
+                        "StartingPoints": 100,
+                        "StartingWave": 5,
+                        "ZombiePool": [
+                            "RTID(eighties@ZombieTypes)",
+                            "RTID(eighties_armor1@ZombieTypes)",
+                            "RTID(eighties_armor2@ZombieTypes)"
+                        ]
+                    },
+                    {
+                        "PointIncrementPerWave": 40,
+                        "StartingPoints": 200,
+                        "StartingWave": 4,
+                        "ZombiePool": [
+                            "RTID(eighties@ZombieTypes)",
+                            "RTID(eighties_armor1@ZombieTypes)",
+                            "RTID(eighties_armor2@ZombieTypes)"
+                        ]
+                    },
+                    {
+                        "PointIncrementPerWave": 60,
+                        "StartingPoints": 200,
+                        "StartingWave": 4,
+                        "ZombiePool": [
+                            "RTID(eighties_armor1@ZombieTypes)",
+                            "RTID(eighties@ZombieTypes)"
+                        ]
+                    }
+                ],
+                "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+            }
+        },
+        {
+            "aliases": [
+                "WaveManagerProps"
+            ],
+            "objclass": "WaveManagerProperties",
+            "objdata": {
+                "FlagWaveInterval": 4,
+                "WaveCount": 8,
+                // "LevelJamList": [
+                //     "jam_punk",
+                //     "jam_rap",
+                //     "jam_pop"
+                // ],
+                "WaveSpendingPointIncrement": 200,
+                "WaveSpendingPoints": 150,
+                "Waves": [
+                    [
+                        "RTID(Wave1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave2@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave3@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave4@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave5@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave6@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave7@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave8@CurrentLevel)"
+                    ]
+                   
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave1"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "4",
+                        "Type": "RTID(beach_surfer@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(beach_surfer@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave2"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(beach_surfer@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(beach_octopus@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave3"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "NotificationEvents": [
+                    "jam_metal"
+                ],
+                "AdditionalPlantfood": 1,
+                "Zombies": [
+                    {
+                        "Row": "4",
+                        "Type": "RTID(lostcity_bug_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(eighties_gargantuar@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(beach_octopus@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave4"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(beach_surfer@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(beach_surfer@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(eighties_gargantuar@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(beach_octopus@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(lostcity_bug_armor4@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave5"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "AdditionalPlantfood": 1,
+                "NotificationEvents": [
+                    "jam_punk"
+                ],
+                "Zombies": [
+                    {
+                        "Row": "3",
+                        "Type": "RTID(beach_surfer@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(beach_surfer@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(beach_surfer@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(beach_octopus@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave6"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(beach_surfer@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(beach_surfer@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(lostcity_bug_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(lostcity_bug_armor4@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(beach_octopus@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave7"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "NotificationEvents": [
+                    "jam_pop"
+                ],
+                "Zombies": [
+                    {
+                        "Row": "4",
+                        "Type": "RTID(eighties_glitter@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(eighties_glitter@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(eighties_gargantuar@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(eighties_gargantuar@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(beach_octopus@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(beach_octopus@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave8"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "NotificationEvents": [
+                    "jam_metal"
+                ],
+                "Zombies": [
+                    {
+                        "Row": "5",
+                        "Type": "RTID(beach_surfer@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(beach_surfer@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(eighties_gargantuar@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(beach_surfer@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(eighties_boombox@ZombieTypes)"
+                    }
+                ]
+            }
+        }
+    ],
+    "version": 1
+}

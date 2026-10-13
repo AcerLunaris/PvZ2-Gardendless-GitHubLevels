@@ -1,0 +1,740 @@
+{
+  "#comment": "",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Description": "[PLAYERS_ATTEMPT_TO_GET_PLANT]",
+        "PlantToIntroduce": "poisonpeashooter",
+        "LevelNumber": 1,
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "Modules": [
+          "RTID(StandardIntro@LevelModules)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(SeedBank@CurrentLevel)",
+          "RTID(CowboyRails@CurrentLevel)",
+          "RTID(ChallengeModule@CurrentLevel)",
+          "RTID(NewWaves@CurrentLevel)"
+        ],
+        "WrittenBy": "莱池_余垛",
+        "Name": "Memories of Goo Peashooter - Level <LEVELNUMBER>",
+        "NameMultiLanguage": {
+          "en": "Memories of Goo Peashooter - Level <LEVELNUMBER>",
+          "zh": "黏毒豌豆的回忆 - 第 <LEVELNUMBER> 关"
+        },
+        "StageModule": "RTID(DarkTutorialStage@LevelModules)"
+      }
+    },
+    {
+      "aliases": [
+        "ChallengeModule"
+      ],
+      "objclass": "StarChallengeModuleProperties",
+      "objdata": {
+        "Challenges": [
+          [
+            "RTID(BeatTheLevel@CurrentLevel)",
+            "RTID(DoNotPlantBeforeLine@CurrentLevel)"
+          ]
+        ],
+        "ChallengesAlwaysAvailable": true
+      }
+    },
+    {
+      "aliases": [
+        "DoNotPlantBeforeLine"
+      ],
+      "objclass": "MoldColonyChallengeProps",
+      "objdata": {
+        "MoldMatrix": [
+          "00101",
+          "00000",
+          "00001",
+          "00000",
+          "00110"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "CowboyRails"
+      ],
+      "objclass": "RailcartProperties",
+      "objdata": {
+        "RailcartType": "railcart_tutorial",
+        "Railcarts": [
+          {
+            "Column": 1,
+            "Row": 3
+          },
+          {
+            "Column": 1,
+            "Row": 0
+          },
+          {
+            "Column": 2,
+            "Row": 1
+          },
+          {
+            "Column": 5,
+            "Row": 1
+          },
+          {
+            "Column": 3,
+            "Row": 2
+          },
+          {
+            "Column": 4,
+            "Row": 3
+          }
+        ],
+        "Rails": [
+          {
+            "Column": 1,
+            "RowEnd": 4,
+            "RowStart": 3
+          },
+          {
+            "Column": 2,
+            "RowEnd": 3,
+            "RowStart": 1
+          },
+          {
+            "Column": 1,
+            "RowEnd": 2,
+            "RowStart": 0
+          },
+          {
+            "Column": 3,
+            "RowEnd": 3,
+            "RowStart": 0
+          },
+          {
+            "Column": 5,
+            "RowEnd": 4,
+            "RowStart": 0
+          },
+          {
+            "Column": 4,
+            "RowEnd": 1,
+            "RowStart": 1
+          },
+          {
+            "Column": 4,
+            "RowEnd": 4,
+            "RowStart": 3
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "SeedBank"
+      ],
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "SelectionMethod": "preset",
+        "PresetPlantList": [
+          {
+            "PlantType": "poisonpeashooter",
+            "Level": -1
+          },
+          {
+            "PlantType": "snowpea",
+            "Level": -1
+          },
+          {
+            "PlantType": "potatomine",
+            "Level": -1
+          },
+          {
+            "PlantType": "holonut",
+            "Level": -1
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "NewWaves"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {
+        "DynamicZombies": [
+          {},
+          {},
+          {},
+          {},
+          {
+            "PointIncrementPerWave": 20,
+            "StartingPoints": 100,
+            "StartingWave": 6,
+            "ZombiePool": [
+              "RTID(mummy_armor2@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": 40,
+            "StartingPoints": 200,
+            "StartingWave": 5,
+            "ZombiePool": [
+              "RTID(mummy_armor2@ZombieTypes)"
+            ]
+          },
+          {
+            "PointIncrementPerWave": 60,
+            "StartingPoints": 400,
+            "StartingWave": 4,
+            "ZombiePool": [
+              "RTID(mummy_armor2@ZombieTypes)"
+            ]
+          }
+        ],
+        "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+      }
+    },
+    {
+      "aliases": [
+        "WaveManagerProps"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "LevelJamList": [
+          "jam_metal"
+        ],
+        "FlagWaveInterval": 8,
+        "WaveCount": 16,
+        "WaveSpendingPointIncrement": 200,
+        "WaveSpendingPoints": 400,
+        "Waves": [
+          [
+            "RTID(Wave1@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave2@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave3@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave4@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave5@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave6@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave7@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave8@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave9@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave10@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave11@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave12@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave13@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave14@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave15@CurrentLevel)"
+          ],
+          [
+            "RTID(Wave16@CurrentLevel)"
+          ]
+        ],
+        "ZombieCountdownFirstWaveSecs": 2
+      }
+    },
+    {
+      "aliases": [
+        "Wave1"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "CarrySun": 50,
+            "Style": "appear",
+            "Row": "???",
+            "Column": "8",
+            "Type": "RTID(the_superfanimp@CurrentLevel)"
+          },
+          {
+            "Type": "RTID(dark@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave2"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "CarrySun": 50,
+            "Style": "appear",
+            "Row": "???",
+            "Column": "8",
+            "Type": "RTID(the_superfanimp@CurrentLevel)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave3"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "DynamicPlantfood": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "Zombies": [
+          {
+            "CarrySun": 50,
+            "Style": "appear",
+            "Row": "???",
+            "Column": "8",
+            "Type": "RTID(the_superfanimp@CurrentLevel)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave4"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "CarrySun": 50,
+            "Style": "appear",
+            "Row": "???",
+            "Column": "8",
+            "Type": "RTID(the_superfanimp@CurrentLevel)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dino_imp@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(kongfu_chi@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_armor2@ZombieTypes)"
+          }
+        ],
+        "MustKillAllToNextWave": true
+      }
+    },
+    {
+      "aliases": [
+        "Wave5"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "CarrySun": 50,
+            "Style": "appear",
+            "Row": "???",
+            "Column": "8",
+            "Type": "RTID(the_superfanimp@CurrentLevel)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(abbot_chi@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave6"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "DynamicPlantfood": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        "Zombies": [
+          {
+            "CarrySun": 100,
+            "Style": "appear",
+            "Row": "???",
+            "Column": "8",
+            "Type": "RTID(the_superfanimp@CurrentLevel)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(beach_surfer@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave7"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "CarrySun": 100,
+            "Style": "appear",
+            "Row": "???",
+            "Column": "8",
+            "Type": "RTID(the_superfanimp@CurrentLevel)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(explorer_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave8"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "CarrySun": 100,
+            "Style": "appear",
+            "Row": "???",
+            "Column": "8",
+            "Type": "RTID(the_superfanimp@CurrentLevel)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(eighties_gargantuar@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(beach_octopus@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave9"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "Zombies": [
+          {
+            "CarrySun": 50,
+            "Style": "appear",
+            "Row": "???",
+            "Column": "8",
+            "Type": "RTID(the_superfanimp@CurrentLevel)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_armor4@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave10"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "CarrySun": 50,
+            "Style": "appear",
+            "Row": "???",
+            "Column": "8",
+            "Type": "RTID(the_superfanimp@CurrentLevel)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(eighties_gargantuar@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(beach_octopus@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave11"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "CarrySun": 50,
+            "Style": "appear",
+            "Row": "???",
+            "Column": "8",
+            "Type": "RTID(the_superfanimp@CurrentLevel)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_armor4@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(beach_surfer@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave12"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "DynamicPlantfood": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "Zombies": [
+          {
+            "CarrySun": 50,
+            "Style": "appear",
+            "Row": "???",
+            "Column": "8",
+            "Type": "RTID(the_superfanimp@CurrentLevel)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(explorer_veteran@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave13"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "CarrySun": 50,
+            "Style": "appear",
+            "Row": "???",
+            "Column": "8",
+            "Type": "RTID(the_superfanimp@CurrentLevel)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dino_bully@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(beach_surfer@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave15"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "DynamicPlantfood": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "Zombies": [
+          {
+            "CarrySun": 100,
+            "Style": "appear",
+            "Row": "???",
+            "Column": "8",
+            "Type": "RTID(the_superfanimp@CurrentLevel)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dino_bully@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(explorer_veteran@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave14"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "CarrySun": 100,
+            "Style": "appear",
+            "Row": "???",
+            "Column": "8",
+            "Type": "RTID(the_superfanimp@CurrentLevel)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(eighties_gargantuar@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(beach_octopus@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave16"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "CarrySun": 100,
+            "Style": "appear",
+            "Row": "???",
+            "Column": "8",
+            "Type": "RTID(the_superfanimp@CurrentLevel)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(abbot_chi@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(eighties_gargantuar@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "the_superfanimp"
+      ],
+      "objclass": "ZombieType",
+      "objdata": {
+        "Properties": "RTID(modern_superfanimp_r@CurrentLevel)",
+        "ZombieBasedOn": "modern_superfanimp"
+      }
+    },
+    {
+      "aliases": [
+        "modern_superfanimp_r"
+      ],
+      "objclass": "ZombieProperties",
+      "objdata": {
+        "IgnoredInWaves": true,
+        "KilledByShrinkingViolet": true,
+        "CannotBeGrabbedByPtero": true,
+        "ExplosionDamage": 1,
+        "MinTriggerColumn": 8,
+        "MaxTriggerColumn": 8,
+        "CanBeKickedByAllstar": true,
+        "WalkSPS": 1,
+        "EatDPS": 0,
+        "Toughness": 10,
+        "WavePointCost": 200,
+        "Weight": 3000,
+        "HitRect": "RTID(ImpHitRect@RectangleProps)",
+        "AttackRect": "RTID(ImpAttackRect@RectangleProps)"
+      }
+    }
+  ],
+  "version": 1
+}

@@ -21,6 +21,10 @@
           "RTID(DefaultZombieWinCondition@LevelModules)"
         ],
         "Name": "Sandbox (Modern)",
+        "NameMultiLanguage": {
+          "en": "Sandbox (Modern)",
+          "zh": "沙盒 (现代)"
+        },
         "MusicType": "MiniGame_A",
         "StageModule": "RTID(ModernStage@LevelModules)",
         "StartingSun": 100,

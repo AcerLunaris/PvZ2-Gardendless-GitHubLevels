@@ -21,6 +21,10 @@
           "RTID(DefaultZombieWinCondition@LevelModules)"
         ],
         "Name": "Sandbox (Green)",
+        "NameMultiLanguage": {
+          "en": "Sandbox (Green)",
+          "zh": "沙盒 (绿幕)"
+        },
         "StageModule": "RTID(GreenStage@LevelModules)",
         "StartingSun": 100,
         "SandBoxMode": true,

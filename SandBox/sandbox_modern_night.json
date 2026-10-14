@@ -22,6 +22,10 @@
         ],
         "MusicType": "MiniGame_B",
         "Name": "Sandbox (Modern Night)",
+        "NameMultiLanguage": {
+          "en": "Sandbox (Modern Night)",
+          "zh": "沙盒 (现代夜晚)"
+        },
         "StageModule": "RTID(ModernNightStage@LevelModules)",
         "StartingSun": 100,
         "SandBoxMode": true,

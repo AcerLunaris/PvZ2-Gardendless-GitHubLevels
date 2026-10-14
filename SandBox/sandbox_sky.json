@@ -22,6 +22,10 @@
           "RTID(DefaultZombieWinCondition@LevelModules)"
         ],
         "Name": "Sandbox (Aerial)",
+        "NameMultiLanguage": {
+          "en": "Sandbox (Aerial)",
+          "zh": "沙盒 (天空)"
+        },
         "StageModule": "RTID(SkyStage@LevelModules)",
         "StartingSun": 100,
         "SandBoxMode": true,

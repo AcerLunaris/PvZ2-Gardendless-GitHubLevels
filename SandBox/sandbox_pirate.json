@@ -20,7 +20,11 @@
           "RTID(LilypadPlacement@CurrentLevel)",
           "RTID(DefaultZombieWinCondition@LevelModules)"
         ],
-        "Name": "Sandbox (Modern)",
+        "Name": "Sandbox (Pirate)",
+        "NameMultiLanguage": {
+          "en": "Sandbox (Pirate)",
+          "zh": "沙盒 (海盗)"
+        },
         "MusicType": "MiniGame_A",
         "StageModule": "RTID(PirateStage@LevelModules)",
         "StartingSun": 100,

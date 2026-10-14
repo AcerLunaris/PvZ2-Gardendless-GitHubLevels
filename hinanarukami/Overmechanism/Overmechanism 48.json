@@ -97,7 +97,7 @@
                 "guacodile",
                 "firegourd"
               ]
-            } 
+            }
                 
                           
                                        
@@ -768,7 +768,7 @@
         "Zombies": [
           {
             "Type": "RTID(sky_electric@ZombieTypes)"
-          } 
+          }
         ]
       }
     }

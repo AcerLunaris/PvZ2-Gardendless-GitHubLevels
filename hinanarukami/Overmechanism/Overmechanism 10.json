@@ -24,7 +24,7 @@
           "RTID(ChallengeModule@CurrentLevel)",
           "RTID(DefaultSunDropper@LevelModules)",
           "RTID(CowboyRails@CurrentLevel)",
-          "RTID(SeedBank@CurrentLevel)" 
+          "RTID(SeedBank@CurrentLevel)"
         ],
         "Name": "Overmechanism - Level 10",
         "WrittenBy": "hinanarukami",
@@ -176,7 +176,7 @@
               ]
             }
           ]
-        } 
+        }
       }
     },
     {
@@ -209,7 +209,7 @@
       "objclass": "StarChallengeBeatTheLevelProps",
       "objdata": {
         "Descriptions": [
-          "Survive the overmechanism!" 
+          "Survive the overmechanism!"
         ],
         "DescriptionsMultiLanguage": [
           {

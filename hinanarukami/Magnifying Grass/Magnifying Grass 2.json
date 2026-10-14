@@ -48,7 +48,7 @@
             "GridY": 2,
             "Level": -1,
             "TypeName": "magnifyinggrass"
-          } 
+          }
         ]
       }
     },
@@ -140,7 +140,7 @@
       "objclass": "StarChallengeBeatTheLevelProps",
       "objdata": {
         "Descriptions": [
-          "Survive the animals' attack" 
+          "Survive the animals' attack"
         ],
         "DescriptionsMultiLanguage": [
           {
@@ -414,7 +414,7 @@
           },
           {
             "Type": "RTID(pirate_armor4@ZombieTypes)"
-          } 
+          }
         ]
       }
     },
@@ -486,7 +486,7 @@
           },
           {
             "Type": "RTID(pirate_armor4@ZombieTypes)"
-          } 
+          }
         ]
       }
     },
@@ -539,7 +539,7 @@
         "LabelTargetScale": 0.5,
         "LabelInitScale": 4,
         "Duration": 2.5,
-        "InitTime": 0.33 
+        "InitTime": 0.33
       }
     },
     {
@@ -560,7 +560,7 @@
         "LabelTargetScale": 0.5,
         "LabelInitScale": 4,
         "Duration": 2.5,
-        "InitTime": 0.33 
+        "InitTime": 0.33
       }
     },
     {
@@ -711,7 +711,7 @@
           }
         ]
       }
-    } 
+    }
   ],
   "version": 1
 }

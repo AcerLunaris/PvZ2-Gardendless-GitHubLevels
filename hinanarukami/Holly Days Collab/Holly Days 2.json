@@ -726,7 +726,7 @@
                 "RewardWhenEnded": false,
                 "SuppressRewardState": false,
                 "Events": [
-                    "RTID(SpawnTomatos@CurrentLevel)" 
+                    "RTID(SpawnTomatos@CurrentLevel)"
                 ]
             }
         },
@@ -767,7 +767,7 @@
                         "SpawnAnim": "grow",
                         "GridX": 2,
                         "GridY": 2
-                    } 
+                    }
                 ]
             }
         },
@@ -997,7 +997,7 @@
                     }
                 ]
             }
-        } 
+        }
     ],
     "version": 1
 }

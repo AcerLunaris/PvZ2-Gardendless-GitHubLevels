@@ -154,7 +154,7 @@
             "ZombiePool": [
               "RTID(tutorial@ZombieTypes)",
               "RTID(tutorial_armor1@ZombieTypes)",
-              "RTID(modern_balloon@ZombieTypes)" 
+              "RTID(modern_balloon@ZombieTypes)"
             ]
           },
           {
@@ -164,7 +164,7 @@
             "ZombiePool": [
               "RTID(tutorial_armor1@ZombieTypes)",
               "RTID(tutorial_armor2@ZombieTypes)",
-              "RTID(modern_balloon@ZombieTypes)" 
+              "RTID(modern_balloon@ZombieTypes)"
             ]
           },
           {
@@ -175,7 +175,7 @@
               "RTID(tutorial_armor1@ZombieTypes)",
               "RTID(tutorial_armor2@ZombieTypes)",
               "RTID(modern_balloon@ZombieTypes)",
-              "RTID(modern_newspaper@ZombieTypes)" 
+              "RTID(modern_newspaper@ZombieTypes)"
             ]
           },
           {
@@ -187,7 +187,7 @@
               "RTID(tutorial_armor2@ZombieTypes)",
               "RTID(modern_balloon@ZombieTypes)",
               "RTID(newspaper_veteran@ZombieTypes)",
-              "RTID(tutorial_gargantuar@ZombieTypes)" 
+              "RTID(tutorial_gargantuar@ZombieTypes)"
             ]
           }
         ],
@@ -311,7 +311,7 @@
             "Type": "RTID(iceburg@PlantTypes)",
             "MaxCount": 1,
             "Weight": 65
-          } 
+          }
         ],
         "Remove": []
       }
@@ -357,7 +357,7 @@
             "Type": "RTID(sweetpotato@PlantTypes)",
             "MaxCount": 1,
             "Weight": 65
-          } 
+          }
         ],
         "Remove": []
       }
@@ -389,7 +389,7 @@
           },
           {
             "Type": "RTID(iceage_gargantuar@ZombieTypes)"
-          } 
+          }
         ]
       }
     },
@@ -421,7 +421,7 @@
           {
             "Type": "RTID(beach_surfer@ZombieTypes)",
             "Row": "5"
-          } 
+          }
         ]
       }
     },
@@ -827,7 +827,7 @@
           {
             "Type": "RTID(west_bull@ZombieTypes)",
             "Row": "4"
-          } 
+          }
         ]
       }
     },

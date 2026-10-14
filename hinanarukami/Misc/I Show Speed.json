@@ -86,7 +86,7 @@
       "objclass": "StarChallengeBeatTheLevelProps",
       "objdata": {
         "Descriptions": [
-          "The level has exactly 172 zombies (including imps from gargantuars)" 
+          "The level has exactly 172 zombies (including imps from gargantuars)"
         ],
         "DescriptionsMultiLanguage": [
           {
@@ -957,7 +957,7 @@
           {
             "Type": "RTID(catapult@ZombieTypes)",
             "Row": 1
-          } 
+          }
         ]
       }
     }

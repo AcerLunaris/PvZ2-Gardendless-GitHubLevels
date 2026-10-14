@@ -70,7 +70,7 @@
             "GridY": 4,
             "Level": -1,
             "TypeName": "primalsunflower"
-          } 
+          }
         ]
       }
     },
@@ -95,7 +95,7 @@
       "objclass": "StarChallengeBeatTheLevelProps",
       "objdata": {
         "Descriptions": [
-          "Survive with 4 seed slots" 
+          "Survive with 4 seed slots"
         ],
         "DescriptionsMultiLanguage": [
           {
@@ -157,7 +157,7 @@
           "plantern",
           "moonflower",
           "blover"
-        ] 
+        ]
       }
     },
     {

@@ -706,7 +706,7 @@
           {
             "Count": 10,
             "Type": "RTID(gravestone_dark@GridItemTypes)"
-          } 
+          }
         ],
         "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
         "SpawnPositionsPool": [
@@ -1311,7 +1311,7 @@
         "LabelTargetScale": 0.5,
         "LabelInitScale": 4,
         "Duration": 2.5,
-        "InitTime": 0.33 
+        "InitTime": 0.33
       }
     },
     {
@@ -1564,7 +1564,7 @@
           {
             "Count": 10,
             "Type": "RTID(gravestone_tutorial@GridItemTypes)"
-          } 
+          }
         ],
         "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
         "SpawnPositionsPool": [

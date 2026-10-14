@@ -113,7 +113,7 @@
               ]
             }
           ]
-        } 
+        }
       }
     },
     {
@@ -964,7 +964,7 @@
           {
             "Type": "RTID(disco_mech@ZombieTypes)",
             "Row": 3
-          } 
+          }
         ]
       }
     },

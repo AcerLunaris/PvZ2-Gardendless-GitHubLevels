@@ -343,7 +343,7 @@
             "RTID(Additional1@CurrentLevel)"
           ],
           [
-            "RTID(PlantFoodSpawner100@CurrentLevel)" 
+            "RTID(PlantFoodSpawner100@CurrentLevel)"
           ],
           [
             "RTID(Relic1@CurrentLevel)",
@@ -1166,7 +1166,7 @@
           }
         ]
       }
-    } 
+    }
   ],
   "version": 1
 }

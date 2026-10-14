@@ -58,7 +58,7 @@
       "objclass": "StarChallengeBeatTheLevelProps",
       "objdata": {
         "Descriptions": [
-          "Produce the given amount of sun in 125 seconds.\nThere is no time rng, Endurian's attack rate is fixed at 1 second." 
+          "Produce the given amount of sun in 125 seconds.\nThere is no time rng, Endurian's attack rate is fixed at 1 second."
         ],
         "DescriptionsMultiLanguage": [
           {
@@ -130,7 +130,7 @@
             "GridX": 8,
             "GridY": 4,
             "PlantType": "endurian"
-          } 
+          }
         ]
       }
     },
@@ -389,7 +389,7 @@
           "thymewarp",
           "springbean",
           "shinevine"
-        ] 
+        ]
       }
     },
     {
@@ -449,7 +449,7 @@
             "Type": "RTID(timer@CurrentLevel)",
             "Row": 4,
             "Column": 9
-          } 
+          }
         ]
       }
     }

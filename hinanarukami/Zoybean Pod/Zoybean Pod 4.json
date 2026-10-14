@@ -1250,7 +1250,7 @@
             "Type": "RTID(stallia@PlantTypes)",
             "MaxCount": 0,
             "Weight": 0
-          } 
+          }
         ]
       }
     },
@@ -1281,7 +1281,7 @@
             "MinWeightFactor": 0.1,
             "ToolType": "tool_powertile_alpha",
             "Weight": 50
-          } 
+          }
         ],
         "Remove": []
       }

@@ -53,7 +53,7 @@
 						"GridY": 2,
 						"Level": -1,
 						"TypeName": "electriccurrant"
-					} 
+					}
 				]
 			}
 		},
@@ -243,7 +243,7 @@
 						"RTID(Wave1@CurrentLevel)"
 					],
 					[
-						"RTID(Wave2@CurrentLevel)" 
+						"RTID(Wave2@CurrentLevel)"
 					],
 					[
 						"RTID(Wave3@CurrentLevel)"
@@ -316,7 +316,7 @@
 				"Zombies": [
 					{
 						"Type": "RTID(mummy_armor1@ZombieTypes)"
-					} 
+					}
 				]
 			}
 		},
@@ -361,7 +361,7 @@
 					},
 					{
 						"Type": "RTID(mummy_armor2@ZombieTypes)"
-					} 
+					}
 				]
 			}
 		},
@@ -415,7 +415,7 @@
 					},
 					{
 						"Type": "RTID(mummy@ZombieTypes)"
-					} 
+					}
 				]
 			}
 		},
@@ -439,7 +439,7 @@
 					},
 					{
 						"Type": "RTID(mummy_armor2@ZombieTypes)"
-					} 
+					}
 				]
 			}
 		},
@@ -487,7 +487,7 @@
 				"Zombies": [
 					{
 						"Type": "RTID(egypt_gargantuar@ZombieTypes)"
-					} 
+					}
 				]
 			}
 		},
@@ -520,7 +520,7 @@
 					},
 					{
 						"Type": "RTID(explorer@ZombieTypes)"
-					} 
+					}
 				]
 			}
 		},
@@ -556,7 +556,7 @@
 					},
 					{
 						"Type": "RTID(mummy_armor1@ZombieTypes)"
-					} 
+					}
 				]
 			}
 		},
@@ -592,7 +592,7 @@
 					},
 					{
 						"Type": "RTID(mummy_armor1@ZombieTypes)"
-					} 
+					}
 				]
 			}
 		},
@@ -643,7 +643,7 @@
 					},
 					{
 						"Type": "RTID(pharaoh@ZombieTypes)"
-					} 
+					}
 				]
 			}
 		},
@@ -712,7 +712,7 @@
 					},
 					{
 						"Type": "RTID(egypt_gargantuar@ZombieTypes)"
-					} 
+					}
 				]
 			}
 		},
@@ -754,7 +754,7 @@
 					},
 					{
 						"Type": "RTID(mummy_armor4@ZombieTypes)"
-					} 
+					}
 				]
 			}
 		},
@@ -787,7 +787,7 @@
 					},
 					{
 						"Type": "RTID(mummy_armor1@ZombieTypes)"
-					} 
+					}
 				]
 			}
 		},
@@ -826,7 +826,7 @@
 					},
 					{
 						"Type": "RTID(explorer_veteran@ZombieTypes)"
-					} 
+					}
 				]
 			}
 		},
@@ -871,7 +871,7 @@
 					},
 					{
 						"Type": "RTID(mummy_armor2@ZombieTypes)"
-					} 
+					}
 				]
 			}
 		},

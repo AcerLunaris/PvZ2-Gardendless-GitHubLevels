@@ -87,7 +87,7 @@
       "objclass": "StarChallengeBeatTheLevelProps",
       "objdata": {
         "Descriptions": [
-          "Survive the overmechanism!" 
+          "Survive the overmechanism!"
         ],
         "DescriptionsMultiLanguage": [
           {
@@ -303,15 +303,15 @@
           ],
           [
             "RTID(Abbot3@CurrentLevel)",
-            "RTID(Abbot7@CurrentLevel)" 
+            "RTID(Abbot7@CurrentLevel)"
           ],
           [
             "RTID(Abbot3@CurrentLevel)",
-            "RTID(Abbot6@CurrentLevel)" 
+            "RTID(Abbot6@CurrentLevel)"
           ],
           [
             "RTID(Abbot4@CurrentLevel)",
-            "RTID(Abbot7@CurrentLevel)" 
+            "RTID(Abbot7@CurrentLevel)"
           ],
           [
             "RTID(Abbot3@CurrentLevel)",

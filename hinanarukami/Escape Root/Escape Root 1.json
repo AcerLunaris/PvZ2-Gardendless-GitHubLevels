@@ -106,7 +106,7 @@
             "GridX": 0,
             "GridY": 4,
             "PlantType": "fumeshroom"
-          } 
+          }
         ]
       }
     },
@@ -577,7 +577,7 @@
         ],
         "Zombies": []
       }
-    } 
+    }
   ],
   "version": 1
 }

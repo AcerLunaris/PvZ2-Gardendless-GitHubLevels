@@ -26,7 +26,7 @@
           "RTID(GoldTiles@CurrentLevel)",
           "RTID(ThunderTiles@CurrentLevel)",
           "RTID(Rails@CurrentLevel)",
-          "RTID(IPP@CurrentLevel)" 
+          "RTID(IPP@CurrentLevel)"
         ],
         "Name": "Apple Mortar - Level 6",
         "WrittenBy": "hinanarukami",
@@ -67,7 +67,7 @@
       "objclass": "StarChallengeBeatTheLevelProps",
       "objdata": {
         "Descriptions": [
-          "You have 2 more puff-shrooms than needed" 
+          "You have 2 more puff-shrooms than needed"
         ],
         "DescriptionsMultiLanguage": [
           {
@@ -778,7 +778,7 @@
           {
             "Count": 5,
             "Type": "RTID(goldtile@GridItemTypes)"
-          } 
+          }
         ],
         "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
         "SpawnPositionsPool": [
@@ -816,7 +816,7 @@
           {
             "Count": 5,
             "Type": "RTID(goldtile@GridItemTypes)"
-          } 
+          }
         ],
         "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
         "SpawnPositionsPool": [
@@ -843,6 +843,6 @@
         ],
         "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"
       }
-    } 
+    }
   ]
 }

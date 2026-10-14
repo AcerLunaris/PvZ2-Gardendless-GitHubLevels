@@ -24,7 +24,7 @@
           "RTID(ChallengeModule@CurrentLevel)",
           "RTID(SliderPlacement@CurrentLevel)",
           "RTID(DefaultSunDropper@LevelModules)",
-          "RTID(SeedBank@CurrentLevel)" 
+          "RTID(SeedBank@CurrentLevel)"
         ],
         "Name": "Overmechanism - Level 11",
         "WrittenBy": "hinanarukami",
@@ -184,7 +184,7 @@
             "GridX": 8,
             "GridY": 3,
             "TypeName": "slider_down"
-          } 
+          }
         ]
       }
     },
@@ -254,7 +254,7 @@
               ]
             }
           ]
-        } 
+        }
       }
     },
     {
@@ -287,7 +287,7 @@
       "objclass": "StarChallengeBeatTheLevelProps",
       "objdata": {
         "Descriptions": [
-          "Survive the overmechanism!" 
+          "Survive the overmechanism!"
         ],
         "DescriptionsMultiLanguage": [
           {
@@ -1502,7 +1502,7 @@
           },
           {
             "Type": "RTID(iceage_gargantuar@ZombieTypes)"
-          } 
+          }
         ]
       }
     },

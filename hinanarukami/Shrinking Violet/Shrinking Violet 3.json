@@ -65,7 +65,7 @@
             "GridX": 2,
             "GridY": 4,
             "PlantType": "coconutcannon"
-          } 
+          }
         ]
       }
     },
@@ -282,7 +282,7 @@
           {
             "Type": "RTID(tutorial_armor2@ZombieTypes)",
             "Row": 5
-          } 
+          }
         ]
       }
     },
@@ -326,7 +326,7 @@
           {
             "Type": "RTID(iceage_weaselhoarder@ZombieTypes)",
             "Row": 1
-          } 
+          }
         ]
       }
     },

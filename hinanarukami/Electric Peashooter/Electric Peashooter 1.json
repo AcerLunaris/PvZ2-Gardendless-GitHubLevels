@@ -72,7 +72,7 @@
             "MaxCount": 5,
             "PlantType": "electricpeashooter",
             "Weight": 30
-          } 
+          }
         ],
         "SpeedConditions": [
           {
@@ -111,7 +111,7 @@
               "RTID(iceage_weaselhoarder@ZombieTypes)",
               "RTID(pirate_captain_parrot@ZombieTypes)",
               "RTID(seagull@ZombieTypes)",
-              "RTID(pelican@ZombieTypes)" 
+              "RTID(pelican@ZombieTypes)"
             ]
           },
           {
@@ -124,7 +124,7 @@
               "RTID(iceage_weaselhoarder@ZombieTypes)",
               "RTID(pirate_captain_parrot@ZombieTypes)",
               "RTID(seagull@ZombieTypes)",
-              "RTID(pelican@ZombieTypes)" 
+              "RTID(pelican@ZombieTypes)"
             ]
           },
           {
@@ -137,7 +137,7 @@
               "RTID(iceage_weaselhoarder@ZombieTypes)",
               "RTID(pirate_captain_parrot@ZombieTypes)",
               "RTID(seagull@ZombieTypes)",
-              "RTID(pelican@ZombieTypes)" 
+              "RTID(pelican@ZombieTypes)"
             ]
           },
           {
@@ -150,7 +150,7 @@
               "RTID(iceage_weaselhoarder@ZombieTypes)",
               "RTID(pirate_captain_parrot@ZombieTypes)",
               "RTID(seagull@ZombieTypes)",
-              "RTID(pelican@ZombieTypes)" 
+              "RTID(pelican@ZombieTypes)"
             ]
           }
         ],
@@ -477,7 +477,7 @@
           {
             "Type": "RTID(beach_octopus@ZombieTypes)",
             "Row": 5
-          } 
+          }
         ]
       }
     },
@@ -951,7 +951,7 @@
           },
           {
             "Type": "RTID(west_bull@ZombieTypes)"
-          } 
+          }
         ]
       }
     },
@@ -1020,7 +1020,7 @@
           },
           {
             "Type": "RTID(west_bull_veteran@ZombieTypes)"
-          } 
+          }
         ]
       }
     },

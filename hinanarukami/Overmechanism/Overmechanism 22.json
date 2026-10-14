@@ -136,7 +136,7 @@
             "objclass": "StarChallengeBeatTheLevelProps",
             "objdata": {
                 "Descriptions": [
-                    "Survive the overmechanism!" 
+                    "Survive the overmechanism!"
                 ],
                 "DescriptionsMultiLanguage": [
                     {
@@ -174,7 +174,7 @@
                             "RTID(kongfu_bronze_chi@ZombieTypes)",
                             "RTID(kongfu_bronze_hook@ZombieTypes)",
                             "RTID(kongfu_bronze_strong@ZombieTypes)",
-                            "RTID(sky_gargantuar@ZombieTypes)" 
+                            "RTID(sky_gargantuar@ZombieTypes)"
                         ]
                     },
                     {
@@ -195,7 +195,7 @@
                             "RTID(kongfu_bronze_chi@ZombieTypes)",
                             "RTID(kongfu_bronze_hook@ZombieTypes)",
                             "RTID(kongfu_bronze_strong@ZombieTypes)",
-                            "RTID(sky_gargantuar@ZombieTypes)" 
+                            "RTID(sky_gargantuar@ZombieTypes)"
                         ]
                     },
                     {
@@ -216,7 +216,7 @@
                             "RTID(kongfu_bronze_chi@ZombieTypes)",
                             "RTID(kongfu_bronze_hook@ZombieTypes)",
                             "RTID(kongfu_bronze_strong@ZombieTypes)",
-                            "RTID(sky_gargantuar@ZombieTypes)" 
+                            "RTID(sky_gargantuar@ZombieTypes)"
                         ]
                     },
                     {
@@ -237,7 +237,7 @@
                             "RTID(kongfu_bronze_chi@ZombieTypes)",
                             "RTID(kongfu_bronze_hook@ZombieTypes)",
                             "RTID(kongfu_bronze_strong@ZombieTypes)",
-                            "RTID(sky_gargantuar@ZombieTypes)" 
+                            "RTID(sky_gargantuar@ZombieTypes)"
                         ]
                     }
                 ],

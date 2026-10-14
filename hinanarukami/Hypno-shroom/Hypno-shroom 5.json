@@ -128,7 +128,7 @@
             "PlantType": "hypnoshroom",
             "Level": -1
           }
-        ] 
+        ]
       }
     },
     {
@@ -299,7 +299,7 @@
             "RTID(NecromancyScheduler1@CurrentLevel)",
             "RTID(RapScheduler@CurrentLevel)",
             "RTID(Summer@CurrentLevel)"
-          ] 
+          ]
         ]
       }
     },
@@ -576,7 +576,7 @@
           {
             "Count": 2,
             "Type": "RTID(gravestone_tutorial@GridItemTypes)"
-          } 
+          }
         ],
         "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
         "SpawnPositionsPool": [
@@ -634,7 +634,7 @@
           {
             "Count": 2,
             "Type": "RTID(gravestone_tutorial@GridItemTypes)"
-          } 
+          }
         ],
         "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
         "SpawnPositionsPool": [

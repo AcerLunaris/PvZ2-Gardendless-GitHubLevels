@@ -193,7 +193,7 @@
             "RTID(Wave1@CurrentLevel)"
           ],
           [
-            "RTID(Wave2@CurrentLevel)" 
+            "RTID(Wave2@CurrentLevel)"
           ],
           [
             "RTID(ImpCannonZom@CurrentLevel)"
@@ -961,7 +961,7 @@
             "Type": "RTID(cactus@PlantTypes)",
             "MaxCount": 5,
             "Weight": 30
-          } 
+          }
         ],
         "Remove": []
       }

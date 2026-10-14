@@ -22,9 +22,12 @@
           "RTID(NewWaves@CurrentLevel)",
           "RTID(ChallengeModule@CurrentLevel)"
         ],
-        "MusicType": "MiniGame_A",
         "PlantToIntroduce": "dragonbruit",
-        "Name": "[EPIC_PLANT_DEMO_LEVEL_NAME]",
+        "MusicType": "MiniGame_A",
+        "NameMultiLanguage": {
+          "en": "Hydra Effect",
+          "zh": "九头蛇效应"
+        },
         "WrittenBy": "蔓逐I蝶舞",
         "StageModule": "RTID(ModernStage@LevelModules)"
       }

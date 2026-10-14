@@ -4,7 +4,6 @@
     {
       "objclass": "LevelDefinition",
       "objdata": {
-        "Description": "",
         "Description": "[PLAYERS_TRIP_TO_KONGFU]",
         "FirstIntroNarrative": "KONGFU_44_INTRO",
         "FirstOutroNarrative": "KONGFU_44_OUTRO",

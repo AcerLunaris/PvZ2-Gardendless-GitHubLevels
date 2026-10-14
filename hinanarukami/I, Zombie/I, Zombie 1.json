@@ -383,7 +383,7 @@
                             "mY": 4
                         },
                         "PropagationDelay": 0.25
-                    }
+                    } 
                 ]
             }
         },
@@ -413,7 +413,7 @@
                     {
                         "PlantType": "powerplant_epsilon",
                         "Level": -1
-                    }
+                    } 
                 ],
                 "SelectionMethod": "preset"
             }
@@ -995,7 +995,7 @@
                 "LabelTargetScale": 0.5,
                 "LabelInitScale": 4,
                 "Duration": 0.2,
-                "InitTime": 0.01
+                "InitTime": 0.01 
             }
         },
         {
@@ -1016,7 +1016,7 @@
                 "LabelTargetScale": 0.5,
                 "LabelInitScale": 4,
                 "Duration": 0.2,
-                "InitTime": 0.01
+                "InitTime": 0.01 
             }
         },
         {
@@ -1037,7 +1037,7 @@
                 "LabelTargetScale": 0.5,
                 "LabelInitScale": 4,
                 "Duration": 0.2,
-                "InitTime": 0.01
+                "InitTime": 0.01 
             }
         },
         {
@@ -1058,7 +1058,7 @@
                 "LabelTargetScale": 0.5,
                 "LabelInitScale": 4,
                 "Duration": 0.2,
-                "InitTime": 0.01
+                "InitTime": 0.01 
             }
         },
         {
@@ -1079,7 +1079,7 @@
                 "LabelTargetScale": 0.5,
                 "LabelInitScale": 4,
                 "Duration": 0.2,
-                "InitTime": 0.01
+                "InitTime": 0.01 
             }
         },
         {
@@ -1366,7 +1366,7 @@
                     }
                 ]
             }
-        }
+        } 
     ],
     "version": 1
 }

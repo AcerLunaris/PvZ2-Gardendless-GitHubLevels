@@ -77,7 +77,7 @@
             "GridX": 3,
             "GridY": 4,
             "PlantType": "sapfling"
-          }
+          } 
         ]
       }
     },
@@ -102,7 +102,7 @@
       "objclass": "StarChallengeBeatTheLevelProps",
       "objdata": {
         "Descriptions": [
-          "Survive with 2 slots"
+          "Survive with 2 slots" 
         ],
         "DescriptionsMultiLanguage": [
           {

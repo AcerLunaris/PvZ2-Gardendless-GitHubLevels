@@ -755,7 +755,7 @@
                     {
                         "Type": "RTID(tutorial_gargantuar@ZombieTypes)",
                         "Row": 2
-                    }
+                    } 
                 ]
             }
         },
@@ -769,7 +769,7 @@
                     {
                         "Type": "RTID(summer_gargantuar@ZombieTypes)",
                         "Row": 5
-                    }
+                    } 
                 ]
             }
         },
@@ -830,7 +830,7 @@
                     {
                         "Type": "RTID(eighties_breakdancer@ZombieTypes)",
                         "Row": 4
-                    }
+                    } 
                 ]
             }
         },
@@ -1698,7 +1698,7 @@
                     {
                         "Type": "RTID(beach_gargantuar@ZombieTypes)",
                         "Row": 1
-                    }
+                    } 
                 ]
             }
         },

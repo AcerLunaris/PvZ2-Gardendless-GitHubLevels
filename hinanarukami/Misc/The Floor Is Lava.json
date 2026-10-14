@@ -159,7 +159,7 @@
             "PlantType": "moonbean",
             "Level": -1
           }
-        ]
+        ] 
       }
     },
     {
@@ -1456,7 +1456,7 @@
         "DinoType": "ankylo",
         "DinoWaveDuration": 4
       }
-    }
+    } 
   ],
   "version": 1
 }

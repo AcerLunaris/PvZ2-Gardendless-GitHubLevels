@@ -158,7 +158,7 @@
           "enforcemint",
           "blover",
           "hurrikale",
-          "icebloom"
+          "icebloom" 
           ],
         "SelectionMethod": "chooser",
         "CardDecks": {
@@ -179,7 +179,7 @@
                 "guacodile",
                 "puffshroom"
               ]
-            }
+            } 
                 
                           
                                        
@@ -719,7 +719,7 @@
         "Zombies": [
           {
             "Type": "RTID(sky@ZombieTypes)"
-          }
+          } 
         ]
       }
     }

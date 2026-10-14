@@ -167,7 +167,7 @@
             "objclass": "StarChallengeBeatTheLevelProps",
             "objdata": {
                 "Descriptions": [
-                    "Survive the overmechanism!"
+                    "Survive the overmechanism!" 
                 ],
                 "DescriptionsMultiLanguage": [
                     {
@@ -190,7 +190,7 @@
                         "RTID(Wave1@CurrentLevel)"
                     ],
                     [
-                        "RTID(Wave2@CurrentLevel)"
+                        "RTID(Wave2@CurrentLevel)" 
                     ],
                     [
                         "RTID(Wave3@CurrentLevel)"
@@ -1065,7 +1065,7 @@
                     {
                         "Type": "RTID(egypt_gargantuar@ZombieTypes)",
                         "Row": "5"
-                    }
+                    } 
                 ]
             }
         },
@@ -1133,7 +1133,7 @@
                     {
                         "Type": "RTID(egypt_gargantuar@ZombieTypes)",
                         "Row": "3"
-                    }
+                    } 
                 ]
             }
         },

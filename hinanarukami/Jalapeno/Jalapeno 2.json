@@ -231,7 +231,7 @@
           ],
           [
             "RTID(Wave21@CurrentLevel)"
-          ]
+          ] 
         ]
       }
     },
@@ -750,7 +750,7 @@
           },
           {
             "Type": "RTID(iceage_gargantuar@ZombieTypes)"
-          }
+          } 
         ]
       }
     },

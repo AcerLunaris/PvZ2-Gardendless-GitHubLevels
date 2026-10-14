@@ -117,7 +117,7 @@
       "objclass": "StarChallengeBeatTheLevelProps",
       "objdata": {
         "Descriptions": [
-          "Survive the overmechanism!"
+          "Survive the overmechanism!" 
         ],
         "DescriptionsMultiLanguage": [
           {
@@ -607,7 +607,7 @@
           },
           {
             "Type": "RTID(beach_octopus@ZombieTypes)"
-          }
+          } 
         ]
       }
     },
@@ -665,7 +665,7 @@
           {
             "Type": "RTID(beach_fisherman@ZombieTypes)",
             "Row": "1"
-          }
+          } 
         ]
       }
     },
@@ -683,7 +683,7 @@
           {
             "Type": "RTID(beach_fisherman@ZombieTypes)",
             "Row": "4"
-          }
+          } 
         ]
       }
     },

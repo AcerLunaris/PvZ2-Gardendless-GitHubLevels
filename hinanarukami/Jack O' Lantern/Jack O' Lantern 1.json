@@ -309,7 +309,7 @@
             "RTID(TyrannoRow3@CurrentLevel)",
             "RTID(TyrannoRow4@CurrentLevel)",
             "RTID(PlantFoodSpawner3@CurrentLevel)"
-          ]
+          ] 
         ]
       }
     },
@@ -789,7 +789,7 @@
         "DinoType": "tyranno",
         "DinoWaveDuration": 4
       }
-    }
+    } 
   ],
   "version": 1
 }

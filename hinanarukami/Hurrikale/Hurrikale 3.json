@@ -97,7 +97,7 @@
                 "chardguard",
                 "wintermelon",
                 "solarsage",
-                "guacodile"
+                "guacodile" 
               ]
             },
             {
@@ -261,7 +261,7 @@
             "RTID(PteroRow2@CurrentLevel)",
             "RTID(PteroRow3@CurrentLevel)",
             "RTID(PteroRow4@CurrentLevel)"
-          ]
+          ] 
         ]
       }
     },
@@ -927,7 +927,7 @@
           {
             "Type": "RTID(abbot_3section_staff@ZombieTypes)",
             "Row": 2
-          }
+          } 
         ]
       }
     },
@@ -997,7 +997,7 @@
           {
             "Type": "RTID(cowboy_armor4@ZombieTypes)",
             "Row": 2
-          }
+          } 
         ]
       }
     },

@@ -281,7 +281,7 @@
         "Weight": 3000,
         "HitRect": "RTID(CommonHitRect@RectangleProps)",
         "AttackRect": "RTID(CommonAttackRect@RectangleProps)",
-        "LivesInDeepWater": true
+        "LivesInDeepWater": true 
       }
     },
     {

@@ -74,7 +74,7 @@
                 "Level": -1
             }
         ],
-        "SelectionMethod": "preset"
+        "SelectionMethod": "preset" 
       }
     },
     {
@@ -436,7 +436,7 @@
       "objclass": "SpawnZombiesJitteredWaveActionProps",
       "objdata": {
         "Zombies": [
-          { "Type": "RTID(pharaoh@ZombieTypes)"  },
+          { "Type": "RTID(pharaoh@ZombieTypes)"   },
           { "Type": "RTID(pharaoh@ZombieTypes)" },
           { "Type": "RTID(pharaoh@ZombieTypes)" },
           { "Type": "RTID(pharaoh@ZombieTypes)" },
@@ -446,7 +446,7 @@
           { "Type": "RTID(cannon@ZombieTypes)", "Row": 2 },
           { "Type": "RTID(cannon@ZombieTypes)", "Row": 3 },
           { "Type": "RTID(cannon@ZombieTypes)", "Row": 4 },
-          { "Type": "RTID(cannon@ZombieTypes)", "Row": 5 }
+          { "Type": "RTID(cannon@ZombieTypes)", "Row": 5 } 
         ]
       }
     },

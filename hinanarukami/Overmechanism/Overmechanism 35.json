@@ -23,7 +23,7 @@
                     "RTID(StandardIntro@LevelModules)",
                     "RTID(ChallengeModule@CurrentLevel)",
                     "RTID(DefaultSunDropper@LevelModules)",
-                    "RTID(SeedBank@CurrentLevel)"
+                    "RTID(SeedBank@CurrentLevel)" 
                 ],
                 "Name": "Overmechanism - Level 35",
                 "MusicType": "MiniGame_A",
@@ -90,7 +90,7 @@
             "objclass": "StarChallengeBeatTheLevelProps",
             "objdata": {
                 "Descriptions": [
-                    "Survive the overmechanism!"
+                    "Survive the overmechanism!" 
                 ],
                 "DescriptionsMultiLanguage": [
                     {
@@ -199,7 +199,7 @@
                         "RTID(Wave1@CurrentLevel)"
                     ],
                     [
-                        "RTID(Wave2@CurrentLevel)"
+                        "RTID(Wave2@CurrentLevel)" 
                     ],
                     [
                         "RTID(Wave3@CurrentLevel)"

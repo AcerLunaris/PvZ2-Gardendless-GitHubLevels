@@ -74,7 +74,7 @@
       "objclass": "StarChallengeBeatTheLevelProps",
       "objdata": {
         "Descriptions": [
-          "Survive with 3 slots"
+          "Survive with 3 slots" 
         ],
         "DescriptionsMultiLanguage": [
           {
@@ -543,7 +543,7 @@
           {
             "Type": "RTID(eighties_boombox@ZombieTypes)",
             "Row": "5"
-          }
+          } 
         ]
       }
     },
@@ -808,7 +808,7 @@
           {
             "Type": "RTID(dino_bully_veteran@ZombieTypes)",
             "Row": "5"
-          }
+          } 
         ]
       }
     },
@@ -1166,7 +1166,7 @@
         "WaveStartMessage": "[WARNING_SPIDERRAIN]",
         "ZombieFallTime": 1.5
       }
-    }
+    } 
   ],
   "version": 1
 }

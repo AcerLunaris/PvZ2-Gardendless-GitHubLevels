@@ -25,7 +25,7 @@
           "RTID(ModernMowers@LevelModules)",
           "RTID(DefaultSunDropper@LevelModules)",
           "RTID(SeedBank@CurrentLevel)",
-          "RTID(mold@CurrentLevel)"
+          "RTID(mold@CurrentLevel)" 
         ],
         "Name": "Bamboozle - Level 2",
         "WrittenBy": "hinanarukami",
@@ -81,7 +81,7 @@
           {
             "PlantType": "stallia",
             "Level": -1
-          }
+          } 
         ],
         "SelectionMethod": "preset"
       }
@@ -275,7 +275,7 @@
           {
             "Type": "RTID(tutorial_armor2@ZombieTypes)",
             "Row": 3
-          }
+          } 
         ]
       }
     },
@@ -590,7 +590,7 @@
           },
           {
             "Type": "RTID(modern_allstar@ZombieTypes)"
-          }
+          } 
         ]
       }
     },
@@ -903,7 +903,7 @@
         "WaveStartMessage": "[WARNING_SPIDERRAIN]",
         "ZombieFallTime": 1.5
       }
-    }
+    } 
   ],
   "version": 1
 }

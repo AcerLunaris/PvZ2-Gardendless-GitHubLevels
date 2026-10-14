@@ -119,7 +119,7 @@
                 "cherry_bomb",
                 "solartomato"
               ]
-            }
+            } 
                 
                           
                                        
@@ -906,7 +906,7 @@
         "Zombies": [
           {
             "Type": "RTID(feastivus@ZombieTypes)"
-          }
+          } 
         ]
       }
     }

@@ -1081,7 +1081,7 @@
                 "LabelTargetScale": 0.5,
                 "LabelInitScale": 4,
                 "Duration": 0.5,
-                "InitTime": 0.1
+                "InitTime": 0.1 
             }
         },
         {
@@ -1102,7 +1102,7 @@
                 "LabelTargetScale": 0.5,
                 "LabelInitScale": 4,
                 "Duration": 0.5,
-                "InitTime": 0.1
+                "InitTime": 0.1 
             }
         },
         {
@@ -1118,7 +1118,7 @@
                     "h": 100
                 }
             }
-        }
+        } 
     ],
     "version": 1
 }

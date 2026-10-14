@@ -478,7 +478,7 @@
           {
             "Type": "RTID(iceage_dodo@ZombieTypes)",
             "Row": 3
-          }
+          } 
         ]
       }
     },
@@ -1301,7 +1301,7 @@
         "LabelTargetScale": 0.5,
         "LabelInitScale": 4,
         "Duration": 2.5,
-        "InitTime": 0.33
+        "InitTime": 0.33 
       }
     },
     {
@@ -1383,7 +1383,7 @@
           "RTID(Wave14Zom@CurrentLevel)"
         ]
       }
-    }
+    } 
   ],
   "version": 1
 }

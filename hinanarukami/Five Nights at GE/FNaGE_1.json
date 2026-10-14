@@ -228,7 +228,7 @@
                             "Damage": 0,
                             "Toughness": 100,
                             "DeathDamage": 0,
-                            "DeathFireDuration": 0.1
+                            "DeathFireDuration": 0.1 
                         }
                     },
                     {
@@ -264,7 +264,7 @@
                         "GridX": 4,
                         "GridY": 3,
                         "PlantType": "sunbean"
-                    }
+                    } 
                 ]
             }
         },

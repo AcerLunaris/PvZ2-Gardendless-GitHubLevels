@@ -33,7 +33,7 @@
           "RTID(DefaultZombieWinCondition@LevelModules)",
           "RTID(ConveyorBelt@CurrentLevel)",
           "RTID(RandomImitaterAdditional@CurrentLevel)",
-          "RTID(RandomImitater@LevelModules)"
+          "RTID(RandomImitater@LevelModules)" 
         ],
         "Name": "Zambling Zomboss",
         "StageModule": "RTID(ModernNightStage@LevelModules)",

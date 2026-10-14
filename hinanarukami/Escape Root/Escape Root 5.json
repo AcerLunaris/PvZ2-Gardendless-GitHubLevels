@@ -712,7 +712,7 @@
         "MissileFallCountdown": 3,
         "WaveStartMessage": "[WARNING_MISSILE]"
       }
-    }
+    } 
   ],
   "version": 1
 }

@@ -127,7 +127,7 @@
               "RTID(chicken_farmer@ZombieTypes)",
               "RTID(iceage_weaselhoarder@ZombieTypes)",
               "RTID(seagull@ZombieTypes)",
-              "RTID(pelican@ZombieTypes)"
+              "RTID(pelican@ZombieTypes)" 
             ]
           },
           {
@@ -140,7 +140,7 @@
               "RTID(iceage_weaselhoarder@ZombieTypes)",
               "RTID(pirate_captain_parrot@ZombieTypes)",
               "RTID(seagull@ZombieTypes)",
-              "RTID(pelican@ZombieTypes)"
+              "RTID(pelican@ZombieTypes)" 
             ]
           }
         ],
@@ -257,7 +257,7 @@
             "Type": "RTID(parsnip@PlantTypes)",
             "MaxCount": 3,
             "Weight": 85
-          }
+          } 
         ],
         "Remove": []
       }
@@ -275,7 +275,7 @@
             "Type": "RTID(parsnip@PlantTypes)",
             "MaxCount": 7,
             "Weight": 85
-          }
+          } 
         ],
         "Remove": []
       }
@@ -435,7 +435,7 @@
           {
             "Type": "RTID(beach_octopus@ZombieTypes)",
             "Row": 5
-          }
+          } 
         ]
       }
     },
@@ -928,7 +928,7 @@
           },
           {
             "Type": "RTID(west_bull@ZombieTypes)"
-          }
+          } 
         ]
       }
     },
@@ -997,7 +997,7 @@
           },
           {
             "Type": "RTID(west_bull_veteran@ZombieTypes)"
-          }
+          } 
         ]
       }
     },

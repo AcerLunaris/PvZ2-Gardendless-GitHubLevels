@@ -245,7 +245,7 @@
           {
             "Type": "RTID(summer_basic@ZombieTypes)",
             "Row": 4
-          }
+          } 
         ]
       }
     },
@@ -258,7 +258,7 @@
         "Zombies": [
           {
             "Type": "RTID(summer_bug_armor2@ZombieTypes)",
-            "Row": 2
+            "Row": 2 
           },
           {
             "Type": "RTID(eighties_armor4@ZombieTypes)",
@@ -322,11 +322,11 @@
           },
           {
             "Type": "RTID(summer_bug@ZombieTypes)",
-            "Row": 1
+            "Row": 1 
           },
           {
             "Type": "RTID(summer_bug@ZombieTypes)",
-            "Row": 5
+            "Row": 5 
           },
           {
             "Type": "RTID(summer_bug_armor1@ZombieTypes)",

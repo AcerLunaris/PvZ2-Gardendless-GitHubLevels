@@ -163,7 +163,7 @@
       "objclass": "StarChallengeBeatTheLevelProps",
       "objdata": {
         "Descriptions": [
-          "Survive while the zombies level up!"
+          "Survive while the zombies level up!" 
         ],
         "DescriptionsMultiLanguage": [
           {
@@ -555,7 +555,7 @@
         "LabelTargetScale": 0.5,
         "LabelInitScale": 4,
         "Duration": 2.5,
-        "InitTime": 0.33
+        "InitTime": 0.33 
       }
     },
     {
@@ -585,7 +585,7 @@
           }
         ]
       }
-    }
+    } 
   ],
   "version": 1
 }

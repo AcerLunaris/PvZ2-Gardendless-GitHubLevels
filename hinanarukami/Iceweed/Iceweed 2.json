@@ -71,7 +71,7 @@
             "GridY": 4,
             "Level": -1,
             "TypeName": "iceweed"
-          }
+          } 
         ]
       }
     },
@@ -121,7 +121,7 @@
               "mY": 4
             },
             "PropagationDelay": 0.25
-          }
+          } 
         ]
       }
     },
@@ -142,7 +142,7 @@
           "spikerock",
           "cactus",
           "glaciershroom"
-        ]
+        ] 
       }
     },
     {
@@ -304,7 +304,7 @@
             "RTID(Barrel@CurrentLevel)",
             "RTID(RaptorRow1@CurrentLevel)",
             "RTID(StegoRow3@CurrentLevel)"
-          ]
+          ] 
         ]
       }
     },

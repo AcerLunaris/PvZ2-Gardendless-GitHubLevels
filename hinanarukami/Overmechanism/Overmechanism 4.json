@@ -334,7 +334,7 @@
       "objclass": "StarChallengeBeatTheLevelProps",
       "objdata": {
         "Descriptions": [
-          "Survive the overmechanism!"
+          "Survive the overmechanism!" 
         ],
         "DescriptionsMultiLanguage": [
           {
@@ -361,7 +361,7 @@
             "ZombiePool": [
               "RTID(lostcity@ZombieTypes)",
               "RTID(lostcity_armor1@ZombieTypes)",
-              "RTID(lostcity_armor2@ZombieTypes)"
+              "RTID(lostcity_armor2@ZombieTypes)" 
             ]
           },
           {
@@ -371,7 +371,7 @@
             "ZombiePool": [
               "RTID(lostcity@ZombieTypes)",
               "RTID(lostcity_armor1@ZombieTypes)",
-              "RTID(lostcity_armor2@ZombieTypes)"
+              "RTID(lostcity_armor2@ZombieTypes)" 
             ]
           },
           {
@@ -381,7 +381,7 @@
             "ZombiePool": [
               "RTID(lostcity@ZombieTypes)",
               "RTID(lostcity_armor1@ZombieTypes)",
-              "RTID(lostcity_armor2@ZombieTypes)"
+              "RTID(lostcity_armor2@ZombieTypes)" 
             ]
           },
           {
@@ -391,7 +391,7 @@
             "ZombiePool": [
               "RTID(lostcity@ZombieTypes)",
               "RTID(lostcity_armor1@ZombieTypes)",
-              "RTID(lostcity_armor2@ZombieTypes)"
+              "RTID(lostcity_armor2@ZombieTypes)" 
             ]
           }
         ],
@@ -521,7 +521,7 @@
             "RTID(Breakdancer@CurrentLevel)",
             "RTID(ParachuteRainEventLarge@CurrentLevel)",
             "RTID(Parasol@CurrentLevel)",
-            "RTID(Excavator@CurrentLevel)"
+            "RTID(Excavator@CurrentLevel)" 
           ]
         ]
       }

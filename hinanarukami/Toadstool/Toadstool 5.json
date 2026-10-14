@@ -24,7 +24,7 @@
           "RTID(DefaultSunDropper@LevelModules)",
           "RTID(BeachMowers@LevelModules)",
           "RTID(SeedBank@CurrentLevel)",
-          "RTID(ZombieDistance@CurrentLevel)"
+          "RTID(ZombieDistance@CurrentLevel)" 
         ],
         "Name": "Toadstool - Level 5",
         "WrittenBy": "hinanarukami",

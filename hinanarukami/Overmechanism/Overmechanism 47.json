@@ -123,7 +123,7 @@
                 "moonbean",
                 "cherry_bomb"
               ]
-            }
+            } 
                 
                           
                                        
@@ -1020,7 +1020,7 @@
         "Zombies": [
           {
             "Type": "RTID(prospector@ZombieTypes)"
-          }
+          } 
         ]
       }
     }

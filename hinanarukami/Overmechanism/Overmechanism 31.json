@@ -23,7 +23,7 @@
           "RTID(StandardIntro@LevelModules)",
           "RTID(ChallengeModule@CurrentLevel)",
           "RTID(DefaultSunDropper@LevelModules)",
-          "RTID(SeedBank@CurrentLevel)"
+          "RTID(SeedBank@CurrentLevel)" 
         ],
         "Name": "Overmechanism - Level 31",
         "WrittenBy": "hinanarukami",
@@ -288,7 +288,7 @@
       "objclass": "StarChallengeBeatTheLevelProps",
       "objdata": {
         "Descriptions": [
-          "Survive the overmechanism!"
+          "Survive the overmechanism!" 
         ],
         "DescriptionsMultiLanguage": [
           {
@@ -3188,7 +3188,7 @@
           },
           {
             "Type": "RTID(tutorial@ZombieTypes)"
-          }
+          } 
         ]
       }
     },
@@ -3295,7 +3295,7 @@
           {
             "Count": 10,
             "Type": "RTID(gravestone_dark@GridItemTypes)"
-          }
+          } 
         ],
         "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
         "SpawnPositionsPool": [
@@ -3787,7 +3787,7 @@
           {
             "Type": "RTID(kongfu_rocket_imp@ZombieTypes)",
             "Row": 4
-          }
+          } 
         ]
       }
     },

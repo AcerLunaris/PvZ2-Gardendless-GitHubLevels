@@ -452,16 +452,16 @@
       "objdata": {
         "NotificationEvents": ["jam_pop"],
         "Zombies": [
-          {"Type": "RTID(monk_torch@ZombieTypes)", "Row": 1},
-          {"Type": "RTID(abbot_torch@ZombieTypes)", "Row": 2},
-          {"Type": "RTID(kongfu_torch@ZombieTypes)", "Row": 3},
-          {"Type": "RTID(abbot_torch@ZombieTypes)", "Row": 4},
-          {"Type": "RTID(monk_torch@ZombieTypes)", "Row": 5},
           {"Type": "RTID(abbot_fan@ZombieTypes)", "Row": 1},
           {"Type": "RTID(abbot_fan@ZombieTypes)", "Row": 2},
           {"Type": "RTID(abbot_fan@ZombieTypes)", "Row": 3},
           {"Type": "RTID(abbot_fan@ZombieTypes)", "Row": 4},
           {"Type": "RTID(abbot_fan@ZombieTypes)", "Row": 5},
+          {"Type": "RTID(monk_torch@ZombieTypes)", "Row": 1},
+          {"Type": "RTID(abbot_torch@ZombieTypes)", "Row": 2},
+          {"Type": "RTID(kongfu_torch@ZombieTypes)", "Row": 3},
+          {"Type": "RTID(abbot_torch@ZombieTypes)", "Row": 4},
+          {"Type": "RTID(monk_torch@ZombieTypes)", "Row": 5},
           {"Type": "RTID(sky_battleplane@ZombieTypes)", "Row": 2},
           {"Type": "RTID(sky_battleplane@ZombieTypes)", "Row": 4}
         ]

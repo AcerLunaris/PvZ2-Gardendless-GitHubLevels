@@ -251,7 +251,7 @@
       "objclass": "StarChallengeBeatTheLevelProps",
       "objdata": {
         "Descriptions": [
-          "Survive the overmechanism!"
+          "Survive the overmechanism!" 
         ],
         "DescriptionsMultiLanguage": [
           {
@@ -344,7 +344,7 @@
             "RTID(Wave1@CurrentLevel)"
           ],
           [
-            "RTID(Wave2@CurrentLevel)"
+            "RTID(Wave2@CurrentLevel)" 
           ],
           [
             "RTID(Wave3@CurrentLevel)"
@@ -525,7 +525,7 @@
           },
           {
             "Type": "RTID(dark_armor3@ZombieTypes)"
-          }
+          } 
         ]
       }
     },
@@ -1010,7 +1010,7 @@
           {
             "Count": 27,
             "Type": "RTID(gravestone_dark@GridItemTypes)"
-          }
+          } 
         ],
         "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
         "SpawnPositionsPool": [
@@ -1136,7 +1136,7 @@
           {
             "Count": 3,
             "Type": "RTID(gravestoneSunOnDestruction@GridItemTypes)"
-          }
+          } 
         ],
         "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
         "SpawnPositionsPool": [
@@ -1166,7 +1166,7 @@
           {
             "Count": 5,
             "Type": "RTID(gravestone_dark@GridItemTypes)"
-          }
+          } 
         ],
         "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
         "SpawnPositionsPool": [
@@ -1204,7 +1204,7 @@
           {
             "Count": 5,
             "Type": "RTID(gravestone_dark@GridItemTypes)"
-          }
+          } 
         ],
         "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
         "SpawnPositionsPool": [
@@ -1242,7 +1242,7 @@
           {
             "Count": 3,
             "Type": "RTID(gravestone_dark@GridItemTypes)"
-          }
+          } 
         ],
         "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
         "SpawnPositionsPool": [

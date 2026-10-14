@@ -439,7 +439,7 @@
           {
             "Type": "RTID(iceage_armor1@ZombieTypes)",
             "Row": 4
-          }
+          } 
         ]
       }
     },
@@ -469,7 +469,7 @@
           {
             "Type": "RTID(iceage_armor3@ZombieTypes)",
             "Row": 1
-          }
+          } 
         ]
       }
     },
@@ -710,7 +710,7 @@
           {
             "Type": "RTID(iceage_weaselhoarder@ZombieTypes)",
             "Row": "5"
-          }
+          } 
         ]
       }
     },

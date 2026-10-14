@@ -274,7 +274,7 @@
           "seashroom",
           "glaciershroom",
           "snowdrop"
-        ]
+        ] 
       }
     },
     {
@@ -1493,7 +1493,7 @@
           }
         ]
       }
-    }
+    } 
   ],
   "version": 1
 }

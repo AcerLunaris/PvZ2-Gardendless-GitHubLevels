@@ -105,7 +105,7 @@
             "GridX": 0,
             "GridY": 4,
             "PlantType": "sapfling"
-          }
+          } 
         ]
       }
     },
@@ -371,7 +371,7 @@
         "Zombies": [
           {
             "Type": "RTID(chicken@ZombieTypes)"
-          }
+          } 
         ]
       }
     },
@@ -464,7 +464,7 @@
           {
             "Type": "RTID(chicken_pumpkin_boss@CurrentLevel)",
             "Row": 4
-          }
+          } 
         ]
       }
     },
@@ -1571,7 +1571,7 @@
             "Type": "RTID(laser_bean@PlantTypes)",
             "MaxCount": 0,
             "Weight": 0
-          }
+          } 
         ]
       }
     },

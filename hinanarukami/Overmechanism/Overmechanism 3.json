@@ -24,7 +24,7 @@
           "RTID(ChallengeModule@CurrentLevel)",
           "RTID(DefaultSunDropper@LevelModules)",
           "RTID(FrozenZombiePlacement@CurrentLevel)",
-          "RTID(SeedBank@CurrentLevel)"
+          "RTID(SeedBank@CurrentLevel)" 
         ],
         "Name": "Overmechanism - Level 3",
         "WrittenBy": "hinanarukami",
@@ -154,7 +154,7 @@
               ]
             }
           ]
-        }
+        } 
       }
     },
     {
@@ -187,7 +187,7 @@
       "objclass": "StarChallengeBeatTheLevelProps",
       "objdata": {
         "Descriptions": [
-          "Survive the overmechanism!"
+          "Survive the overmechanism!" 
         ],
         "DescriptionsMultiLanguage": [
           {
@@ -839,7 +839,7 @@
           },
           {
             "Type": "RTID(summer_gargantuar@ZombieTypes)"
-          }
+          } 
         ]
       }
     },
@@ -1027,7 +1027,7 @@
           },
           {
             "Type": "RTID(iceage@ZombieTypes)"
-          }
+          } 
         ]
       }
     },

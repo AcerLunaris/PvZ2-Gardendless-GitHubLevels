@@ -24,7 +24,7 @@
           "RTID(ChallengeModule@CurrentLevel)",
           "RTID(DefaultSunDropper@LevelModules)",
           "RTID(FrozenZombiePlacement@CurrentLevel)",
-          "RTID(SeedBank@CurrentLevel)"
+          "RTID(SeedBank@CurrentLevel)" 
         ],
         "Name": "Overmechanism - Level 8",
         "WrittenBy": "hinanarukami",
@@ -334,7 +334,7 @@
               ]
             }
           ]
-        }
+        } 
       }
     },
     {
@@ -367,7 +367,7 @@
       "objclass": "StarChallengeBeatTheLevelProps",
       "objdata": {
         "Descriptions": [
-          "Survive the overmechanism!"
+          "Survive the overmechanism!" 
         ],
         "DescriptionsMultiLanguage": [
           {
@@ -1090,7 +1090,7 @@
           {
             "Type": "RTID(dark_juggler@ZombieTypes)",
             "Row": 5
-          }
+          } 
         ]
       }
     },

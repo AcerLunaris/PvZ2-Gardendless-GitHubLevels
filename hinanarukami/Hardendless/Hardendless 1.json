@@ -56,12 +56,12 @@
       "objclass": "StarChallengeBeatTheLevelProps",
       "objdata": {
         "Descriptions": [
-          "You better use everything you have"
+          "You better use everything you have" 
         ],
         "DescriptionsMultiLanguage": [
           {
             "en": "You better use everything you have",
-            "zh": "你最好用你所有的东西"
+            "zh": "你最好用你所有的东西" 
           }
         ]
       }

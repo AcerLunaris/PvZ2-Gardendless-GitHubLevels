@@ -192,7 +192,7 @@
       "objclass": "StarChallengeBeatTheLevelProps",
       "objdata": {
         "Descriptions": [
-          "Survive with most of the plants picked for you"
+          "Survive with most of the plants picked for you" 
         ],
         "DescriptionsMultiLanguage": [
           {
@@ -351,7 +351,7 @@
           {
             "Type": "RTID(dark_king@ZombieTypes)",
             "Row": "2"
-          }
+          } 
         ]
       }
     },
@@ -371,10 +371,10 @@
             "Row": "1"
           },
           {
-            "Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+            "Type": "RTID(dark_wizard_veteran@ZombieTypes)" 
           },
           {
-            "Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+            "Type": "RTID(dark_wizard_veteran@ZombieTypes)" 
           },
           {
             "Type": "RTID(future_protector@ZombieTypes)",
@@ -499,7 +499,7 @@
           {
             "Type": "RTID(dark_king_veteran@ZombieTypes)",
             "Row": "5"
-          }
+          } 
         ]
       }
     },
@@ -564,7 +564,7 @@
           {
             "Type": "RTID(dark_king_veteran@ZombieTypes)",
             "Row": "1"
-          }
+          } 
         ]
       }
     },
@@ -586,7 +586,7 @@
           {
             "Type": "RTID(future_protector@ZombieTypes)",
             "Row": "4"
-          }
+          } 
         ]
       }
     },
@@ -611,7 +611,7 @@
           },
           {
             "Type": "RTID(dark_king_veteran@ZombieTypes)"
-          }
+          } 
         ]
       }
     },
@@ -688,19 +688,19 @@
       "objdata": {
         "Zombies": [
           {
-            "Type": "RTID(dark_king_veteran@ZombieTypes)"
+            "Type": "RTID(dark_king_veteran@ZombieTypes)" 
           },
           {
-            "Type": "RTID(dark_king_veteran@ZombieTypes)"
+            "Type": "RTID(dark_king_veteran@ZombieTypes)" 
           },
           {
-            "Type": "RTID(dark_king_veteran@ZombieTypes)"
+            "Type": "RTID(dark_king_veteran@ZombieTypes)" 
           },
           {
             "Type": "RTID(beach_octopus@ZombieTypes)"
           },
           {
-            "Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+            "Type": "RTID(dark_wizard_veteran@ZombieTypes)" 
           }
         ]
       }
@@ -713,25 +713,25 @@
       "objdata": {
         "Zombies": [
           {
-            "Type": "RTID(dark_king_veteran@ZombieTypes)"
+            "Type": "RTID(dark_king_veteran@ZombieTypes)" 
           },
           {
-            "Type": "RTID(dark_king_veteran@ZombieTypes)"
+            "Type": "RTID(dark_king_veteran@ZombieTypes)" 
           },
           {
-            "Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+            "Type": "RTID(dark_wizard_veteran@ZombieTypes)" 
           },
           {
-            "Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+            "Type": "RTID(dark_wizard_veteran@ZombieTypes)" 
           },
           {
-            "Type": "RTID(beach_octopus@ZombieTypes)"
+            "Type": "RTID(beach_octopus@ZombieTypes)" 
           },
           {
-            "Type": "RTID(beach_octopus@ZombieTypes)"
+            "Type": "RTID(beach_octopus@ZombieTypes)" 
           },
           {
-            "Type": "RTID(dark_wizard@ZombieTypes)"
+            "Type": "RTID(dark_wizard@ZombieTypes)" 
           }
         ]
       }
@@ -746,7 +746,7 @@
           {
             "Count": 8,
             "Type": "RTID(gravestoneSunOnDestruction@GridItemTypes)"
-          }
+          } 
         ],
         "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
         "SpawnPositionsPool": [
@@ -809,7 +809,7 @@
           {
             "mX": 6,
             "mY": 4
-          }
+          } 
         ],
         "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"
       }
@@ -824,7 +824,7 @@
           {
             "Count": 11,
             "Type": "RTID(gravestoneSunOnDestruction@GridItemTypes)"
-          }
+          } 
         ],
         "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
         "SpawnPositionsPool": [
@@ -887,7 +887,7 @@
           {
             "mX": 6,
             "mY": 4
-          }
+          } 
         ],
         "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"
       }
@@ -902,7 +902,7 @@
           {
             "Count": 13,
             "Type": "RTID(gravestoneSunOnDestruction@GridItemTypes)"
-          }
+          } 
         ],
         "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
         "SpawnPositionsPool": [
@@ -965,7 +965,7 @@
           {
             "mX": 6,
             "mY": 4
-          }
+          } 
         ],
         "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"
       }
@@ -980,7 +980,7 @@
           {
             "Count": 15,
             "Type": "RTID(gravestoneSunOnDestruction@GridItemTypes)"
-          }
+          } 
         ],
         "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
         "SpawnPositionsPool": [
@@ -1043,7 +1043,7 @@
           {
             "mX": 6,
             "mY": 4
-          }
+          } 
         ],
         "SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"
       }
@@ -1074,7 +1074,7 @@
           },
           {
             "Type": "RTID(future_protector@ZombieTypes)"
-          }
+          } 
         ]
       }
     },

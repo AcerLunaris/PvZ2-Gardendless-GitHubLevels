@@ -428,7 +428,7 @@
                             "Damage": 0,
                             "Toughness": 100,
                             "DeathDamage": 0,
-                            "DeathFireDuration": 0.1
+                            "DeathFireDuration": 0.1 
                         }
                     },
                     {
@@ -5475,7 +5475,7 @@
                     }
                 ]
             }
-        }
+        } 
     ],
     "version": 1
 }

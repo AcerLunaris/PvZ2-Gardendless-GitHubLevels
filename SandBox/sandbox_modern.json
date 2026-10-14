@@ -31,7 +31,7 @@
     },
     {
       "aliases": [
-        "//LostCityTrapTileGroups"
+        "///LostCityTrapTileGroups"
       ],
       "objclass": "TrapTileProperties",
       "objdata": {

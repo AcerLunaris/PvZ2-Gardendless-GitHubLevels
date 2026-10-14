@@ -28,12 +28,6 @@ Each author must place their levels (files or subfolders) **inside a folder name
 
 You can upload your levels via **Pull Request**.
 
-### Making Changes Visible to Players
-
-If you want players to notice changes to a level, **add a different suffix to the level's filename** than before.
-
-For example, if a level was previously named `level0.json`, rename it to something like `level0_v2.json` when you update it. This ensures the game recognizes it as a new version and players can see the change.
-
 ---
 
 ## How to Contribute
@@ -80,12 +74,6 @@ Level updates are synced automatically **every 30 minuites**. To see the latest 
 ### 上传关卡
 
 你可以通过 **Pull Request** 上传关卡。
-
-### 让玩家看到关卡变化
-
-如果你希望玩家发现关卡的改变，可以**给关卡文件名加上与以往不同的后缀**。
-
-例如，如果某个关卡原本叫 `level0.json`，更新时把它改成 `level0_v2.json`。这样游戏会把它识别为新版本，玩家就能看到变化。
 
 ---
 

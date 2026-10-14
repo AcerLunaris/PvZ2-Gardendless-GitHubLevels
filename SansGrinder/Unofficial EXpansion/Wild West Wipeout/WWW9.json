@@ -503,7 +503,8 @@
 			],
 			"objclass":"ProjectileProperties",
 			"objdata":{
-				"Damage":0
+				"Damage":0,
+    			"StunDuration": 1000
 			}
 		},
 		{

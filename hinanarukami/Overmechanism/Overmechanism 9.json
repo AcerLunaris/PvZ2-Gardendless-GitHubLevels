@@ -471,7 +471,7 @@
       "objclass": "StarChallengeBeatTheLevelProps",
       "objdata": {
         "Descriptions": [
-          "Survive the overmechanism!\n5 nearest boulder tiles' recharge is 210s" 
+          "Survive the overmechanism!\n5 nearest boulder tiles' recharge is 210s"
         ],
         "DescriptionsMultiLanguage": [
           {
@@ -897,7 +897,7 @@
         "LabelTargetScale": 0.5,
         "LabelInitScale": 4,
         "Duration": 2.5,
-        "InitTime": 0.33 
+        "InitTime": 0.33
       }
     },
     {
@@ -918,7 +918,7 @@
         "LabelTargetScale": 0.5,
         "LabelInitScale": 4,
         "Duration": 2.5,
-        "InitTime": 0.33 
+        "InitTime": 0.33
       }
     },
     {

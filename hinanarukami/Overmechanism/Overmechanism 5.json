@@ -23,7 +23,7 @@
                     "RTID(StandardIntro@LevelModules)",
                     "RTID(ChallengeModule@CurrentLevel)",
                     "RTID(DefaultSunDropper@LevelModules)",
-                    "RTID(SeedBank@CurrentLevel)" 
+                    "RTID(SeedBank@CurrentLevel)"
                 ],
                 "Name": "Overmechanism - Level 5",
                 "WrittenBy": "hinanarukami",
@@ -131,7 +131,7 @@
             "objclass": "StarChallengeBeatTheLevelProps",
             "objdata": {
                 "Descriptions": [
-                    "Survive the overmechanism!" 
+                    "Survive the overmechanism!"
                 ],
                 "DescriptionsMultiLanguage": [
                     {

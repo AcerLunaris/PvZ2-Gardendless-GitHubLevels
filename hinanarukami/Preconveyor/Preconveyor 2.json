@@ -167,7 +167,7 @@
                         "MaxCount": 1,
                         "PlantType": "phatbeet",
                         "Weight": 75
-                    } 
+                    }
                 ],
                 "SpeedConditions": [
                     {
@@ -615,7 +615,7 @@
                     }
                 ]
             }
-        } 
+        }
     ],
     "version": 1
 }

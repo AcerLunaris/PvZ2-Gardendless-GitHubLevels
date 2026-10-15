@@ -47,7 +47,7 @@
             "GridY": 2,
             "Level": -1,
             "TypeName": "iceburg"
-          } 
+          }
         ]
       }
     },
@@ -80,7 +80,7 @@
           {
             "PlantType": "blover",
             "Level": -1
-          } 
+          }
         ],
         "SelectionMethod": "preset"
       }
@@ -115,7 +115,7 @@
       "objclass": "StarChallengeBeatTheLevelProps",
       "objdata": {
         "Descriptions": [
-          "Learn how to use Magnifying Grass efficiently" 
+          "Learn how to use Magnifying Grass efficiently"
         ],
         "DescriptionsMultiLanguage": [
           {
@@ -702,7 +702,7 @@
           }
         ]
       }
-    } 
+    }
   ],
   "version": 1
 }

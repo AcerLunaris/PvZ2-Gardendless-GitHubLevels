@@ -69,7 +69,7 @@
             "GridY": 4,
             "Level": -1,
             "TypeName": "magnetshroom"
-          } 
+          }
         ]
       }
     },
@@ -108,7 +108,7 @@
       "objclass": "StarChallengeBeatTheLevelProps",
       "objdata": {
         "Descriptions": [
-          "Survive the overmechanism!" 
+          "Survive the overmechanism!"
         ],
         "DescriptionsMultiLanguage": [
           {

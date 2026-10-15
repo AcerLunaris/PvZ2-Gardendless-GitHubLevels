@@ -90,7 +90,7 @@
             "GridX": 0,
             "GridY": 4,
             "TypeName": "goldtile"
-          } 
+          }
         ]
       }
     },
@@ -467,7 +467,7 @@
           {
             "Type": "RTID(lostcity_bug@ZombieTypes)",
             "Row": "5"
-          } 
+          }
         ]
       }
     },
@@ -501,7 +501,7 @@
           },
           {
             "Type": "RTID(lostcity_armor1@ZombieTypes)"
-          } 
+          }
         ]
       }
     },

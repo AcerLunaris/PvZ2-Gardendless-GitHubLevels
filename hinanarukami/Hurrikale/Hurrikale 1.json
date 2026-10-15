@@ -414,7 +414,7 @@
             "MaxCount": 2,
             "PlantType": "hurrikale",
             "Weight": 30
-          } 
+          }
         ],
         "SpeedConditions": [
           {
@@ -498,7 +498,7 @@
           }
         ]
       }
-    } 
+    }
   ],
   "version": 1
 }

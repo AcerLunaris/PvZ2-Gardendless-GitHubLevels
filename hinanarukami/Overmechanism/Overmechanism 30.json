@@ -108,7 +108,7 @@
       "objclass": "StarChallengeBeatTheLevelProps",
       "objdata": {
         "Descriptions": [
-          "Survive the overmechanism!" 
+          "Survive the overmechanism!"
         ],
         "DescriptionsMultiLanguage": [
           {
@@ -383,7 +383,7 @@
             "RTID(Shield9@CurrentLevel)",
             "RTID(Garg5@CurrentLevel)",
             "RTID(Imp5@CurrentLevel)"
-          ] 
+          ]
         ]
       }
     },

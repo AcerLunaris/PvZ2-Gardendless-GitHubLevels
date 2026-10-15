@@ -193,7 +193,7 @@
           "seashroom",
           "glaciershroom",
           "snowdrop"
-        ] 
+        ]
       }
     },
     {
@@ -421,7 +421,7 @@
           {
             "Type": "RTID(lostcity_bug_armor1@ZombieTypes)",
             "Row": 1
-          } 
+          }
         ]
       }
     },
@@ -1037,7 +1037,7 @@
           }
         ]
       }
-    } 
+    }
   ],
   "version": 1
 }

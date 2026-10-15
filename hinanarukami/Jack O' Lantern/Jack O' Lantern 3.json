@@ -373,7 +373,7 @@
           {
             "Type": "RTID(dark_armor2@ZombieTypes)",
             "Row": 4
-          } 
+          }
         ]
       }
     },
@@ -712,7 +712,7 @@
           },
           {
             "Type": "RTID(dark_wizard@ZombieTypes)"
-          } 
+          }
         ]
       }
     },
@@ -968,7 +968,7 @@
           }
         ]
       }
-    } 
+    }
   ],
   "version": 1
 }

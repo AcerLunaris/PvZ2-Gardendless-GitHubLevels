@@ -23,7 +23,7 @@
           "RTID(StandardIntro@LevelModules)",
           "RTID(ChallengeModule@CurrentLevel)",
           "RTID(DefaultSunDropper@LevelModules)",
-          "RTID(SeedBank@CurrentLevel)" 
+          "RTID(SeedBank@CurrentLevel)"
         ],
         "Name": "Unpredictable",
         "WrittenBy": "hinanarukami",
@@ -70,7 +70,7 @@
       "objclass": "StarChallengeBeatTheLevelProps",
       "objdata": {
         "Descriptions": [
-          "Survive the unpredictables!" 
+          "Survive the unpredictables!"
         ],
         "DescriptionsMultiLanguage": [
           {
@@ -9055,7 +9055,7 @@
           {
             "Count": 10,
             "Type": "RTID(gravestone_dark@GridItemTypes)"
-          } 
+          }
         ],
         "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
         "SpawnPositionsPool": [
@@ -10035,7 +10035,7 @@
           }
         ]
       }
-    } 
+    }
   ],
   "version": 1
 }

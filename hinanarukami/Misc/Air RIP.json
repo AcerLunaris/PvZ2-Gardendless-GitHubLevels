@@ -134,7 +134,7 @@
                 "Type": "phat_beet_t"
               }
             ]
-          } 
+          }
         ]
       }
     },
@@ -276,7 +276,7 @@
         "Damage": 20,
         "AttackInterval": 0.1,
         "SpawnedScale": 0.5,
-        "ZombieDetectorWidth": 5 
+        "ZombieDetectorWidth": 5
       }
     },
     {

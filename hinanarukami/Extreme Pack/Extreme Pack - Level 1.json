@@ -151,7 +151,7 @@
             "GridX": 7,
             "GridY": 0,
             "TypeName": "goldtile"
-          } 
+          }
         ]
       }
     },
@@ -185,7 +185,7 @@
       "objclass": "StarChallengeBeatTheLevelProps",
       "objdata": {
         "Descriptions": [
-          "Survive, just survive!" 
+          "Survive, just survive!"
         ],
         "DescriptionsMultiLanguage": [
           {

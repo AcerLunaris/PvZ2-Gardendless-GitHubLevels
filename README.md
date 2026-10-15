@@ -28,6 +28,13 @@ Each author must place their levels (files or subfolders) **inside a folder name
 
 You can upload your levels via **Pull Request**.
 
+Level posting rules:
+1.Only levels playable in Gardendless is accepted. Any other files are NOT accepted. Levels that are not normally loaded in Gardendless is NOT accepted.
+2.Uploaded levels shall NOT lag too much thus making them not playable on most devices. Nor can they be unable to be cleared without cheating.
+3.Uploaded levels must be based on vanilla Gardendless. Levels requiring MODs or datapacks are not accepted.
+4.Levels shall only be posted into a folder of a specific author. Level files shall contain author names.
+5.Levels must be playable in any difficulties. Differences under different difficulties is optional, but if they DO exist, every difficulties should be different.
+
 ---
 
 ## How to Contribute
@@ -74,6 +81,13 @@ Level updates are synced automatically **every 30 minuites**. To see the latest 
 ### 上传关卡
 
 你可以通过 **Pull Request** 上传关卡。
+
+关卡投稿须知：
+1.只能上传Gardendless关卡，不可上传关卡之外的文件，不可上传Gardendless无法正常运行的关卡。
+2.不可上传过于卡顿以至于大部分设备无法正常运行的关卡，关卡不可无解。
+3.关卡必须基于Gardendless原版，不可上传必须加载模组/数据包才能正常游玩的关卡。
+4.关卡只能上传至作者自己的文件夹内，不可上传至文件夹外，关卡文件内必须含作者署名。
+5.关卡必须在所有难度下可正常游玩，可以没有难度区分，但需要避免动态池只写一个难度不管其他难度的情况。
 
 ---
 

@@ -1,0 +1,261 @@
+{
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Loot": "RTID(NoLoot@LevelModules)",
+        "Modules": [
+          "RTID(EightiesZombossIntro@LevelModules)",
+          "RTID(AutoCollect@LevelModules)",
+          "RTID(DefaultSunDropperListenToLawn@LevelModules)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(PowerupsTutorial@CurrentLevel)",
+          "RTID(SeedBank@CurrentLevel)",
+          "RTID(Dinosaurs@CurrentLevel)",
+          "RTID(DefaultZombieWinCondition@LevelModules)"
+        ],
+        "Name": "Sandbox (Dinosaurs)",
+        "NameMultiLanguage": {
+          "en": "Sandbox (Dinosaurs)",
+          "zh": "沙盒 (恐龙)"
+        },
+        "SandBoxMode": true,
+        "SandBoxWithoutAllLawns": true,
+        "WrittenBy": "星痕_Hoshiato",
+        "MusicType": "MiniGame_B",
+        "StageModule": "RTID(DinoStage@LevelModules)"
+      }
+    },
+    {
+			"aliases":[
+				"Dinosaurs"
+			],
+			"objclass":"LevelSchedulerProps",
+			"objdata":{
+				"TimeBeforeFirst":{
+					"Max":3,
+					"Min":3
+				},
+				"TimeBetween":{
+					"Max":1,
+					"Min":1
+				},
+				"Repeat":{
+					"Max":1,
+					"Min":1
+				},
+				"RewardWhenEnded":false,
+				"SuppressRewardState":false,
+				"Events":[
+					"RTID(Dinosaur0@CurrentLevel)",
+          "RTID(Dinosaur1@CurrentLevel)",
+          "RTID(Dinosaur2@CurrentLevel)",
+          "RTID(Dinosaur3@CurrentLevel)",
+          "RTID(Dinosaur4@CurrentLevel)"
+				]
+			}
+		},
+    {
+			"aliases": [
+				"raptor_0"
+			],
+			"objclass": "DinosaurType",
+			"objdata": {
+				"Properties": "RTID(raptor@CurrentLevel)",
+				"DinosaurBasedOn": "raptor"
+			}
+		},
+		{
+			"aliases": [
+				"stego_0"
+			],
+			"objclass": "DinosaurType",
+			"objdata": {
+				"Properties": "RTID(stego@CurrentLevel)",
+				"DinosaurBasedOn": "stego"
+			}
+		},
+		{
+			"aliases": [
+				"ptero_0"
+			],
+			"objclass": "DinosaurType",
+			"objdata": {
+				"Properties": "RTID(ptero@CurrentLevel)",
+				"DinosaurBasedOn": "ptero"
+			}
+		},
+		{
+			"aliases": [
+				"tyranno_0"
+			],
+			"objclass": "DinosaurType",
+			"objdata": {
+				"Properties": "RTID(tyranno@CurrentLevel)",
+				"DinosaurBasedOn": "tyranno"
+			}
+		},
+		{
+			"aliases": [
+				"ankylo_0"
+			],
+			"objclass": "DinosaurType",
+			"objdata": {
+				"Properties": "RTID(ankylo@CurrentLevel)",
+				"DinosaurBasedOn": "ankylo"
+			}
+		},
+    {
+			"aliases": [
+				"raptor"
+			],
+			"objclass": "DinosaurProperties",
+			"objdata": {
+				"MaxWonderingTime": 9999999,
+				"ZombiesToKick": 99999
+			}
+		},
+		{
+			"aliases": [
+				"stego"
+			],
+			"objclass": "DinosaurProperties",
+			"objdata": {
+				"MaxWonderingTime": 9999999,
+				"MaxThrowingTime": 99999
+			}
+		},
+		{
+			"aliases": [
+				"ptero"
+			],
+			"objclass": "DinosaurProperties",
+			"objdata": {
+				"MaxWonderingTime": 9999999,
+				"FlyingTimes": 99999
+			}
+		},
+		{
+			"aliases": [
+				"tyranno"
+			],
+			"objclass": "DinosaurProperties",
+			"objdata": {
+				"MaxWonderingTime": 9999999,
+				"MaxRoaringTime": 99999
+			}
+		},
+		{
+			"aliases": [
+				"ankylo"
+			],
+			"objclass": "DinosaurProperties",
+			"objdata": {
+				"MaxWonderingTime": 9999999,
+				"ZombiesToThrow": 99999
+			}
+		},
+    {
+      "aliases": [
+        "Dinosaur0"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 0,
+        "DinoType": "raptor_0"
+      }
+    },
+    {
+      "aliases": [
+        "Dinosaur1"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 1,
+        "DinoType": "stego_0"
+      }
+    },
+    {
+      "aliases": [
+        "Dinosaur2"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 2,
+        "DinoType": "ptero_0"
+      }
+    },
+    {
+      "aliases": [
+        "Dinosaur3"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 3,
+        "DinoType": "tyranno_0"
+      }
+    },
+    {
+      "aliases": [
+        "Dinosaur4"
+      ],
+      "objclass": "DinoWaveActionProps",
+      "objdata": {
+        "DinoRow": 4,
+        "DinoType": "ankylo_0"
+      }
+    },
+    {
+      "aliases": [
+        "SeedBank"
+      ],
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "SuppressObjectiveTip": true,
+        "PresetPlantList": [
+          {
+            "PlantType": "peashooter",
+            "Level": -1
+          },
+          {
+            "PlantType": "sunflower",
+            "Level": -1
+          },
+          {
+            "PlantType": "wallnut",
+            "Level": -1
+          },
+          {
+            "PlantType": "potatomine",
+            "Level": -1
+          },
+          {
+            "PlantType": "cabbagepult",
+            "Level": -1
+          },
+          {
+            "PlantType": "bloomerang",
+            "Level": -1
+          },
+          {
+            "PlantType": "iceburg",
+            "Level": -1
+          },
+          {
+            "PlantType": "gravebuster",
+            "Level": -1
+          }
+        ],
+        "SelectionMethod": "preset"
+      }
+    },
+    {
+      "aliases": [
+        "PowerupsTutorial"
+      ],
+      "objclass": "PowerupTutorialIntroProperties",
+      "objdata": {}
+    }
+  ],
+  "version": 1
+}

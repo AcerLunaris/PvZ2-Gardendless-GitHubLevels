@@ -1,0 +1,446 @@
+{
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Loot": "RTID(NoLoot@LevelModules)",
+        "Modules": [
+          "RTID(EightiesZombossIntro@LevelModules)",
+          "RTID(AutoCollect@LevelModules)",
+          "RTID(DefaultSunDropperListenToLawn@LevelModules)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(PowerupsTutorial@CurrentLevel)",
+          "RTID(SeedBank@CurrentLevel)",
+          "RTID(KongfuTNT@CurrentLevel)",
+          "RTID(Rails@CurrentLevel)",
+          "RTID(GridItemPlacement@CurrentLevel)",
+          "RTID(DefaultZombieWinCondition@LevelModules)"
+        ],
+        "Name": "Sandbox (Grid Items)",
+        "NameMultiLanguage": {
+          "en": "Sandbox (Grid Items)",
+          "zh": "沙盒 (地物)"
+        },
+        "SandBoxMode": true,
+        "SandBoxWithoutAllLawns": true,
+        "WrittenBy": "星痕_Hoshiato",
+        "MusicType": "MiniGame_A",
+        "StageModule": "RTID(IceageVeteranStage@LevelModules)"
+      }
+    },
+    {
+      "aliases": [
+        "KongfuTNT"
+      ],
+      "objclass": "KongfuTNTProperties",
+      "objdata": {
+        "Speed": 0.5,
+        "TriggerGameLose": false,
+        "DamagesToZombies": true,
+        "DamagesToPlants": true,
+        "SpawnData": [
+          {
+            "Speed": 0.5,
+            "WireLength": 3,
+            "GridX": 4,
+            "GridY": 3
+          },
+          {
+            "Speed": 0.5,
+            "WireLength": 4,
+            "GridX": 3,
+            "GridY": 4
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Rails"
+      ],
+      "objclass": "RailcartProperties",
+      "objdata": {
+        "RailcartType": "railcart_future",
+        "Railcarts": [
+          {
+            "Column": 0,
+            "Row": 1
+          }
+        ],
+        "Rails": [
+          {
+            "Column": 0,
+            "RowEnd": 1,
+            "RowStart": 0
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Rails"
+      ],
+      "objclass": "RailcartProperties",
+      "objdata": {
+        "RailcartType": "railcart_sky",
+        "Railcarts": [
+          {
+            "Column": 1,
+            "Row": 0
+          }
+        ],
+        "Rails": [
+          {
+            "Column": 1,
+            "RowEnd": 1,
+            "RowStart": 0
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Rails"
+      ],
+      "objclass": "RailcartProperties",
+      "objdata": {
+        "RailcartType": "railcart_kongfu",
+        "Railcarts": [
+          {
+            "Column": 0,
+            "Row": 3
+          },
+          {
+            "Column": 1,
+            "Row": 3,
+            "LinksToPrev": true
+          }
+        ],
+        "Rails": [
+          {
+            "Column": 0,
+            "RowEnd": 4,
+            "RowStart": 2
+          },
+          {
+            "Column": 1,
+            "RowEnd": 4,
+            "RowStart": 2
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "GridItemPlacement"
+      ],
+      "objclass": "InitialGridItemProperties",
+      "objdata": {
+        "InitialGridItemMatrixes": [
+          {
+            "GridMatrix": [
+              "000010000",
+              "000010000",
+              "000010000",
+              "000000000",
+              "000000000"
+            ],
+            "TypeName": "potholepool"
+          },
+          {
+            "GridMatrix": [
+              "000000111",
+              "000000000",
+              "000000000",
+              "000000000",
+              "000000000"
+            ],
+            "TypeName": "potholepuddle"
+          },
+          {
+            "GridMatrix": [
+              "000000000",
+              "000000000",
+              "000000111",
+              "000000000",
+              "000000000"
+            ],
+            "TypeName": "shallowpuddle"
+          },
+          {
+            "GridMatrix": [
+              "000000000",
+              "000000000",
+              "000000000",
+              "000000001",
+              "000000000"
+            ],
+            "TypeName": "slider_down"
+          },
+          {
+            "GridMatrix": [
+              "000000000",
+              "000000000",
+              "000000000",
+              "000000000",
+              "000000001"
+            ],
+            "TypeName": "slider_up"
+          },
+          {
+            "GridMatrix": [
+              "000000000",
+              "000000000",
+              "000000000",
+              "000000100",
+              "000000000"
+            ],
+            "TypeName": "slider_down_modern"
+          },
+          {
+            "GridMatrix": [
+              "000000000",
+              "000000000",
+              "000000000",
+              "000000000",
+              "000010000"
+            ],
+            "TypeName": "slider_up_modern"
+          },
+          {
+            "GridMatrix": [
+              "000001000",
+              "000001000",
+              "000001000",
+              "000000000",
+              "000000000"
+            ],
+            "TypeName": "taichitile"
+          },
+          {
+            "GridMatrix": [
+              "001000000",
+              "000000000",
+              "000000000",
+              "000000000",
+              "000000000"
+            ],
+            "TypeName": "kongfu_rack_torch"
+          },
+          {
+            "GridMatrix": [
+              "000000000",
+              "000100000",
+              "000000000",
+              "000000000",
+              "000000000"
+            ],
+            "TypeName": "kongfu_rack_helmet"
+          },
+          {
+            "GridMatrix": [
+              "000000000",
+              "000000000",
+              "001000000",
+              "000000000",
+              "000000000"
+            ],
+            "TypeName": "kongfu_rack_fan"
+          },
+          {
+            "GridMatrix": [
+              "000000000",
+              "000000000",
+              "000000000",
+              "000100000",
+              "000000000"
+            ],
+            "TypeName": "kongfu_rack_bomb"
+          },
+          {
+            "GridMatrix": [
+              "000000000",
+              "000000000",
+              "000000000",
+              "000000000",
+              "001000000"
+            ],
+            "TypeName": "kongfu_rack_nunchaku"
+          },
+          {
+            "GridMatrix": [
+              "000000000",
+              "000000010",
+              "000000000",
+              "000000000",
+              "000000000"
+            ],
+            "TypeName": "flame_spreader_trap"
+          },
+          {
+            "GridMatrix": [
+              "000000000",
+              "001000000",
+              "000000000",
+              "000000000",
+              "000000000"
+            ],
+            "TypeName": "boulder_trap_falling_forward"
+          },
+          {
+            "GridMatrix": [
+              "000000000",
+              "000000000",
+              "000000000",
+              "001000000",
+              "000000000"
+            ],
+            "TypeName": "boulder_trap_falling_backward"
+          },
+          {
+            "GridMatrix": [
+              "000000000",
+              "000000001",
+              "000000000",
+              "000000000",
+              "000000000"
+            ],
+            "TypeName": "thunder_trap"
+          },
+          {
+            "GridMatrix": [
+              "000000000",
+              "000000100",
+              "000000000",
+              "000000000",
+              "000000000"
+            ],
+            "TypeName": "speaker"
+          },
+          {
+            "GridMatrix": [
+              "000100000",
+              "000000000",
+              "000000000",
+              "000000000",
+              "000000000"
+            ],
+            "TypeName": "gravestoneSunOnDestruction"
+          },
+          {
+            "GridMatrix": [
+              "000000000",
+              "000000000",
+              "000100000",
+              "000000000",
+              "000000000"
+            ],
+            "TypeName": "gravestonePlantfoodOnDestruction"
+          },
+          {
+            "GridMatrix": [
+              "000000000",
+              "000000000",
+              "000000000",
+              "000001000",
+              "000000000"
+            ],
+            "TypeName": "gravestone_pirate"
+          },
+          {
+            "GridMatrix": [
+              "000000000",
+              "000000000",
+              "000000000",
+              "000000000",
+              "000001000"
+            ],
+            "TypeName": "gravestone_cowboy"
+          },
+          {
+            "GridMatrix": [
+              "000000000",
+              "000000000",
+              "000000000",
+              "000000000",
+              "000000100"
+            ],
+            "TypeName": "gravestone_future"
+          },
+          {
+            "GridMatrix": [
+              "000000000",
+              "000000000",
+              "000000000",
+              "000000000",
+              "000000010"
+            ],
+            "TypeName": "gravestone_iceage"
+          },
+          {
+            "GridMatrix": [
+              "000000000",
+              "000000000",
+              "000000000",
+              "000000010",
+              "000000000"
+            ],
+            "TypeName": "gravestone_lostcity"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "SeedBank"
+      ],
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "SuppressObjectiveTip": true,
+        "PresetPlantList": [
+          {
+            "PlantType": "peashooter",
+            "Level": -1
+          },
+          {
+            "PlantType": "sunflower",
+            "Level": -1
+          },
+          {
+            "PlantType": "wallnut",
+            "Level": -1
+          },
+          {
+            "PlantType": "potatomine",
+            "Level": -1
+          },
+          {
+            "PlantType": "cabbagepult",
+            "Level": -1
+          },
+          {
+            "PlantType": "bloomerang",
+            "Level": -1
+          },
+          {
+            "PlantType": "iceburg",
+            "Level": -1
+          },
+          {
+            "PlantType": "gravebuster",
+            "Level": -1
+          }
+        ],
+        "SelectionMethod": "preset"
+      }
+    },
+    {
+      "aliases": [
+        "PowerupsTutorial"
+      ],
+      "objclass": "PowerupTutorialIntroProperties",
+      "objdata": {}
+    }
+  ],
+  "version": 1
+}

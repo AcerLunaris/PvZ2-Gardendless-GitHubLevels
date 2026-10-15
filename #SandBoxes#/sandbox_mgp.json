@@ -1,0 +1,211 @@
+{
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Loot": "RTID(NoLoot@LevelModules)",
+        "Modules": [
+          "RTID(EightiesZombossIntro@LevelModules)",
+          "RTID(AutoCollect@LevelModules)",
+          "RTID(DefaultSunDropperListenToLawn@LevelModules)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(PowerupsTutorial@CurrentLevel)",
+          "RTID(SeedBank@CurrentLevel)",
+          "RTID(ModPlants@CurrentLevel)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(BeatTheLevel@CurrentLevel)"
+        ],
+        "Name": "Sandbox (Mega Gatling Pea)",
+        "NameMultiLanguage": {
+          "en": "Sandbox (Mega Gatling Pea)",
+          "zh": "沙盒 (超级机枪射手)"
+        },
+        "SandBoxMode": true,
+        "SandBoxWithoutAllLawns": true,
+        "WrittenBy": "星痕_Hoshiato",
+        "MusicType": "MiniGame_B",
+        "StageModule": "RTID(HeroesStage@LevelModules)"
+      }
+    },
+    {
+      "aliases": [
+        "BeatTheLevel"
+      ],
+      "objclass": "StarChallengeBeatTheLevelProps",
+      "objdata": {
+        "DescriptionsMultilanguage": [
+          {
+            "en": "In this Sandbox, Mega Gatling Pea and its variants will not have a chance to randomly Plant Food themselves.",
+            "zh": "在本沙盒中，超级机枪射手及其变体不会自己发动叶绿素效果。"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "SeedBank"
+      ],
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "SuppressObjectiveTip": true,
+        "PresetPlantList": [
+          {
+            "PlantType": "peashooter",
+            "Level": -1
+          },
+          {
+            "PlantType": "sunflower",
+            "Level": -1
+          },
+          {
+            "PlantType": "wallnut",
+            "Level": -1
+          },
+          {
+            "PlantType": "potatomine",
+            "Level": -1
+          },
+          {
+            "PlantType": "cabbagepult",
+            "Level": -1
+          },
+          {
+            "PlantType": "bloomerang",
+            "Level": -1
+          },
+          {
+            "PlantType": "iceburg",
+            "Level": -1
+          },
+          {
+            "PlantType": "gravebuster",
+            "Level": -1
+          }
+        ],
+        "SelectionMethod": "preset"
+      }
+    },
+    {
+      "aliases": [
+        "PowerupsTutorial"
+      ],
+      "objclass": "PowerupTutorialIntroProperties",
+      "objdata": {}
+    },
+    {
+      "aliases": [
+        "ModPlants"
+      ],
+      "objclass": "PlantModifierProperties",
+      "objdata": {
+        "List": [
+          {
+            "Type": "megagatling",
+            "NewObjdata": {
+              "ChanceToPlantfood": 0
+            }
+          },
+          {
+            "Type": "repeater_mgp",
+            "NewObjdata": {
+              "ChanceToPlantfood": 0
+            }
+          },
+          {
+            "Type": "threepeater_mgp",
+            "NewObjdata": {
+              "ChanceToPlantfood": 0
+            }
+          },
+          {
+            "Type": "poisonpeashooter_mgp",
+            "NewObjdata": {
+              "ChanceToPlantfood": 0
+            }
+          },
+          {
+            "Type": "electricpeashooter_mgp",
+            "NewObjdata": {
+              "ChanceToPlantfood": 0
+            }
+          },
+          {
+            "Type": "primalpeashooter_mgp",
+            "NewObjdata": {
+              "ChanceToPlantfood": 0
+            }
+          },
+          {
+            "Type": "shadowpeashooter_mgp",
+            "NewObjdata": {
+              "ChanceToPlantfood": 0
+            }
+          },
+          {
+            "Type": "snowpea_mgp",
+            "NewObjdata": {
+              "ChanceToPlantfood": 0
+            }
+          },
+          {
+            "Type": "firepeashooter_mgp",
+            "NewObjdata": {
+              "ChanceToPlantfood": 0
+            }
+          },
+          {
+            "Type": "splitpea_mgp",
+            "NewObjdata": {
+              "ChanceToPlantfood": 0,
+              "ChanceToPlantfoodBack": 0
+            }
+          },
+          {
+            "Type": "peapod_mgp",
+            "NewObjdata": {
+              "ChanceToPlantfood": 0
+            }
+          },
+          {
+            "Type": "slingpea_mgp",
+            "NewObjdata": {
+              "ChanceToPlantfood": 0
+            }
+          },
+          {
+            "Type": "skyshooter_mgp",
+            "NewObjdata": {
+              "ChanceToPlantfood": 0
+            }
+          },
+          {
+            "Type": "peacommando_mgp",
+            "NewObjdata": {
+              "ChanceToPlantfood": 0
+            }
+          },
+          {
+            "Type": "seashooter_mgp",
+            "NewObjdata": {
+              "ChanceToPlantfood": 0
+            }
+          },
+          {
+            "Type": "snappea_mgp",
+            "NewObjdata": {
+              "ChanceToPlantfood": 0
+            }
+          },
+          {
+            "Type": "gatling_mgp",
+            "NewObjdata": {
+              "ChanceToPlantfood": 0,
+              "MGPAutoShotsChanceToPlantfood":0
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "version": 1
+}

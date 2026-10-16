@@ -1,0 +1,696 @@
+{
+    "#comment": "",
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "DescriptionMultiLanguage": {
+                    "en": "<PLAYERNAME>'s Time travel",
+                    "zh": "<PLAYERNAME>的时间旅行"
+                },
+                "FirstIntroNarrative": "Design_INTRO",
+                "ReplayIntroNarrative": "Design_INTRO",
+                "ForceToWorldMap": true,
+                "GameOverDialogShowBrain": false,
+                "Loot": "RTID(DefaultLoot@LevelModules)",
+                "Modules": [
+                    "RTID(Intro@CurrentLevel)",
+                    "RTID(ZombiesDeadWinCon@LevelModules)",
+                    "RTID(ChallengeModule@CurrentLevel)",
+                    "RTID(Gravestones@CurrentLevel)",
+                    "RTID(LevelScheduler@CurrentLevel)",
+                    "RTID(ProtectThePlant@CurrentLevel)",
+                    "RTID(InitialPlantPlacement@CurrentLevel)",
+                    "RTID(LevelEscalationModule@CurrentLevel)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)"
+                ],
+                "MusicPlaybackRate": 0.1,
+                "MusicType": "MiniGame_A",
+                "NameMultiLanguage": {
+                    "en": "Sinister Design",
+                    "zh": "鬼胎"
+                },
+                "WrittenBy": "莱池_余垛",
+                "StageModule": "RTID(DarkTutorialStage@LevelModules)"
+            }
+        },
+        {
+            "objclass": "NarrativeProperties",
+            "aliases": [
+                "Design_INTRO"
+            ],
+            "objdata": {
+                "Flow": [
+                    {
+                        "Character": "winnie",
+                        "Action": "NPC_ENTER"
+                    },
+                    {
+                        "Character": "winnie",
+                        "Action": "SAY",
+                        "Lines": {
+                            "en": "This is an opportunity, neighbor.",
+                            "zh": "这是一次机遇，邻居。"
+                        }
+                    },
+                    {
+                        "Character": "winnie",
+                        "Action": "SAY",
+                        "Lines": {
+                            "en": "……",
+                            "zh": "……"
+                        }
+                    },
+                    {
+                        "Character": "winnie",
+                        "Action": "SAY",
+                        "Lines": {
+                            "en": "This could lead to some irreversible consequences.",
+                            "zh": "这可能会导致一些不可挽回的后果。"
+                        }
+                    },
+                    {
+                        "Character": "winnie",
+                        "Action": "SAY",
+                        "Lines": {
+                            "en": "I hope we truly understand what we're doing.",
+                            "zh": "希望我们切实知道我们在做什么。"
+                        }
+                    },
+                    {
+                        "Character": "winnie",
+                        "Action": "SAY",
+                        "Lines": {
+                            "en": "……",
+                            "zh": "……"
+                        }
+                    },
+                    {
+                        "Character": "winnie",
+                        "Action": "SAY",
+                        "Lines": {
+                            "en": "This must not be known to the crazy man.",
+                            "zh": "这不能让疯子知道。"
+                        }
+                    },
+                    {
+                        "Character": "winnie",
+                        "Action": "SAY",
+                        "Lines": {
+                            "en": "……",
+                            "zh": "……"
+                        }
+                    },
+                    {
+                        "Character": "winnie",
+                        "Action": "SAY",
+                        "Lines": {
+                            "en": "Let's get moving,time is running out.",
+                            "zh": "开始行动吧，我们的时间不多。"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "LevelScheduler"
+            ],
+            "objclass": "LevelSchedulerProps",
+            "objdata": {
+                "TimeBeforeFirst": {
+                    "Max": 1,
+                    "Min": 1
+                },
+                "TimeBetween": {
+                    "Max": 30,
+                    "Min": 30
+                },
+                "Repeat": {
+                    "Max": 1,
+                    "Min": 1
+                },
+                "RewardWhenEnded": false,
+                "SuppressRewardState": false,
+                "Events": [
+                    "RTID(M0@CurrentLevel)",
+                    "RTID(M0_1@CurrentLevel)"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "M0"
+            ],
+            "objclass": "TutorialLabelProperties",
+            "objdata": {
+                "String": "",
+                "StringMultiLanguage": {
+                    "en": "Clear marked area.",
+                    "zh": "清除标记区域"
+                },
+                "LifeSpan": 3
+            }
+        },
+        {
+            "aliases": [
+                "M0_1"
+            ],
+            "objclass": "MissileLocateWaveActionProps",
+            "objdata": {
+                "MissileCount": 0,
+                "MissileFallCountdown": 33,
+                "WaveStartMessage": "",
+                "ProjectileType": "pea",
+                "Locations": [
+                    {
+                        "mX": 2,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 3
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "M2_1"
+            ],
+            "objclass": "MissileLocateWaveActionProps",
+            "objdata": {
+                "MissileCount": 0,
+                "MissileFallCountdown": 45,
+                "WaveStartMessage": "",
+                "ProjectileType": "pea",
+                "Locations": [
+                    {
+                        "mX": 2,
+                        "mY": 1
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 2
+                    },
+                    {
+                        "mX": 2,
+                        "mY": 3
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "theexplorer"
+            ],
+            "objclass": "ZombieType",
+            "objdata": {
+                "Properties": "RTID(explorerprop@CurrentLevel)",
+                "ZombieBasedOn": "dino_bully"
+            }
+        },
+        {
+            "aliases": [
+                "explorerprop"
+            ],
+            "objclass": "ZombieProperties",
+            "objdata": {
+                "CannotBeTossedByCitron": false,
+                "WalkSPS": 0.1,
+                "EatDPS": 100,
+                "Toughness": 40000,
+                "CannotBeKnockedBackByProjectiles": true,
+                "SmashDamage": 0,
+                "StartingArmors": [
+                    "dino_armor4"
+                ],
+                "CraterLifetime": 0,
+                "WavePointCost": 450,
+                "Weight": 4500,
+                "HitRect": "RTID(BullyHitRect@RectangleProps)",
+                "AttackRect": "RTID(BullyAttackRect@RectangleProps)"
+            }
+        },
+        {
+            "aliases": [
+                "Gravestones"
+            ],
+            "objclass": "GravestoneProperties",
+            "objdata": {
+                "ForceSpawnData": [
+                    {
+                        "GridX": 2,
+                        "GridY": 0
+                    },
+                    {
+                        "GridX": 3,
+                        "GridY": 2
+                    },
+                    {
+                        "GridX": 3,
+                        "GridY": 3
+                    },
+                    {
+                        "GridX": 3,
+                        "GridY": 4
+                    },
+                    {
+                        "GridX": 3,
+                        "GridY": 0
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "LevelIntroProperties",
+            "aliases": [
+                "Intro"
+            ],
+            "objdata": {
+                "PanStartOffset": -70,
+                "PanStreetOffset": -70,
+                "PanEndOffset": -0,
+                "PanRightDuration": 0,
+                "PanLeftDuration": 1,
+                "PanMoveRightTime": 0,
+                "PanMoveLeftTime": 2,
+                "AdditionalStartingSun": 0,
+                "ZombiePreviewOff": true
+            }
+        },
+        {
+            "aliases": [
+                "ProtectThePlant"
+            ],
+            "objclass": "ProtectThePlantChallengeProperties",
+            "objdata": {
+                "SuppressObjectiveTip": true,
+                "MustProtectCount": 0,
+                "Plants": [
+                    {
+                        "GridX": 6,
+                        "GridY": 1,
+                        "PlantType": "marigold_yellow"
+                    },
+                    {
+                        "GridX": 6,
+                        "GridY": 2,
+                        "PlantType": "marigold_yellow"
+                    },
+                    {
+                        "GridX": 6,
+                        "GridY": 3,
+                        "PlantType": "marigold_yellow"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "InitialPlantPlacement"
+            ],
+            "objclass": "InitialPlantProperties",
+            "objdata": {
+                "InitialPlantPlacements": [
+                    {
+                        "GridX": 0,
+                        "GridY": 0,
+                        "TypeName": "coconutcannon"
+                    },
+                    {
+                        "GridX": 0,
+                        "GridY": 1,
+                        "TypeName": "marigold_orange"
+                    },
+                    {
+                        "GridX": 0,
+                        "GridY": 3,
+                        "TypeName": "sapfling"
+                    },
+                    {
+                        "GridX": 0,
+                        "GridY": 2,
+                        "TypeName": "escaperoot"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "ChallengeModule"
+            ],
+            "objclass": "StarChallengeModuleProperties",
+            "objdata": {
+                "Challenges": [
+                    [
+                        "RTID(SunProduced@CurrentLevel)",
+                        "RTID(PlantsLost@CurrentLevel)"
+                    ]
+                ],
+                "ChallengesAlwaysAvailable": true
+            }
+        },
+        {
+            "aliases": [
+                "SunProduced"
+            ],
+            "objclass": "StarChallengeSunProducedProps",
+            "objdata": {
+                "TargetSun": 450
+            }
+        },
+        {
+            "aliases": [
+                "PlantsLost"
+            ],
+            "objclass": "StarChallengePlantsLostProps",
+            "objdata": {
+                "MaximumPlantsLost": 3
+            }
+        },
+        {
+            "aliases": [
+                "LevelEscalationModule"
+            ],
+            "objclass": "LevelEscalationModuleProperties",
+            "objdata": {
+                "PlantfoodToSpawnCount": 1,
+                "PointIncrementPerWave": 0,
+                "StartingPoints": 0,
+                "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)",
+                "ZombiePool": []
+            }
+        },
+        {
+            "aliases": [
+                "WaveManagerProps"
+            ],
+            "objclass": "WaveManagerProperties",
+            "objdata": {
+                "SuppressFlagZombie": true,
+                "FlagWaveInterval": 9,
+                "WaveCount": 9,
+                "WaveSpendingPointIncrement": 100,
+                "WaveSpendingPoints": 100,
+                "Waves": [
+                    [
+                        "RTID(Wave1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(M1@CurrentLevel)",
+                        "RTID(SpawnPlantsEvent1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(M2@CurrentLevel)",
+                        "RTID(M2_1@CurrentLevel)",
+                        "RTID(Wave2@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave3@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave4@CurrentLevel)",
+                        "RTID(SpawnPlantsEvent2@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave5@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(SpawnPlantsEvent3@CurrentLevel)",
+                        "RTID(Wave6@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave7@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(SpawnPlantsEvent4@CurrentLevel)",
+                        "RTID(Wave8@CurrentLevel)"
+                    ]
+                ],
+                "ZombieCountdownFirstWaveSecs": 0.1
+            }
+        },
+        {
+            "aliases": [
+                "Wave1"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "2",
+                        "Column": "3",
+                        "Type": "RTID(dark_king@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Column": "3",
+                        "Type": "RTID(dark_king@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Column": "3",
+                        "Type": "RTID(dark_king@ZombieTypes)"
+                    }
+                ],
+                "MustKillAllToNextWave": true
+            }
+        },
+        {
+            "aliases": [
+                "M1"
+            ],
+            "objclass": "TutorialLabelProperties",
+            "objdata": {
+                "String": "",
+                "StringMultiLanguage": {
+                    "en": "We have no more plants available, Spore-shrooms can serve as the stepping stone.",
+                    "zh": "我们没有更多植物可用，孢子菇可以提供跳板。"
+                },
+                "LifeSpan": 3
+            }
+        },
+        {
+            "aliases": [
+                "SpawnPlantsEvent1"
+            ],
+            "objclass": "SpawnPlantsWaveActionProps",
+            "objdata": {
+                "Plants": [
+                    {
+                        "TypeName": "sporeshroom",
+                        "GridX": 1,
+                        "GridY": 3,
+                        "SpawnAnim": "grow",
+                        "AllowSpawnOnOtherPlants": false
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "M2"
+            ],
+            "objclass": "TutorialLabelProperties",
+            "objdata": {
+                "String": "",
+                "StringMultiLanguage": {
+                    "en": "Cover the target area.",
+                    "zh": "覆盖目标区域"
+                },
+                "LifeSpan": 3
+            }
+        },
+        {
+            "aliases": [
+                "Wave2"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "2",
+                        "Column": "5",
+                        "Type": "RTID(dark_armor1@ZombieTypes)"
+                    }
+                ],
+                "MustKillAllToNextWave": true
+            }
+        },
+        {
+            "aliases": [
+                "Wave3"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "3",
+                        "Column": "5",
+                        "Type": "RTID(dark_armor1@ZombieTypes)"
+                    }
+                ],
+                "MustKillAllToNextWave": true
+            }
+        },
+        {
+            "aliases": [
+                "SpawnPlantsEvent2"
+            ],
+            "objclass": "SpawnPlantsWaveActionProps",
+            "objdata": {
+                "Plants": [
+                    {
+                        "TypeName": "grimrose",
+                        "GridX": 1,
+                        "GridY": 1,
+                        "SpawnAnim": "grow",
+                        "AllowSpawnOnOtherPlants": false
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave4"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "4",
+                        "Column": "5",
+                        "Type": "RTID(dark_armor2@ZombieTypes)"
+                    }
+                ],
+                "MustKillAllToNextWave": true
+            }
+        },
+        {
+            "aliases": [
+                "SpawnPlantsEvent3"
+            ],
+            "objclass": "SpawnPlantsWaveActionProps",
+            "objdata": {
+                "Plants": [
+                    {
+                        "TypeName": "sweetpotato",
+                        "RandomSpawnMatrix": [
+                            "11000000",
+                            "11000000",
+                            "11000000",
+                            "11000000",
+                            "11000000"
+                        ],
+                        "SpawnAnim": "grow",
+                        "AllowSpawnOnOtherPlants": false
+                    },
+                    {
+                        "TypeName": "gloomvine",
+                        "GridX": 2,
+                        "GridY": 1,
+                        "SpawnAnim": "grow",
+                        "AllowSpawnOnOtherPlants": true
+                    },
+                    {
+                        "TypeName": "gloomvine",
+                        "GridX": 2,
+                        "GridY": 3,
+                        "SpawnAnim": "grow",
+                        "AllowSpawnOnOtherPlants": true
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave5"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "2",
+                        "Type": "RTID(future_jetpack@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(future_jetpack@ZombieTypes)"
+                    }
+                ],
+                "MustKillAllToNextWave": true
+            }
+        },
+        {
+            "aliases": [
+                "Wave6"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(theexplorer@CurrentLevel)"
+                    }
+                ],
+                "MustKillAllToNextWave": true
+            }
+        },
+        {
+            "aliases": [
+                "Wave7"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "5",
+                        "Type": "RTID(theexplorer@CurrentLevel)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(future_jetpack@ZombieTypes)"
+                    }
+                ],
+                "MustKillAllToNextWave": true
+            }
+        },
+        {
+            "aliases": [
+                "SpawnPlantsEvent4"
+            ],
+            "objclass": "SpawnPlantsWaveActionProps",
+            "objdata": {
+                "Plants": [
+                    {
+                        "TypeName": "gloomvine",
+                        "GridX": 2,
+                        "GridY": 2,
+                        "SpawnAnim": "grow",
+                        "AllowSpawnOnOtherPlants": true
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave8"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(theexplorer@CurrentLevel)"
+                    }
+                ]
+            }
+        }
+    ],
+    "version": 1
+}

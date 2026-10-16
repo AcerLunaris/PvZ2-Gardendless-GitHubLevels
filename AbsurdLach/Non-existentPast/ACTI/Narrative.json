@@ -1,0 +1,964 @@
+[
+    {
+        "objclass": "NarrativeProperties",
+        "aliases": [
+            "Start_INTRO"
+        ],
+        "objdata": {
+            "Flow": [
+                {
+                    "Character": "crazydave",
+                    "Action": "NPC_ENTER"
+                },
+                {
+                    "Action": "START_DIALOG_MUSIC"
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "Hey neighbor, we've got a bad new!",
+                        "zh": "邻居，这里有一个坏消息！"
+                    }
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "We lost almost all of our seed reserves! ",
+                        "zh": "我们丢失了绝大部分种子储备！"
+                    }
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "I'm off to scout for usable plants nearby, You'll have to fend for yourself.",
+                        "zh": "我要去附近搜寻可用植物，这段时间你只能靠自己了。"
+                    }
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "Some plants we stashed away are now in your yard.",
+                        "zh": "之前留存的一些植物已经移到了你的院子里。"
+                    }
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "I guess Ms. Root who handles deliveries downtown will be a big help.",
+                        "zh": "我想这位负责在市区送快递的树根会给你带来很大帮助。"
+                    }
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "Without her around, we ain't gonna hold off them zombies.",
+                        "zh": "没有她的存在我们会失去抵御僵尸的能力。"
+                    }
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "Don't allow zombies to get near her.",
+                        "zh": "千万不能让僵尸靠近她。"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "aliases": [
+            "Start_OUTRO"
+        ],
+        "objclass": "NarrativeProperties",
+        "objdata": {
+            "Flow": [
+                {
+                    "Character": "winnie",
+                    "Action": "NPC_ENTER"
+                },
+                {
+                    "Action": "START_DIALOG_MUSIC"
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "TIRED",
+                    "Lines": {
+                        "en": "Severe time continuity error detected!",
+                        "zh": "检测到严重时间连续性错误！"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "Search timezone *78%__*1203%\nfailed!",
+                        "zh": "检索时间段*78%__*1203%\n失败！"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "Search timezone *1485%__+4861%\nfailed!",
+                        "zh": "检索时间段*1485%__+4861%\n失败！"
+                    }
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "NPC_ENTER"
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "PLAYFUL",
+                    "Lines": {
+                        "en": "This is the worst!",
+                        "zh": "这真是太糟糕了！"
+                    }
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "This indicates that the past has never happened before.",
+                        "zh": "这说明过去从来没有发生过。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "This is most likely due to the loss of seed reserves.",
+                        "zh": "这极有可能就是种子储备的遗失的原因。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "The seeds we gathered were erased along with the past.",
+                        "zh": "我们收集的种子和过去一起被抹除了。"
+                    }
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "PLAYFUL",
+                    "Lines": {
+                        "en": "Looks like we gotta prep for a time jump! ",
+                        "zh": "看来有必要准备一次时间跳跃了。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "Initiating time jump.",
+                        "zh": "时间跳跃准备。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "Low power!",
+                        "zh": "电量不足！"
+                    }
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "That's busted!",
+                        "zh": "坏了!"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "objclass": "NarrativeProperties",
+        "aliases": [
+            "Charge_INTRO"
+        ],
+        "objdata": {
+            "Flow": [
+                {
+                    "Character": "crazydave",
+                    "Action": "NPC_ENTER"
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "I found a couple of Electric Currants!.",
+                        "zh": "我找到两个醋栗。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "NPC_ENTER"
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "TIRED",
+                    "Lines": {
+                        "en": "This will provide enough time to charge the time jump.",
+                        "zh": "这正好可以给时间跳跃充能。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "TIRED",
+                    "Lines": {
+                        "en": "Please try to secure five minutes!",
+                        "zh": "请争取五分钟的时间！"
+                    }
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "I'll scout around for plants to bring in backup. ",
+                        "zh": "我会搜寻周围的植物来提供支援。"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "objclass": "NarrativeProperties",
+        "aliases": [
+            "TimeJugglery_INTRO"
+        ],
+        "objdata": {
+            "Flow": [
+                {
+                    "Character": "winnie",
+                    "Action": "NPC_ENTER"
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "EXCITED",
+                    "Lines": {
+                        "en": "Time period: Not registered.",
+                        "zh": "时间段：未注册。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "My instrument indicates that the zombie here has fallen into a time loop.",
+                        "zh": "仪器显示这里的僵尸掉进了闭环的时间。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "TIRED",
+                    "Lines": {
+                        "en": "Additionally.",
+                        "zh": "另外。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "EXCITED",
+                    "Lines": {
+                        "en": "We've lost all the seeds!",
+                        "zh": "我们遗失了全部的种子！"
+                    }
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "NPC_ENTER"
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "My plant collection has also disappeared.",
+                        "zh": "我收集的植物也不见了。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "TIRED",
+                    "Lines": {
+                        "en": "They are not within the range of emergency time jump.",
+                        "zh": "他们不在紧急进行的时间跳跃范围内。"
+                    }
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "TIRED",
+                    "Lines": {
+                        "en": "We're sunk! The plants in the yard look pathetic!",
+                        "zh": "我们完了，院子里的植物看起来逊毙了。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "Received plant communication signal.",
+                        "zh": "接到植物通讯信号。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "They asked, “Did you forget your manners?”",
+                        "zh": "他们说“你礼貌吗？”"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "Received plant communication signal.",
+                        "zh": "接到植物通讯信号。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "The delivery Root found three plants during this time period.",
+                        "zh": "快递员在这个时间段找到三株植物。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "According to her, they were fending off another invasion.",
+                        "zh": "据她所说，他们在抵御另一场入侵。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "We can select one to support the defenses here.",
+                        "zh": "我们可以选择一株来支援这边的防线。"
+                    }
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "Wait, I found a small packet of marigold in my pants pocket.",
+                        "zh": "等等，我在裤兜翻到一小包金盏花。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "EXCITED",
+                    "Lines": {
+                        "en": "Nice work, user Dave!",
+                        "zh": "干的漂亮，用户戴夫！"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "EXCITED",
+                    "Lines": {
+                        "en": "At least, we can provide delivery Root with additional stepping stones.",
+                        "zh": "我们至少能给快递员提供额外的跳板了。"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "objclass": "NarrativeProperties",
+        "aliases": [
+            "TimeJugglery_OUTRO"
+        ],
+        "objdata": {
+            "Flow": [
+                {
+                    "Character": "crazydave",
+                    "Action": "NPC_ENTER"
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "PLAYFUL",
+                    "Lines": {
+                        "en": "Look, a packet of seeds!",
+                        "zh": "看，是一包种子！"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "NPC_ENTER"
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "EXCITED",
+                    "Lines": {
+                        "en": "Warning!",
+                        "zh": "警告！"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "EXCITED",
+                    "Lines": {
+                        "en": "Time continuity errors have increased!",
+                        "zh": "时间连续性错误增加了！"
+                    }
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "SHOUT",
+                    "Lines": {
+                        "en": "The past is collapsing!",
+                        "zh": "过去在崩溃！"
+                    }
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "TIRED",
+                    "Lines": {
+                        "en": "We don't have much time left.",
+                        "zh": "我们的时间不多了。"
+                    }
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "Everything that has just happened will also disappear.",
+                        "zh": "刚刚经历的一切也会变得不复存在。"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "objclass": "NarrativeProperties",
+        "aliases": [
+            "AAD_INTRO"
+        ],
+        "objdata": {
+            "Flow": [
+                {
+                    "Character": "winnie",
+                    "Action": "NPC_ENTER"
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "I need some suns that doesn't come from the sun as a sample.",
+                        "zh": "我需要一些不来自太阳的阳光作为样本。"
+                    }
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "NPC_ENTER"
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "But there isn't a single sunflower here.",
+                        "zh": "可是这里没有哪怕一株向日葵。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "If we could grow sunflowers.",
+                        "zh": "如果我们能生产向日葵。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "TIRED",
+                    "Lines": {
+                        "en": "Never mind. That's exactly why I need the suns.",
+                        "zh": "算了，这正是我需要阳光的原因。"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "objclass": "NarrativeProperties",
+        "aliases": [
+            "AAD_OUTRO"
+        ],
+        "objdata": {
+            "Flow": [
+                {
+                    "Character": "winnie",
+                    "Action": "NPC_ENTER"
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "EXCITED",
+                    "Lines": {
+                        "en": "Nice work, neighbor!",
+                        "zh": "干的漂亮！邻居。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "With these suns, I can pinpoint the nearest sunflower.",
+                        "zh": "有了这些阳光我就可以定位到最近的向日葵了。"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "objclass": "NarrativeProperties",
+        "aliases": [
+            "Storm_INTRO"
+        ],
+        "objdata": {
+            "Flow": [
+                {
+                    "Character": "winnie",
+                    "Action": "NPC_ENTER"
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "Sunflower has been deployed.",
+                        "zh": "向日葵已部署。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "Although there were only two.",
+                        "zh": "虽然只有两株。"
+                    }
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "NPC_ENTER"
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "TIRED",
+                    "Lines": {
+                        "en": "That's far too little.",
+                        "zh": "这也太少了。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "The good news is, I've detected the presence of sunflower seeds within the time stream.",
+                        "zh": "不过好消息是，我捕获到了向日葵种子在时间流域里的存在。"
+                    }
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "EXCITED",
+                    "Lines": {
+                        "en": "Is this meager life finally coming to an end?",
+                        "zh": "这拮据的生活终于要到头了吗！"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "objclass": "NarrativeProperties",
+        "aliases": [
+            "Storm_OUTRO"
+        ],
+        "objdata": {
+            "Flow": [
+                {
+                    "Character": "winnie",
+                    "Action": "NPC_ENTER"
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "EXCITED",
+                    "Lines": {
+                        "en": "Time jump preparation complete.",
+                        "zh": "时间跳跃准备完毕。"
+                    }
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "NPC_ENTER"
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "Once I've packed my bags.",
+                        "zh": "等我收拾好行李。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "That's not necessary. This time, there's enough energy to cover the entire area.",
+                        "zh": "不必，这次有充足的能量覆盖到这里的全部。"
+                    }
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "EXCITED",
+                    "Lines": {
+                        "en": "Toward the taco—no, toward the sunflower!",
+                        "zh": "向玉米卷，不对，向日葵前进！"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "objclass": "NarrativeProperties",
+        "aliases": [
+            "Design_INTRO"
+        ],
+        "objdata": {
+            "Flow": [
+                {
+                    "Character": "winnie",
+                    "Action": "NPC_ENTER"
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "This is an opportunity, neighbor.",
+                        "zh": "这是一次机遇，邻居。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "……",
+                        "zh": "……"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "This could lead to some irreversible consequences.",
+                        "zh": "这可能会导致一些不可挽回的后果。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "I hope we truly understand what we're doing.",
+                        "zh": "希望我们切实知道我们在做什么。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "……",
+                        "zh": "……"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "This must not be known to the crazy man.",
+                        "zh": "这不能让疯子知道。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "……",
+                        "zh": "……"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "Let's get moving,time is running out.",
+                        "zh": "开始行动吧，我们的时间不多。"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "objclass": "NarrativeProperties",
+        "aliases": [
+            "Smooth_INTRO"
+        ],
+        "objdata": {
+            "Flow": [
+                {
+                    "Character": "winnie",
+                    "Action": "NPC_ENTER"
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "EXCITED",
+                    "Lines": {
+                        "en": "Protect these sunflowers.",
+                        "zh": "保护好这些向日葵。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "I need at least one plant to serve as a stable anchor.",
+                        "zh": "我需要至少一株作为稳定锚。"
+                    }
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "NPC_ENTER"
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "EXCITED",
+                    "Lines": {
+                        "en": "Otherwise we will lose the reality that the seeds existing in this time period!",
+                        "zh": "否则我们会丢失种子存在于这个时间段的现实！"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "objclass": "NarrativeProperties",
+        "aliases": [
+            "Smooth_OUTRO"
+        ],
+        "objdata": {
+            "Flow": [
+                {
+                    "Character": "crazydave",
+                    "Action": "NPC_ENTER"
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "EXCITED",
+                    "Lines": {
+                        "en": "What?",
+                        "zh": "什么？"
+                    }
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "EXCITED",
+                    "Lines": {
+                        "en": "You lost all your sunflowers!?",
+                        "zh": "你损失了所有的向日葵！？"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "NPC_ENTER"
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "Things don't always go smoothly.",
+                        "zh": "事情不总是一帆风顺。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "TIRED",
+                    "Lines": {
+                        "en": "Our efforts came to nothing.",
+                        "zh": "我们的努力功亏一篑了。"
+                    }
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "That's not the worst part.",
+                        "zh": "这不是最糟糕的部分。"
+                    }
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "We must leave before reality collapses here.",
+                        "zh": "我们要赶在这里的现实崩溃前离开。"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "objclass": "NarrativeProperties",
+        "aliases": [
+            "Chaos_INTRO"
+        ],
+        "objdata": {
+            "Flow": [
+                {
+                    "Character": "winnie",
+                    "Action": "NPC_ENTER"
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "The arrow loosed cannot be recalled.",
+                        "zh": "开弓没有回头箭。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "As expected, this time period has become unstable.",
+                        "zh": "同设想的一样，这个时间段变得不稳定了。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "This accelerated the zombies' offensive.",
+                        "zh": "这提前了僵尸的攻势。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "TIRED",
+                    "Lines": {
+                        "en": "What's worse.",
+                        "zh": "更糟糕的是。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "After destroying the sunflowers, we cannot obtain sufficient sun.",
+                        "zh": "销毁向日葵之后，我们无法得到足够的阳光。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "EXCITED",
+                    "Lines": {
+                        "en": "I'll search for additional plants to support you.",
+                        "zh": "我会为你搜寻额外的植物作为支援。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "EXCITED",
+                    "Lines": {
+                        "en": "With the crazy man's assistance, we have more plants available this time.",
+                        "zh": "有疯子的协助，这次我们有更多的植物可用。"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "objclass": "NarrativeProperties",
+        "aliases": [
+            "Chaos_OUTRO"
+        ],
+        "objdata": {
+            "Flow": [
+                {
+                    "Character": "winnie",
+                    "Action": "NPC_ENTER"
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "EXCITED",
+                    "Lines": {
+                        "en": "An unexpected bonus.",
+                        "zh": "意外收获。"
+                    }
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "NPC_ENTER"
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "What is this? A plant I've never seen before.",
+                        "zh": "这是什么？从来没有见过的植物。"
+                    }
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "TIRED",
+                    "Lines": {
+                        "en": "Hold on.",
+                        "zh": "等一下。"
+                    }
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "EXCITED",
+                    "Lines": {
+                        "en": "There are several types of plant seeds here.",
+                        "zh": "这里有好几种植物的种子。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "This is most likely a byproduct of the time period collapse.",
+                        "zh": "这极有可能是时间段崩溃的副产物。"
+                    }
+                },
+                {
+                    "Character": "crazydave",
+                    "Action": "TIRED",
+                    "Lines": {
+                        "en": "I still have to spend a lot of time sorting them out.",
+                        "zh": "我还得花大量的时间把他们分拣出来。"
+                    }
+                },
+                {
+                    "Character": "winnie",
+                    "Action": "SAY",
+                    "Lines": {
+                        "en": "Please leave this work to me.",
+                        "zh": "这种工作还是交给我吧。"
+                    }
+                }
+            ]
+        }
+    }
+]

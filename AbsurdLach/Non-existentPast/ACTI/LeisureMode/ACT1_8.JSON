@@ -1,0 +1,1006 @@
+{
+    "#comment": "",
+    "objects": [
+        {
+            "objclass": "LevelDefinition",
+            "objdata": {
+                "DescriptionMultiLanguage": {
+                    "en": "<PLAYERNAME>'s Time travel",
+                    "zh": "<PLAYERNAME>的时间旅行"
+                },
+                "FirstIntroNarrative": "Chaos_INTRO",
+                "ReplayIntroNarrative": "Chaos_INTRO",
+                "FirstOutroNarrative": "Chaos_OUTRO",
+                "ReplayOutroNarrative": "Chaos_OUTRO",
+                "FirstRewardParam": "seedling",
+                "FirstRewardType": "unlock_plant",
+                "ForceToWorldMap": true,
+                "GameOverDialogShowBrain": false,
+                "Loot": "RTID(DefaultLoot@LevelModules)",
+                "Modules": [
+                    "RTID(Intro@CurrentLevel)",
+                    "RTID(ZombiesDeadWinCon@LevelModules)",
+                    "RTID(ChallengeModule@CurrentLevel)",
+                    "RTID(Gravestones@CurrentLevel)",
+                    "RTID(ConveyorBelt@CurrentLevel)",
+                    "RTID(LevelEscalationModule@CurrentLevel)",
+                    "RTID(InitialPlantPlacement@CurrentLevel)",
+                    "RTID(ProtectThePlant@CurrentLevel)",
+                    "RTID(LevelDeadLine@CurrentLevel)",
+                    "RTID(DefaultZombieWinCondition@LevelModules)"
+                ],
+                "MusicType": "MiniGame_A",
+                "NameMultiLanguage": {
+                    "en": "Chaos & Lies",
+                    "zh": "混乱与谎言"
+                },
+                "WrittenBy": "莱池_余垛",
+                "StageModule": "RTID(DarkTutorialStage@LevelModules)"
+            }
+        },
+        {
+            "objclass": "NarrativeProperties",
+            "aliases": [
+                "Chaos_INTRO"
+            ],
+            "objdata": {
+                "Flow": [
+                    {
+                        "Character": "winnie",
+                        "Action": "NPC_ENTER"
+                    },
+                    {
+                        "Character": "winnie",
+                        "Action": "SAY",
+                        "Lines": {
+                            "en": "The arrow loosed cannot be recalled.",
+                            "zh": "开弓没有回头箭。"
+                        }
+                    },
+                    {
+                        "Character": "winnie",
+                        "Action": "SAY",
+                        "Lines": {
+                            "en": "As expected, this time period has become unstable.",
+                            "zh": "同设想的一样，这个时间段变得不稳定了。"
+                        }
+                    },
+                    {
+                        "Character": "winnie",
+                        "Action": "SAY",
+                        "Lines": {
+                            "en": "This accelerated the zombies' offensive.",
+                            "zh": "这提前了僵尸的攻势。"
+                        }
+                    },
+                    {
+                        "Character": "winnie",
+                        "Action": "TIRED",
+                        "Lines": {
+                            "en": "What's worse.",
+                            "zh": "更糟糕的是。"
+                        }
+                    },
+                    {
+                        "Character": "winnie",
+                        "Action": "SAY",
+                        "Lines": {
+                            "en": "After destroying the sunflowers, we cannot obtain sufficient sun.",
+                            "zh": "销毁向日葵之后，我们无法得到足够的阳光。"
+                        }
+                    },
+                    {
+                        "Character": "winnie",
+                        "Action": "EXCITED",
+                        "Lines": {
+                            "en": "I'll search for additional plants to support you.",
+                            "zh": "我会为你搜寻额外的植物作为支援。"
+                        }
+                    },
+                    {
+                        "Character": "winnie",
+                        "Action": "EXCITED",
+                        "Lines": {
+                            "en": "With the crazy man's assistance, we have more plants available this time.",
+                            "zh": "有疯子的协助，这次我们有更多的植物可用。"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "NarrativeProperties",
+            "aliases": [
+                "Chaos_OUTRO"
+            ],
+            "objdata": {
+                "Flow": [
+                    {
+                        "Character": "winnie",
+                        "Action": "NPC_ENTER"
+                    },
+                    {
+                        "Character": "winnie",
+                        "Action": "EXCITED",
+                        "Lines": {
+                            "en": "An unexpected bonus.",
+                            "zh": "意外收获。"
+                        }
+                    },
+                    {
+                        "Character": "crazydave",
+                        "Action": "NPC_ENTER"
+                    },
+                    {
+                        "Character": "crazydave",
+                        "Action": "SAY",
+                        "Lines": {
+                            "en": "What is this? A plant I've never seen before.",
+                            "zh": "这是什么？从来没有见过的植物。"
+                        }
+                    },
+                    {
+                        "Character": "crazydave",
+                        "Action": "TIRED",
+                        "Lines": {
+                            "en": "Hold on.",
+                            "zh": "等一下。"
+                        }
+                    },
+                    {
+                        "Character": "crazydave",
+                        "Action": "EXCITED",
+                        "Lines": {
+                            "en": "There are several types of plant seeds here.",
+                            "zh": "这里有好几种植物的种子。"
+                        }
+                    },
+                    {
+                        "Character": "winnie",
+                        "Action": "SAY",
+                        "Lines": {
+                            "en": "This is most likely a byproduct of the time period collapse.",
+                            "zh": "这极有可能是时间段崩溃的副产物。"
+                        }
+                    },
+                    {
+                        "Character": "crazydave",
+                        "Action": "TIRED",
+                        "Lines": {
+                            "en": "I still have to spend a lot of time sorting them out.",
+                            "zh": "我还得花大量的时间把他们分拣出来。"
+                        }
+                    },
+                    {
+                        "Character": "winnie",
+                        "Action": "SAY",
+                        "Lines": {
+                            "en": "Please leave this work to me.",
+                            "zh": "这种工作还是交给我吧。"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "LevelDeadLine"
+            ],
+            "objclass": "LevelDeadLineProps",
+            "objdata": {
+                "SuppressObjectiveTip": false,
+                "Countdown": 340,
+                "Events": [
+                    "RTID(LoseGame@CurrentLevel)"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "LoseGame"
+            ],
+            "objclass": "LoseGameWaveActionProps",
+            "objdata": {
+                "Tip": {
+                    "en": "",
+                    "zh": ""
+                },
+                "SmallTip": {
+                    "en": "Mission Fail",
+                    "zh": "任务失败"
+                }
+            }
+        },
+        {
+            "aliases": [
+                "ConveyorBelt"
+            ],
+            "objclass": "ConveyorSeedBankProperties",
+            "objdata": {
+                "DropDelayConditions": [
+                    {
+                        "Delay": 0.5,
+                        "MaxPackets": 0
+                    }
+                ],
+                "InitialPlantList": [
+                    {
+                        "MaxDelivered": 1,
+                        "PlantType": "bloominghearts",
+                        "Weight": 1
+                    },
+                    {
+                        "MaxDelivered": 1,
+                        "PlantType": "akee",
+                        "Weight": 1
+                    }
+                ],
+                "SpeedConditions": [
+                    {
+                        "MaxPackets": 0,
+                        "Speed": 200
+                    }
+                ],
+                "AutoHide": true
+            }
+        },
+        {
+            "aliases": [
+                "Gravestones"
+            ],
+            "objclass": "GravestoneProperties",
+            "objdata": {
+                "GravestoneCount": 10,
+                "SpawnColumnEnd": 9,
+                "SpawnColumnStart": 8
+            }
+        },
+        {
+            "objclass": "LevelIntroProperties",
+            "aliases": [
+                "Intro"
+            ],
+            "objdata": {
+                "PanStartOffset": -70,
+                "PanStreetOffset": -70,
+                "PanEndOffset": -0,
+                "PanRightDuration": 0,
+                "PanLeftDuration": 1,
+                "PanMoveRightTime": 0,
+                "PanMoveLeftTime": 2,
+                "AdditionalStartingSun": 0,
+                "ZombiePreviewOff": true
+            }
+        },
+        {
+            "aliases": [
+                "ProtectThePlant"
+            ],
+            "objclass": "ProtectThePlantChallengeProperties",
+            "objdata": {
+                "SuppressObjectiveTip": true,
+                "MustProtectCount": 1,
+                "Plants": [
+                    {
+                        "GridX": 2,
+                        "GridY": 2,
+                        "PlantType": "escaperoot",
+                        "Level": -1
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "InitialPlantPlacement"
+            ],
+            "objclass": "InitialPlantProperties",
+            "objdata": {
+                "InitialPlantPlacements": [
+                    {
+                        "GridX": 0,
+                        "GridY": 4,
+                        "TypeName": "fumeshroom"
+                    },
+                    {
+                        "GridX": 0,
+                        "GridY": 1,
+                        "TypeName": "fumeshroom"
+                    },
+                    {
+                        "GridX": 0,
+                        "GridY": 2,
+                        "TypeName": "fumeshroom"
+                    },
+                    {
+                        "GridX": 2,
+                        "GridY": 3,
+                        "TypeName": "toadstool"
+                    },
+                    {
+                        "GridX": 2,
+                        "GridY": 0,
+                        "TypeName": "toadstool"
+                    },
+                    {
+                        "GridX": 1,
+                        "GridY": 2,
+                        "TypeName": "holonut"
+                    },
+                    {
+                        "GridX": 1,
+                        "GridY": 0,
+                        "TypeName": "repeater"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "ChallengeModule"
+            ],
+            "objclass": "StarChallengeModuleProperties",
+            "objdata": {
+                "Challenges": [
+                    [
+                        "RTID(BeatTheLevel@CurrentLevel)"
+                    ]
+                ],
+                "ChallengesAlwaysAvailable": true
+            }
+        },
+        {
+            "aliases": [
+                "BeatTheLevel"
+            ],
+            "objclass": "StarChallengeBeatTheLevelProps",
+            "objdata": {
+                "DescriptionsMultilanguage": [
+                    {
+                        "en": "The escaperoot must survive",
+                        "zh": "逃脱树根必须存活"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "LevelEscalationModule"
+            ],
+            "objclass": "LevelEscalationModuleProperties",
+            "objdata": {
+                "PlantfoodToSpawnCount": 3,
+                "PointIncrementPerWave": 25,
+                "StartingPoints": 50,
+                "WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)",
+                "ZombiePool": [
+                    "RTID(dino_imp@ZombieTypes)",
+                    "RTID(dino_armor2@ZombieTypes)",
+                    "RTID(dino_bully@ZombieTypes)",
+                    "RTID(monk_torch@ZombieTypes)",
+                    "RTID(dark_gargantuar@ZombieTypes)"
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "WaveManagerProps"
+            ],
+            "objclass": "WaveManagerProperties",
+            "objdata": {
+                "FlagWaveInterval": 5,
+                "WaveCount": 20,
+                "LevelJam": "jam_rap",
+                "WaveSpendingPointIncrement": 100,
+                "WaveSpendingPoints": 100,
+                "Waves": [
+                    [
+                        "RTID(Wave1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave2@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave3@CurrentLevel)",
+                        "RTID(PlantGive0@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave4@CurrentLevel)",
+                        "RTID(PlantGive1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave5@CurrentLevel)",
+                        "RTID(PlantGive2@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave6@CurrentLevel)",
+                        "RTID(Wave6Portal@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave7@CurrentLevel)",
+                        "RTID(PlantGive3@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave8@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave9@CurrentLevel)",
+                        "RTID(Wave9Portal@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave10@CurrentLevel)",
+                        "RTID(PlantGive4@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave11@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave12@CurrentLevel)",
+                        "RTID(Wave12Portal@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave13@CurrentLevel)",
+                        "RTID(PlantGive5@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave14@CurrentLevel)",
+                        "RTID(Wave14Portal0@CurrentLevel)",
+                        "RTID(Wave14Portal1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave15@CurrentLevel)",
+                        "RTID(Wave15Portal0@CurrentLevel)"
+                    ]
+                ],
+                "ZombieCountdownFirstWaveSecs": 3
+            }
+        },
+        {
+            "aliases": [
+                "Wave1"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(kongfu_rocket_imp@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(dino_imp@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave2"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "4",
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "PlantGive0"
+            ],
+            "objclass": "ModifyConveyorWaveActionProps",
+            "objdata": {
+                "Add": [
+                    {
+                        "MaxDelivered": 2,
+                        "Type": "RTID(repeater@PlantTypes)",
+                        "Weight": 1
+                    }
+                ],
+                "Remove": []
+            }
+        },
+        {
+            "aliases": [
+                "Wave3"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(monk_torch@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(dark_king@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "PlantGive1"
+            ],
+            "objclass": "ModifyConveyorWaveActionProps",
+            "objdata": {
+                "Add": [
+                    {
+                        "MaxDelivered": 1,
+                        "Type": "RTID(akee@PlantTypes)",
+                        "Weight": 1
+                    },
+                    {
+                        "MaxDelivered": 1,
+                        "Type": "RTID(blover@PlantTypes)",
+                        "Weight": 1
+                    }
+                ],
+                "Remove": []
+            }
+        },
+        {
+            "aliases": [
+                "Wave4"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "5",
+                        "Type": "RTID(monk_torch@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(eighties_breakdancer@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "PlantGive2"
+            ],
+            "objclass": "ModifyConveyorWaveActionProps",
+            "objdata": {
+                "Add": [
+                    {
+                        "MaxDelivered": 2,
+                        "Type": "RTID(fumeshroom@PlantTypes)",
+                        "Weight": 1
+                    }
+                ],
+                "Remove": []
+            }
+        },
+        {
+            "aliases": [
+                "Wave5"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "5",
+                        "Type": "RTID(cowboy_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(piano@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave6"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "2",
+                        "Type": "RTID(dark_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(cowboy_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(dark_armor1@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "PlantGive3"
+            ],
+            "objclass": "ModifyConveyorWaveActionProps",
+            "objdata": {
+                "Add": [
+                    {
+                        "MaxDelivered": 1,
+                        "Type": "RTID(toadstool@PlantTypes)",
+                        "Weight": 1
+                    }
+                ],
+                "Remove": []
+            }
+        },
+        {
+            "aliases": [
+                "Wave7"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(kongfu_rocket_imp@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(kongfu_rocket_imp@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(kongfu_rocket_imp@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(kongfu_rocket_imp@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(kongfu_rocket_imp@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave8"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "3",
+                        "Type": "RTID(future_protector@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(monk_torch@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(monk_torch@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave9"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(dino_imp@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(dino_imp@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(dino_imp@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(dino_imp@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(dino_imp@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(dino_bully@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "PlantGive4"
+            ],
+            "objclass": "ModifyConveyorWaveActionProps",
+            "objdata": {
+                "Add": [
+                    {
+                        "MaxDelivered": 3,
+                        "Type": "RTID(akee@PlantTypes)",
+                        "Weight": 1
+                    }
+                ],
+                "Remove": []
+            }
+        },
+        {
+            "aliases": [
+                "Wave10"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "3",
+                        "Type": "RTID(mech_cone@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(dark_wizard@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave11"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "4",
+                        "Type": "RTID(piano@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(cowboy_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(cowboy_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(cowboy_armor1@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave12"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "4",
+                        "Type": "RTID(dino_bully@ZombieTypes)"
+                    },
+                    {
+                        "Row": "1",
+                        "Type": "RTID(dark_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(dark_armor1@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "PlantGive5"
+            ],
+            "objclass": "ModifyConveyorWaveActionProps",
+            "objdata": {
+                "Add": [
+                    {
+                        "MaxDelivered": 2,
+                        "Type": "RTID(celerystalker@PlantTypes)",
+                        "Weight": 1
+                    }
+                ],
+                "Remove": []
+            }
+        },
+        {
+            "aliases": [
+                "Wave13"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "2",
+                        "Type": "RTID(dino_bully@ZombieTypes)"
+                    },
+                    {
+                        "Row": "5",
+                        "Type": "RTID(dino_bully@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave14"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "1",
+                        "Type": "RTID(dino_imp@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(dino_imp@ZombieTypes)"
+                    },
+                    {
+                        "Row": "3",
+                        "Type": "RTID(dino_armor2@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave15"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Row": "3",
+                        "Type": "RTID(piano@ZombieTypes)"
+                    },
+                    {
+                        "Row": "2",
+                        "Type": "RTID(cowboy_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Row": "4",
+                        "Type": "RTID(cowboy_armor1@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave6Portal"
+            ],
+            "objclass": "SpawnModernPortalsWaveActionProps",
+            "objdata": {
+                "PortalColumn": 6,
+                "PortalRow": "4",
+                "PortalType": "RTID(Portal0@CurrentLevel)",
+                "SpawnEffectAnimID": "",
+                "SpawnSoundID": ""
+            }
+        },
+        {
+            "aliases": [
+                "Wave9Portal"
+            ],
+            "objclass": "SpawnModernPortalsWaveActionProps",
+            "objdata": {
+                "PortalColumn": 6,
+                "PortalRow": "1",
+                "PortalType": "RTID(Portal0@CurrentLevel)",
+                "SpawnEffectAnimID": "",
+                "SpawnSoundID": ""
+            }
+        },
+        {
+            "aliases": [
+                "Wave12Portal"
+            ],
+            "objclass": "SpawnModernPortalsWaveActionProps",
+            "objdata": {
+                "PortalColumn": 6,
+                "PortalRow": "2",
+                "PortalType": "RTID(Portal0@CurrentLevel)",
+                "SpawnEffectAnimID": "",
+                "SpawnSoundID": ""
+            }
+        },
+        {
+            "aliases": [
+                "Wave14Portal0"
+            ],
+            "objclass": "SpawnModernPortalsWaveActionProps",
+            "objdata": {
+                "PortalColumn": 6,
+                "PortalRow": "0",
+                "PortalType": "RTID(Portal0@CurrentLevel)",
+                "SpawnEffectAnimID": "",
+                "SpawnSoundID": ""
+            }
+        },
+        {
+            "aliases": [
+                "Wave14Portal1"
+            ],
+            "objclass": "SpawnModernPortalsWaveActionProps",
+            "objdata": {
+                "PortalColumn": 6,
+                "PortalRow": "3",
+                "PortalType": "RTID(Portal0@CurrentLevel)",
+                "SpawnEffectAnimID": "",
+                "SpawnSoundID": ""
+            }
+        },
+        {
+            "aliases": [
+                "Wave15Portal0"
+            ],
+            "objclass": "SpawnModernPortalsWaveActionProps",
+            "objdata": {
+                "PortalColumn": 5,
+                "PortalRow": "2",
+                "PortalType": "RTID(Portal0@CurrentLevel)",
+                "SpawnEffectAnimID": "",
+                "SpawnSoundID": ""
+            }
+        },
+        {
+            "objclass": "PortalType",
+            "aliases": [
+                "Portal0"
+            ],
+            "objdata": {
+                "Properties": "RTID(Portal0props@CurrentLevel)"
+            }
+        },
+        {
+            "objclass": "PortalProps",
+            "aliases": [
+                "Portal0props"
+            ],
+            "objdata": {
+                "TimeBeforeFirst": {
+                    "Min": 3,
+                    "Max": 7
+                },
+                "TimeBetween": {
+                    "Min": 8,
+                    "Max": 10
+                },
+                "Scale": 1,
+                "World": "blank",
+                "ZombieTypesToSpawn": [
+                    {
+                        "Weight": 4,
+                        "ZombieTypeName": "chicken_farmer"
+                    },
+                    {
+                        "Weight": 2,
+                        "ZombieTypeName": "dino_imp"
+                    },
+                    {
+                        "Weight": 2,
+                        "ZombieTypeName": "dark_wizard"
+                    }
+                ]
+            }
+        }
+    ],
+    "version": 1
+}

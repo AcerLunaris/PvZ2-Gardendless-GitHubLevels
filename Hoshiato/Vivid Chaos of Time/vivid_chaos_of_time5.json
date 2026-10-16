@@ -853,7 +853,6 @@
 					"Max":1,
 					"Min":1
 				},
-        "WaveStartMessage": "[WARNING_SPIDERRAIN]",
 				"RewardWhenEnded":false,
 				"SuppressRewardState":false,
 				"Events":[

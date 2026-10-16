@@ -41,6 +41,10 @@
           "RTID(DefaultZombieWinCondition@LevelModules)"
         ],
         "Name": "Sandbox",
+        "NameMultiLanguage": {
+          "en": "Sandbox",
+          "zh": "沙盒"
+        },
         "StageModule": "RTID(TutorialStage@LevelModules)",
         "StartingSun": 100,
         "SandBoxMode": true,

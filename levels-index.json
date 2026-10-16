@@ -2227,10 +2227,5 @@
       "sha256": "8a839da8d6f07486e6e849a704c6114d5a2d4532603a53c45ff4207a86835b13"
     }
   ],
-  "invalid": [
-    {
-      "path": "AbsurdLach/Non-existentPast/ACTI/Narrative.json",
-      "reason": "level-definition-missing"
-    }
-  ]
+  "invalid": []
 }

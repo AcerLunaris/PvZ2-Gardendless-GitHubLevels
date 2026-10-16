@@ -38,6 +38,48 @@
         {
             "objclass": "NarrativeProperties",
             "aliases": [
+                "Smooth_INTRO"
+            ],
+            "objdata": {
+                "Flow": [
+                    {
+                        "Character": "winnie",
+                        "Action": "NPC_ENTER"
+                    },
+                    {
+                        "Character": "winnie",
+                        "Action": "EXCITED",
+                        "Lines": {
+                            "en": "Protect these sunflowers.",
+                            "zh": "保护好这些向日葵。"
+                        }
+                    },
+                    {
+                        "Character": "winnie",
+                        "Action": "SAY",
+                        "Lines": {
+                            "en": "I need at least one plant to serve as a stable anchor.",
+                            "zh": "我需要至少一株作为稳定锚。"
+                        }
+                    },
+                    {
+                        "Character": "crazydave",
+                        "Action": "NPC_ENTER"
+                    },
+                    {
+                        "Character": "crazydave",
+                        "Action": "EXCITED",
+                        "Lines": {
+                            "en": "Otherwise we will lose the reality that the seeds existing in this time period!",
+                            "zh": "否则我们会丢失种子存在于这个时间段的现实！"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "NarrativeProperties",
+            "aliases": [
                 "Smooth_OUTRO"
             ],
             "objdata": {

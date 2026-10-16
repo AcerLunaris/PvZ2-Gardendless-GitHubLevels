@@ -47,31 +47,6 @@
       "sha256": "0b117cca61736a7bf3b2521f0e0e13a0a52b1b01dca6e9f72db81a3ee3925fc9"
     },
     {
-      "path": "AbsurdLach/Bank Theft/bank_theft1.json",
-      "size": 11318,
-      "sha256": "9d9f861aa076d03d4b07f9d85231287e0bacad54887406c573c5dc883740b343"
-    },
-    {
-      "path": "AbsurdLach/Bank Theft/bank_theft2.json",
-      "size": 12935,
-      "sha256": "cdf95584fbde4387c94608efcd1b5a4dd69c7fe32a3c707e4574e9cf885ceec7"
-    },
-    {
-      "path": "AbsurdLach/Bank Theft/bank_theft3.json",
-      "size": 16985,
-      "sha256": "965fa7ca5a6b3b17e34a13292afe5c805f9a04403f8d678a026eecf777f769f9"
-    },
-    {
-      "path": "AbsurdLach/Bank Theft/bank_theft4.json",
-      "size": 18847,
-      "sha256": "ff8928129dc600a4b3dcca184fef3ac0215c074ad4e7a35a31734199a22ff934"
-    },
-    {
-      "path": "AbsurdLach/Bank Theft/bank_theft5.json",
-      "size": 19494,
-      "sha256": "f6c183fa0bd030e051c75a64ca1ab827559a38b3efc47d67a8a151df8bdf0939"
-    },
-    {
       "path": "AbsurdLach/Floawerpot/floawerpot1.json",
       "size": 22024,
       "sha256": "24af3380355b8a754778c27af64c2692c64b369980ddbfebb644049b22d2b4be"
@@ -87,94 +62,119 @@
       "sha256": "e9184e5bc6dbf7f2d12c6b4cbf18ec48a59d8ed2fff3e811f5b4e44f9474d405"
     },
     {
-      "path": "AbsurdLach/Non-existentPast/ACTI/LeisureMode/ACT1_1.JSON",
+      "path": "AbsurdLach/Non-existentPast(bank theft)/ACTI/LeisureMode/ACT1_1.JSON",
       "size": 19815,
       "sha256": "775865c515d56f47a8951c456fbc19295c2da10544373647cf79de7474dd7d6c"
     },
     {
-      "path": "AbsurdLach/Non-existentPast/ACTI/LeisureMode/ACT1_2.JSON",
+      "path": "AbsurdLach/Non-existentPast(bank theft)/ACTI/LeisureMode/ACT1_2.JSON",
       "size": 21832,
       "sha256": "a920b9da3b6ef051d02b5567331ce9b23dd65cfd37c22ed2c7a6eb0575f5dcab"
     },
     {
-      "path": "AbsurdLach/Non-existentPast/ACTI/LeisureMode/ACT1_3.JSON",
+      "path": "AbsurdLach/Non-existentPast(bank theft)/ACTI/LeisureMode/ACT1_3.JSON",
       "size": 35018,
       "sha256": "ae4d0126e7ce3027a595039a9956455803a83464a808f203f5cc187d30684b90"
     },
     {
-      "path": "AbsurdLach/Non-existentPast/ACTI/LeisureMode/ACT1_4.JSON",
+      "path": "AbsurdLach/Non-existentPast(bank theft)/ACTI/LeisureMode/ACT1_4.JSON",
       "size": 28454,
       "sha256": "69b1a547d029d4ff116cabf7eb80b6ae1b7b096404dbbe35ec7e4b4931b7255e"
     },
     {
-      "path": "AbsurdLach/Non-existentPast/ACTI/LeisureMode/ACT1_5.JSON",
+      "path": "AbsurdLach/Non-existentPast(bank theft)/ACTI/LeisureMode/ACT1_5.JSON",
       "size": 22951,
       "sha256": "7b4706c25c07cdf15623c3da2084d24a9d1baeb122359fb8ee2cd326db97fa26"
     },
     {
-      "path": "AbsurdLach/Non-existentPast/ACTI/LeisureMode/ACT1_6.JSON",
+      "path": "AbsurdLach/Non-existentPast(bank theft)/ACTI/LeisureMode/ACT1_6.JSON",
       "size": 21986,
       "sha256": "97141a7d7436c8f42070ed5e67943d6f516b89067a206e4b02ce7ac528e19a14"
     },
     {
-      "path": "AbsurdLach/Non-existentPast/ACTI/LeisureMode/ACT1_7.JSON",
+      "path": "AbsurdLach/Non-existentPast(bank theft)/ACTI/LeisureMode/ACT1_7.JSON",
       "size": 19092,
       "sha256": "90dec8d7039f1c91b866f9ef43c67c337b733d0cad7f94224579546661f4ba8d"
     },
     {
-      "path": "AbsurdLach/Non-existentPast/ACTI/LeisureMode/ACT1_8.JSON",
+      "path": "AbsurdLach/Non-existentPast(bank theft)/ACTI/LeisureMode/ACT1_8.JSON",
       "size": 32460,
       "sha256": "d8351d708e557da043db68ab5a26414dfef25c7055894c18d42aeb269687cf1b"
     },
     {
-      "path": "AbsurdLach/Non-existentPast/ACTI/NightmareMode/ACT1_1.JSON",
+      "path": "AbsurdLach/Non-existentPast(bank theft)/ACTI/NightmareMode/ACT1_1.JSON",
       "size": 20148,
       "sha256": "af8d2827c69fc25eb0091e91c0c67b30af203637d739d3279c570ad02850923c"
     },
     {
-      "path": "AbsurdLach/Non-existentPast/ACTI/NightmareMode/ACT1_2.JSON",
+      "path": "AbsurdLach/Non-existentPast(bank theft)/ACTI/NightmareMode/ACT1_2.JSON",
       "size": 22177,
       "sha256": "f9c680e5c42e0e1d3f4bf42509ffd757df3f11708d1d0b68b8daeedda4c28be6"
     },
     {
-      "path": "AbsurdLach/Non-existentPast/ACTI/NightmareMode/ACT1_3.JSON",
+      "path": "AbsurdLach/Non-existentPast(bank theft)/ACTI/NightmareMode/ACT1_3.JSON",
       "size": 35104,
       "sha256": "1b9cab21bd31ea7b2b59c48f4e32a6b6b4da05688eb3eb86b20a82327b6de31c"
     },
     {
-      "path": "AbsurdLach/Non-existentPast/ACTI/NightmareMode/ACT1_4.JSON",
+      "path": "AbsurdLach/Non-existentPast(bank theft)/ACTI/NightmareMode/ACT1_4.JSON",
       "size": 28467,
       "sha256": "8dcdc58161283004cc096cbadc6afd538794174afd57d4962c9e815ceb109ec6"
     },
     {
-      "path": "AbsurdLach/Non-existentPast/ACTI/NightmareMode/ACT1_5.JSON",
+      "path": "AbsurdLach/Non-existentPast(bank theft)/ACTI/NightmareMode/ACT1_5.JSON",
       "size": 23912,
       "sha256": "28ee1cc224d569eea268b5274410d4e1a07732e544bde1f7f1e98ab3a0473f77"
     },
     {
-      "path": "AbsurdLach/Non-existentPast/ACTI/NightmareMode/ACT1_6.JSON",
+      "path": "AbsurdLach/Non-existentPast(bank theft)/ACTI/NightmareMode/ACT1_6.JSON",
       "size": 21935,
       "sha256": "cfca3b30fc79c6448d57b5fd94216318d5594e9af9a73588cb965141a6b543f8"
     },
     {
-      "path": "AbsurdLach/Non-existentPast/ACTI/NightmareMode/ACT1_7.JSON",
+      "path": "AbsurdLach/Non-existentPast(bank theft)/ACTI/NightmareMode/ACT1_7.JSON",
       "size": 19089,
       "sha256": "7bac14ca0ecec74268f43ff8874070799db58efa86285efa70012bd64e4209f9"
     },
     {
-      "path": "AbsurdLach/Non-existentPast/ACTI/NightmareMode/ACT1_8.JSON",
+      "path": "AbsurdLach/Non-existentPast(bank theft)/ACTI/NightmareMode/ACT1_8.JSON",
       "size": 32473,
       "sha256": "918ffab6b20fe5fbc17379c561d12257a6118138193acea32dde55182f67d0ca"
     },
     {
-      "path": "AbsurdLach/Non-existentPast/Unthinkable.JSON",
+      "path": "AbsurdLach/Non-existentPast(bank theft)/Unthinkable.JSON",
       "size": 50603,
       "sha256": "7d4fd50f037db695728820b7c3a608335594798e68eb5989f45a9b8f5e318846"
     },
     {
-      "path": "AbsurdLach/Non-existentPast/Unthinkable_Nightmare.JSON",
+      "path": "AbsurdLach/Non-existentPast(bank theft)/Unthinkable_Nightmare.JSON",
       "size": 53203,
       "sha256": "281d7f9c299b123d0957fe55a0cfaee3b1a611b0fcafd0a229d9115fa7b307e5"
+    },
+    {
+      "path": "AbsurdLach/Non-existentPast(bank theft)/old/bank_theft1.json",
+      "size": 11318,
+      "sha256": "9d9f861aa076d03d4b07f9d85231287e0bacad54887406c573c5dc883740b343"
+    },
+    {
+      "path": "AbsurdLach/Non-existentPast(bank theft)/old/bank_theft2.json",
+      "size": 12935,
+      "sha256": "cdf95584fbde4387c94608efcd1b5a4dd69c7fe32a3c707e4574e9cf885ceec7"
+    },
+    {
+      "path": "AbsurdLach/Non-existentPast(bank theft)/old/bank_theft3.json",
+      "size": 16985,
+      "sha256": "965fa7ca5a6b3b17e34a13292afe5c805f9a04403f8d678a026eecf777f769f9"
+    },
+    {
+      "path": "AbsurdLach/Non-existentPast(bank theft)/old/bank_theft4.json",
+      "size": 18847,
+      "sha256": "ff8928129dc600a4b3dcca184fef3ac0215c074ad4e7a35a31734199a22ff934"
+    },
+    {
+      "path": "AbsurdLach/Non-existentPast(bank theft)/old/bank_theft5.json",
+      "size": 19494,
+      "sha256": "f6c183fa0bd030e051c75a64ca1ab827559a38b3efc47d67a8a151df8bdf0939"
     },
     {
       "path": "AbsurdLach/Random Plants vs. Zombies/random_beach.json",
